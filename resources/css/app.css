@@ -1,0 +1,4 @@
+@import "critical.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

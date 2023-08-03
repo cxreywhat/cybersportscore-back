@@ -1,0 +1,71 @@
+{{- define "service.config" }}
+- name: APP_NAME
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: APP_NAME }}
+
+- name: APP_ENV
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: APP_ENV }}
+
+- name: APP_KEY
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: APP_KEY }}
+
+- name: DMP_ENV
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: DMP_ENV }}
+
+- name: APP_DEBUG
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: APP_DEBUG }}
+
+- name: APP_URL
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: APP_URL }}
+
+- name: APP_FRONT_URL
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: APP_FRONT_URL }}
+
+- name: LOG_CHANNEL
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: LOG_CHANNEL }}
+
+- name: LOG_DEPRECATIONS_CHANNEL
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: LOG_DEPRECATIONS_CHANNEL }}
+
+- name: LOG_LEVEL
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: LOG_LEVEL }}
+
+- name: DB_CONNECTION
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: DB_CONNECTION }}
+
+- name: DB_HOST
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: DB_HOST }}
+
+- name: DB_PORT
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: DB_PORT }}
+
+- name: DB_DATABASE
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: DB_DATABASE }}
+
+- name: DB_USERNAME
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: DB_USERNAME }}
+
+- name: DB_PASSWORD
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: DB_PASSWORD }}
+
+- name: REDIS_SENTINEL_HOST
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: REDIS_SENTINEL_HOST }}
+
+- name: REDIS_SENTINEL_SERVICE
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: REDIS_SENTINEL_SERVICE }}
+
+- name: REDIS_PORT
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: REDIS_PORT }}
+
+- name: CACHE_TIME
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: CACHE_TIME }}
+
+- name: CACHE_ENABLE
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: CACHE_ENABLE }}
+
+- name: OPEN_DOTA_API_HOST
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: OPEN_DOTA_API_HOST }}
+
+- name: SEARCH_HOST
+  valueFrom: { secretKeyRef: { name: {{ .Chart.Name }}-secret, key: SEARCH_HOST }}
+  
+{{ end -}}

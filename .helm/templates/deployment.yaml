@@ -1,0 +1,73 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Chart.Name }}
+  labels:
+    type: webserver
+    service: {{ .Chart.Name }}
+spec:
+  replicas: 1
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 0
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      type: webserver
+      service: {{ .Chart.Name }}
+  template:
+    metadata:
+      labels:
+        type: webserver
+        service: {{ .Chart.Name }}
+      annotations:
+        prometheus.io/path: "/metrics"
+        prometheus.io/scrape: "true"
+    spec:
+      dnsConfig:
+        options:
+          - name: ndots
+            value: "3"
+          - name: attempts
+            value: "2"
+          - name: timeout
+            value: "1"
+          - name: single-request
+      containers:
+      - name: nginx
+        image: {{ .Values.global.image_front }}
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 80
+          protocol: TCP
+        - name: nginx-metrics
+          protocol: TCP
+          containerPort: 8081
+        resources:
+          requests:
+            cpu: "100m"
+        lifecycle:
+          preStop:
+            exec:
+              command: ["sh", "-c", "PROC_ID=`cat /var/run/nginx.pid`; nginx -s quit; while [ -d /proc/${PROC_ID} ]; do sleep 0.1; done"]
+      - name: fpm
+        image: {{ .Values.global.image_back }}
+        imagePullPolicy: Always
+        workingDir: /var/www/{{ .Chart.Name }}
+        ports:
+        - name: fpm
+          protocol: TCP
+          containerPort: 8000
+        - name: fpm-metrics
+          protocol: TCP
+          containerPort: 8080
+        resources:
+          requests:
+            memory: 256Mi
+            cpu: 0.5
+          limits:
+            memory: 2048Mi
+            cpu: 2
+        env:
+          {{- include "service.config" . | indent 10 }}

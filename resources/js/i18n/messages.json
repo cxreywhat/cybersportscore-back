@@ -1,0 +1,389 @@
+{
+  "en": {
+    "meta": {
+      "match": {
+        "title": "{team1} vs {team2} match bets and predictions, {date} at the {event} by {discipline}"
+      },
+      "index": {
+        "title": {
+          "default": "Live score, match schedule, results, watch matches online - Esports",
+          "discipline": "{game} match schedule, live score, {discipline} streams and broadcasts"
+        }
+      }
+    },
+    "events": {
+      "game_started": "The game has started",
+      "winner": "The game ended with the victory of the",
+      "picksbans": "Picks and bans stage",
+      "t0_picked_up": "was picked up",
+      "killed": "killed",
+      "t0_killed": "was killed",
+      "team_killed": "killed",
+      "destroyed": "destroyed",
+      "t0_destroyed": "was destroyed",
+      "team_destroyed": "destroyed",
+      "picked_up": "picked up",
+      "team_picked_up": "picked up",
+      "get": "get",
+      "team_get": "get",
+      "deals": "deals",
+      "team_deals": "deals",
+      
+      "tower_building": "Tower",
+      "inhibitor_building": "Inhibitor",
+
+      "dragon": "Drake",
+      "fire_dragon": "Infernal Drake",
+      "chemtech_dragon": "Chemtech Drake",
+      "hextech_dragon": "Hextech Drake",
+      "earth_dragon": "Mountain Drake",
+      "air_dragon": "Cloud Drake",
+      "water_dragon": "Ocean Drake",
+      "riftherald": "Rift Herald",
+      "nashor": "Nashor",
+      "roshan": "Roshan",
+      "aegis": "Aegis"
+    },
+    "details": {
+      "networth": "Networth",
+      "first_blood": "First blood",
+      "first_10_kills": "First 10 kills",
+      "first_tower": "First Tower",
+      "first_roshan_kill": "First Roshan kill",
+      "first_nashor_kill": "First Nashor kill",
+      "tower": "Tower",
+      "barracs": "Barracks",
+      "melee": "Meele",
+      "range": "Ranged",
+      "tier": "Tier"
+    },
+    "date": {
+      "today": "Today",
+      "tomorrow": "Tomorrow",
+      "now": "Now"
+    },
+    "placeholder": {
+      "game": "Select game",
+      "event": "Select event",
+      "team": "Select team",
+      "stream": "Select stream",
+      "search": "Search..."
+    },
+    "state": {
+      "loading": "Loading...",
+      "load_more": "Load more",
+      "no_matches": "There are no upcoming matches with these params",
+      "no_data": "No data",
+      "no_logs": "No logs",
+      "match_is_over": "The match is over",
+      "streams_ended": "The stream has ended",
+      "no_streams": "No streams",
+      "unavailable_content": "Unavailable content",
+      "viewers_online": "viewers online"
+    },
+    "footer": {
+      "description": "Follow the results of CSGO, Dota 2, League of Legends, Overwatch matches, compare odds and bets on matches, learn more about the players, and view the schedules of streams",
+      "legal": "© 2013-2020 • cybersportscore.com is operated by Brivio Limited, a company registered in the Republic of Cyprus, with its principal place of business at: Office 102, 12A Lekorpouzier, Limassol, Cyprus"
+    },
+    "labels": {
+      "matches": "Matches",
+      "last_matches": "Last matches",
+      "atricles": "Articles",
+      "news": "News",
+      "map": "Map",
+      "dota2": "Dota 2"
+    },
+    "article": {
+      "source": "Source",
+      "sourcePic": "Source picture"
+    }
+  },
+  "ru": {
+    "meta": {
+      "match": {
+        "title": "Ставки и прогнозы на матч {team1} против {team2}, {date} на турнире {event} по {discipline}"
+      },
+      "index": {
+        "title": {
+          "default": "Расписание матчей, live score, смотреть матчи онлайн - Киберспорт",
+          "discipline": "{game} расписание матчей, live score, стримы и трансляции {discipline}"
+        }
+      }
+    },
+    "events": {
+      "game_started": "Игра началась",
+      "winner": "Игра завершилась победой",
+      "picksbans": "Стадия пиков и банов",
+      "t0_picked_up": "был подобран",
+      "killed": "убивает",
+      "t0_killed": "был убит",
+      "team_killed": "убивают",
+      "destroyed": "уничтожает",
+      "t0_destroyed": "была уничтожена",
+      "team_destroyed": "уничтожают",
+      "picked_up": "подбирает",
+      "team_picked_up": "подбирают",
+      "get": "получает",
+      "team_get": "получают",
+      "deals": "наносит",
+      "team_deals": "наносят",
+    
+      "tower_building": "Башня(ю)",
+      "inhibitor_building": "Ингибитор",
+
+      "dragon": "Дракон",
+      "fire_dragon": "Адский Дрейк",
+      "chemtech_dragon": "Схемтек Дрейк",
+      "hextech_dragon": "Хекстек Дрейк",
+      "earth_dragon": "Горный Дрейк",
+      "air_dragon": "Облачный Дрейк",
+      "water_dragon": "Оушен Дрейк",
+      "riftherald": "Весник Разлома",
+      "nashor": "Нашор",
+      "roshan": "Рошан",
+      "aegis": "Аэгис"
+    },
+    "details": {
+      "networth": "Ценность героя",
+      "first_blood": "Первая кровь",
+      "first_10_kills": "Первые 10 убийств",
+      "first_tower": "Первая башня",
+      "first_roshan_kill": "Первое убийство Рошана",
+      "first_nashor_kill": "Первое убийство Нашора",
+      "tower": "Башня",
+      "barracs": "Бараки",
+      "tier": "Tier"
+    },
+    "date": {
+      "today": "Сегодня",
+      "now": "Сейчас",
+      "tomorrow": "Завтра"
+    },
+    "placeholder": {
+      "game": "Выбрать игру",
+      "event": "Выбрать турнир",
+      "team": "Выбрать команду",
+      "stream": "Выбрать стрим",
+      "search": "Поиск..."
+    },
+    "state": {
+      "loading": "Загрузка...",
+      "load_more": "Загрузить еще",
+      "no_matches": "Нету будущих матчей с такими параметрами",
+      "no_data": "Данные отсутствуют",
+      "no_logs": "Нет логов",
+      "match_is_over": "Матч закончился",
+      "streams_ended": "Стрим закончился",
+      "no_streams": "Нет стримов",
+      "unavailable_content": "Контент недоступен",
+      "viewers_online": "зрителей онлайн"
+    },
+    "footer": {
+      "description": "Follow the results of CSGO, Dota 2, League of Legends, Overwatch matches, compare odds and bets on matches, learn more about the players, and view the schedules of streams",
+      "legal": "© 2013-2020 • cybersportscore.com is operated by Brivio Limited, a company registered in the Republic of Cyprus, with its principal place of business at: Office 102, 12A Lekorpouzier, Limassol, Cyprus"
+    },
+    "labels": {
+      "matches": "Матчи",
+      "last_matches": "Последние матчи",
+      "atricles": "Статьи",
+      "news": "Новости",
+      "map": "Карта",
+      "dota2": "дота 2"
+    },
+    "article": {
+      "source": "Источник",
+      "sourcePic": "Заглавное фото"
+    }
+  },
+  "zh": {
+    "meta": {
+      "match": {
+        "title": "在 {discipline} 举办的锦标赛 {event} {date} 上对 {team1} 对阵 {team2} 的比赛的投注和预测"
+      },
+      "index": {
+        "title": {
+          "default": "比赛日程、实时比分、在线观看比赛 - 电子竞技",
+          "discipline": "{game} 比赛日程、比分直播、直播和转播 {discipline}"
+        }
+      }
+    },
+    "events": {
+      "game_started": "比赛开始",
+      "winner": "比赛结束，获胜",
+      "picksbans": "选择和禁止阶段",
+      "killed": "杀死",
+      "t0_killed": "杀死",
+      "t0_picked_up": "被提出",
+      "team_killed": "杀死",
+      "destroyed": "销毁",
+      "t0_destroyed": "被摧毁",
+      "team_destroyed": "被摧毁",
+      "picked_up": "拿起",
+      "team_picked_up": "捡到",
+      "get": "得到",
+      "team_get": "得到",
+      "deals": "交易",
+      "team_deals": "交易",
+  
+      "tower_building": "塔楼",
+      "inhibitor_building": "抑制剂",
+
+      "dragon": "龙",
+      "fire_dragon": "地狱龙",
+      "chemtech_dragon": "德雷克的示意图",
+      "hextech_dragon": "德雷克海克斯科技",
+      "earth_dragon": "山龙",
+      "air_dragon": "云龙",
+      "water_dragon": "海龙",
+      "riftherald": "裂谷先驱",
+      "nashor": "纳舒拉",
+      "roshan": "肉山",
+      "aegis": "宙斯盾"
+
+    },
+    "details": {
+      "networth": "英雄的价值",
+      "first_blood": "第一滴血",
+      "first_10_kills": "前 10 次击杀",
+      "first_tower": "第一塔",
+      "first_roshan_kill": "第一次杀死 Roshan",
+      "first_nashor_kill": "第一次杀死 Nashor"
+    },
+    "date": {
+      "today": "今天",
+      "now": "现在",
+      "tomorrow": "明天"
+    },
+    "placeholder": {
+      "game": "选择游戏",
+      "event": "选择事件",
+      "team": "选择团队",
+      "stream": "选择流",
+      "search": "搜索..."
+    },
+    "state": {
+      "loading": "加载中...",
+      "load_more": "装载更多",
+      "no_matches": "这些参数没有即将到来的比赛",
+      "no_data": "暂无数据",
+      "no_logs": "没有日志",
+      "match_is_over": "比赛结束了",
+      "streams_ended": "视频流已结束",
+      "no_streams": "没有流",
+      "unavailable_content": "不可用的内容",
+      "viewers_online": "在线观众"
+      
+    },
+    "footer": {
+      "description": "Follow the results of CSGO, Dota 2, League of Legends, Overwatch matches, compare odds and bets on matches, learn more about the players, and view the schedules of streams",
+      "legal": "© 2013-2020 • cybersportscore.com is operated by Brivio Limited, a company registered in the Republic of Cyprus, with its principal place of business at: Office 102, 12A Lekorpouzier, Limassol, Cyprus"
+    },
+    "labels": {
+      "matches": "火柴",
+      "last_matches": "最后一场比赛",
+      "atricles": "文章",
+      "news": "消息",
+      "map": "卡鲁塔",
+      "dota2": "Dota 2"
+    },
+    "article": {
+      "source": "Source",
+      "sourcePic": "Source picture"
+    }
+  },
+  "uk": {
+    "meta": {
+      "match": {
+        "title": "Ставки та прогнози на матч {team1} проти {team2}, {date} на турнірі {event} з {discipline}"
+      },
+      "index": {
+        "title": {
+          "default": "Розклад матчів, live score, дивитись матчі онлайн - Кіберспорт",
+          "discipline": "{game} розклад матчів, live score, стрими та трансляції {discipline}"
+        }
+      }
+    },
+    "events": {
+      "game_started": "Гра розпочалася",
+      "winner": "Гра завершилася перемогою",
+      "picksbans": "Стадія піків і банів",
+      "t0_picked_up": "був піднятий",
+      "killed": "вбиває",
+      "t0_killed": "був убитий",
+      "team_killed": "вбивають",
+      "destroyed": "знищує",
+      "t0_destroyed": "була знищена",
+      "team_destroyed": "знищують",
+      "picked_up": "підбирає",
+      "team_picked_up": "підбирають",
+      "get": "отримує",
+      "team_get": "отримують",
+      "deals": "наносить",
+      "team_deals": "наносять",
+      
+      "tower_building": "Башта(у)",
+      "inhibitor_building": "Інгібітор",
+      
+      "dragon": "Дракон",
+      "fire_dragon": "Пекельний Дрейк",
+      "chemtech_dragon": "Чемтеч Дрейк",
+      "hextech_dragon": "Хекстеч Дрейк",
+      "earth_dragon": "Гірський Дрейк",
+      "air_dragon": "Хмарний Дрейк",
+      "water_dragon": "Оушен Дрейк",
+      "riftherald": "Вісник Розлому",
+      "nashor": "Нашор",
+      "roshan": "Рошан",
+      "aegis": "Аеґіс"
+      
+    },
+    "details": {
+      "networth": "Цінність героя",
+      "first_blood": "Перша кров",
+      "first_10_kills": "Перші 10 вбивств",
+      "first_tower": "Перша вежа",
+      "first_roshan_kill": "Перше вбивство Рошана",
+      "first_nashor_kill": "Перше вбивство Нашора"
+    },
+    "date": {
+      "today": "Сьогодні",
+      "now": "Зараз",
+      "tomorrow": "Завтра"
+    },
+    "placeholder": {
+      "game": "Оберіть гру",
+      "event": "Оберіть подію",
+      "team": "Оберіть команду",
+      "stream": "Оберіть стрім",
+      "search": "Пошук..."
+    },
+    "state": {
+      "loading": "Завантаження...",
+      "load_more": "Завантажити ще",
+      "no_matches": "Немає майбутніх матчів з такими параметрами",
+      "no_data": "Дані відсутні",
+      "no_logs": "Логи відсутні",
+      "match_is_over": "Матч завершився",
+      "streams_ended": "Стрім завершився",
+      "no_streams": "Немає стрімів",
+      "unavailable_content": "Контент тимчасово недоступний",
+      "viewers_online": "глядачів онлайн"
+    },
+    "footer": {
+      "description": "Follow the results of CSGO, Dota 2, League of Legends, Overwatch matches, compare odds and bets on matches, learn more about the players, and view the schedules of streams",
+      "legal": "© 2013-2020 • cybersportscore.com is operated by Brivio Limited, a company registered in the Republic of Cyprus, with its principal place of business at: Office 102, 12A Lekorpouzier, Limassol, Cyprus"
+    },
+    "labels": {
+      "matches": "Матчі",
+      "last_matches": "Останні матчі",
+      "atricles": "Статті",
+      "news": "Новини",
+      "map": "Карта",
+      "dota2": "дота 2"
+    },
+    "article": {
+      "source": "Джерело",
+      "sourcePic": "Заголовне фото"
+    }
+  }
+}
