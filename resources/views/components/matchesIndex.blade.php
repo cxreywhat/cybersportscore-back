@@ -8,25 +8,13 @@
 
         {{--@if(isMounted)--}}
         <div class="flex flex-col md:flex-row w-full">
-            FilterListbox
-                ref="gameFilterRef"
-                :name="'game'"
-                :collection="gamesCollection"
-                @on-change="onGameFilterChange"
+            @include('components.common.filterListBox')
+{{--
+            @include('components.common.filterListBox')
 
-            FilterListbox
-                ref="eventFilterRef"
-                :name="'event'"
-                :api="api.matches.tournaments"
-                :iconPath="'media/event/_120/e{id}.webp'"
-                @on-change="onEventFilterChange"
 
-            FilterListbox
-                ref="teamFilterRef"
-                :name="'team'"
-                :api="api.matches.teams"
-                :iconPath="'media/logo/_30/t{id}.webp'"
-                @on-change="onTeamFilterChange"
+            @include('components.common.filterListBox')--}}
+
         </div>
         {{--@endif--}}
     </div>
@@ -37,7 +25,7 @@
         {{--@if(items?.length || 0 > 0)--}}
         {{--@foreach($items as $item)--}}
         <div {{--id="item.id"--}} class="border-gray-700 border-x border-t justify-between">
-            MatchRow :item="item"
+            @include('components.matchesIndex.matchRow')
         </div>
         {{--@endforeach--}}
         {{--@endif
@@ -50,7 +38,7 @@
         </div>
         {{--@endif--}}
         {{--@if(showLoader)--}}
-        Loader
+{{--        @include('components.common.loader')--}}
         {{--@endif--}}
     </div>
 
