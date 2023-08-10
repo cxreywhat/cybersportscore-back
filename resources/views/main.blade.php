@@ -10,7 +10,6 @@
 
     <link rel="icon" type="image/svg+xml" href={{ asset('media/icons/favicon32.png') }}/>
     <link rel="stylesheet" href={{ asset('css/app.css') }} />
-    <link rel="stylesheet" href={{ asset('css/style.css') }} />
     <title>CyberSportScore.com - livescore, live results, matches, scores, streams</title>
 
 </head>

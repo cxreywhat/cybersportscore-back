@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let clearSelection = document.getElementById("clear-selection");
     let selectedGame = document.getElementById("selected-game");
 
+
+
     let customSelectTournament = document.getElementById(
         "custom-select-tournament",
     );
@@ -18,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let customOptionsTeam = document.getElementById("custom-options-team");
     let clearSelectionTeam = document.getElementById("clear-selection-team");
 
-    let team = [
+    let teams = [
         {
             game: "dota-2",
             value: "vp",
@@ -73,6 +75,31 @@ document.addEventListener("DOMContentLoaded", function () {
     let selectedTeamValue = null;
     let selectedTournamentValue = null;
     let selectedGameValue = null;
+
+    customSelect.addEventListener("click", function (event) {
+        closeOtherSelectMenus(customSelectTournament, customOptionsTournament);
+        closeOtherSelectMenus(customSelectTeam, customOptionsTeam);
+        // ... (rest of your existing customSelect click event code)
+    });
+
+    customSelectTournament.addEventListener("click", function (event) {
+        closeOtherSelectMenus(customSelect, customOptions);
+        closeOtherSelectMenus(customSelectTeam, customOptionsTeam);
+        // ... (rest of your existing customSelectTournament click event code)
+    });
+
+    customSelectTeam.addEventListener("click", function (event) {
+        closeOtherSelectMenus(customSelect, customOptions);
+        closeOtherSelectMenus(customSelectTournament, customOptionsTournament);
+        // ... (rest of your existing customSelectTeam click event code)
+    });
+
+    // Function to close other select menus
+    function closeOtherSelectMenus(currentSelect, currentOptions) {
+        if (currentOptions.style.display === "block") {
+            currentOptions.style.display = "none";
+        }
+    }
 
     customSelect.addEventListener("click", function (event) {
         event.stopPropagation();
@@ -136,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     )
                     .concat(
                         tournament.image,
-                        '" loading="lazy" class="w-3 h-3 inline-block mr-1" alt="">\n                        ',
+                        '" loading="lazy" class="w-5 h-5 inline-block mr-1" alt="">\n                        ',
                     )
                     .concat(tournament.label, "\n                        ")
                     .concat(
@@ -157,6 +184,46 @@ document.addEventListener("DOMContentLoaded", function () {
             customOptionsTournament.style.display = "none";
         }
     });
+    customSelectTeam.addEventListener("click", function (event) {
+        event.stopPropagation();
+        customOptionsTeam.innerHTML = "";
+
+        if (customOptionsTeam.style.display === "none") {
+            customOptionsTeam.style.display = "block";
+
+            if (!customOptionsTeam.querySelector("input[type='search']")) {
+                createSearchInputTeam();
+            }
+
+            teams.forEach(team => {
+                const option = document.createElement("li");
+                option.classList.add("relative");
+                option.innerHTML = `
+                <button data-value="${team.value}" class="flex items-center w-full text-left block py-2 px-2 text-white
+                    whitespace-normal truncate h-[43px] text-xs lg:text-sm">
+                    <img src="${team.game_image}" alt="dota-2 icon" loading="lazy" class="opacity-50 w-3 h-3 inline-block mr-3">
+                    <img src="${team.image}" loading="lazy" class="w-5 h-5 inline-block mr-2">
+                    ${team.label}
+                    ${team === selectedTeamValue ? `
+                        <span class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5">
+                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                            </svg>
+                        </span>` : ''}
+                </button>`;
+                customOptionsTeam.appendChild(option);
+
+                option.addEventListener("click", function () {
+                    selectedTeamValue = team;
+                    updateSelectedTeam();
+                    customOptionsTeam.style.display = "none";
+                });
+            });
+        } else {
+            customOptionsTeam.style.display = "none";
+        }
+    });
+
 
     clearSelectionTournament.addEventListener("click", function (event) {
         event.stopPropagation();
@@ -165,6 +232,14 @@ document.addEventListener("DOMContentLoaded", function () {
         customOptionsTournament.style.display = "none";
     });
 
+    clearSelectionTeam.addEventListener("click", function (event) {
+        event.stopPropagation();
+        selectedTeamValue = null;
+        updateSelectedTeam();
+        customOptionsTeam.style.display = "none";
+    });
+
+
     clearSelection.addEventListener("click", function (event) {
         event.stopPropagation(); // Остановить всплытие события
         selectedGame.s = "Выбрать игру";
@@ -172,6 +247,30 @@ document.addEventListener("DOMContentLoaded", function () {
             '\n                        <svg class="h-5 w-5 text-gray-400 pointer-events-none" viewBox="0 0 20 20" fill="none" stroke="currentColor">\n                            <path d="M7 7l3-3 3 3m0 6l-3 3-3-3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>\n                        </svg>';
         customOptions.style.display = "none";
     });
+
+    function updateSelectedTeam() {
+        const selectedTeamElement = document.getElementById("selected-team");
+
+        clearSelectionTeam.innerHTML = `
+        <svg class="h-5 w-5 text-gray-400 pointer-events-none" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+            <path d="M7 7l3-3 3 3m0 6l-3 3-3-3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>`;
+
+        if (selectedTeamValue) {
+            selectedTeamElement.classList.remove("text-gray-500");
+            selectedTeamElement.classList.add("text-gray-200");
+            selectedTeamElement.innerHTML = `
+            <span class="ml-1 block truncate text-xs">
+                <img src="${selectedTeamValue.game_image}" alt="dota-2 icon" loading="lazy" class="opacity-50 w-3 h-3 inline-block mr-3">
+                <img src="${selectedTeamValue.image}" loading="lazy" class="w-3 h-3 inline-block mr-1">
+                ${selectedTeamValue.label}
+            </span>`;
+        } else {
+            selectedTeamElement.classList.add("text-gray-500");
+            selectedTeamElement.classList.remove("text-gray-200");
+            selectedTeamElement.textContent = "Выбрать команду";
+        }
+    }
 
     function updateSelectedTournament() {
         let selectedTournamentElement = document.getElementById(
@@ -215,6 +314,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 )
                 .concat(selectedGameValue.label, "\n                </span>");
     }
+        function createSearchInputTeam() {
+            const searchInputTeam = document.createElement("input");
+            searchInputTeam.setAttribute("type", "search");
+            searchInputTeam.setAttribute("placeholder", "Поиск...");
+            searchInputTeam.classList.add("w-11/12", "rounded", "text-xs", "m-auto", "mt-2", "block", "h-8", "text-white", "mb-3", "bg-gray-800", "border", "border-gray-700", "focus:border-indigo-500", "focus:outline-none", "focus:opacity-80", "focus:ring-1", "focus:ring-indigo-500");
+            customOptionsTeam.insertBefore(searchInputTeam, customOptionsTeam.firstChild);
+        }
 
     function createSearchInputTournament() {
         let searchInputTournamentHTML =
