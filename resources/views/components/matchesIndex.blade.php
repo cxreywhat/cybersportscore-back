@@ -24,18 +24,16 @@
         'relative overflow-hidden border-b rounded-b-md border-gray-700 shadow-xl']">
         {{--@if(items?.length || 0 > 0)--}}
         {{--@foreach($items as $item)--}}
-        <div {{--id="item.id"--}} class="border-gray-700 border-x border-t justify-between">
             @include('components.matchesIndex.matchRow')
-        </div>
         {{--@endforeach--}}
         {{--@endif
 
-        @elseif(!showLoader)--}}
+        {{--@elseif(!showLoader)--}}{{--
         <div class="flex border-l border-t border-r min-h-[200px] relative justify-center items-center
         overflow-hidden rounded-b-md border-gray-700 text-gray-600 text-xl
         bg-[#212D3D]">
-            {{--{{ $t('state.no_matches') }}--}}
-        </div>
+            --}}{{--{{ $t('state.no_matches') }}--}}{{--
+        </div>--}}
         {{--@endif--}}
         {{--@if(showLoader)--}}
 {{--        @include('components.common.loader')--}}
@@ -43,9 +41,7 @@
     </div>
 
     <div class="mt-5">
-        Pagination
-        ref="paginationRef"
-        @on-change="changePage"
+        @include('components.common.pagination')
     </div>
     {{--@endif--}}
 

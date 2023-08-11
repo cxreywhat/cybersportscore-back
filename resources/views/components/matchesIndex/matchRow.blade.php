@@ -1,4 +1,3 @@
-
 <div class="items-row hover:bg-gray-800 border-l-[4px] border-red-500" data-v-283f8db8="">
     <a href="/ru/dota-2/522008" class="border-transparent flex flex-row w-full h-full items-center" data-v-283f8db8="">
         <div class="flex items-col pl-4 w-[45px]" data-v-3ea41e3b="">

@@ -25,5 +25,16 @@ Route::get('go', [BannerController::class, 'go']);
 //});
 
 Route::get('/', function () {
-        return view('main');
+        return view('home');
     });
+
+Route::get('/news', function () {
+    return view('newsList');
+});
+
+Route::group(['prefix' => 'news'], function () {
+    Route::get('/translit', function () {
+        return view('newsArticle');
+    });
+});
+

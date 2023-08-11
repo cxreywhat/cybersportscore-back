@@ -11,11 +11,15 @@
     <link rel="icon" type="image/svg+xml" href={{ asset('media/icons/favicon32.png') }}/>
     <link rel="stylesheet" href={{ asset('css/app.css') }} />
     <title>CyberSportScore.com - livescore, live results, matches, scores, streams</title>
-
 </head>
 <body>
     <div class="h-full relative flex flex-col max-w-6xl mx-auto px-0 lg:px-3 bg-[#1B2838]">
-        @include('home')
+        @include('components.layout.navbar')
+
+        @yield('content')
+
+        @include('components.layout.footer')
+
     </div>
 </body>
 </html>
