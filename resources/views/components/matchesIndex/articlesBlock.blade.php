@@ -49,4 +49,4 @@
         </div><!---->
     </div>
 </div>
-@include('components.matchesIndex.articlesBlock')
+
