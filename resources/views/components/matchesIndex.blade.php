@@ -279,3 +279,32 @@
 //     const refreshMatches = setInterval(getMatches, 5000, true)
 
 </script>
+<style lang="scss">
+    @layer components {
+        .items-col-adv {
+            span + span {
+                @apply ml-0 sm:ml-1 md:ml-2;
+            }
+        }
+        .items-row {
+            @apply relative flex bg-[#192536] h-[3.2rem] bg-gray-700 bg-opacity-20 text-gray-500 items-center;
+            will-change: contents;
+        }
+        .items-col {
+            @apply flex h-full flex-col items-start justify-center border-gray-700 text-gray-500;
+        }
+        .items-col-adv {
+            span + span {
+                @apply ml-1 md:ml-2;
+            }
+        }
+
+        .details-container {
+            @apply relative min-h-[285px] w-full;
+            background:
+                linear-gradient(180deg,
+                    rgba(214, 214, 214, 0.06) 0%,
+                    rgba(217, 217, 217, 0.03) 100%);
+        }
+    }
+</style>

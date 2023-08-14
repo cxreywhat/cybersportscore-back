@@ -38,3 +38,6 @@ Route::group(['prefix' => 'news'], function () {
     });
 });
 
+Route::get('/match', function () {
+    return view('match');
+});
