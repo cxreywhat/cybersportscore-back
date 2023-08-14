@@ -23,7 +23,7 @@ class BetDto implements \JsonSerializable
                 $this->team2Rate,
             ],
             'url' => 'go?to=' . $this->name . '&k1&m=' . $this->matchId,
-            'icon_url' => '/media/odds/small/' . $this->name . '.png',
+            'icon_url' => 'public/media/odds/small/' . $this->name . '.png',
         ];
     }
 }

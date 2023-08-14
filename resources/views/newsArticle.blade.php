@@ -156,17 +156,8 @@
         border: 1px solid #dee2e6;
     }
 
-    .table-bordered, .table-bordered td, .table-bordered th {
-        /*border: 1px solid #dee2e6;*/
+    .table-bordered td, .table-bordered th {
         border: 1px solid #212d37; /* dark mode */
-    }
-    .warn-block {
-        margin-bottom: 15px;
-        border: 1px solid #ececee;
-        padding: 50px 10px;
-        border-radius: 3px;
-        text-align: center;
-        background: rgba(243, 244, 248, 0.7);
     }
 
     .warn-block p {

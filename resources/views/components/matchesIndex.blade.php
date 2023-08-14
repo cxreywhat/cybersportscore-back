@@ -22,11 +22,16 @@
     {{--@if(isMounted)--}}
     <div class="[showLoader ? 'min-h-[785px] border-l border-r border-t' : '',
         'relative overflow-hidden border-b rounded-b-md border-gray-700 shadow-xl']">
-        {{--@if(items?.length || 0 > 0)--}}
-        {{--@foreach($items as $item)--}}
-            @include('components.matchesIndex.matchRow')
-        {{--@endforeach--}}
-        {{--@endif
+
+        @if(count($items) > 0)
+            @foreach($items as $item)
+
+
+                @include('components.matchesIndex.matchRow', [
+                    'item' => $item
+                ])
+            @endforeach
+        @endif
 
         {{--@elseif(!showLoader)--}}{{--
         <div class="flex border-l border-t border-r min-h-[200px] relative justify-center items-center

@@ -34,8 +34,10 @@ Route::middleware(['cors'])->group(function () {
 
     Route::get('matches/{id}/preview', [MatchController::class, 'showPreview'])
         ->name('matches.show-preview');
+
     Route::apiResource('matches', MatchController::class)
         ->only(['index', 'show']);
+
     Route::get('matches/{id}/streams', [StreamController::class, 'index'])
         ->name('matches.streams');
     Route::get('matches/{id}/history/{side?}', [MatchController::class, 'showHistory'])

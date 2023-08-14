@@ -3,13 +3,13 @@ export const gamesCollection = [
     id: 582,
     eng: 'dota-2',
     title: 'Dota 2',
-    icon: 'media/icons/games/dota-2.webp'
+    icon: 'public/media/icons/games/dota-2.webp'
   },
   {
     id: 313,
     eng: 'lol',
     title: 'LoL',
-    icon: 'media/icons/games/lol.webp'
+    icon: 'public/media/icons/games/lol.webp'
   }
 ]
 

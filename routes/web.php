@@ -2,6 +2,7 @@
 
 
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SeoController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,9 +25,7 @@ Route::get('go', [BannerController::class, 'go']);
 //    ]);
 //});
 
-Route::get('/', function () {
-        return view('home');
-    });
+Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/news', function () {
     return view('newsList');

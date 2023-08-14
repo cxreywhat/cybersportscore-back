@@ -13,52 +13,40 @@
                     class="flex flex-col h-full ml-1 bg-gray-100 bg-opacity-60 w-[55px] h-[50px] items-center justify-center rounded-[100%]"
                 >
                     <img
-                        src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                        title="EPL S11"
-                        alt="EPL S11 icon"
+                        src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                        title="LNTI"
+                        alt="LNTI icon"
                         loading="lazy"
                         class="w-[2.5rem] h-[2.5rem] inline"
                     />
                 </div>
-                <span class="flex flex-col ml-4 justify-center">
-                    <span class="whitespace-nowrap">EPL S11assa</span>
-                    <br />
-                    <span>$10,000</span>
-                </span>
+                <span class="flex flex-col ml-4 justify-center"
+                    ><span class="whitespace-nowrap">LNTIassa</span><br /><span
+                        >$20,000</span
+                    ></span
+                >
             </div>
             <div
                 class="flex flex-row align-center md:w-56 md:justify-center sm:justify-end sm:ml-3 flex-wrap"
             >
-                <span class="mx-1 sm:mx-2 my-1 sm:mr-0">
-                    <a
-                        aria-current="page"
-                        href="/ru/dota-2/523919?num=1"
-                        class="router-link-active router-link-exact-active cursor-default pointer-events-none bg-apple text-gray-900 uppercase text-[10px] font-semibold px-2 py-1 rounded sm:text-xs"
-                    >
-                        <span
-                            class="animate-pulse inline-flex w-[8px] h-[8px] bg-red-500 border border-gray-400 border-1 rounded-[100%] mr-1"
-                        ></span>
-                        <span class="inline-flex">Карта 1</span>
-                    </a>
-                </span>
-                <span class="mx-1 sm:mx-2 my-1 sm:mr-0">
-                    <a
-                        aria-current="page"
-                        href="/ru/dota-2/523919?num=2"
-                        class="router-link-active router-link-exact-active text-gray-700 border border-1 border-gray-700 cursor-default pointer-events-none uppercase text-[10px] font-semibold px-2 py-1 rounded sm:text-xs"
-                    >
-                        <span class="inline-flex">Карта 2</span>
-                    </a>
-                </span>
                 <span class="mx-1 sm:mx-2 my-1 sm:mr-0"
                     ><a
                         aria-current="page"
-                        href="/ru/dota-2/523919?num=3"
+                        href="/ru/dota-2/524035?num=1"
+                        class="router-link-active router-link-exact-active cursor-default pointer-events-none bg-apple text-gray-900 uppercase text-[10px] font-semibold px-2 py-1 rounded sm:text-xs"
+                        ><span
+                            class="animate-pulse inline-flex w-[8px] h-[8px] bg-red-500 border border-gray-400 border-1 rounded-[100%] mr-1"
+                        ></span
+                        ><span class="inline-flex">Карта 1</span></a
+                    ></span
+                ><span class="mx-1 sm:mx-2 my-1 sm:mr-0"
+                    ><a
+                        aria-current="page"
+                        href="/ru/dota-2/524035?num=2"
                         class="router-link-active router-link-exact-active text-gray-700 border border-1 border-gray-700 cursor-default pointer-events-none uppercase text-[10px] font-semibold px-2 py-1 rounded sm:text-xs"
-                    >
-                        <span class="inline-flex">Карта 3</span>
-                    </a>
-                </span>
+                        ><!----><span class="inline-flex">Карта 2</span></a
+                    ></span
+                >
             </div>
         </div>
         <div class="col-span-6 lg:col-span-3 flex justify-between items-center">
@@ -84,10 +72,10 @@
                         class="flex-col-reverse items-end flex"
                         data-v-728ac113=""
                     >
-                        <span
+                        <!----><!----><span
                             class="text-[10px] sm:text-xs font-semibold mr-3 sm:mr-0 mb-0 sm:mb-1 md:mb-0 truncate"
                             data-v-728ac113=""
-                            >StoRm</span
+                            >ME</span
                         >
                     </div>
                 </div>
@@ -96,8 +84,8 @@
                     data-v-e3302de3=""
                 >
                     <img
-                        src="https://api.cybersportscore.com/media/logo/_30/t96229.webp"
-                        alt="StoRm icon"
+                        src="https://api.cybersportscore.com/media/logo/_30/t95245.webp"
+                        alt="MIRACLE ESPORT icon"
                         class="w-[1.6rem] aspect-[3/2] object-contain"
                         loading="lazy"
                         data-v-e3302de3=""
@@ -132,7 +120,7 @@
                                 class="w-[30px] sm:w-[38px] text-right text-[9px] sm:text-xs leading-normal"
                                 data-v-e3302de3=""
                             >
-                                <span data-v-e3302de3="" class="">04:14</span>
+                                <span data-v-e3302de3="" class="">17:30</span>
                             </div>
                         </div>
                         <div
@@ -142,13 +130,13 @@
                             <span
                                 class="leading-normal text-apple text-xs sm:text-sm text-right font-bold pr-1"
                                 data-v-e3302de3=""
-                                >2</span
+                                >12</span
                             >
                             :
                             <span
                                 class="leading-normal text-apple text-xs sm:text-sm text-center font-bold pl-1"
                                 data-v-e3302de3=""
-                                >3</span
+                                >17</span
                             >
                         </div>
                     </div>
@@ -158,8 +146,8 @@
                     data-v-e3302de3=""
                 >
                     <img
-                        src="https://api.cybersportscore.com/media/logo/_30/t95934.webp"
-                        alt="Moneymakers icon"
+                        src="https://api.cybersportscore.com/media/logo/_30/t96167.webp"
+                        alt="Vision icon"
                         class="w-[1.6rem] aspect-[3/2] object-contain"
                         loading="lazy"
                         data-v-e3302de3=""
@@ -174,31 +162,29 @@
                         <span
                             class="text-[10px] sm:text-xs font-semibold ml-3 sm:ml-0 mb-0 sm:mb-1 md:mb-0 truncate"
                             data-v-728ac113=""
-                            >MM</span
-                        >
-                        <span
+                            >VSG</span
+                        ><span
                             class="ml-3 sm:ml-0 items-col-adv text-[9px] font-semibold opacity-90"
                             data-v-728ac113=""
-                        >
-                            <span
+                            ><span
                                 class="h-[12px] block rounded border-yellow-300 text-yellow-300 leading-normal"
                                 data-v-728ac113=""
-                                >+145</span
-                            >
-                            <span
+                                >+5k</span
+                            ><span
                                 class="text-left h-[12px] block sm:ml-0 rounded border-[#1786ED] text-[#1786ED] leading-normal"
                                 data-v-728ac113=""
-                                >+504</span
-                            >
-                        </span>
+                                >+7.4k</span
+                            ></span
+                        ><!---->
                     </div>
                 </div>
+                <!---->
                 <div class="items-col w-[50px] items-center" data-v-3ea41e3b="">
                     <div
                         class="flex font-semibold flex-col text-xs text-gray-300 leading-4"
                         data-v-3ea41e3b=""
                     >
-                        BO3
+                        BO2
                     </div>
                     <span
                         class="bg-gray-500 text-[11px] leading-none font-semibold mt-0.5 w-7 px-1 py-0.5 rounded text-white text-center"
@@ -211,43 +197,27 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-6 gap-6 relative">
         <div class="col-span-6 lg:col-span-3">
-            <div class="w-full border border-gray-700 min-h-[250px] sm:min-h-[376px] rounded-lg shadow-xl mb-6 bg-[#212D3D] items-center justify-center relative overflow-hidden">
+            <div
+                class="w-full border border-gray-700 min-h-[250px] sm:min-h-[376px] rounded-lg shadow-xl mb-6 bg-[#212D3D] items-center justify-center relative overflow-hidden"
+            >
                 <div
                     class="flex flex-row border-b border-gray-700 w-full h-[65px] self-start overflow-x-auto shadow shadow-md relative"
                 >
                     <button
-                        title="KZ Team vs Storm |  European Pro League season 11 | Group Stage | Bo3 | joexdtry"
-                        class="border-b-gray-900 hover:bg-gray-700 hover:border-b-gray-900 flex flex-row min-w-[252px] w-[252px] text-gray-200 border-b border-b-[5px] group box-content"
-                    >
-                        <img
-                            class="w-[65px] h-full transition opacity-80 group-hover:opacity-100"
-                            src="https://api.cybersportscore.com/media/streams/_50/s18242.png"
-                        />
-                        <div
-                            class="p-3 basis-full h-full truncate text-xs flex-col text-left font-semibold"
-                        >
-                            KZ Team vs Storm | European Pro League season 11 |
-                            Group Stage | Bo3 | joexdtry
-                            <div class="text-gray-500 text-[10px] pt-1">
-                                305 зрителей онлайн
-                            </div>
-                        </div>
-                    </button>
-                    <button
-                        title="Money Makers vs StoRm | EPL Season 11 | BO3 | Group Stage | by ihinoi  mont3m"
+                        title="Miracle esport - Vision Gaming | LingNeng Trendy Invitational | by dantesss10"
                         class="border-b border-b-apple bg-gray-700 cursor-default flex flex-row min-w-[252px] w-[252px] text-gray-200 border-b border-b-[5px] group box-content"
                     >
                         <img
                             class="w-[65px] h-full transition opacity-80 group-hover:opacity-100"
-                            src="https://api.cybersportscore.com/media/streams/_50/s10883.png"
+                            src="https://api.cybersportscore.com/media/streams/_50/s21934.png"
                         />
                         <div
                             class="p-3 basis-full h-full truncate text-xs flex-col text-left font-semibold"
                         >
-                            Money Makers vs StoRm | EPL Season 11 | BO3 | Group
-                            Stage | by ihinoi mont3m
+                            Miracle esport - Vision Gaming | LingNeng Trendy
+                            Invitational | by dantesss10
                             <div class="text-gray-500 text-[10px] pt-1">
-                                103 зрителей онлайн
+                                440 зрителей онлайн
                             </div>
                         </div>
                     </button>
@@ -272,7 +242,7 @@
                     <div
                         class="w-full h-full"
                         style="
-                            background-image: url('https://static-cdn.jtvnw.net/previews-ttv/live_user_epldota_ru-1280x720.jpg');
+                            background-image: url('https://static-cdn.jtvnw.net/previews-ttv/live_user_ggwpmedia-1280x720.jpg');
                             background-size: cover;
                         "
                     ></div>
@@ -313,7 +283,7 @@
                                 </svg>
                             </div>
                             <div
-                                class="#374151 group flex w-[24px] h-[29px] relative"
+                                class="red-side group flex w-[24px] h-[29px] relative"
                                 title="Первые 10 убийств"
                                 style="transition-delay: 0.2s"
                             >
@@ -332,13 +302,13 @@
                                 >
                                     <path
                                         d="M0.722244 21.2978L0.727002 3.12362L12.0024 0.666687L23.2778 3.12362V21.3049L12.0105 29.6666L0.722244 21.2978Z"
-                                        stroke="#374151"
+                                        stroke="#c23c2a"
                                         stroke-width="2px"
                                     ></path>
                                 </svg>
                             </div>
                             <div
-                                class="#374151 group flex w-[24px] h-[29px] relative"
+                                class="green-side group flex w-[24px] h-[29px] relative"
                                 title="Первая башня"
                                 style="transition-delay: 0.4s"
                             >
@@ -357,7 +327,7 @@
                                 >
                                     <path
                                         d="M0.722244 21.2978L0.727002 3.12362L12.0024 0.666687L23.2778 3.12362V21.3049L12.0105 29.6666L0.722244 21.2978Z"
-                                        stroke="#374151"
+                                        stroke="#92a525"
                                         stroke-width="2px"
                                     ></path>
                                 </svg>
@@ -391,7 +361,10 @@
                         <div class="relative transition">
                             <div
                                 class="h-0 w-[100%] pb-[100%] w-full h-full opacity-70"
-                                style="background-image: url({{ asset('/media/maps/dota-2.png') }}); background-size: cover;"
+                                style="
+                                    background-image: url({{asset('/media/maps/dota-2.png')}});
+                                    background-size: cover;
+                                "
                             ></div>
                             <div
                                 class="green-side-map absolute shadow-sm transition"
@@ -438,7 +411,7 @@
                                 "
                             ></div>
                             <div
-                                class="green-side-map absolute shadow-sm transition"
+                                class="destroyed-side-map absolute shadow-sm transition"
                                 style="
                                     width: 7%;
                                     height: 7%;
@@ -471,7 +444,7 @@
                                 "
                             ></div>
                             <div
-                                class="green-side-map absolute shadow-sm transition"
+                                class="destroyed-side-map absolute shadow-sm transition"
                                 style="
                                     width: 7%;
                                     height: 7%;
@@ -693,7 +666,7 @@
                                 "
                             ></div>
                             <div
-                                class="red-side-map absolute shadow-sm transition"
+                                class="destroyed-side-map absolute shadow-sm transition"
                                 style="
                                     width: 7%;
                                     height: 7%;
@@ -807,6 +780,839 @@
                             <div
                                 class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
                             >
+                                <span>16:00</span>
+                            </div>
+                            <div
+                                class="flex flex-col grow items-start justify-start text-left pr-3 text-xs"
+                            >
+                                <div class="mb-2">
+                                    <span class="red-side font-semibold mb-2"
+                                        ><span>VSG</span></span
+                                    ><span> уничтожают </span
+                                    ><span class="green-side font-semibold mb-2"
+                                        ><!----></span
+                                    ><!----><!----><span class="font-bold"
+                                        ><!---->
+                                        Tier 1 Middle Tower</span
+                                    ><!---->
+                                </div>
+                                <!----><!----><!----><!----><!----><!---->
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row border-b border-dashed border-gray-700 mb-2"
+                        >
+                            <div
+                                class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
+                            >
+                                <span>15:00</span>
+                            </div>
+                            <div
+                                class="flex flex-col grow items-start justify-start text-left pr-3 text-xs"
+                            >
+                                <!----><!----><!----><!----><!----><!----><span
+                                    ><div class="mb-2">
+                                        <span
+                                            class="green-side font-semibold mb-2"
+                                            ><span>ME</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="red-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            459</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div class="mb-2">
+                                        <span
+                                            class="red-side font-semibold mb-2"
+                                            ><span>VSG</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="green-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            2,706</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div>
+                                        <div class="mb-2">
+                                            <span
+                                                class="red-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Mars</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="green-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Gyrocopter</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div>
+                                        <div class="mb-2">
+                                            <span
+                                                class="green-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Tusk</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="red-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Nyx Assassin</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div>
+                                        <!---->
+                                        <div class="mb-2">
+                                            <span
+                                                class="red-side font-semibold mb-2"
+                                                ><span
+                                                    >Mars, Skywrath Mage</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="green-side font-semibold mb-2"
+                                                ><span
+                                                    >Tusk, Batrider</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                    </div></span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row border-b border-dashed border-gray-700 mb-2"
+                        >
+                            <div
+                                class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
+                            >
+                                <span>14:00</span>
+                            </div>
+                            <div
+                                class="flex flex-col grow items-start justify-start text-left pr-3 text-xs"
+                            >
+                                <div class="mb-2">
+                                    <span class="red-side font-semibold mb-2"
+                                        ><span>VSG</span></span
+                                    ><span> уничтожают </span
+                                    ><span class="green-side font-semibold mb-2"
+                                        ><!----></span
+                                    ><!----><!----><span class="font-bold"
+                                        ><!---->
+                                        Tier 1 Bottom Tower</span
+                                    ><!---->
+                                </div>
+                                <!----><!----><!----><!----><!----><!---->
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row border-b border-dashed border-gray-700 mb-2"
+                        >
+                            <div
+                                class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
+                            >
+                                <span>14:00</span>
+                            </div>
+                            <div
+                                class="flex flex-col grow items-start justify-start text-left pr-3 text-xs"
+                            >
+                                <!----><!----><!----><!----><!----><!----><span
+                                    ><div class="mb-2">
+                                        <span
+                                            class="green-side font-semibold mb-2"
+                                            ><span>ME</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="red-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            1,217</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div class="mb-2">
+                                        <span
+                                            class="red-side font-semibold mb-2"
+                                            ><span>VSG</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="green-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            1,898</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div>
+                                        <!---->
+                                        <div class="mb-2">
+                                            <span
+                                                class="green-side font-semibold mb-2"
+                                                ><span
+                                                    >Tusk, Gyrocopter</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="red-side font-semibold mb-2"
+                                                ><span
+                                                    >Luna, Skywrath Mage</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="mb-2">
+                                            <span
+                                                class="red-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Mars</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="green-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Gyrocopter</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div>
+                                        <div class="mb-2">
+                                            <span
+                                                class="red-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Razor</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="green-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Treant Protector</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                        <!---->
+                                    </div></span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row border-b border-dashed border-gray-700 mb-2"
+                        >
+                            <div
+                                class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
+                            >
+                                <span>13:00</span>
+                            </div>
+                            <div
+                                class="flex flex-col grow items-start justify-start text-left pr-3 text-xs"
+                            >
+                                <!----><!----><!----><!----><!----><!----><span
+                                    ><div class="mb-2">
+                                        <span
+                                            class="green-side font-semibold mb-2"
+                                            ><span>ME</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="red-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            1,706</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div class="mb-2">
+                                        <span
+                                            class="red-side font-semibold mb-2"
+                                            ><span>VSG</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="green-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            1,630</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div>
+                                        <div class="mb-2">
+                                            <span
+                                                class="green-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Tusk</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="red-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Skywrath Mage</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div>
+                                        <div class="mb-2">
+                                            <span
+                                                class="red-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Mars</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="green-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Gyrocopter</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div>
+                                        <!---->
+                                        <div class="mb-2">
+                                            <span
+                                                class="green-side font-semibold mb-2"
+                                                ><span>Gyrocopter</span></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="red-side font-semibold mb-2"
+                                                ><span
+                                                    >Nyx Assassin, Razor</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <!---->
+                                        <div class="mb-2">
+                                            <span
+                                                class="red-side font-semibold mb-2"
+                                                ><span
+                                                    >Nyx Assassin, Razor</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="green-side font-semibold mb-2"
+                                                ><span
+                                                    >Tusk, Batrider</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                    </div></span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row border-b border-dashed border-gray-700 mb-2"
+                        >
+                            <div
+                                class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
+                            >
+                                <span>12:00</span>
+                            </div>
+                            <div
+                                class="flex flex-col grow items-start justify-start text-left pr-3 text-xs"
+                            >
+                                <div class="mb-2">
+                                    <span class="green-side font-semibold mb-2"
+                                        ><span>ME</span></span
+                                    ><span> уничтожают </span
+                                    ><span class="red-side font-semibold mb-2"
+                                        ><!----></span
+                                    ><!----><!----><span class="font-bold"
+                                        ><!---->
+                                        Tier 1 Top Tower</span
+                                    ><!---->
+                                </div>
+                                <!----><!----><!----><!----><!----><!---->
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row border-b border-dashed border-gray-700 mb-2"
+                        >
+                            <div
+                                class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
+                            >
+                                <span>12:00</span>
+                            </div>
+                            <div
+                                class="flex flex-col grow items-start justify-start text-left pr-3 text-xs"
+                            >
+                                <!----><!----><!----><!----><!----><!----><span
+                                    ><div class="mb-2">
+                                        <span
+                                            class="green-side font-semibold mb-2"
+                                            ><span>ME</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="red-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            1,683</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div class="mb-2">
+                                        <span
+                                            class="red-side font-semibold mb-2"
+                                            ><span>VSG</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="green-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            2,729</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div>
+                                        <!---->
+                                        <div class="mb-2">
+                                            <span
+                                                class="green-side font-semibold mb-2"
+                                                ><span
+                                                    >Lycan, Treant
+                                                    Protector</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="red-side font-semibold mb-2"
+                                                ><span>Luna, Mars</span></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <!---->
+                                        <div class="mb-2">
+                                            <span
+                                                class="red-side font-semibold mb-2"
+                                                ><span
+                                                    >Nyx Assassin, Razor,
+                                                    Mars</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="green-side font-semibold mb-2"
+                                                ><span
+                                                    >Tusk, Lycan, Batrider</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                    </div></span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row border-b border-dashed border-gray-700 mb-2"
+                        >
+                            <div
+                                class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
+                            >
+                                <span>11:00</span>
+                            </div>
+                            <div
+                                class="flex flex-col grow items-start justify-start text-left pr-3 text-xs"
+                            >
+                                <!----><!----><!----><!----><!----><!----><span
+                                    ><div class="mb-2">
+                                        <span
+                                            class="green-side font-semibold mb-2"
+                                            ><span>ME</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="red-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            554</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div class="mb-2">
+                                        <span
+                                            class="red-side font-semibold mb-2"
+                                            ><span>VSG</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="green-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            838</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div>
+                                        <div class="mb-2">
+                                            <span
+                                                class="green-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Gyrocopter</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="red-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Skywrath Mage</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div>
+                                        <!---->
+                                        <div class="mb-2">
+                                            <span
+                                                class="red-side font-semibold mb-2"
+                                                ><span>Razor</span></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="green-side font-semibold mb-2"
+                                                ><span
+                                                    >Tusk, Batrider</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                    </div></span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row border-b border-dashed border-gray-700 mb-2"
+                        >
+                            <div
+                                class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
+                            >
+                                <span>10:00</span>
+                            </div>
+                            <div
+                                class="flex flex-col grow items-start justify-start text-left pr-3 text-xs"
+                            >
+                                <!----><!----><!----><!----><!----><!----><span
+                                    ><!----><!---->
+                                    <div class="mb-2">
+                                        <span
+                                            class="red-side font-semibold mb-2"
+                                            ><span>VSG</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="green-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            447</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div>
+                                        <div class="mb-2">
+                                            <span
+                                                class="red-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Mars</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="green-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Treant Protector</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                        <!---->
+                                    </div></span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row border-b border-dashed border-gray-700 mb-2"
+                        >
+                            <div
+                                class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
+                            >
+                                <span>09:00</span>
+                            </div>
+                            <div
+                                class="flex flex-col grow items-start justify-start text-left pr-3 text-xs"
+                            >
+                                <!----><!----><!----><!----><!----><!----><span
+                                    ><div class="mb-2">
+                                        <span
+                                            class="green-side font-semibold mb-2"
+                                            ><span>ME</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="red-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            667</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div class="mb-2">
+                                        <span
+                                            class="red-side font-semibold mb-2"
+                                            ><span>VSG</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="green-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            1,092</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div>
+                                        <div class="mb-2">
+                                            <span
+                                                class="green-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Tusk</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="red-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Skywrath Mage</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div>
+                                        <!---->
+                                        <div class="mb-2">
+                                            <span
+                                                class="red-side font-semibold mb-2"
+                                                ><span>Razor</span></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="green-side font-semibold mb-2"
+                                                ><span
+                                                    >Tusk, Gyrocopter</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                    </div></span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row border-b border-dashed border-gray-700 mb-2"
+                        >
+                            <div
+                                class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
+                            >
+                                <span>08:00</span>
+                            </div>
+                            <div
+                                class="flex flex-col grow items-start justify-start text-left pr-3 text-xs"
+                            >
+                                <!----><!----><!----><!----><!----><!----><span
+                                    ><!----><!---->
+                                    <div class="mb-2">
+                                        <span
+                                            class="red-side font-semibold mb-2"
+                                            ><span>VSG</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="green-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            937</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div>
+                                        <div class="mb-2">
+                                            <span
+                                                class="red-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Razor</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="green-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Tusk</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                        <!---->
+                                    </div></span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row border-b border-dashed border-gray-700 mb-2"
+                        >
+                            <div
+                                class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
+                            >
+                                <span>07:00</span>
+                            </div>
+                            <div
+                                class="flex flex-col grow items-start justify-start text-left pr-3 text-xs"
+                            >
+                                <!----><!----><!----><!----><!----><!----><span
+                                    ><div class="mb-2">
+                                        <span
+                                            class="green-side font-semibold mb-2"
+                                            ><span>ME</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="red-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            230</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div class="mb-2">
+                                        <span
+                                            class="red-side font-semibold mb-2"
+                                            ><span>VSG</span></span
+                                        ><span> получают </span
+                                        ><span
+                                            class="green-side font-semibold mb-2"
+                                            ><!----></span
+                                        ><span
+                                            class="font-bold text-yellow-400 whitespace-nowrap"
+                                            ><img
+                                                class="inline h-4"
+                                                src="/media/icons/events/gold.png"
+                                                alt="gold"
+                                            />
+                                            25</span
+                                        ><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                    <div>
+                                        <div class="mb-2">
+                                            <span
+                                                class="green-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Batrider</span
+                                                ></span
+                                            ><span> убивает </span
+                                            ><span
+                                                class="red-side font-semibold mb-2"
+                                                ><span class="whitespace-nowrap"
+                                                    >Skywrath Mage</span
+                                                ></span
+                                            ><!----><!----><!----><!---->
+                                        </div>
+                                        <!---->
+                                    </div></span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row border-b border-dashed border-gray-700 mb-2"
+                        >
+                            <div
+                                class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
+                            >
                                 <span>03:00</span>
                             </div>
                             <div
@@ -816,7 +1622,7 @@
                                     ><div class="mb-2">
                                         <span
                                             class="green-side font-semibold mb-2"
-                                            ><span>StoRm</span></span
+                                            ><span>ME</span></span
                                         ><span> получают </span
                                         ><span
                                             class="red-side font-semibold mb-2"
@@ -828,215 +1634,22 @@
                                                 src="/media/icons/events/gold.png"
                                                 alt="gold"
                                             />
-                                            519</span
+                                            608</span
                                         ><!----><!----><!---->
                                     </div>
-                                    <!---->
-                                    <div class="mb-2">
-                                        <span
-                                            class="red-side font-semibold mb-2"
-                                            ><span>MM</span></span
-                                        ><span> получают </span
-                                        ><span
-                                            class="green-side font-semibold mb-2"
-                                            ><!----></span
-                                        ><span
-                                            class="font-bold text-yellow-400 whitespace-nowrap"
-                                            ><img
-                                                class="inline h-4"
-                                                src="/media/icons/events/gold.png"
-                                                alt="gold"
-                                            />
-                                            553</span
-                                        ><!----><!----><!---->
-                                    </div>
-                                    <!---->
-                                    <div>
-                                        <div class="mb-2">
-                                            <span
-                                                class="red-side font-semibold mb-2"
-                                                ><span class="whitespace-nowrap"
-                                                    >Natures Prophet</span
-                                                ></span
-                                            ><span> убивает </span
-                                            ><span
-                                                class="green-side font-semibold mb-2"
-                                                ><span class="whitespace-nowrap"
-                                                    >Chen</span
-                                                ></span
-                                            ><!----><!----><!----><!---->
-                                        </div>
-                                        <!---->
-                                    </div>
+                                    <!----><!----><!---->
                                     <div>
                                         <div class="mb-2">
                                             <span
                                                 class="green-side font-semibold mb-2"
                                                 ><span class="whitespace-nowrap"
-                                                    >Faceless Void</span
+                                                    >Gyrocopter</span
                                                 ></span
                                             ><span> убивает </span
                                             ><span
                                                 class="red-side font-semibold mb-2"
                                                 ><span class="whitespace-nowrap"
-                                                    >Natures Prophet</span
-                                                ></span
-                                            ><!----><!----><!----><!---->
-                                        </div>
-                                        <!---->
-                                    </div></span
-                                >
-                            </div>
-                        </div>
-                        <div
-                            class="flex flex-row border-b border-dashed border-gray-700 mb-2"
-                        >
-                            <div
-                                class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
-                            >
-                                <span>02:00</span>
-                            </div>
-                            <div
-                                class="flex flex-col grow items-start justify-start text-left pr-3 text-xs"
-                            >
-                                <!----><!----><!----><!----><!----><!----><span
-                                    ><div class="mb-2">
-                                        <span
-                                            class="green-side font-semibold mb-2"
-                                            ><span>StoRm</span></span
-                                        ><span> получают </span
-                                        ><span
-                                            class="red-side font-semibold mb-2"
-                                            ><!----></span
-                                        ><span
-                                            class="font-bold text-yellow-400 whitespace-nowrap"
-                                            ><img
-                                                class="inline h-4"
-                                                src="/media/icons/events/gold.png"
-                                                alt="gold"
-                                            />
-                                            28</span
-                                        ><!----><!----><!---->
-                                    </div>
-                                    <!---->
-                                    <div class="mb-2">
-                                        <span
-                                            class="red-side font-semibold mb-2"
-                                            ><span>MM</span></span
-                                        ><span> получают </span
-                                        ><span
-                                            class="green-side font-semibold mb-2"
-                                            ><!----></span
-                                        ><span
-                                            class="font-bold text-yellow-400 whitespace-nowrap"
-                                            ><img
-                                                class="inline h-4"
-                                                src="/media/icons/events/gold.png"
-                                                alt="gold"
-                                            />
-                                            402</span
-                                        ><!----><!----><!---->
-                                    </div>
-                                    <!---->
-                                    <div>
-                                        <div class="mb-2">
-                                            <span
-                                                class="red-side font-semibold mb-2"
-                                                ><span class="whitespace-nowrap"
-                                                    >Natures Prophet</span
-                                                ></span
-                                            ><span> убивает </span
-                                            ><span
-                                                class="green-side font-semibold mb-2"
-                                                ><span class="whitespace-nowrap"
-                                                    >Dark Willow</span
-                                                ></span
-                                            ><!----><!----><!----><!---->
-                                        </div>
-                                        <!---->
-                                    </div></span
-                                >
-                            </div>
-                        </div>
-                        <div
-                            class="flex flex-row border-b border-dashed border-gray-700 mb-2"
-                        >
-                            <div
-                                class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3"
-                            >
-                                <span>01:00</span>
-                            </div>
-                            <div
-                                class="flex flex-col grow items-start justify-start text-left pr-3 text-xs"
-                            >
-                                <!----><!----><!----><!----><!----><!----><span
-                                    ><div class="mb-2">
-                                        <span
-                                            class="green-side font-semibold mb-2"
-                                            ><span>StoRm</span></span
-                                        ><span> получают </span
-                                        ><span
-                                            class="red-side font-semibold mb-2"
-                                            ><!----></span
-                                        ><span
-                                            class="font-bold text-yellow-400 whitespace-nowrap"
-                                            ><img
-                                                class="inline h-4"
-                                                src="/media/icons/events/gold.png"
-                                                alt="gold"
-                                            />
-                                            384</span
-                                        ><!----><!----><!---->
-                                    </div>
-                                    <!---->
-                                    <div class="mb-2">
-                                        <span
-                                            class="red-side font-semibold mb-2"
-                                            ><span>MM</span></span
-                                        ><span> получают </span
-                                        ><span
-                                            class="green-side font-semibold mb-2"
-                                            ><!----></span
-                                        ><span
-                                            class="font-bold text-yellow-400 whitespace-nowrap"
-                                            ><img
-                                                class="inline h-4"
-                                                src="/media/icons/events/gold.png"
-                                                alt="gold"
-                                            />
-                                            310</span
-                                        ><!----><!----><!---->
-                                    </div>
-                                    <!---->
-                                    <div>
-                                        <div class="mb-2">
-                                            <span
-                                                class="green-side font-semibold mb-2"
-                                                ><span class="whitespace-nowrap"
-                                                    >Dark Willow</span
-                                                ></span
-                                            ><span> убивает </span
-                                            ><span
-                                                class="red-side font-semibold mb-2"
-                                                ><span class="whitespace-nowrap"
-                                                    >Natures Prophet</span
-                                                ></span
-                                            ><!----><!----><!----><!---->
-                                        </div>
-                                        <!---->
-                                    </div>
-                                    <div>
-                                        <div class="mb-2">
-                                            <span
-                                                class="red-side font-semibold mb-2"
-                                                ><span class="whitespace-nowrap"
-                                                    >Natures Prophet</span
-                                                ></span
-                                            ><span> убивает </span
-                                            ><span
-                                                class="green-side font-semibold mb-2"
-                                                ><span class="whitespace-nowrap"
-                                                    >Dark Willow</span
+                                                    >Nyx Assassin</span
                                                 ></span
                                             ><!----><!----><!----><!---->
                                         </div>
@@ -1105,37 +1718,37 @@
                                 class="max-w-[50px] sm:w-11 mx-[3px] flex flex-row rounded-md overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-150 hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/66.png"
-                                    title="Chen"
-                                    alt="Chen" /></span
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/83.png"
+                                    title="Treant Protector"
+                                    alt="Treant Protector" /></span
                             ><span
                                 class="max-w-[50px] sm:w-11 mx-[3px] flex flex-row rounded-md overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-150 hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/137.png"
-                                    title="primal_beast"
-                                    alt="primal_beast" /></span
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/65.png"
+                                    title="Batrider"
+                                    alt="Batrider" /></span
                             ><span
                                 class="max-w-[50px] sm:w-11 mx-[3px] flex flex-row rounded-md overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-150 hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/41.png"
-                                    title="Faceless Void"
-                                    alt="Faceless Void" /></span
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/100.png"
+                                    title="Tusk"
+                                    alt="Tusk" /></span
                             ><span
                                 class="max-w-[50px] sm:w-11 mx-[3px] flex flex-row rounded-md overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-150 hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/119.png"
-                                    title="Dark Willow"
-                                    alt="Dark Willow" /></span
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/77.png"
+                                    title="Lycan"
+                                    alt="Lycan" /></span
                             ><span
                                 class="max-w-[50px] sm:w-11 mx-[3px] flex flex-row rounded-md overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-150 hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/104.png"
-                                    title="Legion Commander"
-                                    alt="Legion Commander"
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/72.png"
+                                    title="Gyrocopter"
+                                    alt="Gyrocopter"
                             /></span>
                         </div>
                         <div
@@ -1150,13 +1763,6 @@
                                 class="max-w-[50px] sm:w-11 mx-[3px] flex flex-row rounded-md overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-150 hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/53.png"
-                                    title="Natures Prophet"
-                                    alt="Natures Prophet" /></span
-                            ><span
-                                class="max-w-[50px] sm:w-11 mx-[3px] flex flex-row rounded-md overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-150 hover:z-[2] transition"
-                                ><img
-                                    class="transform scale-110"
                                     src="https://api.cybersportscore.com/media/game/hero/582/_59/15.png"
                                     title="Razor"
                                     alt="Razor" /></span
@@ -1164,23 +1770,30 @@
                                 class="max-w-[50px] sm:w-11 mx-[3px] flex flex-row rounded-md overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-150 hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/51.png"
-                                    title="Clockwerk"
-                                    alt="Clockwerk" /></span
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/129.png"
+                                    title="Mars"
+                                    alt="Mars" /></span
                             ><span
                                 class="max-w-[50px] sm:w-11 mx-[3px] flex flex-row rounded-md overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-150 hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/89.png"
-                                    title="Naga Siren"
-                                    alt="Naga Siren" /></span
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/101.png"
+                                    title="Skywrath Mage"
+                                    alt="Skywrath Mage" /></span
                             ><span
                                 class="max-w-[50px] sm:w-11 mx-[3px] flex flex-row rounded-md overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-150 hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/108.png"
-                                    title="Underlord"
-                                    alt="Underlord"
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/88.png"
+                                    title="Nyx Assassin"
+                                    alt="Nyx Assassin" /></span
+                            ><span
+                                class="max-w-[50px] sm:w-11 mx-[3px] flex flex-row rounded-md overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-150 hover:z-[2] transition"
+                                ><img
+                                    class="transform scale-110"
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/48.png"
+                                    title="Luna"
+                                    alt="Luna"
                             /></span>
                         </div>
                     </div>
@@ -1201,44 +1814,44 @@
                                 class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110 grayscale hover:grayscale-0"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/86.png"
-                                    title="Rubick"
-                                    alt="Rubick" /></span
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/119.png"
+                                    title="Dark Willow"
+                                    alt="Dark Willow" /></span
                             ><span
                                 class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110 grayscale hover:grayscale-0"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/114.png"
-                                    title="Monkey King"
-                                    alt="Monkey King" /></span
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/90.png"
+                                    title="Keeper of the Light"
+                                    alt="Keeper of the Light" /></span
                             ><span
                                 class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110 grayscale hover:grayscale-0"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/38.png"
-                                    title="Beastmaster"
-                                    alt="Beastmaster" /></span
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/51.png"
+                                    title="Clockwerk"
+                                    alt="Clockwerk" /></span
                             ><span
                                 class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110 grayscale hover:grayscale-0"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/71.png"
-                                    title="Spirit Breaker"
-                                    alt="Spirit Breaker" /></span
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/55.png"
+                                    title="Dark Seer"
+                                    alt="Dark Seer" /></span
                             ><span
                                 class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110 grayscale hover:grayscale-0"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/69.png"
-                                    title="Doom"
-                                    alt="Doom" /></span
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/39.png"
+                                    title="Queen of Pain"
+                                    alt="Queen of Pain" /></span
                             ><span
                                 class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110 grayscale hover:grayscale-0"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/87.png"
-                                    title="Disruptor"
-                                    alt="Disruptor"
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/13.png"
+                                    title="Puck"
+                                    alt="Puck"
                             /></span>
                         </div>
                         <div
@@ -1253,51 +1866,51 @@
                                 class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110 grayscale hover:grayscale-0"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/85.png"
-                                    title="Undying"
-                                    alt="Undying" /></span
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/61.png"
+                                    title="Broodmother"
+                                    alt="Broodmother" /></span
                             ><span
                                 class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110 grayscale hover:grayscale-0"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/7.png"
-                                    title="Earthshaker"
-                                    alt="Earthshaker" /></span
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/53.png"
+                                    title="Natures Prophet"
+                                    alt="Natures Prophet" /></span
                             ><span
                                 class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110 grayscale hover:grayscale-0"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/110.png"
-                                    title="Phoenix"
-                                    alt="Phoenix" /></span
-                            ><span
-                                class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
-                                ><img
-                                    class="transform scale-110 grayscale hover:grayscale-0"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/55.png"
-                                    title="Dark Seer"
-                                    alt="Dark Seer" /></span
-                            ><span
-                                class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
-                                ><img
-                                    class="transform scale-110 grayscale hover:grayscale-0"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/26.png"
-                                    title="Lion"
-                                    alt="Lion" /></span
-                            ><span
-                                class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
-                                ><img
-                                    class="transform scale-110 grayscale hover:grayscale-0"
-                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/22.png"
-                                    title="Zeus"
-                                    alt="Zeus" /></span
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/137.png"
+                                    title="primal_beast"
+                                    alt="primal_beast" /></span
                             ><span
                                 class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
                                 ><img
                                     class="transform scale-110 grayscale hover:grayscale-0"
                                     src="https://api.cybersportscore.com/media/game/hero/582/_59/98.png"
                                     title="Timbersaw"
-                                    alt="Timbersaw"
+                                    alt="Timbersaw" /></span
+                            ><span
+                                class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
+                                ><img
+                                    class="transform scale-110 grayscale hover:grayscale-0"
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/93.png"
+                                    title="Slark"
+                                    alt="Slark" /></span
+                            ><span
+                                class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
+                                ><img
+                                    class="transform scale-110 grayscale hover:grayscale-0"
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/6.png"
+                                    title="Drow Ranger"
+                                    alt="Drow Ranger" /></span
+                            ><span
+                                class="max-w-[40px] sm:w-7 mx-[3px] flex flex-row rounded-sm overflow-hidden border border-gray-600 border-1 box-border shadow-xl hover:transform hover:scale-[2] hover:z-[2] transition"
+                                ><img
+                                    class="transform scale-110 grayscale hover:grayscale-0"
+                                    src="https://api.cybersportscore.com/media/game/hero/582/_59/46.png"
+                                    title="Templar Assassin"
+                                    alt="Templar Assassin"
                             /></span>
                         </div>
                     </div>
@@ -1311,13 +1924,13 @@
                 >
                     <!----><canvas
                         class="h-full w-full"
-                        width="549"
-                        height="289"
+                        width="526"
+                        height="263"
                         style="
                             display: block;
                             box-sizing: border-box;
                             height: 263px;
-                            width: 499px;
+                            width: 526px;
                         "
                     ></canvas>
                 </div>
@@ -1328,17 +1941,19 @@
                 >
                     <div class="flex text-xs items-center">
                         <img
-                            src="https://api.cybersportscore.com/media/logo/_30/t96229.webp"
-                            alt="StoRm icon"
+                            src="https://api.cybersportscore.com/media/logo/_30/t95245.webp"
+                            alt="MIRACLE ESPORT icon"
                             class="w-[1.6rem] aspect-[3/2] object-contain mr-2"
                             loading="lazy"
-                        /><span class="green-side" title="StoRm">StoRm</span>
+                        /><span class="green-side" title="MIRACLE ESPORT"
+                            >ME</span
+                        >
                     </div>
                     <div class="flex text-xs items-center justify-end">
-                        <span class="red-side" title="Moneymakers">MM</span
+                        <span class="red-side" title="Vision">VSG</span
                         ><img
-                            src="https://api.cybersportscore.com/media/logo/_30/t95934.webp"
-                            alt="Moneymakers icon"
+                            src="https://api.cybersportscore.com/media/logo/_30/t96167.webp"
+                            alt="Vision icon"
                             class="w-[1.6rem] aspect-[3/2] object-contain ml-2"
                             loading="lazy"
                         />
@@ -1352,42 +1967,42 @@
                             class="px-2 flex w-full items-center grow max-w-[50%] relative max-h-8"
                         >
                             <span
-                                title="Ценность героя 2,180"
+                                title="Ценность героя 8,555"
                                 class="left-2 origin-left hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding"
-                                style="transform: scaleX(0.9)"
+                                style="transform: scaleX(0.76052)"
                             ></span
                             ><!----><!----><img
                                 class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 mr-2"
-                                src="https://api.cybersportscore.com/media/game/hero/582/_59/41.png"
-                                alt="Faceless Void"
-                                title="Faceless Void"
+                                src="https://api.cybersportscore.com/media/game/hero/582/_59/77.png"
+                                alt="Lycan"
+                                title="Lycan"
                                 loading="lazy"
                             /><span
                                 class="text-gray-300 text-xs cursor-default leading-normal md:truncate"
-                                title="k8t"
-                                >k8t</span
+                                title="M.C"
+                                >M.C</span
                             ><span
-                                title="4 Level"
+                                title="12 Level"
                                 class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                >4</span
+                                >12</span
                             >
                         </div>
                         <div
                             class="justify-end px-2 flex w-full items-center grow max-w-[50%] relative max-h-8"
                         >
                             <span
-                                title="Ценность героя 2,146"
+                                title="Ценность героя 10,124"
                                 class="right-2 origin-right hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding"
-                                style="transform: scaleX(0.885963)"
+                                style="transform: scaleX(0.9)"
                             ></span
                             ><span
-                                title="5 Level"
+                                title="14 Level"
                                 class="mr-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                >5</span
+                                >14</span
                             ><span
                                 class="text-gray-300 text-xs cursor-default text-right md:truncate"
-                                title="Egor"
-                                >Egor</span
+                                title="Mercury-"
+                                >Mercury-</span
                             ><img
                                 class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 ml-2"
                                 src="https://api.cybersportscore.com/media/game/hero/582/_59/15.png"
@@ -1404,47 +2019,47 @@
                             class="px-2 flex w-full items-center grow max-w-[50%] relative max-h-8"
                         >
                             <span
-                                title="Ценность героя 2,004"
+                                title="Ценность героя 8,180"
                                 class="left-2 origin-left hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding"
-                                style="transform: scaleX(0.827339)"
+                                style="transform: scaleX(0.727183)"
                             ></span
                             ><!----><!----><img
                                 class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 mr-2"
-                                src="https://api.cybersportscore.com/media/game/hero/582/_59/104.png"
-                                alt="Legion Commander"
-                                title="Legion Commander"
+                                src="https://api.cybersportscore.com/media/game/hero/582/_59/72.png"
+                                alt="Gyrocopter"
+                                title="Gyrocopter"
                                 loading="lazy"
                             /><span
                                 class="text-gray-300 text-xs cursor-default leading-normal md:truncate"
-                                title="Dominic"
-                                >Dominic</span
+                                title="woro"
+                                >woro</span
                             ><span
-                                title="4 Level"
+                                title="12 Level"
                                 class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                >4</span
+                                >12</span
                             >
                         </div>
                         <div
                             class="justify-end px-2 flex w-full items-center grow max-w-[50%] relative max-h-8"
                         >
                             <span
-                                title="Ценность героя 2,083"
+                                title="Ценность героя 10,082"
                                 class="right-2 origin-right hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding"
-                                style="transform: scaleX(0.859954)"
+                                style="transform: scaleX(0.896266)"
                             ></span
                             ><span
-                                title="3 Level"
+                                title="14 Level"
                                 class="mr-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                >3</span
+                                >14</span
                             ><span
                                 class="text-gray-300 text-xs cursor-default text-right md:truncate"
-                                title="Bignum"
-                                >Bignum</span
+                                title="Pos 1"
+                                >Pos 1</span
                             ><img
                                 class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 ml-2"
-                                src="https://api.cybersportscore.com/media/game/hero/582/_59/108.png"
-                                alt="Underlord"
-                                title="Underlord"
+                                src="https://api.cybersportscore.com/media/game/hero/582/_59/48.png"
+                                alt="Luna"
+                                title="Luna"
                                 loading="lazy"
                             /><!----><!---->
                         </div>
@@ -1456,47 +2071,47 @@
                             class="px-2 flex w-full items-center grow max-w-[50%] relative max-h-8"
                         >
                             <span
-                                title="Ценность героя 1,820"
+                                title="Ценность героя 6,625"
                                 class="left-2 origin-left hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding"
-                                style="transform: scaleX(0.751376)"
+                                style="transform: scaleX(0.588947)"
                             ></span
                             ><!----><!----><img
                                 class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 mr-2"
-                                src="https://api.cybersportscore.com/media/game/hero/582/_59/137.png"
-                                alt="primal_beast"
-                                title="primal_beast"
+                                src="https://api.cybersportscore.com/media/game/hero/582/_59/100.png"
+                                alt="Tusk"
+                                title="Tusk"
                                 loading="lazy"
                             /><span
                                 class="text-gray-300 text-xs cursor-default leading-normal md:truncate"
-                                title="Nicky`Cool"
-                                >Nicky`Cool</span
+                                title="Backspace"
+                                >Backspace</span
                             ><span
-                                title="4 Level"
+                                title="11 Level"
                                 class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                >4</span
+                                >11</span
                             >
                         </div>
                         <div
                             class="justify-end px-2 flex w-full items-center grow max-w-[50%] relative max-h-8"
                         >
                             <span
-                                title="Ценность героя 1,718"
+                                title="Ценность героя 8,995"
                                 class="right-2 origin-right hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding"
-                                style="transform: scaleX(0.709266)"
+                                style="transform: scaleX(0.799635)"
                             ></span
                             ><span
-                                title="4 Level"
+                                title="13 Level"
                                 class="mr-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                >4</span
+                                >13</span
                             ><span
                                 class="text-gray-300 text-xs cursor-default text-right md:truncate"
-                                title="Lukas"
-                                >Lukas</span
+                                title="Candyloon"
+                                >Candyloon</span
                             ><img
                                 class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 ml-2"
-                                src="https://api.cybersportscore.com/media/game/hero/582/_59/89.png"
-                                alt="Naga Siren"
-                                title="Naga Siren"
+                                src="https://api.cybersportscore.com/media/game/hero/582/_59/129.png"
+                                alt="Mars"
+                                title="Mars"
                                 loading="lazy"
                             /><!----><!---->
                         </div>
@@ -1508,47 +2123,47 @@
                             class="px-2 flex w-full items-center grow max-w-[50%] relative max-h-8"
                         >
                             <span
-                                title="Ценность героя 1,264"
+                                title="Ценность героя 4,570"
                                 class="left-2 origin-left hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding"
-                                style="transform: scaleX(0.521835)"
+                                style="transform: scaleX(0.406262)"
                             ></span
                             ><!----><!----><img
                                 class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 mr-2"
-                                src="https://api.cybersportscore.com/media/game/hero/582/_59/119.png"
-                                alt="Dark Willow"
-                                title="Dark Willow"
+                                src="https://api.cybersportscore.com/media/game/hero/582/_59/83.png"
+                                alt="Treant Protector"
+                                title="Treant Protector"
                                 loading="lazy"
                             /><span
                                 class="text-gray-300 text-xs cursor-default leading-normal md:truncate"
-                                title="OneJey"
-                                >OneJey</span
+                                title="Efking"
+                                >Efking</span
                             ><span
-                                title="2 Level"
+                                title="10 Level"
                                 class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                >2</span
+                                >10</span
                             >
                         </div>
                         <div
                             class="justify-end px-2 flex w-full items-center grow max-w-[50%] relative max-h-8"
                         >
                             <span
-                                title="Ценность героя 1,677"
+                                title="Ценность героя 4,082"
                                 class="right-2 origin-right hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding"
-                                style="transform: scaleX(0.692339)"
+                                style="transform: scaleX(0.36288)"
                             ></span
                             ><span
-                                title="3 Level"
+                                title="8 Level"
                                 class="mr-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                >3</span
+                                >8</span
                             ><span
                                 class="text-gray-300 text-xs cursor-default text-right md:truncate"
-                                title="bb3px"
-                                >bb3px</span
+                                title="...."
+                                >....</span
                             ><img
                                 class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 ml-2"
-                                src="https://api.cybersportscore.com/media/game/hero/582/_59/53.png"
-                                alt="Natures Prophet"
-                                title="Natures Prophet"
+                                src="https://api.cybersportscore.com/media/game/hero/582/_59/101.png"
+                                alt="Skywrath Mage"
+                                title="Skywrath Mage"
                                 loading="lazy"
                             /><!----><!---->
                         </div>
@@ -1560,47 +2175,47 @@
                             class="px-2 flex w-full items-center grow max-w-[50%] relative max-h-8"
                         >
                             <span
-                                title="Ценность героя 1,185"
+                                title="Ценность героя 3,795"
                                 class="left-2 origin-left hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding"
-                                style="transform: scaleX(0.48922)"
+                                style="transform: scaleX(0.337367)"
                             ></span
                             ><!----><!----><img
                                 class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 mr-2"
-                                src="https://api.cybersportscore.com/media/game/hero/582/_59/66.png"
-                                alt="Chen"
-                                title="Chen"
+                                src="https://api.cybersportscore.com/media/game/hero/582/_59/65.png"
+                                alt="Batrider"
+                                title="Batrider"
                                 loading="lazy"
                             /><span
                                 class="text-gray-300 text-xs cursor-default leading-normal md:truncate"
-                                title="SoNNeikO"
-                                >SoNNeikO</span
+                                title="123456"
+                                >123456</span
                             ><span
-                                title="3 Level"
+                                title="8 Level"
                                 class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                >3</span
+                                >8</span
                             >
                         </div>
                         <div
                             class="justify-end px-2 flex w-full items-center grow max-w-[50%] relative max-h-8"
                         >
                             <span
-                                title="Ценность героя 974"
+                                title="Ценность героя 3,417"
                                 class="right-2 origin-right hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding"
-                                style="transform: scaleX(0.40211)"
+                                style="transform: scaleX(0.303763)"
                             ></span
                             ><span
-                                title="2 Level"
+                                title="10 Level"
                                 class="mr-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                >2</span
+                                >10</span
                             ><span
                                 class="text-gray-300 text-xs cursor-default text-right md:truncate"
-                                title="Slayer"
-                                >Slayer</span
+                                title="SGOD"
+                                >SGOD</span
                             ><img
                                 class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 ml-2"
-                                src="https://api.cybersportscore.com/media/game/hero/582/_59/51.png"
-                                alt="Clockwerk"
-                                title="Clockwerk"
+                                src="https://api.cybersportscore.com/media/game/hero/582/_59/88.png"
+                                alt="Nyx Assassin"
+                                title="Nyx Assassin"
                                 loading="lazy"
                             /><!----><!---->
                         </div>
@@ -1621,15 +2236,15 @@
                                 <th scope="col" class="py-1 px-2 w-[200px]">
                                     <div class="flex items-center gap-2">
                                         <img
-                                            src="https://api.cybersportscore.com/media/logo/_30/t96229.webp"
-                                            alt="StoRm icon"
+                                            src="https://api.cybersportscore.com/media/logo/_30/t95245.webp"
+                                            alt="MIRACLE ESPORT icon"
                                             class="w-[1.6rem] aspect-[3/2] object-contain"
                                             loading="lazy"
                                         />
                                         <p
                                             class="green-side flex text-right text-[13px] leading-4 truncate"
                                         >
-                                            StoRm
+                                            MIRACLE ESPORT
                                         </p>
                                     </div>
                                 </th>
@@ -1706,24 +2321,24 @@
                                     >
                                         <img
                                             class="w-9 shadow-md rounded-sm"
-                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/41.png"
-                                            alt="Faceless Void"
+                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/77.png"
+                                            alt="Lycan"
                                         /><!---->
                                         <div class="flex-col">
                                             <div
                                                 class="flex text-xs leading-none text-gray-300"
                                             >
-                                                k8t
+                                                M.C
                                             </div>
                                             <a
                                                 class="text-[10px] leading-none text-gray-500"
-                                                >Faceless Void</a
+                                                >Lycan</a
                                             >
                                         </div>
                                         <span
-                                            title="4 Level"
+                                            title="12 Level"
                                             class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                            >4</span
+                                            >12</span
                                         >
                                     </div>
                                 </td>
@@ -1731,139 +2346,7 @@
                                     1
                                 </td>
                                 <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 pr-4 text-apple text-right"
-                                >
-                                    2,180
-                                </td>
-                                <td scope="col" class="py-2 px-1">
-                                    <div class="flex gap-2 w-[240px]">
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/34.png"
-                                                title="Magic Stick"
-                                                alt="Magic Stick"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/11.png"
-                                                title="Quelling Blade"
-                                                alt="Quelling Blade"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/25.png"
-                                                title="Gloves of Haste"
-                                                alt="Gloves of Haste"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/16.png"
-                                                title="Iron Branch"
-                                                alt="Iron Branch"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/16.png"
-                                                title="Iron Branch"
-                                                alt="Iron Branch"
-                                            />
-                                        </div>
-                                    </div>
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 pr-3 text-gray-300 text-right"
-                                >
-                                    21 (2)
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 pr-3 text-apple text-right"
-                                >
-                                    391
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    274
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-4 text-right"
-                                >
-                                    0
-                                </td>
-                            </tr>
-                            <tr
-                                class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]"
-                            >
-                                <td class="py-1 px-2">
-                                    <div
-                                        class="flex flex-row gap-2 items-center"
-                                    >
-                                        <img
-                                            class="w-9 shadow-md rounded-sm"
-                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/104.png"
-                                            alt="Legion Commander"
-                                        /><!---->
-                                        <div class="flex-col">
-                                            <div
-                                                class="flex text-xs leading-none text-gray-300"
-                                            >
-                                                Dominic
-                                            </div>
-                                            <a
-                                                class="text-[10px] leading-none text-gray-500"
-                                                >Legion Commander</a
-                                            >
-                                        </div>
-                                        <span
-                                            title="4 Level"
-                                            class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                            >4</span
-                                        >
-                                    </div>
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
+                                    1
                                 </td>
                                 <td scope="col" class="py-2 px-1 text-gray-400">
                                     1
@@ -1872,7 +2355,7 @@
                                     scope="col"
                                     class="py-2 pr-4 text-apple text-right"
                                 >
-                                    2,004
+                                    8,555
                                 </td>
                                 <td scope="col" class="py-2 px-1">
                                     <div class="flex gap-2 w-[240px]">
@@ -1887,141 +2370,9 @@
                                         <div class="flex gap-0.5">
                                             <img
                                                 class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/34.png"
-                                                title="Magic Stick"
-                                                alt="Magic Stick"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/73.png"
-                                                title="Bracer"
-                                                alt="Bracer"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/13.png"
-                                                title="Gauntlets of Strength"
-                                                alt="Gauntlets of Strength"
-                                            />
-                                        </div>
-                                    </div>
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 pr-3 text-gray-300 text-right"
-                                >
-                                    20 (3)
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 pr-3 text-apple text-right"
-                                >
-                                    340
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    278
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-4 text-right"
-                                >
-                                    0
-                                </td>
-                            </tr>
-                            <tr
-                                class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]"
-                            >
-                                <td class="py-1 px-2">
-                                    <div
-                                        class="flex flex-row gap-2 items-center"
-                                    >
-                                        <img
-                                            class="w-9 shadow-md rounded-sm"
-                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/137.png"
-                                            alt="primal_beast"
-                                        /><!---->
-                                        <div class="flex-col">
-                                            <div
-                                                class="flex text-xs leading-none text-gray-300"
-                                            >
-                                                Nicky`Cool
-                                            </div>
-                                            <a
-                                                class="text-[10px] leading-none text-gray-500"
-                                                >primal_beast</a
-                                            >
-                                        </div>
-                                        <span
-                                            title="4 Level"
-                                            class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                            >4</span
-                                        >
-                                    </div>
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 pr-4 text-apple text-right"
-                                >
-                                    1,820
-                                </td>
-                                <td scope="col" class="py-2 px-1">
-                                    <div class="flex gap-2 w-[240px]">
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/11.png"
-                                                title="Quelling Blade"
-                                                alt="Quelling Blade"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/41.png"
-                                                title="Bottle"
-                                                alt="Bottle"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/237.png"
-                                                title="Faerie Fire"
-                                                alt="Faerie Fire"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/635.png"
+                                                title="Helm of the Overlord"
+                                                alt="Helm of the Overlord"
                                             />
                                         </div>
                                         <div class="flex gap-0.5">
@@ -2030,270 +2381,6 @@
                                                 src="https://api.cybersportscore.com/media/game/item/582/_29/16.png"
                                                 title="Iron Branch"
                                                 alt="Iron Branch"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/16.png"
-                                                title="Iron Branch"
-                                                alt="Iron Branch"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/29.png"
-                                                title="Boots of Speed"
-                                                alt="Boots of Speed"
-                                            />
-                                        </div>
-                                    </div>
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 pr-3 text-gray-300 text-right"
-                                >
-                                    19 (2)
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 pr-3 text-apple text-right"
-                                >
-                                    297
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    389
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-4 text-right"
-                                >
-                                    0
-                                </td>
-                            </tr>
-                            <tr
-                                class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]"
-                            >
-                                <td class="py-1 px-2">
-                                    <div
-                                        class="flex flex-row gap-2 items-center"
-                                    >
-                                        <img
-                                            class="w-9 shadow-md rounded-sm"
-                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/119.png"
-                                            alt="Dark Willow"
-                                        /><!---->
-                                        <div class="flex-col">
-                                            <div
-                                                class="flex text-xs leading-none text-gray-300"
-                                            >
-                                                OneJey
-                                            </div>
-                                            <a
-                                                class="text-[10px] leading-none text-gray-500"
-                                                >Dark Willow</a
-                                            >
-                                        </div>
-                                        <span
-                                            title="2 Level"
-                                            class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                            >2</span
-                                        >
-                                    </div>
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    1
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    2
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 pr-4 text-apple text-right"
-                                >
-                                    1,264
-                                </td>
-                                <td scope="col" class="py-2 px-1">
-                                    <div class="flex gap-2 w-[240px]">
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/11.png"
-                                                title="Quelling Blade"
-                                                alt="Quelling Blade"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/16.png"
-                                                title="Iron Branch"
-                                                alt="Iron Branch"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/20.png"
-                                                title="Circlet"
-                                                alt="Circlet"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/16.png"
-                                                title="Iron Branch"
-                                                alt="Iron Branch"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/16.png"
-                                                title="Iron Branch"
-                                                alt="Iron Branch"
-                                            />
-                                        </div>
-                                    </div>
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 pr-3 text-gray-300 text-right"
-                                >
-                                    2 (0)
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 pr-3 text-apple text-right"
-                                >
-                                    203
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    125
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-4 text-right"
-                                >
-                                    0
-                                </td>
-                            </tr>
-                            <tr
-                                class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]"
-                            >
-                                <td class="py-1 px-2">
-                                    <div
-                                        class="flex flex-row gap-2 items-center"
-                                    >
-                                        <img
-                                            class="w-9 shadow-md rounded-sm"
-                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/66.png"
-                                            alt="Chen"
-                                        /><!---->
-                                        <div class="flex-col">
-                                            <div
-                                                class="flex text-xs leading-none text-gray-300"
-                                            >
-                                                SoNNeikO
-                                            </div>
-                                            <a
-                                                class="text-[10px] leading-none text-gray-500"
-                                                >Chen</a
-                                            >
-                                        </div>
-                                        <span
-                                            title="3 Level"
-                                            class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                            >3</span
-                                        >
-                                    </div>
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    1
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 pr-4 text-apple text-right"
-                                >
-                                    1,185
-                                </td>
-                                <td scope="col" class="py-2 px-1">
-                                    <div class="flex gap-2 w-[240px]">
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/44.png"
-                                                title="Tango"
-                                                alt="Tango"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/240.png"
-                                                title="Blight Stone"
-                                                alt="Blight Stone"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/42.png"
-                                                title="Observer Ward"
-                                                alt="Observer Ward"
                                             />
                                         </div>
                                         <div class="flex gap-0.5">
@@ -2312,25 +2399,537 @@
                                                 alt="Sage's Mask"
                                             />
                                         </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/21.png"
+                                                title="Ogre Axe"
+                                                alt="Ogre Axe"
+                                            />
+                                        </div>
                                     </div>
                                 </td>
                                 <td
                                     scope="col"
                                     class="py-2 px-1 pr-3 text-gray-300 text-right"
                                 >
-                                    1 (2)
+                                    133 (9)
                                 </td>
                                 <td
                                     scope="col"
                                     class="py-2 px-1 pr-3 text-apple text-right"
                                 >
-                                    155
+                                    462
                                 </td>
                                 <td
                                     scope="col"
                                     class="py-2 px-1 text-gray-300 pr-3 text-right"
                                 >
-                                    171
+                                    522
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-4 text-right"
+                                >
+                                    0
+                                </td>
+                            </tr>
+                            <tr
+                                class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]"
+                            >
+                                <td class="py-1 px-2">
+                                    <div
+                                        class="flex flex-row gap-2 items-center"
+                                    >
+                                        <img
+                                            class="w-9 shadow-md rounded-sm"
+                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/72.png"
+                                            alt="Gyrocopter"
+                                        /><!---->
+                                        <div class="flex-col">
+                                            <div
+                                                class="flex text-xs leading-none text-gray-300"
+                                            >
+                                                woro
+                                            </div>
+                                            <a
+                                                class="text-[10px] leading-none text-gray-500"
+                                                >Gyrocopter</a
+                                            >
+                                        </div>
+                                        <span
+                                            title="12 Level"
+                                            class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
+                                            >12</span
+                                        >
+                                    </div>
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    5
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    4
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    3
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 pr-4 text-apple text-right"
+                                >
+                                    8,180
+                                </td>
+                                <td scope="col" class="py-2 px-1">
+                                    <div class="flex gap-2 w-[240px]">
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/596.png"
+                                                title="Falcon Blade"
+                                                alt="Falcon Blade"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/36.png"
+                                                title="Magic Wand"
+                                                alt="Magic Wand"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/50.png"
+                                                title="Phase Boots"
+                                                alt="Phase Boots"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/185.png"
+                                                title="Drum of Endurance"
+                                                alt="Drum of Endurance"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/170.png"
+                                                title="Yasha"
+                                                alt="Yasha"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/21.png"
+                                                title="Ogre Axe"
+                                                alt="Ogre Axe"
+                                            />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 pr-3 text-gray-300 text-right"
+                                >
+                                    94 (10)
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 pr-3 text-apple text-right"
+                                >
+                                    461
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    507
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-4 text-right"
+                                >
+                                    0
+                                </td>
+                            </tr>
+                            <tr
+                                class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]"
+                            >
+                                <td class="py-1 px-2">
+                                    <div
+                                        class="flex flex-row gap-2 items-center"
+                                    >
+                                        <img
+                                            class="w-9 shadow-md rounded-sm"
+                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/100.png"
+                                            alt="Tusk"
+                                        /><!---->
+                                        <div class="flex-col">
+                                            <div
+                                                class="flex text-xs leading-none text-gray-300"
+                                            >
+                                                Backspace
+                                            </div>
+                                            <a
+                                                class="text-[10px] leading-none text-gray-500"
+                                                >Tusk</a
+                                            >
+                                        </div>
+                                        <span
+                                            title="11 Level"
+                                            class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
+                                            >11</span
+                                        >
+                                    </div>
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    4
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    6
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    1
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 pr-4 text-apple text-right"
+                                >
+                                    6,625
+                                </td>
+                                <td scope="col" class="py-2 px-1">
+                                    <div class="flex gap-2 w-[240px]">
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/36.png"
+                                                title="Magic Wand"
+                                                alt="Magic Wand"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/11.png"
+                                                title="Quelling Blade"
+                                                alt="Quelling Blade"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/168.png"
+                                                title="Desolator"
+                                                alt="Desolator"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/41.png"
+                                                title="Bottle"
+                                                alt="Bottle"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/50.png"
+                                                title="Phase Boots"
+                                                alt="Phase Boots"
+                                            />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 pr-3 text-gray-300 text-right"
+                                >
+                                    79 (12)
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 pr-3 text-apple text-right"
+                                >
+                                    380
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    426
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-4 text-right"
+                                >
+                                    0
+                                </td>
+                            </tr>
+                            <tr
+                                class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]"
+                            >
+                                <td class="py-1 px-2">
+                                    <div
+                                        class="flex flex-row gap-2 items-center"
+                                    >
+                                        <img
+                                            class="w-9 shadow-md rounded-sm"
+                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/83.png"
+                                            alt="Treant Protector"
+                                        /><!---->
+                                        <div class="flex-col">
+                                            <div
+                                                class="flex text-xs leading-none text-gray-300"
+                                            >
+                                                Efking
+                                            </div>
+                                            <a
+                                                class="text-[10px] leading-none text-gray-500"
+                                                >Treant Protector</a
+                                            >
+                                        </div>
+                                        <span
+                                            title="10 Level"
+                                            class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
+                                            >10</span
+                                        >
+                                    </div>
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    1
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    2
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    2
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 pr-4 text-apple text-right"
+                                >
+                                    4,570
+                                </td>
+                                <td scope="col" class="py-2 px-1">
+                                    <div class="flex gap-2 w-[240px]">
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/36.png"
+                                                title="Magic Wand"
+                                                alt="Magic Wand"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/185.png"
+                                                title="Drum of Endurance"
+                                                alt="Drum of Endurance"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/214.png"
+                                                title="Tranquil Boots"
+                                                alt="Tranquil Boots"
+                                            />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 pr-3 text-gray-300 text-right"
+                                >
+                                    41 (27)
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 pr-3 text-apple text-right"
+                                >
+                                    257
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    384
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-4 text-right"
+                                >
+                                    0
+                                </td>
+                            </tr>
+                            <tr
+                                class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]"
+                            >
+                                <td class="py-1 px-2">
+                                    <div
+                                        class="flex flex-row gap-2 items-center"
+                                    >
+                                        <img
+                                            class="w-9 shadow-md rounded-sm"
+                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/65.png"
+                                            alt="Batrider"
+                                        /><!---->
+                                        <div class="flex-col">
+                                            <div
+                                                class="flex text-xs leading-none text-gray-300"
+                                            >
+                                                123456
+                                            </div>
+                                            <a
+                                                class="text-[10px] leading-none text-gray-500"
+                                                >Batrider</a
+                                            >
+                                        </div>
+                                        <span
+                                            title="8 Level"
+                                            class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
+                                            >8</span
+                                        >
+                                    </div>
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    1
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    4
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    3
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 pr-4 text-apple text-right"
+                                >
+                                    3,795
+                                </td>
+                                <td scope="col" class="py-2 px-1">
+                                    <div class="flex gap-2 w-[240px]">
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/40.png"
+                                                title="Dust of Appearance"
+                                                alt="Dust of Appearance"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/214.png"
+                                                title="Tranquil Boots"
+                                                alt="Tranquil Boots"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/36.png"
+                                                title="Magic Wand"
+                                                alt="Magic Wand"
+                                            />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 pr-3 text-gray-300 text-right"
+                                >
+                                    28 (0)
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 pr-3 text-apple text-right"
+                                >
+                                    236
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    236
                                 </td>
                                 <td
                                     scope="col"
@@ -2367,15 +2966,15 @@
                                 <th scope="col" class="py-1 px-2 w-[200px]">
                                     <div class="flex items-center gap-2">
                                         <img
-                                            src="https://api.cybersportscore.com/media/logo/_30/t95934.webp"
-                                            alt="Moneymakers icon"
+                                            src="https://api.cybersportscore.com/media/logo/_30/t96167.webp"
+                                            alt="Vision icon"
                                             class="w-[1.6rem] aspect-[3/2] object-contain"
                                             loading="lazy"
                                         />
                                         <p
                                             class="red-side flex text-right text-[13px] leading-4 truncate"
                                         >
-                                            Moneymakers
+                                            Vision
                                         </p>
                                     </div>
                                 </th>
@@ -2459,7 +3058,7 @@
                                             <div
                                                 class="flex text-xs leading-none text-gray-300"
                                             >
-                                                Egor
+                                                Mercury-
                                             </div>
                                             <a
                                                 class="text-[10px] leading-none text-gray-500"
@@ -2467,447 +3066,43 @@
                                             >
                                         </div>
                                         <span
-                                            title="5 Level"
+                                            title="14 Level"
                                             class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                            >5</span
+                                            >14</span
                                         >
                                     </div>
                                 </td>
                                 <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 pr-4 text-apple text-right"
-                                >
-                                    2,146
-                                </td>
-                                <td scope="col" class="py-2 px-1">
-                                    <div class="flex gap-2 w-[240px]">
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/29.png"
-                                                title="Boots of Speed"
-                                                alt="Boots of Speed"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/41.png"
-                                                title="Bottle"
-                                                alt="Bottle"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/16.png"
-                                                title="Iron Branch"
-                                                alt="Iron Branch"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/237.png"
-                                                title="Faerie Fire"
-                                                alt="Faerie Fire"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/16.png"
-                                                title="Iron Branch"
-                                                alt="Iron Branch"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/16.png"
-                                                title="Iron Branch"
-                                                alt="Iron Branch"
-                                            />
-                                        </div>
-                                    </div>
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 pr-3 text-gray-300 text-right"
-                                >
-                                    23 (6)
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 pr-3 text-apple text-right"
-                                >
-                                    352
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    441
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-4 text-right"
-                                >
-                                    0
-                                </td>
-                            </tr>
-                            <tr
-                                class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]"
-                            >
-                                <td class="py-1 px-2">
-                                    <div
-                                        class="flex flex-row gap-2 items-center"
-                                    >
-                                        <img
-                                            class="w-9 shadow-md rounded-sm"
-                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/108.png"
-                                            alt="Underlord"
-                                        /><!---->
-                                        <div class="flex-col">
-                                            <div
-                                                class="flex text-xs leading-none text-gray-300"
-                                            >
-                                                Bignum
-                                            </div>
-                                            <a
-                                                class="text-[10px] leading-none text-gray-500"
-                                                >Underlord</a
-                                            >
-                                        </div>
-                                        <span
-                                            title="3 Level"
-                                            class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                            >3</span
-                                        >
-                                    </div>
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
+                                    7
                                 </td>
                                 <td scope="col" class="py-2 px-1 text-gray-400">
                                     1
                                 </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    5
+                                </td>
                                 <td
                                     scope="col"
                                     class="py-2 pr-4 text-apple text-right"
                                 >
-                                    2,083
+                                    10,124
                                 </td>
                                 <td scope="col" class="py-2 px-1">
                                     <div class="flex gap-2 w-[240px]">
                                         <div class="flex gap-0.5">
                                             <img
                                                 class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/11.png"
-                                                title="Quelling Blade"
-                                                alt="Quelling Blade"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/170.png"
+                                                title="Yasha"
+                                                alt="Yasha"
                                             />
                                         </div>
                                         <div class="flex gap-0.5">
                                             <img
                                                 class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/44.png"
-                                                title="Tango"
-                                                alt="Tango"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/73.png"
-                                                title="Bracer"
-                                                alt="Bracer"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/16.png"
-                                                title="Iron Branch"
-                                                alt="Iron Branch"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/16.png"
-                                                title="Iron Branch"
-                                                alt="Iron Branch"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/56.png"
-                                                title="Ring of Health"
-                                                alt="Ring of Health"
-                                            />
-                                        </div>
-                                    </div>
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 pr-3 text-gray-300 text-right"
-                                >
-                                    23 (6)
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 pr-3 text-apple text-right"
-                                >
-                                    349
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    265
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-4 text-right"
-                                >
-                                    0
-                                </td>
-                            </tr>
-                            <tr
-                                class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]"
-                            >
-                                <td class="py-1 px-2">
-                                    <div
-                                        class="flex flex-row gap-2 items-center"
-                                    >
-                                        <img
-                                            class="w-9 shadow-md rounded-sm"
-                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/89.png"
-                                            alt="Naga Siren"
-                                        /><!---->
-                                        <div class="flex-col">
-                                            <div
-                                                class="flex text-xs leading-none text-gray-300"
-                                            >
-                                                Lukas
-                                            </div>
-                                            <a
-                                                class="text-[10px] leading-none text-gray-500"
-                                                >Naga Siren</a
-                                            >
-                                        </div>
-                                        <span
-                                            title="4 Level"
-                                            class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                            >4</span
-                                        >
-                                    </div>
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    1
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 pr-4 text-apple text-right"
-                                >
-                                    1,718
-                                </td>
-                                <td scope="col" class="py-2 px-1">
-                                    <div class="flex gap-2 w-[240px]">
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/34.png"
-                                                title="Magic Stick"
-                                                alt="Magic Stick"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/11.png"
-                                                title="Quelling Blade"
-                                                alt="Quelling Blade"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/20.png"
-                                                title="Circlet"
-                                                alt="Circlet"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/16.png"
-                                                title="Iron Branch"
-                                                alt="Iron Branch"
-                                            />
-                                        </div>
-                                    </div>
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 pr-3 text-gray-300 text-right"
-                                >
-                                    15 (3)
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 pr-3 text-apple text-right"
-                                >
-                                    284
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    369
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
-                                >
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 px-1 text-gray-300 pr-4 text-right"
-                                >
-                                    0
-                                </td>
-                            </tr>
-                            <tr
-                                class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]"
-                            >
-                                <td class="py-1 px-2">
-                                    <div
-                                        class="flex flex-row gap-2 items-center"
-                                    >
-                                        <img
-                                            class="w-9 shadow-md rounded-sm"
-                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/53.png"
-                                            alt="Natures Prophet"
-                                        /><!---->
-                                        <div class="flex-col">
-                                            <div
-                                                class="flex text-xs leading-none text-gray-300"
-                                            >
-                                                bb3px
-                                            </div>
-                                            <a
-                                                class="text-[10px] leading-none text-gray-500"
-                                                >Natures Prophet</a
-                                            >
-                                        </div>
-                                        <span
-                                            title="3 Level"
-                                            class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                            >3</span
-                                        >
-                                    </div>
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    3
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    2
-                                </td>
-                                <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
-                                </td>
-                                <td
-                                    scope="col"
-                                    class="py-2 pr-4 text-apple text-right"
-                                >
-                                    1,677
-                                </td>
-                                <td scope="col" class="py-2 px-1">
-                                    <div class="flex gap-2 w-[240px]">
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/240.png"
-                                                title="Blight Stone"
-                                                alt="Blight Stone"
-                                            />
-                                        </div>
-                                        <div class="flex gap-0.5">
-                                            <img
-                                                class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/44.png"
-                                                title="Tango"
-                                                alt="Tango"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/50.png"
+                                                title="Phase Boots"
+                                                alt="Phase Boots"
                                             />
                                         </div>
                                         <div class="flex gap-0.5">
@@ -2921,17 +3116,25 @@
                                         <div class="flex gap-0.5">
                                             <img
                                                 class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/265.png"
-                                                title="Infused Raindrops"
-                                                alt="Infused Raindrops"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/75.png"
+                                                title="Wraith Band"
+                                                alt="Wraith Band"
                                             />
                                         </div>
                                         <div class="flex gap-0.5">
                                             <img
                                                 class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/39.png"
-                                                title="Healing Salve"
-                                                alt="Healing Salve"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/166.png"
+                                                title="Maelstrom"
+                                                alt="Maelstrom"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/244.png"
+                                                title="Wind Lace"
+                                                alt="Wind Lace"
                                             />
                                         </div>
                                     </div>
@@ -2940,19 +3143,19 @@
                                     scope="col"
                                     class="py-2 px-1 pr-3 text-gray-300 text-right"
                                 >
-                                    1 (0)
+                                    138 (13)
                                 </td>
                                 <td
                                     scope="col"
                                     class="py-2 px-1 pr-3 text-apple text-right"
                                 >
-                                    326
+                                    575
                                 </td>
                                 <td
                                     scope="col"
                                     class="py-2 px-1 text-gray-300 pr-3 text-right"
                                 >
-                                    158
+                                    673
                                 </td>
                                 <td
                                     scope="col"
@@ -2988,24 +3191,24 @@
                                     >
                                         <img
                                             class="w-9 shadow-md rounded-sm"
-                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/51.png"
-                                            alt="Clockwerk"
+                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/48.png"
+                                            alt="Luna"
                                         /><!---->
                                         <div class="flex-col">
                                             <div
                                                 class="flex text-xs leading-none text-gray-300"
                                             >
-                                                Slayer
+                                                Pos 1
                                             </div>
                                             <a
                                                 class="text-[10px] leading-none text-gray-500"
-                                                >Clockwerk</a
+                                                >Luna</a
                                             >
                                         </div>
                                         <span
-                                            title="2 Level"
+                                            title="14 Level"
                                             class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
-                                            >2</span
+                                            >14</span
                                         >
                                     </div>
                                 </td>
@@ -3013,7 +3216,7 @@
                                     0
                                 </td>
                                 <td scope="col" class="py-2 px-1 text-gray-400">
-                                    0
+                                    2
                                 </td>
                                 <td scope="col" class="py-2 px-1 text-gray-400">
                                     1
@@ -3022,16 +3225,48 @@
                                     scope="col"
                                     class="py-2 pr-4 text-apple text-right"
                                 >
-                                    974
+                                    10,082
                                 </td>
                                 <td scope="col" class="py-2 px-1">
                                     <div class="flex gap-2 w-[240px]">
                                         <div class="flex gap-0.5">
                                             <img
                                                 class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/44.png"
-                                                title="Tango"
-                                                alt="Tango"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/172.png"
+                                                title="Mask of Madness"
+                                                alt="Mask of Madness"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/63.png"
+                                                title="Power Treads"
+                                                alt="Power Treads"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/52.png"
+                                                title="Eaglesong"
+                                                alt="Eaglesong"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/170.png"
+                                                title="Yasha"
+                                                alt="Yasha"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/36.png"
+                                                title="Magic Wand"
+                                                alt="Magic Wand"
                                             />
                                         </div>
                                         <div class="flex gap-0.5">
@@ -3040,6 +3275,402 @@
                                                 src="https://api.cybersportscore.com/media/game/item/582/_29/16.png"
                                                 title="Iron Branch"
                                                 alt="Iron Branch"
+                                            />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 pr-3 text-gray-300 text-right"
+                                >
+                                    191 (4)
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 pr-3 text-apple text-right"
+                                >
+                                    574
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    694
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-4 text-right"
+                                >
+                                    0
+                                </td>
+                            </tr>
+                            <tr
+                                class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]"
+                            >
+                                <td class="py-1 px-2">
+                                    <div
+                                        class="flex flex-row gap-2 items-center"
+                                    >
+                                        <img
+                                            class="w-9 shadow-md rounded-sm"
+                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/129.png"
+                                            alt="Mars"
+                                        /><!---->
+                                        <div class="flex-col">
+                                            <div
+                                                class="flex text-xs leading-none text-gray-300"
+                                            >
+                                                Candyloon
+                                            </div>
+                                            <a
+                                                class="text-[10px] leading-none text-gray-500"
+                                                >Mars</a
+                                            >
+                                        </div>
+                                        <span
+                                            title="13 Level"
+                                            class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
+                                            >13</span
+                                        >
+                                    </div>
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    6
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    1
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    1
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 pr-4 text-apple text-right"
+                                >
+                                    8,995
+                                </td>
+                                <td scope="col" class="py-2 px-1">
+                                    <div class="flex gap-2 w-[240px]">
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/178.png"
+                                                title="Soul Ring"
+                                                alt="Soul Ring"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/223.png"
+                                                title="Meteor Hammer"
+                                                alt="Meteor Hammer"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/13.png"
+                                                title="Gauntlets of Strength"
+                                                alt="Gauntlets of Strength"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/21.png"
+                                                title="Ogre Axe"
+                                                alt="Ogre Axe"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/60.png"
+                                                title="Point Booster"
+                                                alt="Point Booster"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/50.png"
+                                                title="Phase Boots"
+                                                alt="Phase Boots"
+                                            />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 pr-3 text-gray-300 text-right"
+                                >
+                                    86 (6)
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 pr-3 text-apple text-right"
+                                >
+                                    488
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    542
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-4 text-right"
+                                >
+                                    0
+                                </td>
+                            </tr>
+                            <tr
+                                class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]"
+                            >
+                                <td class="py-1 px-2">
+                                    <div
+                                        class="flex flex-row gap-2 items-center"
+                                    >
+                                        <img
+                                            class="w-9 shadow-md rounded-sm"
+                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/101.png"
+                                            alt="Skywrath Mage"
+                                        /><!---->
+                                        <div class="flex-col">
+                                            <div
+                                                class="flex text-xs leading-none text-gray-300"
+                                            >
+                                                ....
+                                            </div>
+                                            <a
+                                                class="text-[10px] leading-none text-gray-500"
+                                                >Skywrath Mage</a
+                                            >
+                                        </div>
+                                        <span
+                                            title="8 Level"
+                                            class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
+                                            >8</span
+                                        >
+                                    </div>
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    1
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    5
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    10
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 pr-4 text-apple text-right"
+                                >
+                                    4,082
+                                </td>
+                                <td scope="col" class="py-2 px-1">
+                                    <div class="flex gap-2 w-[240px]">
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/180.png"
+                                                title="Arcane Boots"
+                                                alt="Arcane Boots"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/216.png"
+                                                title="Enchanted Mango"
+                                                alt="Enchanted Mango"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/188.png"
+                                                title="Smoke of Deceit"
+                                                alt="Smoke of Deceit"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/36.png"
+                                                title="Magic Wand"
+                                                alt="Magic Wand"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/61.png"
+                                                title="Vitality Booster"
+                                                alt="Vitality Booster"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/23.png"
+                                                title="Staff of Wizardry"
+                                                alt="Staff of Wizardry"
+                                            />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 pr-3 text-gray-300 text-right"
+                                >
+                                    11 (2)
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 pr-3 text-apple text-right"
+                                >
+                                    255
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    264
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-3 text-right"
+                                >
+                                    0
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 px-1 text-gray-300 pr-4 text-right"
+                                >
+                                    0
+                                </td>
+                            </tr>
+                            <tr
+                                class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]"
+                            >
+                                <td class="py-1 px-2">
+                                    <div
+                                        class="flex flex-row gap-2 items-center"
+                                    >
+                                        <img
+                                            class="w-9 shadow-md rounded-sm"
+                                            src="https://api.cybersportscore.com/media/game/hero/582/_59/88.png"
+                                            alt="Nyx Assassin"
+                                        /><!---->
+                                        <div class="flex-col">
+                                            <div
+                                                class="flex text-xs leading-none text-gray-300"
+                                            >
+                                                SGOD
+                                            </div>
+                                            <a
+                                                class="text-[10px] leading-none text-gray-500"
+                                                >Nyx Assassin</a
+                                            >
+                                        </div>
+                                        <span
+                                            title="10 Level"
+                                            class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded"
+                                            >10</span
+                                        >
+                                    </div>
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    2
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    3
+                                </td>
+                                <td scope="col" class="py-2 px-1 text-gray-400">
+                                    10
+                                </td>
+                                <td
+                                    scope="col"
+                                    class="py-2 pr-4 text-apple text-right"
+                                >
+                                    3,417
+                                </td>
+                                <td scope="col" class="py-2 px-1">
+                                    <div class="flex gap-2 w-[240px]">
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/36.png"
+                                                title="Magic Wand"
+                                                alt="Magic Wand"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/180.png"
+                                                title="Arcane Boots"
+                                                alt="Arcane Boots"
+                                            />
+                                        </div>
+                                        <div class="flex gap-0.5">
+                                            <img
+                                                class="w-5 shadow-md rounded-sm"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/218.png"
+                                                title="Observer and Sentry Wards"
+                                                alt="Observer and Sentry Wards"
                                             />
                                         </div>
                                         <div class="flex gap-0.5">
@@ -3053,17 +3684,17 @@
                                         <div class="flex gap-0.5">
                                             <img
                                                 class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/38.png"
-                                                title="Clarity"
-                                                alt="Clarity"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/265.png"
+                                                title="Infused Raindrops"
+                                                alt="Infused Raindrops"
                                             />
                                         </div>
                                         <div class="flex gap-0.5">
                                             <img
                                                 class="w-5 shadow-md rounded-sm"
-                                                src="https://api.cybersportscore.com/media/game/item/582/_29/218.png"
-                                                title="Observer and Sentry Wards"
-                                                alt="Observer and Sentry Wards"
+                                                src="https://api.cybersportscore.com/media/game/item/582/_29/473.png"
+                                                title="Voodoo Mask"
+                                                alt="Voodoo Mask"
                                             />
                                         </div>
                                     </div>
@@ -3072,19 +3703,19 @@
                                     scope="col"
                                     class="py-2 px-1 pr-3 text-gray-300 text-right"
                                 >
-                                    1 (3)
+                                    8 (0)
                                 </td>
                                 <td
                                     scope="col"
                                     class="py-2 px-1 pr-3 text-apple text-right"
                                 >
-                                    144
+                                    260
                                 </td>
                                 <td
                                     scope="col"
                                     class="py-2 px-1 text-gray-300 pr-3 text-right"
                                 >
-                                    130
+                                    340
                                 </td>
                                 <td
                                     scope="col"
@@ -3140,14 +3771,14 @@
                             <button
                                 class="inline-block text-[12px] px-4 py-2 border border-apple text-apple rounded gap-2 px-2"
                             >
-                                MM
+                                ME
                             </button>
                         </li>
                         <li>
                             <button
                                 class="inline-block text-[12px] px-4 py-2 border border-apple text-apple rounded gap-2 px-2"
                             >
-                                StoRm
+                                VSG
                             </button>
                         </li>
                     </ul>
@@ -3166,7 +3797,7 @@
                                     <div class="flex items-center">
                                         <span class="px-4"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t95934.webp"
+                                                src="https://api.cybersportscore.com/media/logo/_30/t95245.webp"
                                                 alt="undefined icon"
                                                 class="w-[1.6rem] aspect-[3/2] object-contain"
                                                 loading="lazy"
@@ -3175,7 +3806,7 @@
                                     <p
                                         class="text-gray-300 text-[12px] leading-4"
                                     >
-                                        MM
+                                        ME
                                     </p>
                                 </div>
                                 <div
@@ -3190,7 +3821,7 @@
                                 <div class="flex w-28 items-center">
                                     <span class="px-4"
                                         ><img
-                                            src="https://api.cybersportscore.com/media/logo/_30/t96229.webp"
+                                            src="https://api.cybersportscore.com/media/logo/_30/t96167.webp"
                                             alt="undefined icon"
                                             class="w-[1.6rem] aspect-[3/2] object-contain"
                                             loading="lazy"
@@ -3198,7 +3829,7 @@
                                     <p
                                         class="text-gray-300 text-[12px] leading-4"
                                     >
-                                        StoRm
+                                        VSG
                                     </p>
                                 </div>
                             </div>
@@ -3211,7 +3842,7 @@
                                             <div
                                                 class="text-[12px] text-[#6B7280] leading-none"
                                             >
-                                                2023-06-28
+                                                2023-07-30
                                             </div>
                                         </div>
                                     </div>
@@ -3219,8 +3850,8 @@
                                         <div
                                             class="text-xs flex pr-4 w-14 items-center"
                                         >
-                                            <div class="text-[#EB5757]">
-                                                LOSS
+                                            <div class="text-[#98AA28]">
+                                                WIN
                                             </div>
                                         </div>
                                         <div
@@ -3229,23 +3860,23 @@
                                             <div
                                                 class="text-xs text-gray-300 font-bold"
                                             >
-                                                0-1
+                                                3-1
                                             </div>
                                         </div>
                                         <div
                                             class="flex text-xs text-bold pl-4 w-14 items-center"
                                         >
-                                            <div class="text-[#98AA28]">
-                                                WIN
+                                            <div class="text-[#EB5757]">
+                                                LOSS
                                             </div>
                                         </div>
                                     </div>
                                     <div class="flex w-14 items-center">
                                         <span class="mx-4"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                                title="DPC EEU 2023 Tour 3"
-                                                alt="DPC EEU 2023 Tour 3 icon"
+                                                src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                                title="Phoenix League"
+                                                alt="Phoenix League icon"
                                                 loading="lazy"
                                                 class="w-[1.6rem] h-[1.6rem] inline"
                                         /></span>
@@ -3259,7 +3890,7 @@
                                             <div
                                                 class="text-[12px] text-[#6B7280] leading-none"
                                             >
-                                                2023-06-12
+                                                2023-07-24
                                             </div>
                                         </div>
                                     </div>
@@ -3291,9 +3922,57 @@
                                     <div class="flex w-14 items-center">
                                         <span class="mx-4"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                                title="DPC EEU 2023 Tour 3"
-                                                alt="DPC EEU 2023 Tour 3 icon"
+                                                src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                                title="Phoenix League"
+                                                alt="Phoenix League icon"
+                                                loading="lazy"
+                                                class="w-[1.6rem] h-[1.6rem] inline"
+                                        /></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex border-b justify-between border-gray-700 hover:bg-gray-800"
+                                >
+                                    <div class="flex w-24 items-center pl-4">
+                                        <div class="flex flex-col">
+                                            <div
+                                                class="text-[12px] text-[#6B7280] leading-none"
+                                            >
+                                                2023-07-20
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex m-auto justify-center">
+                                        <div
+                                            class="text-xs flex pr-4 w-14 items-center"
+                                        >
+                                            <div class="text-[#98AA28]">
+                                                WIN
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex justify-center items-center border-x border-gray-700 w-14 h-10"
+                                        >
+                                            <div
+                                                class="text-xs text-gray-300 font-bold"
+                                            >
+                                                2-0
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex text-xs text-bold pl-4 w-14 items-center"
+                                        >
+                                            <div class="text-[#EB5757]">
+                                                LOSS
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex w-14 items-center">
+                                        <span class="mx-4"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                                title="Phoenix League"
+                                                alt="Phoenix League icon"
                                                 loading="lazy"
                                                 class="w-[1.6rem] h-[1.6rem] inline"
                                         /></span>
@@ -3310,11 +3989,11 @@
                             >
                                 <span class="px-4"
                                     ><img
-                                        src="https://api.cybersportscore.com/media/logo/_30/t95934.webp"
+                                        src="https://api.cybersportscore.com/media/logo/_30/t95245.webp"
                                         alt="undefined icon"
                                         class="w-[1.6rem] aspect-[3/2] object-contain"
                                         loading="lazy" /></span
-                                ><span class="text-white text-[12px]">MM</span>
+                                ><span class="text-white text-[12px]">ME</span>
                             </div>
                             <div class="overflow-y-scroll h-[16.5rem]">
                                 <div
@@ -3324,9 +4003,9 @@
                                         class="flex justify-center items-center px-1 w-14"
                                     >
                                         <div
-                                            class="text-xs font-bold text-apple"
+                                            class="text-xs font-bold text-white"
                                         >
-                                            2-0
+                                            1-1
                                         </div>
                                     </div>
                                     <div class="flex grow py-1 gap-2 relative">
@@ -3335,13 +4014,151 @@
                                         >
                                             <span class="px-2 w-14"
                                                 ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t96768.webp"
-                                                    alt="Multicast icon"
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t94177.webp"
+                                                    alt="Team Virgo icon"
                                                     class="w-[1.6rem] aspect-[3/2] object-contain"
                                                     loading="lazy" /></span
                                             ><span
                                                 class="text-gray-300 text-[12px]"
-                                                >multi</span
+                                                >Virgo</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                    >
+                                        <div
+                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                        >
+                                            2023-08-14
+                                        </div>
+                                        <span class="px-1"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                                title="LNTI"
+                                                alt="LNTI icon"
+                                                loading="lazy"
+                                                class="w-[1.6rem] h-[1.6rem] inline"
+                                        /></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                                >
+                                    <div
+                                        class="flex justify-center items-center px-1 w-14"
+                                    >
+                                        <div
+                                            class="text-xs font-bold text-red-500"
+                                        >
+                                            0-2
+                                        </div>
+                                    </div>
+                                    <div class="flex grow py-1 gap-2 relative">
+                                        <div
+                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                        >
+                                            <span class="px-2 w-14"
+                                                ><img
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t6273.webp"
+                                                    alt="iG Vitality icon"
+                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                    loading="lazy" /></span
+                                            ><span
+                                                class="text-gray-300 text-[12px]"
+                                                >iG.V</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                    >
+                                        <div
+                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                        >
+                                            2023-08-11
+                                        </div>
+                                        <span class="px-1"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                                title="LNTI"
+                                                alt="LNTI icon"
+                                                loading="lazy"
+                                                class="w-[1.6rem] h-[1.6rem] inline"
+                                        /></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                                >
+                                    <div
+                                        class="flex justify-center items-center px-1 w-14"
+                                    >
+                                        <div
+                                            class="text-xs font-bold text-red-500"
+                                        >
+                                            0-2
+                                        </div>
+                                    </div>
+                                    <div class="flex grow py-1 gap-2 relative">
+                                        <div
+                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                        >
+                                            <span class="px-2 w-14"
+                                                ><img
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t91250.webp"
+                                                    alt="Made in Philippines icon"
+                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                    loading="lazy" /></span
+                                            ><span
+                                                class="text-gray-300 text-[12px]"
+                                                >MIPH</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                    >
+                                        <div
+                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                        >
+                                            2023-08-10
+                                        </div>
+                                        <span class="px-1"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                                title="LNTI"
+                                                alt="LNTI icon"
+                                                loading="lazy"
+                                                class="w-[1.6rem] h-[1.6rem] inline"
+                                        /></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                                >
+                                    <div
+                                        class="flex justify-center items-center px-1 w-14"
+                                    >
+                                        <div
+                                            class="text-xs font-bold text-white"
+                                        >
+                                            1-1
+                                        </div>
+                                    </div>
+                                    <div class="flex grow py-1 gap-2 relative">
+                                        <div
+                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                        >
+                                            <span class="px-2 w-14"
+                                                ><img
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t84556.webp"
+                                                    alt="Polaris Esports icon"
+                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                    loading="lazy" /></span
+                                            ><span
+                                                class="text-gray-300 text-[12px]"
+                                                >Polaris</span
                                             >
                                         </div>
                                     </div>
@@ -3355,9 +4172,55 @@
                                         </div>
                                         <span class="px-1"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                                title="EPL S11"
-                                                alt="EPL S11 icon"
+                                                src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                                title="LNTI"
+                                                alt="LNTI icon"
+                                                loading="lazy"
+                                                class="w-[1.6rem] h-[1.6rem] inline"
+                                        /></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                                >
+                                    <div
+                                        class="flex justify-center items-center px-1 w-14"
+                                    >
+                                        <div
+                                            class="text-xs font-bold text-white"
+                                        >
+                                            1-1
+                                        </div>
+                                    </div>
+                                    <div class="flex grow py-1 gap-2 relative">
+                                        <div
+                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                        >
+                                            <span class="px-2 w-14"
+                                                ><img
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t96157.webp"
+                                                    alt="Big brain icon"
+                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                    loading="lazy" /></span
+                                            ><span
+                                                class="text-gray-300 text-[12px]"
+                                                >Bb</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                    >
+                                        <div
+                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                        >
+                                            2023-08-08
+                                        </div>
+                                        <span class="px-1"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                                title="LNTI"
+                                                alt="LNTI icon"
                                                 loading="lazy"
                                                 class="w-[1.6rem] h-[1.6rem] inline"
                                         /></span>
@@ -3381,105 +4244,13 @@
                                         >
                                             <span class="px-2 w-14"
                                                 ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t96214.webp"
-                                                    alt="Ram Squad icon"
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t96350.webp"
+                                                    alt="Limit icon"
                                                     class="w-[1.6rem] aspect-[3/2] object-contain"
                                                     loading="lazy" /></span
                                             ><span
                                                 class="text-gray-300 text-[12px]"
-                                                >Rams</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                    >
-                                        <div
-                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                        >
-                                            2023-08-07
-                                        </div>
-                                        <span class="px-1"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                                title="EPL S11"
-                                                alt="EPL S11 icon"
-                                                loading="lazy"
-                                                class="w-[1.6rem] h-[1.6rem] inline"
-                                        /></span>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                                >
-                                    <div
-                                        class="flex justify-center items-center px-1 w-14"
-                                    >
-                                        <div
-                                            class="text-xs font-bold text-apple"
-                                        >
-                                            2-1
-                                        </div>
-                                    </div>
-                                    <div class="flex grow py-1 gap-2 relative">
-                                        <div
-                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                        >
-                                            <span class="px-2 w-14"
-                                                ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t93734.webp"
-                                                    alt="Ancient Tribe icon"
-                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                    loading="lazy" /></span
-                                            ><span
-                                                class="text-gray-300 text-[12px]"
-                                                >ATT</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                    >
-                                        <div
-                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                        >
-                                            2023-08-06
-                                        </div>
-                                        <span class="px-1"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                                title="EPL S11"
-                                                alt="EPL S11 icon"
-                                                loading="lazy"
-                                                class="w-[1.6rem] h-[1.6rem] inline"
-                                        /></span>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                                >
-                                    <div
-                                        class="flex justify-center items-center px-1 w-14"
-                                    >
-                                        <div
-                                            class="text-xs font-bold text-red-500"
-                                        >
-                                            0-2
-                                        </div>
-                                    </div>
-                                    <div class="flex grow py-1 gap-2 relative">
-                                        <div
-                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                        >
-                                            <span class="px-2 w-14"
-                                                ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t87999.webp"
-                                                    alt="KZ Team icon"
-                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                    loading="lazy" /></span
-                                            ><span
-                                                class="text-gray-300 text-[12px]"
-                                                >KZ</span
+                                                >LMG</span
                                             >
                                         </div>
                                     </div>
@@ -3493,9 +4264,55 @@
                                         </div>
                                         <span class="px-1"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                                title="EPL S11"
-                                                alt="EPL S11 icon"
+                                                src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                                title="LNTI"
+                                                alt="LNTI icon"
+                                                loading="lazy"
+                                                class="w-[1.6rem] h-[1.6rem] inline"
+                                        /></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                                >
+                                    <div
+                                        class="flex justify-center items-center px-1 w-14"
+                                    >
+                                        <div
+                                            class="text-xs font-bold text-apple"
+                                        >
+                                            3-1
+                                        </div>
+                                    </div>
+                                    <div class="flex grow py-1 gap-2 relative">
+                                        <div
+                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                        >
+                                            <span class="px-2 w-14"
+                                                ><img
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t96167.webp"
+                                                    alt="Vision Gaming icon"
+                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                    loading="lazy" /></span
+                                            ><span
+                                                class="text-gray-300 text-[12px]"
+                                                >VSG</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                    >
+                                        <div
+                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                        >
+                                            2023-07-30
+                                        </div>
+                                        <span class="px-1"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                                title="Phoenix League"
+                                                alt="Phoenix League icon"
                                                 loading="lazy"
                                                 class="w-[1.6rem] h-[1.6rem] inline"
                                         /></span>
@@ -3519,13 +4336,13 @@
                                         >
                                             <span class="px-2 w-14"
                                                 ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t91595.webp"
-                                                    alt="Hot Headed Gaming icon"
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t96350.webp"
+                                                    alt="Limit icon"
                                                     class="w-[1.6rem] aspect-[3/2] object-contain"
                                                     loading="lazy" /></span
                                             ><span
                                                 class="text-gray-300 text-[12px]"
-                                                >Hot</span
+                                                >LMG</span
                                             >
                                         </div>
                                     </div>
@@ -3535,59 +4352,13 @@
                                         <div
                                             class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
                                         >
-                                            2023-08-04
+                                            2023-07-27
                                         </div>
                                         <span class="px-1"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                                title="EPL S11"
-                                                alt="EPL S11 icon"
-                                                loading="lazy"
-                                                class="w-[1.6rem] h-[1.6rem] inline"
-                                        /></span>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                                >
-                                    <div
-                                        class="flex justify-center items-center px-1 w-14"
-                                    >
-                                        <div
-                                            class="text-xs font-bold text-red-500"
-                                        >
-                                            1-2
-                                        </div>
-                                    </div>
-                                    <div class="flex grow py-1 gap-2 relative">
-                                        <div
-                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                        >
-                                            <span class="px-2 w-14"
-                                                ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t95674.webp"
-                                                    alt="SIBE Team icon"
-                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                    loading="lazy" /></span
-                                            ><span
-                                                class="text-gray-300 text-[12px]"
-                                                >SIBE</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                    >
-                                        <div
-                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                        >
-                                            2023-08-03
-                                        </div>
-                                        <span class="px-1"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                                title="EPL S11"
-                                                alt="EPL S11 icon"
+                                                src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                                title="Phoenix League"
+                                                alt="Phoenix League icon"
                                                 loading="lazy"
                                                 class="w-[1.6rem] h-[1.6rem] inline"
                                         /></span>
@@ -3602,7 +4373,7 @@
                                         <div
                                             class="text-xs font-bold text-apple"
                                         >
-                                            1-0
+                                            2-1
                                         </div>
                                     </div>
                                     <div class="flex grow py-1 gap-2 relative">
@@ -3611,13 +4382,13 @@
                                         >
                                             <span class="px-2 w-14"
                                                 ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t92307.webp"
-                                                    alt="Natus Vincere Junior icon"
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t96167.webp"
+                                                    alt="Vision Gaming icon"
                                                     class="w-[1.6rem] aspect-[3/2] object-contain"
                                                     loading="lazy" /></span
                                             ><span
                                                 class="text-gray-300 text-[12px]"
-                                                >NAVIJunior</span
+                                                >VSG</span
                                             >
                                         </div>
                                     </div>
@@ -3627,59 +4398,13 @@
                                         <div
                                             class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
                                         >
-                                            2023-06-28
+                                            2023-07-24
                                         </div>
                                         <span class="px-1"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                                title="DPC EEU 2023 Tour 3"
-                                                alt="DPC EEU 2023 Tour 3 icon"
-                                                loading="lazy"
-                                                class="w-[1.6rem] h-[1.6rem] inline"
-                                        /></span>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                                >
-                                    <div
-                                        class="flex justify-center items-center px-1 w-14"
-                                    >
-                                        <div
-                                            class="text-xs font-bold text-red-500"
-                                        >
-                                            0-1
-                                        </div>
-                                    </div>
-                                    <div class="flex grow py-1 gap-2 relative">
-                                        <div
-                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                        >
-                                            <span class="px-2 w-14"
-                                                ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t96229.webp"
-                                                    alt="StoRm icon"
-                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                    loading="lazy" /></span
-                                            ><span
-                                                class="text-gray-300 text-[12px]"
-                                                >StoRm</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                    >
-                                        <div
-                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                        >
-                                            2023-06-28
-                                        </div>
-                                        <span class="px-1"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                                title="DPC EEU 2023 Tour 3"
-                                                alt="DPC EEU 2023 Tour 3 icon"
+                                                src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                                title="Phoenix League"
+                                                alt="Phoenix League icon"
                                                 loading="lazy"
                                                 class="w-[1.6rem] h-[1.6rem] inline"
                                         /></span>
@@ -3703,13 +4428,13 @@
                                         >
                                             <span class="px-2 w-14"
                                                 ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t87718.webp"
-                                                    alt="cybercats icon"
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t45156.webp"
+                                                    alt="Reaper Hashtag icon"
                                                     class="w-[1.6rem] aspect-[3/2] object-contain"
                                                     loading="lazy" /></span
                                             ><span
                                                 class="text-gray-300 text-[12px]"
-                                                >ccats</span
+                                                >RH</span
                                             >
                                         </div>
                                     </div>
@@ -3719,59 +4444,13 @@
                                         <div
                                             class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
                                         >
-                                            2023-06-27
+                                            2023-07-21
                                         </div>
                                         <span class="px-1"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                                title="DPC EEU 2023 Tour 3"
-                                                alt="DPC EEU 2023 Tour 3 icon"
-                                                loading="lazy"
-                                                class="w-[1.6rem] h-[1.6rem] inline"
-                                        /></span>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                                >
-                                    <div
-                                        class="flex justify-center items-center px-1 w-14"
-                                    >
-                                        <div
-                                            class="text-xs font-bold text-red-500"
-                                        >
-                                            0-2
-                                        </div>
-                                    </div>
-                                    <div class="flex grow py-1 gap-2 relative">
-                                        <div
-                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                        >
-                                            <span class="px-2 w-14"
-                                                ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t95674.webp"
-                                                    alt="SIBE Team icon"
-                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                    loading="lazy" /></span
-                                            ><span
-                                                class="text-gray-300 text-[12px]"
-                                                >SIBE</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                    >
-                                        <div
-                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                        >
-                                            2023-06-26
-                                        </div>
-                                        <span class="px-1"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                                title="DPC EEU 2023 Tour 3"
-                                                alt="DPC EEU 2023 Tour 3 icon"
+                                                src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                                title="Phoenix League"
+                                                alt="Phoenix League icon"
                                                 loading="lazy"
                                                 class="w-[1.6rem] h-[1.6rem] inline"
                                         /></span>
@@ -3799,13 +4478,11 @@
                             >
                                 <span class="px-4"
                                     ><img
-                                        src="https://api.cybersportscore.com/media/logo/_30/t96229.webp"
+                                        src="https://api.cybersportscore.com/media/logo/_30/t96167.webp"
                                         alt="undefined icon"
                                         class="w-[1.6rem] aspect-[3/2] object-contain"
                                         loading="lazy" /></span
-                                ><span class="text-white text-[12px]"
-                                    >StoRm</span
-                                >
+                                ><span class="text-white text-[12px]">VSG</span>
                             </div>
                             <div class="overflow-y-scroll h-[16.5rem]">
                                 <div
@@ -3817,7 +4494,7 @@
                                         <div
                                             class="text-xs font-bold text-red-500"
                                         >
-                                            1-2
+                                            0-2
                                         </div>
                                     </div>
                                     <div class="flex grow py-1 gap-2 relative">
@@ -3826,13 +4503,59 @@
                                         >
                                             <span class="px-2 w-14"
                                                 ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t87999.webp"
-                                                    alt="KZ Team icon"
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t94177.webp"
+                                                    alt="Team Virgo icon"
                                                     class="w-[1.6rem] aspect-[3/2] object-contain"
                                                     loading="lazy" /></span
                                             ><span
                                                 class="text-gray-300 text-[12px]"
-                                                >KZ</span
+                                                >Virgo</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                    >
+                                        <div
+                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                        >
+                                            2023-08-13
+                                        </div>
+                                        <span class="px-1"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                                title="LNTI"
+                                                alt="LNTI icon"
+                                                loading="lazy"
+                                                class="w-[1.6rem] h-[1.6rem] inline"
+                                        /></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                                >
+                                    <div
+                                        class="flex justify-center items-center px-1 w-14"
+                                    >
+                                        <div
+                                            class="text-xs font-bold text-red-500"
+                                        >
+                                            0-2
+                                        </div>
+                                    </div>
+                                    <div class="flex grow py-1 gap-2 relative">
+                                        <div
+                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                        >
+                                            <span class="px-2 w-14"
+                                                ><img
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t84556.webp"
+                                                    alt="Polaris Esports icon"
+                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                    loading="lazy" /></span
+                                            ><span
+                                                class="text-gray-300 text-[12px]"
+                                                >Polaris</span
                                             >
                                         </div>
                                     </div>
@@ -3846,9 +4569,9 @@
                                         </div>
                                         <span class="px-1"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                                title="EPL S11"
-                                                alt="EPL S11 icon"
+                                                src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                                title="LNTI"
+                                                alt="LNTI icon"
                                                 loading="lazy"
                                                 class="w-[1.6rem] h-[1.6rem] inline"
                                         /></span>
@@ -3861,9 +4584,9 @@
                                         class="flex justify-center items-center px-1 w-14"
                                     >
                                         <div
-                                            class="text-xs font-bold text-red-500"
+                                            class="text-xs font-bold text-apple"
                                         >
-                                            0-2
+                                            2-0
                                         </div>
                                     </div>
                                     <div class="flex grow py-1 gap-2 relative">
@@ -3872,13 +4595,13 @@
                                         >
                                             <span class="px-2 w-14"
                                                 ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t96214.webp"
-                                                    alt="Ram Squad icon"
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t96157.webp"
+                                                    alt="Big brain icon"
                                                     class="w-[1.6rem] aspect-[3/2] object-contain"
                                                     loading="lazy" /></span
                                             ><span
                                                 class="text-gray-300 text-[12px]"
-                                                >Rams</span
+                                                >Bb</span
                                             >
                                         </div>
                                     </div>
@@ -3892,9 +4615,101 @@
                                         </div>
                                         <span class="px-1"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                                title="EPL S11"
-                                                alt="EPL S11 icon"
+                                                src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                                title="LNTI"
+                                                alt="LNTI icon"
+                                                loading="lazy"
+                                                class="w-[1.6rem] h-[1.6rem] inline"
+                                        /></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                                >
+                                    <div
+                                        class="flex justify-center items-center px-1 w-14"
+                                    >
+                                        <div
+                                            class="text-xs font-bold text-red-500"
+                                        >
+                                            0-2
+                                        </div>
+                                    </div>
+                                    <div class="flex grow py-1 gap-2 relative">
+                                        <div
+                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                        >
+                                            <span class="px-2 w-14"
+                                                ><img
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t45158.webp"
+                                                    alt="Army Geniuses icon"
+                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                    loading="lazy" /></span
+                                            ><span
+                                                class="text-gray-300 text-[12px]"
+                                                >AG</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                    >
+                                        <div
+                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                        >
+                                            2023-08-10
+                                        </div>
+                                        <span class="px-1"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/event/_120/e8300.webp"
+                                                title="1XPLORE Asia 2"
+                                                alt="1XPLORE Asia 2 icon"
+                                                loading="lazy"
+                                                class="w-[1.6rem] h-[1.6rem] inline"
+                                        /></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                                >
+                                    <div
+                                        class="flex justify-center items-center px-1 w-14"
+                                    >
+                                        <div
+                                            class="text-xs font-bold text-red-500"
+                                        >
+                                            0-2
+                                        </div>
+                                    </div>
+                                    <div class="flex grow py-1 gap-2 relative">
+                                        <div
+                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                        >
+                                            <span class="px-2 w-14"
+                                                ><img
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t96350.webp"
+                                                    alt="Limit icon"
+                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                    loading="lazy" /></span
+                                            ><span
+                                                class="text-gray-300 text-[12px]"
+                                                >LMG</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                    >
+                                        <div
+                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                        >
+                                            2023-08-10
+                                        </div>
+                                        <span class="px-1"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                                title="LNTI"
+                                                alt="LNTI icon"
                                                 loading="lazy"
                                                 class="w-[1.6rem] h-[1.6rem] inline"
                                         /></span>
@@ -3909,7 +4724,7 @@
                                         <div
                                             class="text-xs font-bold text-apple"
                                         >
-                                            2-0
+                                            2-1
                                         </div>
                                     </div>
                                     <div class="flex grow py-1 gap-2 relative">
@@ -3918,13 +4733,13 @@
                                         >
                                             <span class="px-2 w-14"
                                                 ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t95674.webp"
-                                                    alt="SIBE Team icon"
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t96042.webp"
+                                                    alt="IHC Esports icon"
                                                     class="w-[1.6rem] aspect-[3/2] object-contain"
                                                     loading="lazy" /></span
                                             ><span
                                                 class="text-gray-300 text-[12px]"
-                                                >SIBE</span
+                                                >IHC</span
                                             >
                                         </div>
                                     </div>
@@ -3938,239 +4753,9 @@
                                         </div>
                                         <span class="px-1"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                                title="EPL S11"
-                                                alt="EPL S11 icon"
-                                                loading="lazy"
-                                                class="w-[1.6rem] h-[1.6rem] inline"
-                                        /></span>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                                >
-                                    <div
-                                        class="flex justify-center items-center px-1 w-14"
-                                    >
-                                        <div
-                                            class="text-xs font-bold text-red-500"
-                                        >
-                                            1-2
-                                        </div>
-                                    </div>
-                                    <div class="flex grow py-1 gap-2 relative">
-                                        <div
-                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                        >
-                                            <span class="px-2 w-14"
-                                                ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t93734.webp"
-                                                    alt="Ancient Tribe icon"
-                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                    loading="lazy" /></span
-                                            ><span
-                                                class="text-gray-300 text-[12px]"
-                                                >ATT</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                    >
-                                        <div
-                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                        >
-                                            2023-08-08
-                                        </div>
-                                        <span class="px-1"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                                title="EPL S11"
-                                                alt="EPL S11 icon"
-                                                loading="lazy"
-                                                class="w-[1.6rem] h-[1.6rem] inline"
-                                        /></span>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                                >
-                                    <div
-                                        class="flex justify-center items-center px-1 w-14"
-                                    >
-                                        <div
-                                            class="text-xs font-bold text-apple"
-                                        >
-                                            2-0
-                                        </div>
-                                    </div>
-                                    <div class="flex grow py-1 gap-2 relative">
-                                        <div
-                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                        >
-                                            <span class="px-2 w-14"
-                                                ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t91595.webp"
-                                                    alt="Hot Headed Gaming icon"
-                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                    loading="lazy" /></span
-                                            ><span
-                                                class="text-gray-300 text-[12px]"
-                                                >Hot</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                    >
-                                        <div
-                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                        >
-                                            2023-08-07
-                                        </div>
-                                        <span class="px-1"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                                title="EPL S11"
-                                                alt="EPL S11 icon"
-                                                loading="lazy"
-                                                class="w-[1.6rem] h-[1.6rem] inline"
-                                        /></span>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                                >
-                                    <div
-                                        class="flex justify-center items-center px-1 w-14"
-                                    >
-                                        <div
-                                            class="text-xs font-bold text-apple"
-                                        >
-                                            2-0
-                                        </div>
-                                    </div>
-                                    <div class="flex grow py-1 gap-2 relative">
-                                        <div
-                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                        >
-                                            <span class="px-2 w-14"
-                                                ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t96768.webp"
-                                                    alt="Multicast icon"
-                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                    loading="lazy" /></span
-                                            ><span
-                                                class="text-gray-300 text-[12px]"
-                                                >multi</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                    >
-                                        <div
-                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                        >
-                                            2023-08-05
-                                        </div>
-                                        <span class="px-1"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                                title="EPL S11"
-                                                alt="EPL S11 icon"
-                                                loading="lazy"
-                                                class="w-[1.6rem] h-[1.6rem] inline"
-                                        /></span>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                                >
-                                    <div
-                                        class="flex justify-center items-center px-1 w-14"
-                                    >
-                                        <div
-                                            class="text-xs font-bold text-apple"
-                                        >
-                                            1-0
-                                        </div>
-                                    </div>
-                                    <div class="flex grow py-1 gap-2 relative">
-                                        <div
-                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                        >
-                                            <span class="px-2 w-14"
-                                                ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t92307.webp"
-                                                    alt="Natus Vincere Junior icon"
-                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                    loading="lazy" /></span
-                                            ><span
-                                                class="text-gray-300 text-[12px]"
-                                                >NAVIJunior</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                    >
-                                        <div
-                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                        >
-                                            2023-06-28
-                                        </div>
-                                        <span class="px-1"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                                title="DPC EEU 2023 Tour 3"
-                                                alt="DPC EEU 2023 Tour 3 icon"
-                                                loading="lazy"
-                                                class="w-[1.6rem] h-[1.6rem] inline"
-                                        /></span>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                                >
-                                    <div
-                                        class="flex justify-center items-center px-1 w-14"
-                                    >
-                                        <div
-                                            class="text-xs font-bold text-apple"
-                                        >
-                                            1-0
-                                        </div>
-                                    </div>
-                                    <div class="flex grow py-1 gap-2 relative">
-                                        <div
-                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                        >
-                                            <span class="px-2 w-14"
-                                                ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t95934.webp"
-                                                    alt="MoneyMakers icon"
-                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                    loading="lazy" /></span
-                                            ><span
-                                                class="text-gray-300 text-[12px]"
-                                                >MM</span
-                                            >
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                    >
-                                        <div
-                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                        >
-                                            2023-06-28
-                                        </div>
-                                        <span class="px-1"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                                title="DPC EEU 2023 Tour 3"
-                                                alt="DPC EEU 2023 Tour 3 icon"
+                                                src="https://api.cybersportscore.com/media/event/_120/e8300.webp"
+                                                title="1XPLORE Asia 2"
+                                                alt="1XPLORE Asia 2 icon"
                                                 loading="lazy"
                                                 class="w-[1.6rem] h-[1.6rem] inline"
                                         /></span>
@@ -4194,13 +4779,13 @@
                                         >
                                             <span class="px-2 w-14"
                                                 ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t16.webp"
-                                                    alt="Natus Vincere icon"
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t93833.webp"
+                                                    alt="Spawn Team icon"
                                                     class="w-[1.6rem] aspect-[3/2] object-contain"
                                                     loading="lazy" /></span
                                             ><span
                                                 class="text-gray-300 text-[12px]"
-                                                >NAVI</span
+                                                >Spawn</span
                                             >
                                         </div>
                                     </div>
@@ -4210,13 +4795,105 @@
                                         <div
                                             class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
                                         >
-                                            2023-06-26
+                                            2023-08-03
                                         </div>
                                         <span class="px-1"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                                title="DPC EEU 2023 Tour 3"
-                                                alt="DPC EEU 2023 Tour 3 icon"
+                                                src="https://api.cybersportscore.com/media/event/_120/e8300.webp"
+                                                title="1XPLORE Asia 2"
+                                                alt="1XPLORE Asia 2 icon"
+                                                loading="lazy"
+                                                class="w-[1.6rem] h-[1.6rem] inline"
+                                        /></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                                >
+                                    <div
+                                        class="flex justify-center items-center px-1 w-14"
+                                    >
+                                        <div
+                                            class="text-xs font-bold text-apple"
+                                        >
+                                            2-1
+                                        </div>
+                                    </div>
+                                    <div class="flex grow py-1 gap-2 relative">
+                                        <div
+                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                        >
+                                            <span class="px-2 w-14"
+                                                ><img
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t91250.webp"
+                                                    alt="Made in Philippines icon"
+                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                    loading="lazy" /></span
+                                            ><span
+                                                class="text-gray-300 text-[12px]"
+                                                >MIPH</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                    >
+                                        <div
+                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                        >
+                                            2023-08-02
+                                        </div>
+                                        <span class="px-1"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/event/_120/e8300.webp"
+                                                title="1XPLORE Asia 2"
+                                                alt="1XPLORE Asia 2 icon"
+                                                loading="lazy"
+                                                class="w-[1.6rem] h-[1.6rem] inline"
+                                        /></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                                >
+                                    <div
+                                        class="flex justify-center items-center px-1 w-14"
+                                    >
+                                        <div
+                                            class="text-xs font-bold text-apple"
+                                        >
+                                            2-1
+                                        </div>
+                                    </div>
+                                    <div class="flex grow py-1 gap-2 relative">
+                                        <div
+                                            class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                        >
+                                            <span class="px-2 w-14"
+                                                ><img
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t91365.webp"
+                                                    alt="Myth Avenue Gaming icon"
+                                                    class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                    loading="lazy" /></span
+                                            ><span
+                                                class="text-gray-300 text-[12px]"
+                                                >MAG</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                    >
+                                        <div
+                                            class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                        >
+                                            2023-07-31
+                                        </div>
+                                        <span class="px-1"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/event/_120/e8300.webp"
+                                                title="1XPLORE Asia 2"
+                                                alt="1XPLORE Asia 2 icon"
                                                 loading="lazy"
                                                 class="w-[1.6rem] h-[1.6rem] inline"
                                         /></span>
@@ -4231,7 +4908,7 @@
                                         <div
                                             class="text-xs font-bold text-red-500"
                                         >
-                                            0-2
+                                            1-3
                                         </div>
                                     </div>
                                     <div class="flex grow py-1 gap-2 relative">
@@ -4240,13 +4917,13 @@
                                         >
                                             <span class="px-2 w-14"
                                                 ><img
-                                                    src="https://api.cybersportscore.com/media/logo/_30/t94673.webp"
-                                                    alt="Team Sexy icon"
+                                                    src="https://api.cybersportscore.com/media/logo/_30/t95245.webp"
+                                                    alt="Miracle esport icon"
                                                     class="w-[1.6rem] aspect-[3/2] object-contain"
                                                     loading="lazy" /></span
                                             ><span
                                                 class="text-gray-300 text-[12px]"
-                                                >Sexy</span
+                                                >ME</span
                                             >
                                         </div>
                                     </div>
@@ -4256,13 +4933,13 @@
                                         <div
                                             class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
                                         >
-                                            2023-06-22
+                                            2023-07-30
                                         </div>
                                         <span class="px-1"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                                title="DPC EEU 2023 Tour 3"
-                                                alt="DPC EEU 2023 Tour 3 icon"
+                                                src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                                title="Phoenix League"
+                                                alt="Phoenix League icon"
                                                 loading="lazy"
                                                 class="w-[1.6rem] h-[1.6rem] inline"
                                         /></span>
@@ -4300,14 +4977,14 @@
                                 <div class="flex items-center">
                                     <span class="px-4"
                                         ><img
-                                            src="https://api.cybersportscore.com/media/logo/_30/t95934.webp"
+                                            src="https://api.cybersportscore.com/media/logo/_30/t95245.webp"
                                             alt="undefined icon"
                                             class="w-[1.6rem] aspect-[3/2] object-contain"
                                             loading="lazy"
                                     /></span>
                                 </div>
                                 <p class="text-gray-300 text-[12px] leading-4">
-                                    MM
+                                    ME
                                 </p>
                             </div>
                             <div
@@ -4322,13 +4999,13 @@
                             <div class="flex w-28 items-center">
                                 <span class="px-4"
                                     ><img
-                                        src="https://api.cybersportscore.com/media/logo/_30/t96229.webp"
+                                        src="https://api.cybersportscore.com/media/logo/_30/t96167.webp"
                                         alt="undefined icon"
                                         class="w-[1.6rem] aspect-[3/2] object-contain"
                                         loading="lazy"
                                 /></span>
                                 <p class="text-gray-300 text-[12px] leading-4">
-                                    StoRm
+                                    VSG
                                 </p>
                             </div>
                         </div>
@@ -4341,7 +5018,7 @@
                                         <div
                                             class="text-[12px] text-[#6B7280] leading-none"
                                         >
-                                            2023-06-28
+                                            2023-07-30
                                         </div>
                                     </div>
                                 </div>
@@ -4349,7 +5026,7 @@
                                     <div
                                         class="text-xs flex pr-4 w-14 items-center"
                                     >
-                                        <div class="text-[#EB5757]">LOSS</div>
+                                        <div class="text-[#98AA28]">WIN</div>
                                     </div>
                                     <div
                                         class="flex justify-center items-center border-x border-gray-700 w-14 h-10"
@@ -4357,21 +5034,21 @@
                                         <div
                                             class="text-xs text-gray-300 font-bold"
                                         >
-                                            0-1
+                                            3-1
                                         </div>
                                     </div>
                                     <div
                                         class="flex text-xs text-bold pl-4 w-14 items-center"
                                     >
-                                        <div class="text-[#98AA28]">WIN</div>
+                                        <div class="text-[#EB5757]">LOSS</div>
                                     </div>
                                 </div>
                                 <div class="flex w-14 items-center">
                                     <span class="mx-4"
                                         ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                            title="DPC EEU 2023 Tour 3"
-                                            alt="DPC EEU 2023 Tour 3 icon"
+                                            src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                            title="Phoenix League"
+                                            alt="Phoenix League icon"
                                             loading="lazy"
                                             class="w-[1.6rem] h-[1.6rem] inline"
                                     /></span>
@@ -4385,7 +5062,7 @@
                                         <div
                                             class="text-[12px] text-[#6B7280] leading-none"
                                         >
-                                            2023-06-12
+                                            2023-07-24
                                         </div>
                                     </div>
                                 </div>
@@ -4413,9 +5090,53 @@
                                 <div class="flex w-14 items-center">
                                     <span class="mx-4"
                                         ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                            title="DPC EEU 2023 Tour 3"
-                                            alt="DPC EEU 2023 Tour 3 icon"
+                                            src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                            title="Phoenix League"
+                                            alt="Phoenix League icon"
+                                            loading="lazy"
+                                            class="w-[1.6rem] h-[1.6rem] inline"
+                                    /></span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex border-b justify-between border-gray-700 hover:bg-gray-800"
+                            >
+                                <div class="flex w-24 items-center pl-4">
+                                    <div class="flex flex-col">
+                                        <div
+                                            class="text-[12px] text-[#6B7280] leading-none"
+                                        >
+                                            2023-07-20
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex m-auto justify-center">
+                                    <div
+                                        class="text-xs flex pr-4 w-14 items-center"
+                                    >
+                                        <div class="text-[#98AA28]">WIN</div>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center border-x border-gray-700 w-14 h-10"
+                                    >
+                                        <div
+                                            class="text-xs text-gray-300 font-bold"
+                                        >
+                                            2-0
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex text-xs text-bold pl-4 w-14 items-center"
+                                    >
+                                        <div class="text-[#EB5757]">LOSS</div>
+                                    </div>
+                                </div>
+                                <div class="flex w-14 items-center">
+                                    <span class="mx-4"
+                                        ><img
+                                            src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                            title="Phoenix League"
+                                            alt="Phoenix League icon"
                                             loading="lazy"
                                             class="w-[1.6rem] h-[1.6rem] inline"
                                     /></span>
@@ -4432,11 +5153,11 @@
                         >
                             <span class="px-4"
                                 ><img
-                                    src="https://api.cybersportscore.com/media/logo/_30/t95934.webp"
+                                    src="https://api.cybersportscore.com/media/logo/_30/t95245.webp"
                                     alt="undefined icon"
                                     class="w-[1.6rem] aspect-[3/2] object-contain"
                                     loading="lazy" /></span
-                            ><span class="text-gray-300 text-[12px]">MM</span>
+                            ><span class="text-gray-300 text-[12px]">ME</span>
                         </div>
                         <div class="overflow-y-scroll h-[15.3rem]">
                             <div
@@ -4445,8 +5166,8 @@
                                 <div
                                     class="flex justify-center items-center px-1 w-14"
                                 >
-                                    <div class="text-xs font-bold text-apple">
-                                        2-0
+                                    <div class="text-xs font-bold text-white">
+                                        1-1
                                     </div>
                                 </div>
                                 <div class="flex grow py-1 gap-2 relative">
@@ -4455,12 +5176,141 @@
                                     >
                                         <span class="px-2 w-14"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t96768.webp"
-                                                alt="Multicast icon"
+                                                src="https://api.cybersportscore.com/media/logo/_30/t94177.webp"
+                                                alt="Team Virgo icon"
                                                 class="w-[1.6rem] aspect-[3/2] object-contain"
                                                 loading="lazy" /></span
                                         ><span class="text-gray-300 text-[12px]"
-                                            >multi</span
+                                            >Virgo</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                >
+                                    <div
+                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                    >
+                                        2023-08-14
+                                    </div>
+                                    <span class="px-1"
+                                        ><img
+                                            src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                            title="LNTI"
+                                            alt="LNTI icon"
+                                            loading="lazy"
+                                            class="w-[1.6rem] h-[1.6rem] inline"
+                                    /></span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                            >
+                                <div
+                                    class="flex justify-center items-center px-1 w-14"
+                                >
+                                    <div class="text-xs font-bold text-red-500">
+                                        0-2
+                                    </div>
+                                </div>
+                                <div class="flex grow py-1 gap-2 relative">
+                                    <div
+                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                    >
+                                        <span class="px-2 w-14"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/logo/_30/t6273.webp"
+                                                alt="iG Vitality icon"
+                                                class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                loading="lazy" /></span
+                                        ><span class="text-gray-300 text-[12px]"
+                                            >iG.V</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                >
+                                    <div
+                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                    >
+                                        2023-08-11
+                                    </div>
+                                    <span class="px-1"
+                                        ><img
+                                            src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                            title="LNTI"
+                                            alt="LNTI icon"
+                                            loading="lazy"
+                                            class="w-[1.6rem] h-[1.6rem] inline"
+                                    /></span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                            >
+                                <div
+                                    class="flex justify-center items-center px-1 w-14"
+                                >
+                                    <div class="text-xs font-bold text-red-500">
+                                        0-2
+                                    </div>
+                                </div>
+                                <div class="flex grow py-1 gap-2 relative">
+                                    <div
+                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                    >
+                                        <span class="px-2 w-14"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/logo/_30/t91250.webp"
+                                                alt="Made in Philippines icon"
+                                                class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                loading="lazy" /></span
+                                        ><span class="text-gray-300 text-[12px]"
+                                            >MIPH</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                >
+                                    <div
+                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                    >
+                                        2023-08-10
+                                    </div>
+                                    <span class="px-1"
+                                        ><img
+                                            src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                            title="LNTI"
+                                            alt="LNTI icon"
+                                            loading="lazy"
+                                            class="w-[1.6rem] h-[1.6rem] inline"
+                                    /></span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                            >
+                                <div
+                                    class="flex justify-center items-center px-1 w-14"
+                                >
+                                    <div class="text-xs font-bold text-white">
+                                        1-1
+                                    </div>
+                                </div>
+                                <div class="flex grow py-1 gap-2 relative">
+                                    <div
+                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                    >
+                                        <span class="px-2 w-14"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/logo/_30/t84556.webp"
+                                                alt="Polaris Esports icon"
+                                                class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                loading="lazy" /></span
+                                        ><span class="text-gray-300 text-[12px]"
+                                            >Polaris</span
                                         >
                                     </div>
                                 </div>
@@ -4474,9 +5324,52 @@
                                     </div>
                                     <span class="px-1"
                                         ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                            title="EPL S11"
-                                            alt="EPL S11 icon"
+                                            src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                            title="LNTI"
+                                            alt="LNTI icon"
+                                            loading="lazy"
+                                            class="w-[1.6rem] h-[1.6rem] inline"
+                                    /></span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                            >
+                                <div
+                                    class="flex justify-center items-center px-1 w-14"
+                                >
+                                    <div class="text-xs font-bold text-white">
+                                        1-1
+                                    </div>
+                                </div>
+                                <div class="flex grow py-1 gap-2 relative">
+                                    <div
+                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                    >
+                                        <span class="px-2 w-14"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/logo/_30/t96157.webp"
+                                                alt="Big brain icon"
+                                                class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                loading="lazy" /></span
+                                        ><span class="text-gray-300 text-[12px]"
+                                            >Bb</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                >
+                                    <div
+                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                    >
+                                        2023-08-08
+                                    </div>
+                                    <span class="px-1"
+                                        ><img
+                                            src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                            title="LNTI"
+                                            alt="LNTI icon"
                                             loading="lazy"
                                             class="w-[1.6rem] h-[1.6rem] inline"
                                     /></span>
@@ -4498,98 +5391,12 @@
                                     >
                                         <span class="px-2 w-14"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t96214.webp"
-                                                alt="Ram Squad icon"
+                                                src="https://api.cybersportscore.com/media/logo/_30/t96350.webp"
+                                                alt="Limit icon"
                                                 class="w-[1.6rem] aspect-[3/2] object-contain"
                                                 loading="lazy" /></span
                                         ><span class="text-gray-300 text-[12px]"
-                                            >Rams</span
-                                        >
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                >
-                                    <div
-                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                    >
-                                        2023-08-07
-                                    </div>
-                                    <span class="px-1"
-                                        ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                            title="EPL S11"
-                                            alt="EPL S11 icon"
-                                            loading="lazy"
-                                            class="w-[1.6rem] h-[1.6rem] inline"
-                                    /></span>
-                                </div>
-                            </div>
-                            <div
-                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                            >
-                                <div
-                                    class="flex justify-center items-center px-1 w-14"
-                                >
-                                    <div class="text-xs font-bold text-apple">
-                                        2-1
-                                    </div>
-                                </div>
-                                <div class="flex grow py-1 gap-2 relative">
-                                    <div
-                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                    >
-                                        <span class="px-2 w-14"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t93734.webp"
-                                                alt="Ancient Tribe icon"
-                                                class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                loading="lazy" /></span
-                                        ><span class="text-gray-300 text-[12px]"
-                                            >ATT</span
-                                        >
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                >
-                                    <div
-                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                    >
-                                        2023-08-06
-                                    </div>
-                                    <span class="px-1"
-                                        ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                            title="EPL S11"
-                                            alt="EPL S11 icon"
-                                            loading="lazy"
-                                            class="w-[1.6rem] h-[1.6rem] inline"
-                                    /></span>
-                                </div>
-                            </div>
-                            <div
-                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                            >
-                                <div
-                                    class="flex justify-center items-center px-1 w-14"
-                                >
-                                    <div class="text-xs font-bold text-red-500">
-                                        0-2
-                                    </div>
-                                </div>
-                                <div class="flex grow py-1 gap-2 relative">
-                                    <div
-                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                    >
-                                        <span class="px-2 w-14"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t87999.webp"
-                                                alt="KZ Team icon"
-                                                class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                loading="lazy" /></span
-                                        ><span class="text-gray-300 text-[12px]"
-                                            >KZ</span
+                                            >LMG</span
                                         >
                                     </div>
                                 </div>
@@ -4603,9 +5410,52 @@
                                     </div>
                                     <span class="px-1"
                                         ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                            title="EPL S11"
-                                            alt="EPL S11 icon"
+                                            src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                            title="LNTI"
+                                            alt="LNTI icon"
+                                            loading="lazy"
+                                            class="w-[1.6rem] h-[1.6rem] inline"
+                                    /></span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                            >
+                                <div
+                                    class="flex justify-center items-center px-1 w-14"
+                                >
+                                    <div class="text-xs font-bold text-apple">
+                                        3-1
+                                    </div>
+                                </div>
+                                <div class="flex grow py-1 gap-2 relative">
+                                    <div
+                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                    >
+                                        <span class="px-2 w-14"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/logo/_30/t96167.webp"
+                                                alt="Vision Gaming icon"
+                                                class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                loading="lazy" /></span
+                                        ><span class="text-gray-300 text-[12px]"
+                                            >VSG</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                >
+                                    <div
+                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                    >
+                                        2023-07-30
+                                    </div>
+                                    <span class="px-1"
+                                        ><img
+                                            src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                            title="Phoenix League"
+                                            alt="Phoenix League icon"
                                             loading="lazy"
                                             class="w-[1.6rem] h-[1.6rem] inline"
                                     /></span>
@@ -4627,12 +5477,12 @@
                                     >
                                         <span class="px-2 w-14"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t91595.webp"
-                                                alt="Hot Headed Gaming icon"
+                                                src="https://api.cybersportscore.com/media/logo/_30/t96350.webp"
+                                                alt="Limit icon"
                                                 class="w-[1.6rem] aspect-[3/2] object-contain"
                                                 loading="lazy" /></span
                                         ><span class="text-gray-300 text-[12px]"
-                                            >Hot</span
+                                            >LMG</span
                                         >
                                     </div>
                                 </div>
@@ -4642,56 +5492,13 @@
                                     <div
                                         class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
                                     >
-                                        2023-08-04
+                                        2023-07-27
                                     </div>
                                     <span class="px-1"
                                         ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                            title="EPL S11"
-                                            alt="EPL S11 icon"
-                                            loading="lazy"
-                                            class="w-[1.6rem] h-[1.6rem] inline"
-                                    /></span>
-                                </div>
-                            </div>
-                            <div
-                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                            >
-                                <div
-                                    class="flex justify-center items-center px-1 w-14"
-                                >
-                                    <div class="text-xs font-bold text-red-500">
-                                        1-2
-                                    </div>
-                                </div>
-                                <div class="flex grow py-1 gap-2 relative">
-                                    <div
-                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                    >
-                                        <span class="px-2 w-14"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t95674.webp"
-                                                alt="SIBE Team icon"
-                                                class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                loading="lazy" /></span
-                                        ><span class="text-gray-300 text-[12px]"
-                                            >SIBE</span
-                                        >
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                >
-                                    <div
-                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                    >
-                                        2023-08-03
-                                    </div>
-                                    <span class="px-1"
-                                        ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                            title="EPL S11"
-                                            alt="EPL S11 icon"
+                                            src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                            title="Phoenix League"
+                                            alt="Phoenix League icon"
                                             loading="lazy"
                                             class="w-[1.6rem] h-[1.6rem] inline"
                                     /></span>
@@ -4704,7 +5511,7 @@
                                     class="flex justify-center items-center px-1 w-14"
                                 >
                                     <div class="text-xs font-bold text-apple">
-                                        1-0
+                                        2-1
                                     </div>
                                 </div>
                                 <div class="flex grow py-1 gap-2 relative">
@@ -4713,12 +5520,12 @@
                                     >
                                         <span class="px-2 w-14"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t92307.webp"
-                                                alt="Natus Vincere Junior icon"
+                                                src="https://api.cybersportscore.com/media/logo/_30/t96167.webp"
+                                                alt="Vision Gaming icon"
                                                 class="w-[1.6rem] aspect-[3/2] object-contain"
                                                 loading="lazy" /></span
                                         ><span class="text-gray-300 text-[12px]"
-                                            >NAVIJunior</span
+                                            >VSG</span
                                         >
                                     </div>
                                 </div>
@@ -4728,56 +5535,13 @@
                                     <div
                                         class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
                                     >
-                                        2023-06-28
+                                        2023-07-24
                                     </div>
                                     <span class="px-1"
                                         ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                            title="DPC EEU 2023 Tour 3"
-                                            alt="DPC EEU 2023 Tour 3 icon"
-                                            loading="lazy"
-                                            class="w-[1.6rem] h-[1.6rem] inline"
-                                    /></span>
-                                </div>
-                            </div>
-                            <div
-                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                            >
-                                <div
-                                    class="flex justify-center items-center px-1 w-14"
-                                >
-                                    <div class="text-xs font-bold text-red-500">
-                                        0-1
-                                    </div>
-                                </div>
-                                <div class="flex grow py-1 gap-2 relative">
-                                    <div
-                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                    >
-                                        <span class="px-2 w-14"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t96229.webp"
-                                                alt="StoRm icon"
-                                                class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                loading="lazy" /></span
-                                        ><span class="text-gray-300 text-[12px]"
-                                            >StoRm</span
-                                        >
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                >
-                                    <div
-                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                    >
-                                        2023-06-28
-                                    </div>
-                                    <span class="px-1"
-                                        ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                            title="DPC EEU 2023 Tour 3"
-                                            alt="DPC EEU 2023 Tour 3 icon"
+                                            src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                            title="Phoenix League"
+                                            alt="Phoenix League icon"
                                             loading="lazy"
                                             class="w-[1.6rem] h-[1.6rem] inline"
                                     /></span>
@@ -4799,12 +5563,12 @@
                                     >
                                         <span class="px-2 w-14"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t87718.webp"
-                                                alt="cybercats icon"
+                                                src="https://api.cybersportscore.com/media/logo/_30/t45156.webp"
+                                                alt="Reaper Hashtag icon"
                                                 class="w-[1.6rem] aspect-[3/2] object-contain"
                                                 loading="lazy" /></span
                                         ><span class="text-gray-300 text-[12px]"
-                                            >ccats</span
+                                            >RH</span
                                         >
                                     </div>
                                 </div>
@@ -4814,56 +5578,13 @@
                                     <div
                                         class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
                                     >
-                                        2023-06-27
+                                        2023-07-21
                                     </div>
                                     <span class="px-1"
                                         ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                            title="DPC EEU 2023 Tour 3"
-                                            alt="DPC EEU 2023 Tour 3 icon"
-                                            loading="lazy"
-                                            class="w-[1.6rem] h-[1.6rem] inline"
-                                    /></span>
-                                </div>
-                            </div>
-                            <div
-                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                            >
-                                <div
-                                    class="flex justify-center items-center px-1 w-14"
-                                >
-                                    <div class="text-xs font-bold text-red-500">
-                                        0-2
-                                    </div>
-                                </div>
-                                <div class="flex grow py-1 gap-2 relative">
-                                    <div
-                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                    >
-                                        <span class="px-2 w-14"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t95674.webp"
-                                                alt="SIBE Team icon"
-                                                class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                loading="lazy" /></span
-                                        ><span class="text-gray-300 text-[12px]"
-                                            >SIBE</span
-                                        >
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                >
-                                    <div
-                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                    >
-                                        2023-06-26
-                                    </div>
-                                    <span class="px-1"
-                                        ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                            title="DPC EEU 2023 Tour 3"
-                                            alt="DPC EEU 2023 Tour 3 icon"
+                                            src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                            title="Phoenix League"
+                                            alt="Phoenix League icon"
                                             loading="lazy"
                                             class="w-[1.6rem] h-[1.6rem] inline"
                                     /></span>
@@ -4883,13 +5604,11 @@
                         >
                             <span class="px-4"
                                 ><img
-                                    src="https://api.cybersportscore.com/media/logo/_30/t96229.webp"
+                                    src="https://api.cybersportscore.com/media/logo/_30/t96167.webp"
                                     alt="undefined icon"
                                     class="w-[1.6rem] aspect-[3/2] object-contain"
                                     loading="lazy" /></span
-                            ><span class="text-gray-300 text-[12px]"
-                                >StoRm</span
-                            >
+                            ><span class="text-gray-300 text-[12px]">VSG</span>
                         </div>
                         <div class="overflow-y-scroll h-[15.3rem] relative">
                             <div
@@ -4899,7 +5618,7 @@
                                     class="flex justify-center items-center px-1 w-14"
                                 >
                                     <div class="text-xs font-bold text-red-500">
-                                        1-2
+                                        0-2
                                     </div>
                                 </div>
                                 <div class="flex grow py-1 gap-2 relative">
@@ -4908,12 +5627,55 @@
                                     >
                                         <span class="px-2 w-14"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t87999.webp"
-                                                alt="KZ Team icon"
+                                                src="https://api.cybersportscore.com/media/logo/_30/t94177.webp"
+                                                alt="Team Virgo icon"
                                                 class="w-[1.6rem] aspect-[3/2] object-contain"
                                                 loading="lazy" /></span
                                         ><span class="text-gray-300 text-[12px]"
-                                            >KZ</span
+                                            >Virgo</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                >
+                                    <div
+                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                    >
+                                        2023-08-13
+                                    </div>
+                                    <span class="px-1"
+                                        ><img
+                                            src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                            title="LNTI"
+                                            alt="LNTI icon"
+                                            loading="lazy"
+                                            class="w-[1.6rem] h-[1.6rem] inline"
+                                    /></span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                            >
+                                <div
+                                    class="flex justify-center items-center px-1 w-14"
+                                >
+                                    <div class="text-xs font-bold text-red-500">
+                                        0-2
+                                    </div>
+                                </div>
+                                <div class="flex grow py-1 gap-2 relative">
+                                    <div
+                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                    >
+                                        <span class="px-2 w-14"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/logo/_30/t84556.webp"
+                                                alt="Polaris Esports icon"
+                                                class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                loading="lazy" /></span
+                                        ><span class="text-gray-300 text-[12px]"
+                                            >Polaris</span
                                         >
                                     </div>
                                 </div>
@@ -4927,9 +5689,9 @@
                                     </div>
                                     <span class="px-1"
                                         ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                            title="EPL S11"
-                                            alt="EPL S11 icon"
+                                            src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                            title="LNTI"
+                                            alt="LNTI icon"
                                             loading="lazy"
                                             class="w-[1.6rem] h-[1.6rem] inline"
                                     /></span>
@@ -4941,8 +5703,8 @@
                                 <div
                                     class="flex justify-center items-center px-1 w-14"
                                 >
-                                    <div class="text-xs font-bold text-red-500">
-                                        0-2
+                                    <div class="text-xs font-bold text-apple">
+                                        2-0
                                     </div>
                                 </div>
                                 <div class="flex grow py-1 gap-2 relative">
@@ -4951,12 +5713,12 @@
                                     >
                                         <span class="px-2 w-14"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t96214.webp"
-                                                alt="Ram Squad icon"
+                                                src="https://api.cybersportscore.com/media/logo/_30/t96157.webp"
+                                                alt="Big brain icon"
                                                 class="w-[1.6rem] aspect-[3/2] object-contain"
                                                 loading="lazy" /></span
                                         ><span class="text-gray-300 text-[12px]"
-                                            >Rams</span
+                                            >Bb</span
                                         >
                                     </div>
                                 </div>
@@ -4970,9 +5732,95 @@
                                     </div>
                                     <span class="px-1"
                                         ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                            title="EPL S11"
-                                            alt="EPL S11 icon"
+                                            src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                            title="LNTI"
+                                            alt="LNTI icon"
+                                            loading="lazy"
+                                            class="w-[1.6rem] h-[1.6rem] inline"
+                                    /></span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                            >
+                                <div
+                                    class="flex justify-center items-center px-1 w-14"
+                                >
+                                    <div class="text-xs font-bold text-red-500">
+                                        0-2
+                                    </div>
+                                </div>
+                                <div class="flex grow py-1 gap-2 relative">
+                                    <div
+                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                    >
+                                        <span class="px-2 w-14"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/logo/_30/t45158.webp"
+                                                alt="Army Geniuses icon"
+                                                class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                loading="lazy" /></span
+                                        ><span class="text-gray-300 text-[12px]"
+                                            >AG</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                >
+                                    <div
+                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                    >
+                                        2023-08-10
+                                    </div>
+                                    <span class="px-1"
+                                        ><img
+                                            src="https://api.cybersportscore.com/media/event/_120/e8300.webp"
+                                            title="1XPLORE Asia 2"
+                                            alt="1XPLORE Asia 2 icon"
+                                            loading="lazy"
+                                            class="w-[1.6rem] h-[1.6rem] inline"
+                                    /></span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                            >
+                                <div
+                                    class="flex justify-center items-center px-1 w-14"
+                                >
+                                    <div class="text-xs font-bold text-red-500">
+                                        0-2
+                                    </div>
+                                </div>
+                                <div class="flex grow py-1 gap-2 relative">
+                                    <div
+                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                    >
+                                        <span class="px-2 w-14"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/logo/_30/t96350.webp"
+                                                alt="Limit icon"
+                                                class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                loading="lazy" /></span
+                                        ><span class="text-gray-300 text-[12px]"
+                                            >LMG</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                >
+                                    <div
+                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                    >
+                                        2023-08-10
+                                    </div>
+                                    <span class="px-1"
+                                        ><img
+                                            src="https://api.cybersportscore.com/media/event/_120/e8311.webp"
+                                            title="LNTI"
+                                            alt="LNTI icon"
                                             loading="lazy"
                                             class="w-[1.6rem] h-[1.6rem] inline"
                                     /></span>
@@ -4985,7 +5833,7 @@
                                     class="flex justify-center items-center px-1 w-14"
                                 >
                                     <div class="text-xs font-bold text-apple">
-                                        2-0
+                                        2-1
                                     </div>
                                 </div>
                                 <div class="flex grow py-1 gap-2 relative">
@@ -4994,12 +5842,12 @@
                                     >
                                         <span class="px-2 w-14"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t95674.webp"
-                                                alt="SIBE Team icon"
+                                                src="https://api.cybersportscore.com/media/logo/_30/t96042.webp"
+                                                alt="IHC Esports icon"
                                                 class="w-[1.6rem] aspect-[3/2] object-contain"
                                                 loading="lazy" /></span
                                         ><span class="text-gray-300 text-[12px]"
-                                            >SIBE</span
+                                            >IHC</span
                                         >
                                     </div>
                                 </div>
@@ -5013,224 +5861,9 @@
                                     </div>
                                     <span class="px-1"
                                         ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                            title="EPL S11"
-                                            alt="EPL S11 icon"
-                                            loading="lazy"
-                                            class="w-[1.6rem] h-[1.6rem] inline"
-                                    /></span>
-                                </div>
-                            </div>
-                            <div
-                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                            >
-                                <div
-                                    class="flex justify-center items-center px-1 w-14"
-                                >
-                                    <div class="text-xs font-bold text-red-500">
-                                        1-2
-                                    </div>
-                                </div>
-                                <div class="flex grow py-1 gap-2 relative">
-                                    <div
-                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                    >
-                                        <span class="px-2 w-14"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t93734.webp"
-                                                alt="Ancient Tribe icon"
-                                                class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                loading="lazy" /></span
-                                        ><span class="text-gray-300 text-[12px]"
-                                            >ATT</span
-                                        >
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                >
-                                    <div
-                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                    >
-                                        2023-08-08
-                                    </div>
-                                    <span class="px-1"
-                                        ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                            title="EPL S11"
-                                            alt="EPL S11 icon"
-                                            loading="lazy"
-                                            class="w-[1.6rem] h-[1.6rem] inline"
-                                    /></span>
-                                </div>
-                            </div>
-                            <div
-                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                            >
-                                <div
-                                    class="flex justify-center items-center px-1 w-14"
-                                >
-                                    <div class="text-xs font-bold text-apple">
-                                        2-0
-                                    </div>
-                                </div>
-                                <div class="flex grow py-1 gap-2 relative">
-                                    <div
-                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                    >
-                                        <span class="px-2 w-14"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t91595.webp"
-                                                alt="Hot Headed Gaming icon"
-                                                class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                loading="lazy" /></span
-                                        ><span class="text-gray-300 text-[12px]"
-                                            >Hot</span
-                                        >
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                >
-                                    <div
-                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                    >
-                                        2023-08-07
-                                    </div>
-                                    <span class="px-1"
-                                        ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                            title="EPL S11"
-                                            alt="EPL S11 icon"
-                                            loading="lazy"
-                                            class="w-[1.6rem] h-[1.6rem] inline"
-                                    /></span>
-                                </div>
-                            </div>
-                            <div
-                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                            >
-                                <div
-                                    class="flex justify-center items-center px-1 w-14"
-                                >
-                                    <div class="text-xs font-bold text-apple">
-                                        2-0
-                                    </div>
-                                </div>
-                                <div class="flex grow py-1 gap-2 relative">
-                                    <div
-                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                    >
-                                        <span class="px-2 w-14"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t96768.webp"
-                                                alt="Multicast icon"
-                                                class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                loading="lazy" /></span
-                                        ><span class="text-gray-300 text-[12px]"
-                                            >multi</span
-                                        >
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                >
-                                    <div
-                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                    >
-                                        2023-08-05
-                                    </div>
-                                    <span class="px-1"
-                                        ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e8306.webp"
-                                            title="EPL S11"
-                                            alt="EPL S11 icon"
-                                            loading="lazy"
-                                            class="w-[1.6rem] h-[1.6rem] inline"
-                                    /></span>
-                                </div>
-                            </div>
-                            <div
-                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                            >
-                                <div
-                                    class="flex justify-center items-center px-1 w-14"
-                                >
-                                    <div class="text-xs font-bold text-apple">
-                                        1-0
-                                    </div>
-                                </div>
-                                <div class="flex grow py-1 gap-2 relative">
-                                    <div
-                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                    >
-                                        <span class="px-2 w-14"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t92307.webp"
-                                                alt="Natus Vincere Junior icon"
-                                                class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                loading="lazy" /></span
-                                        ><span class="text-gray-300 text-[12px]"
-                                            >NAVIJunior</span
-                                        >
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                >
-                                    <div
-                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                    >
-                                        2023-06-28
-                                    </div>
-                                    <span class="px-1"
-                                        ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                            title="DPC EEU 2023 Tour 3"
-                                            alt="DPC EEU 2023 Tour 3 icon"
-                                            loading="lazy"
-                                            class="w-[1.6rem] h-[1.6rem] inline"
-                                    /></span>
-                                </div>
-                            </div>
-                            <div
-                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
-                            >
-                                <div
-                                    class="flex justify-center items-center px-1 w-14"
-                                >
-                                    <div class="text-xs font-bold text-apple">
-                                        1-0
-                                    </div>
-                                </div>
-                                <div class="flex grow py-1 gap-2 relative">
-                                    <div
-                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
-                                    >
-                                        <span class="px-2 w-14"
-                                            ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t95934.webp"
-                                                alt="MoneyMakers icon"
-                                                class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                loading="lazy" /></span
-                                        ><span class="text-gray-300 text-[12px]"
-                                            >MM</span
-                                        >
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
-                                >
-                                    <div
-                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
-                                    >
-                                        2023-06-28
-                                    </div>
-                                    <span class="px-1"
-                                        ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                            title="DPC EEU 2023 Tour 3"
-                                            alt="DPC EEU 2023 Tour 3 icon"
+                                            src="https://api.cybersportscore.com/media/event/_120/e8300.webp"
+                                            title="1XPLORE Asia 2"
+                                            alt="1XPLORE Asia 2 icon"
                                             loading="lazy"
                                             class="w-[1.6rem] h-[1.6rem] inline"
                                     /></span>
@@ -5252,12 +5885,12 @@
                                     >
                                         <span class="px-2 w-14"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t16.webp"
-                                                alt="Natus Vincere icon"
+                                                src="https://api.cybersportscore.com/media/logo/_30/t93833.webp"
+                                                alt="Spawn Team icon"
                                                 class="w-[1.6rem] aspect-[3/2] object-contain"
                                                 loading="lazy" /></span
                                         ><span class="text-gray-300 text-[12px]"
-                                            >NAVI</span
+                                            >Spawn</span
                                         >
                                     </div>
                                 </div>
@@ -5267,13 +5900,99 @@
                                     <div
                                         class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
                                     >
-                                        2023-06-26
+                                        2023-08-03
                                     </div>
                                     <span class="px-1"
                                         ><img
-                                            src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                            title="DPC EEU 2023 Tour 3"
-                                            alt="DPC EEU 2023 Tour 3 icon"
+                                            src="https://api.cybersportscore.com/media/event/_120/e8300.webp"
+                                            title="1XPLORE Asia 2"
+                                            alt="1XPLORE Asia 2 icon"
+                                            loading="lazy"
+                                            class="w-[1.6rem] h-[1.6rem] inline"
+                                    /></span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                            >
+                                <div
+                                    class="flex justify-center items-center px-1 w-14"
+                                >
+                                    <div class="text-xs font-bold text-apple">
+                                        2-1
+                                    </div>
+                                </div>
+                                <div class="flex grow py-1 gap-2 relative">
+                                    <div
+                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                    >
+                                        <span class="px-2 w-14"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/logo/_30/t91250.webp"
+                                                alt="Made in Philippines icon"
+                                                class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                loading="lazy" /></span
+                                        ><span class="text-gray-300 text-[12px]"
+                                            >MIPH</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                >
+                                    <div
+                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                    >
+                                        2023-08-02
+                                    </div>
+                                    <span class="px-1"
+                                        ><img
+                                            src="https://api.cybersportscore.com/media/event/_120/e8300.webp"
+                                            title="1XPLORE Asia 2"
+                                            alt="1XPLORE Asia 2 icon"
+                                            loading="lazy"
+                                            class="w-[1.6rem] h-[1.6rem] inline"
+                                    /></span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex border-b border-gray-700 hover:bg-gray-800 py-1"
+                            >
+                                <div
+                                    class="flex justify-center items-center px-1 w-14"
+                                >
+                                    <div class="text-xs font-bold text-apple">
+                                        2-1
+                                    </div>
+                                </div>
+                                <div class="flex grow py-1 gap-2 relative">
+                                    <div
+                                        class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row"
+                                    >
+                                        <span class="px-2 w-14"
+                                            ><img
+                                                src="https://api.cybersportscore.com/media/logo/_30/t91365.webp"
+                                                alt="Myth Avenue Gaming icon"
+                                                class="w-[1.6rem] aspect-[3/2] object-contain"
+                                                loading="lazy" /></span
+                                        ><span class="text-gray-300 text-[12px]"
+                                            >MAG</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center w-[140px] justify-end gap-3 pr-3"
+                                >
+                                    <div
+                                        class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
+                                    >
+                                        2023-07-31
+                                    </div>
+                                    <span class="px-1"
+                                        ><img
+                                            src="https://api.cybersportscore.com/media/event/_120/e8300.webp"
+                                            title="1XPLORE Asia 2"
+                                            alt="1XPLORE Asia 2 icon"
                                             loading="lazy"
                                             class="w-[1.6rem] h-[1.6rem] inline"
                                     /></span>
@@ -5286,7 +6005,7 @@
                                     class="flex justify-center items-center px-1 w-14"
                                 >
                                     <div class="text-xs font-bold text-red-500">
-                                        0-2
+                                        1-3
                                     </div>
                                 </div>
                                 <div class="flex grow py-1 gap-2 relative">
@@ -5295,13 +6014,12 @@
                                     >
                                         <span class="px-2 w-14"
                                             ><img
-                                                src="https://api.cybersportscore.com/media/logo/_30/t94673.webp"
-                                                alt="Team Sexy icon"
+                                                src="https://api.cybersportscore.com/media/logo/_30/t95245.webp"
+                                                alt="Miracle esport icon"
                                                 class="w-[1.6rem] aspect-[3/2] object-contain"
-                                                loading="lazy"
-                                        /></span>
-                                        <span class="text-gray-300 text-[12px]"
-                                            >Sexy</span
+                                                loading="lazy" /></span
+                                        ><span class="text-gray-300 text-[12px]"
+                                            >ME</span
                                         >
                                     </div>
                                 </div>
@@ -5311,57 +6029,336 @@
                                     <div
                                         class="text-white text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1"
                                     >
-                                        2023-06-22
+                                        2023-07-30
                                     </div>
-                                    <span class="px-1">
-                                        <img
-                                            src="https://api.cybersportscore.com/media/event/_120/e7270.webp"
-                                            title="DPC EEU 2023 Tour 3"
-                                            alt="DPC EEU 2023 Tour 3 icon"
+                                    <span class="px-1"
+                                        ><img
+                                            src="https://api.cybersportscore.com/media/event/_120/e8267.webp"
+                                            title="Phoenix League"
+                                            alt="Phoenix League icon"
                                             loading="lazy"
                                             class="w-[1.6rem] h-[1.6rem] inline"
-                                        />
-                                    </span>
+                                    /></span>
                                 </div>
                             </div>
                             <!---->
                             <div
                                 class="flex justify-center h-[41px] bg-gray-700 bg-opacity-40 relative"
-                            ></div>
+                            >
+                                <!---->
+                            </div>
                         </div>
                     </div>
+                    <!---->
                 </div>
             </div>
         </div>
     </div>
+    <!---->
 </div>
 @endsection()
 <style lang="scss">
-    @layer components {
-        .items-col-adv {
-            span + span {
-                @apply ml-0 sm:ml-1 md:ml-2;
-            }
-        }
-        .items-row {
-            @apply relative flex bg-[#192536] h-[3.2rem] bg-gray-700 bg-opacity-20 text-gray-500 items-center;
-            will-change: contents;
-        }
-        .items-col {
-            @apply flex h-full flex-col items-start justify-center border-gray-700 text-gray-500;
-        }
-        .items-col-adv {
-            span + span {
-                @apply ml-1 md:ml-2;
-            }
-        }
 
-        .details-container {
-            @apply relative min-h-[285px] w-full;
-            background:
-                linear-gradient(180deg,
-                    rgba(214, 214, 214, 0.06) 0%,
-                    rgba(217, 217, 217, 0.03) 100%);
+    .items-col-adv span + span {
+        margin-left: 0;
+    }
+
+    @media (min-width: 640px) {
+        .items-col-adv span + span {
+            margin-left: 0.25rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .items-col-adv span + span {
+            margin-left: 0.5rem;
+        }
+    }
+
+    .items-col {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        border-color: gray;
+        color: #555555;
+    }
+    .items-col-adv span + span {
+        margin-left: 0.25rem; /* Добавьте нужные вам значения отступов */
+    }
+
+    @media (min-width: 768px) {
+        .items-col-adv span + span {
+            margin-left: 0.5rem; /* Добавьте нужные вам значения отступов для больших экранов */
         }
     }
 </style>
+<script>
+    import { onMounted, onBeforeUnmount, ref, inject, computed, watch } from 'vue'
+    import { useI18n } from 'vue-i18n'
+    import { useRouter, useRoute } from 'vue-router'
+    import { useStore } from "vuex"
+
+    import { timestampToShortFormat, convertSecondsToMinutes } from "../../helpers/time"
+    import { shortNumber, numberWithCommas } from "../../helpers/common"
+    import { externalTooltipHandler } from "../../helpers/chart"
+
+
+    import { Chart, registerables } from 'chart.js'
+
+    Chart.register(...registerables)
+
+    const { t, d, locale } = useI18n({ useScope: 'global' })
+    const router = useRouter()
+    const route = useRoute()
+    const store = useStore()
+
+    const props = defineProps({
+        gold: Array || null,
+        events: Object || null,
+        gameId: Number,
+        teamsConfig: Object || null,
+        status: Object,
+        num: Number
+    })
+
+    const chartRef = ref()
+
+    let chart
+    let currentGoldLength = 0
+
+    const segmentColor = (ctx) => {
+        if(ctx.p1.parsed.y < 0 || ctx.p0.parsed.y < 0) {
+            return props.teamsConfig.t2.color
+        } else {
+            return props.teamsConfig.t1.color
+        }
+    }
+
+    const labelColor = (item) => {
+        if ( item.parsed.y < 0 ) {
+            return {
+                borderColor: props.teamsConfig.t2.color,
+                backgroundColor: props.teamsConfig.t2.bgColor,
+            }
+        } else {
+            return {
+                borderColor: props.teamsConfig.t1.color,
+                backgroundColor: props.teamsConfig.t1.bgColor,
+            }
+        }
+    }
+
+    const datapoints = (gold, events=null) => {
+        if (props.status.isBreak) {
+            return []
+        } else {
+            //  fix lol gold issue
+            let gold_timeline = gold.map((el)=> el.time).sort((a,b) => a - b)
+            let gold_diffline = gold.map((el)=> el.diff)
+
+            let goldMapping = {}
+            let durations = []
+
+            for (var i = 0; i < gold_timeline.length; i++) {
+                durations.push(gold_timeline[i])
+                goldMapping[gold_timeline[i]] = gold_diffline[i]
+            }
+            let eventsMapping
+
+            if (events) {
+                eventsMapping = events?.reduce(function (r, a) {
+                    r[a.duration] = r[a.duration] || []
+                    r[a.duration].push(a)
+                    return r
+                }, Object.create(null))
+
+                events?.forEach((el)=> durations.push(el.duration))
+
+                durations = Array.from(new Set(durations)).sort((a,b) => a - b)
+            }
+
+            let result = []
+            durations.forEach((time, index) => {
+                let nextTime = durations[index+1]
+                let currentGoldAmount = goldMapping[time] || gold?.findLast(el => el.time <= time)?.diff
+
+                result.push({
+                    x: '' + (time || 0),
+                    y: currentGoldAmount,
+                    game_events: eventsMapping ? eventsMapping[time] : null,
+                    game_id: props.gameId,
+                    axis_crossing: false
+                })
+
+                // insert axis crossing keypoint
+                if (nextTime) {
+                    let nextGoldAmount = goldMapping[nextTime] || gold?.findLast(el => el.time <= nextTime)?.diff
+                    if (nextGoldAmount != 0 && currentGoldAmount != 0 && Math.sign(nextGoldAmount) != Math.sign(currentGoldAmount)) {
+
+                        let x = time - (nextTime-time)*currentGoldAmount/(nextGoldAmount-currentGoldAmount)
+
+                        result.push({
+                            x: '' + (x || 0),
+                            y: 0,
+                            game_events: null,
+                            axis_crossing: true
+                        })
+                    }
+                }
+            })
+
+            return result
+
+        }
+    }
+
+    const data = {
+
+        datasets: [
+            {
+                data: datapoints(props.gold, props.events) || [],
+                // pointRadius: 0,
+                // pointHoverRadius: 5,
+                fill: {
+                    target: 'origin',
+                    above: props.teamsConfig.t1.bgColor,
+                    below: props.teamsConfig.t2.bgColor
+                },
+                borderColor: 'rgb(140, 149, 164)',
+                backgroundColor: 'rgba(140, 149, 164, 0.2)',
+                cubicInterpolationMode: 'monotone',
+                // tension: 0.4,
+                spanGaps: false,
+                segment: {
+                    borderColor: ctx => segmentColor(ctx),
+                }
+            }
+        ]
+    }
+
+    const label = (data) => {
+        return data.raw
+    }
+
+    const title = (data) => {
+        return data.raw
+    }
+
+
+    const options = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: false
+            },
+            tooltip: {
+                enabled: false,
+                displayColors: false,
+                // position: 'nearest',
+                position: 'average',
+                external: externalTooltipHandler,
+                callbacks: {
+                    labelColor: labelColor,
+                    label: label,
+                    title: title
+                }
+            }
+        },
+        interaction: {
+            intersect: false,
+            mode: 'x',
+            // mode: 'dataset',
+            includeInvisible: false
+        },
+        elements: {
+            point: {
+                radius: function(ctx) {
+                    if (ctx?.raw?.game_events) {
+                        let defaultSize = 4
+                        let fightSum = defaultSize
+                        ctx.raw.game_events.forEach((el) => el.type == 'fights' ? fightSum += el.fights.length : 0)
+                        return fightSum
+                    } else if (ctx?.raw?.axis_crossing) {
+                        return 0
+                    } else {
+                        return 0
+                    }
+                },
+                hitRadius: function(ctx) {
+                    if (ctx?.raw?.game_events) {
+                        return 2
+                    } else {
+                        return 0
+                    }
+                }
+            }
+        },
+        scales: {
+            x: {
+                display: true,
+                grid: {
+                    tickColor: "#374151",
+                },
+                ticks: {
+                    color: '#b6bac6',
+                    beginAtZero: true,
+                    callback: function(val, index) {
+                        return convertSecondsToMinutes(this.getLabelForValue(val))
+                    },
+                }
+            },
+            y: {
+                display: true,
+                grid: {
+                    tickColor: "#374151",
+                    color: ctx => !props.status.isBreak && props.gold && props.gold.length > 0 && ctx.tick.value == 0 ? "#374151" : "#1f2a38",
+                    lineWidth: ctx => !props.status.isBreak && props.gold && props.gold.length > 0 && ctx.tick.value == 0 ? 2 : 1,
+                },
+                ticks: {
+                    color: '#b6bac6',
+                    beginAtZero: true,
+                    callback: value => shortNumber(value)
+                },
+                suggestedMin: -100,
+                suggestedMax: 100
+            }
+        }
+    }
+
+    onMounted(async () => {
+        await router.isReady()
+        currentGoldLength = props.gold.length
+        chart = new Chart(
+            chartRef.value,
+            {
+                type: 'line',
+                data: data,
+                options: options
+            })
+    })
+
+    watch(() => props.gold, (newGold) => {
+        if (props.status.isBreak) {
+            chart.data.datasets[0].data = null
+            chart.update()
+            return
+        }
+        if (!chart?.data?.datasets) { return }
+        if (newGold.length <= currentGoldLength) { return }
+        chart.data.datasets[0].data = datapoints(newGold, props.events)
+        currentGoldLength = newGold.length
+        chart.update()
+    })
+
+    watch(() => props.status.isBreak, () => {
+        if (props.status.isBreak) {
+            chart.data.datasets[0].data = null
+            chart.update()
+            return
+        }
+    })
+
+</script>
