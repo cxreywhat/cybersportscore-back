@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\MatchesRequest;
 use App\Http\Resources\MatchList\MatchListResource;
+use App\Http\Resources\NewsListResource;
 use App\Services\MatchService;
-use Illuminate\Contracts\Support\Responsable;
+use App\Services\NewsService;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -16,14 +18,23 @@ class HomeController extends Controller
         $this->matchService = $matchService;
     }
 
-    public function index(MatchesRequest $request)
+    public function index(Request $request, MatchesRequest $matchRequest, NewsService $newsService)
     {
         $data = MatchListResource::collection(
-            $this->matchService->getList($request->validated())
-        ) ;
+            $this->matchService->getList($matchRequest->validated())->items()
+        );
+
+        $news = NewsListResource::collection(
+            $newsService->getNewsList([
+                'game_id' => $request->get('game_id'),
+                'lang' => $request->get('lang'),
+                'per_page' => $request->get('perPage'),
+            ])
+        );
 
         return view('home', [
-            'items' => $data
+            'items' => $data,
+            'news' => $news
         ]);
     }
 }

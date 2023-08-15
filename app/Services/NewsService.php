@@ -27,14 +27,14 @@ class NewsService
 
     public function getNewsItem(int $id, bool $preview = false): EsnNews
     {
-        dd($this->getBasicQuery()
+        return $this->getBasicQuery()
             ->select(['id', 'title', 'blocks', 'info', 'pic', 'pic_in', 'lang', 'data'])
             ->where('esn_news.id', $id)
             ->when(!$preview, function ($query) {
                 return $query->where('is_act', '1')
                     ->where('esn_news.date', '<=', Carbon::now());
             })
-            ->firstOrFail());
+            ->firstOrFail();
     }
 
     public function getNewsList(array $filter = []): Paginator

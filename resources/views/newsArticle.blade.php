@@ -189,6 +189,7 @@
             top: -19px;
             left: -18px;
 
+
             img {
                 width: 100%;
                 max-width: 100%;

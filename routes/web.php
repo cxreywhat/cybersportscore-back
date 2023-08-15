@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\SeoController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,14 +28,10 @@ Route::get('go', [BannerController::class, 'go']);
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/news', function () {
-    return view('newsList');
-});
+Route::get('/news', [ArticleController::class, 'index']);
 
 Route::group(['prefix' => 'news'], function () {
-    Route::get('/translit', function () {
-        return view('newsArticle');
-    });
+    Route::get('/{block}', [ArticleController::class, 'show']);
 });
 
 Route::get('/match', function () {
