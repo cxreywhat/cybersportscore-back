@@ -3809,14 +3809,8 @@
                                         ME
                                     </p>
                                 </div>
-                                <div
-                                    class="flex justify-center items-center border-x border-gray-700 w-14 md:h-10"
-                                >
-                                    <div
-                                        class="font-semibold flex text-[10px] rounded-full justify-center items-center border-gray-600 border-1 border w-[28px] h-[28px] border-apple text-apple"
-                                    >
-                                        VS
-                                    </div>
+                                <div class="flex justify-center items-center border-x border-gray-700 w-14 md:h-10">
+                                    <div class="font-semibold flex text-[10px] rounded-full justify-center items-center border-gray-600 border-1 border w-[28px] h-[28px] border-apple text-apple">VS</div>
                                 </div>
                                 <div class="flex w-28 items-center">
                                     <span class="px-4"

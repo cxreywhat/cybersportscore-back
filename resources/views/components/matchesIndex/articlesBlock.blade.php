@@ -7,8 +7,8 @@
         </h3>
     </div>
     <div class="p-4 relative min-h-[200px]">
-        @foreach($news->take(5) as $item)
-            <a href="/ru/news/49958-luchshie-kerri-patcha-7-34-dlya-dota-2-ot-watson" class="transition text-xs font-normal
+        @foreach($news->take($count) as $item)
+            <a href="/news/{{$item->id}}-{{$item->eng}}" class="transition text-xs font-normal
             leading-1 inline-block pb-2 text-gray-300">
                 <span class="text" lang="ru">
                     {{$item->title}}
