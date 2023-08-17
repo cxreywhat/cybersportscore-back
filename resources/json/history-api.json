@@ -1,0 +1,647 @@
+{
+    "server": "http://127.0.0.1:8000/api/matches/522426/history",
+    "data": {
+        "t1": {
+            "id": 87999,
+            "short_title": "KZ",
+            "has_icon": true,
+            "matches": [
+                {
+                    "match_id": 522409,
+                    "event": {
+                        "id": 8274,
+                        "title": "EPL S11",
+                        "has_icon": false
+                    },
+                    "date": "2023-08-14 12:21:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 87999,
+                            "score": 2,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 96214,
+                            "score": 1,
+                            "title": "Ram Squad",
+                            "short_title": "Rams",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 522406,
+                    "event": {
+                        "id": 8274,
+                        "title": "EPL S11",
+                        "has_icon": false
+                    },
+                    "date": "2023-08-12 12:16:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 87999,
+                            "score": 2,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 96229,
+                            "score": 1,
+                            "title": "StoRm",
+                            "short_title": "StoRm",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 522403,
+                    "event": {
+                        "id": 8274,
+                        "title": "EPL S11",
+                        "has_icon": false
+                    },
+                    "date": "2023-08-11 12:02:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 87999,
+                            "score": 2,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 95674,
+                            "score": 0,
+                            "title": "SIBE Team",
+                            "short_title": "SIBE",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519685,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-07-03 18:54:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 87999,
+                            "score": 0,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 96428,
+                            "score": 2,
+                            "title": "Luna Galaxy",
+                            "short_title": "LG",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519683,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-07-01 18:34:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 87999,
+                            "score": 2,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 91595,
+                            "score": 0,
+                            "title": "Hot Headed Gaming",
+                            "short_title": "Hot",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519679,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-07-01 15:00:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 87999,
+                            "score": 1,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 94673,
+                            "score": 2,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519717,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-06-28 15:01:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 87999,
+                            "score": 2,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 89731,
+                            "score": 0,
+                            "title": "Gen of Miracle",
+                            "short_title": "GoM",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519706,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-06-28 11:59:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 87999,
+                            "score": 0,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 96214,
+                            "score": 2,
+                            "title": "Ram Squad",
+                            "short_title": "Rams",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519715,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-06-27 12:02:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 87999,
+                            "score": 1,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 93734,
+                            "score": 2,
+                            "title": "Ancient Tribe",
+                            "short_title": "ATT",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519710,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-06-25 15:00:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 87999,
+                            "score": 2,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 91595,
+                            "score": 0,
+                            "title": "Hot Headed Gaming",
+                            "short_title": "Hot",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519692,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-06-25 09:01:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 87999,
+                            "score": 0,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 94673,
+                            "score": 2,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "t2": {
+            "id": 94673,
+            "short_title": "Sexy",
+            "has_icon": true,
+            "matches": [
+                {
+                    "match_id": 522416,
+                    "event": {
+                        "id": 8274,
+                        "title": "EPL S11",
+                        "has_icon": false
+                    },
+                    "date": "2023-08-15 12:07:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 94673,
+                            "score": 0,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 96229,
+                            "score": 2,
+                            "title": "StoRm",
+                            "short_title": "StoRm",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519689,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-07-05 15:06:00",
+                    "bo": 5,
+                    "teams": [
+                        {
+                            "id": 94673,
+                            "score": 3,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 96245,
+                            "score": 2,
+                            "title": "ex-Monaspa",
+                            "short_title": "ex-Monaspa",
+                            "has_icon": false
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519682,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-07-03 15:09:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 94673,
+                            "score": 2,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 93734,
+                            "score": 1,
+                            "title": "Ancient Tribe",
+                            "short_title": "ATT",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519681,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-07-02 12:03:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 94673,
+                            "score": 2,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 96245,
+                            "score": 0,
+                            "title": "ex-Monaspa",
+                            "short_title": "ex-Monaspa",
+                            "has_icon": false
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519679,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-07-01 15:00:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 94673,
+                            "score": 2,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 87999,
+                            "score": 1,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519716,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-06-27 15:24:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 94673,
+                            "score": 1,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 91595,
+                            "score": 2,
+                            "title": "Hot Headed Gaming",
+                            "short_title": "Hot",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519702,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-06-27 04:00:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 94673,
+                            "score": 2,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 96216,
+                            "score": 0,
+                            "title": "TroubleMakersRe",
+                            "short_title": "TMR",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519711,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-06-26 12:04:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 94673,
+                            "score": 0,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 93734,
+                            "score": 2,
+                            "title": "Ancient Tribe",
+                            "short_title": "ATT",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519709,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-06-25 12:05:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 94673,
+                            "score": 2,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 96214,
+                            "score": 1,
+                            "title": "Ram Squad",
+                            "short_title": "Rams",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519692,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-06-25 09:01:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 94673,
+                            "score": 2,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 87999,
+                            "score": 0,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 513210,
+                    "event": {
+                        "id": 7270,
+                        "title": "DPC EEU 2023 Tour 3",
+                        "has_icon": true
+                    },
+                    "date": "2023-06-24 14:00:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 94673,
+                            "score": 2,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 92307,
+                            "score": 0,
+                            "title": "Natus Vincere Junior",
+                            "short_title": "NAVIJunior",
+                            "has_icon": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "common": {
+            "matches": [
+                {
+                    "match_id": 519679,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-07-01 15:00:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 94673,
+                            "score": 2,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 87999,
+                            "score": 1,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        }
+                    ]
+                },
+                {
+                    "match_id": 519692,
+                    "event": {
+                        "id": 8235,
+                        "title": "EPL S10",
+                        "has_icon": true
+                    },
+                    "date": "2023-06-25 09:01:00",
+                    "bo": 3,
+                    "teams": [
+                        {
+                            "id": 87999,
+                            "score": 0,
+                            "title": "KZ Team",
+                            "short_title": "KZ",
+                            "has_icon": true
+                        },
+                        {
+                            "id": 94673,
+                            "score": 2,
+                            "title": "Team Sexy",
+                            "short_title": "Sexy",
+                            "has_icon": true
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

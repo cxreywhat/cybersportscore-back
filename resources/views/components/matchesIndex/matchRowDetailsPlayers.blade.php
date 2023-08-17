@@ -1,0 +1,54 @@
+<div class="w-full flex flex-col bg-[#212D3D]">
+    <div class="flex w-full justify-between text-sm px-3 py-2 min-h-[42px] font-semibold border-b border-gray-700 rounded-t-md border-t border-l border-r cursor-default">
+        <div class="flex text-xs items-center">
+            <img src="https://api.cybersportscore.com/media/logo/_30/t95245.webp" alt="MIRACLE ESPORT icon" class="w-[1.6rem] aspect-[3/2] object-contain mr-2" loading="lazy">
+            <span class="green-side" title="MIRACLE ESPORT">ME</span>
+        </div>
+        <div class="flex text-xs items-center justify-end">
+            <span class="red-side" title="Vision">VSG</span>
+            <img src="https://api.cybersportscore.com/media/logo/_30/t96167.webp" alt="Vision icon" class="w-[1.6rem] aspect-[3/2] object-contain ml-2" loading="lazy">
+        </div>
+    </div>
+    <div class="flex flex-col relative bg-[#1F2937]">
+        <div class="flex w-full justify-between text-sm py-1 border-gray-700 border-b last:rounded-b-md border-l border-r min-h-[42px] relative">
+            <div class="px-2 flex w-full items-center grow max-w-[50%] relative max-h-8">
+                <span title="Ценность героя 8,555" class="left-2 origin-left hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding" style="transform: scaleX(0.76052)"></span><!----><!----><img class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 mr-2" src="https://api.cybersportscore.com/media/game/hero/582/_59/77.png" alt="Lycan" title="Lycan" loading="lazy"><span class="text-gray-300 text-xs cursor-default leading-normal md:truncate" title="M.C">M.C</span><span title="12 Level" class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded">12</span>
+            </div>
+            <div class="justify-end px-2 flex w-full items-center grow max-w-[50%] relative max-h-8">
+                <span title="Ценность героя 10,124" class="right-2 origin-right hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding" style="transform: scaleX(0.9)"></span><span title="14 Level" class="mr-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded">14</span><span class="text-gray-300 text-xs cursor-default text-right md:truncate" title="Mercury-">Mercury-</span><img class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 ml-2" src="https://api.cybersportscore.com/media/game/hero/582/_59/15.png" alt="Razor" title="Razor" loading="lazy"><!----><!---->
+            </div>
+        </div>
+        <div class="flex w-full justify-between text-sm py-1 border-gray-700 border-b last:rounded-b-md border-l border-r min-h-[42px] relative">
+            <div class="px-2 flex w-full items-center grow max-w-[50%] relative max-h-8">
+                <span title="Ценность героя 8,180" class="left-2 origin-left hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding" style="transform: scaleX(0.727183)"></span><!----><!----><img class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 mr-2" src="https://api.cybersportscore.com/media/game/hero/582/_59/72.png" alt="Gyrocopter" title="Gyrocopter" loading="lazy"><span class="text-gray-300 text-xs cursor-default leading-normal md:truncate" title="woro">woro</span><span title="12 Level" class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded">12</span>
+            </div>
+            <div class="justify-end px-2 flex w-full items-center grow max-w-[50%] relative max-h-8">
+                <span title="Ценность героя 10,082" class="right-2 origin-right hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding" style="transform: scaleX(0.896266)"></span><span title="14 Level" class="mr-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded">14</span><span class="text-gray-300 text-xs cursor-default text-right md:truncate" title="Pos 1">Pos 1</span><img class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 ml-2" src="https://api.cybersportscore.com/media/game/hero/582/_59/48.png" alt="Luna" title="Luna" loading="lazy"><!----><!---->
+            </div>
+        </div>
+        <div class="flex w-full justify-between text-sm py-1 border-gray-700 border-b last:rounded-b-md border-l border-r min-h-[42px] relative">
+            <div class="px-2 flex w-full items-center grow max-w-[50%] relative max-h-8">
+                <span title="Ценность героя 6,625" class="left-2 origin-left hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding" style="transform: scaleX(0.588947)"></span><!----><!----><img class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 mr-2" src="https://api.cybersportscore.com/media/game/hero/582/_59/100.png" alt="Tusk" title="Tusk" loading="lazy"><span class="text-gray-300 text-xs cursor-default leading-normal md:truncate" title="Backspace">Backspace</span><span title="11 Level" class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded">11</span>
+            </div>
+            <div class="justify-end px-2 flex w-full items-center grow max-w-[50%] relative max-h-8">
+                <span title="Ценность героя 8,995" class="right-2 origin-right hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding" style="transform: scaleX(0.799635)"></span><span title="13 Level" class="mr-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded">13</span><span class="text-gray-300 text-xs cursor-default text-right md:truncate" title="Candyloon">Candyloon</span><img class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 ml-2" src="https://api.cybersportscore.com/media/game/hero/582/_59/129.png" alt="Mars" title="Mars" loading="lazy"><!----><!---->
+            </div>
+        </div>
+        <div class="flex w-full justify-between text-sm py-1 border-gray-700 border-b last:rounded-b-md border-l border-r min-h-[42px] relative">
+            <div class="px-2 flex w-full items-center grow max-w-[50%] relative max-h-8">
+                <span title="Ценность героя 4,570" class="left-2 origin-left hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding" style="transform: scaleX(0.406262)"></span><!----><!----><img class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 mr-2" src="https://api.cybersportscore.com/media/game/hero/582/_59/83.png" alt="Treant Protector" title="Treant Protector" loading="lazy"><span class="text-gray-300 text-xs cursor-default leading-normal md:truncate" title="Efking">Efking</span><span title="10 Level" class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded">10</span>
+            </div>
+            <div class="justify-end px-2 flex w-full items-center grow max-w-[50%] relative max-h-8">
+                <span title="Ценность героя 4,082" class="right-2 origin-right hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding" style="transform: scaleX(0.36288)"></span><span title="8 Level" class="mr-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded">8</span><span class="text-gray-300 text-xs cursor-default text-right md:truncate" title="....">....</span><img class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 ml-2" src="https://api.cybersportscore.com/media/game/hero/582/_59/101.png" alt="Skywrath Mage" title="Skywrath Mage" loading="lazy"><!----><!---->
+            </div>
+        </div>
+        <div class="flex w-full justify-between text-sm py-1 border-gray-700 border-b last:rounded-b-md border-l border-r min-h-[42px] relative">
+            <div class="px-2 flex w-full items-center grow max-w-[50%] relative max-h-8">
+                <span title="Ценность героя 3,795" class="left-2 origin-left hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding" style="transform: scaleX(0.337367)"></span><!----><!----><img class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 mr-2" src="https://api.cybersportscore.com/media/game/hero/582/_59/65.png" alt="Batrider" title="Batrider" loading="lazy"><span class="text-gray-300 text-xs cursor-default leading-normal md:truncate" title="123456">123456</span><span title="8 Level" class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded">8</span>
+            </div>
+            <div class="justify-end px-2 flex w-full items-center grow max-w-[50%] relative max-h-8">
+                <span title="Ценность героя 3,417" class="right-2 origin-right hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding" style="transform: scaleX(0.303763)"></span><span title="10 Level" class="mr-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded">10</span><span class="text-gray-300 text-xs cursor-default text-right md:truncate" title="SGOD">SGOD</span><img class="max-w-7 max-h-6 hover:max-h-10 hover:max-w-10 ml-2" src="https://api.cybersportscore.com/media/game/hero/582/_59/88.png" alt="Nyx Assassin" title="Nyx Assassin" loading="lazy"><!----><!---->
+            </div>
+        </div>
+    </div>
+</div>

@@ -2,12 +2,11 @@
     $info = json_decode($game->info);
     $gameDate = new DateTime($game->date, new DateTimeZone('UTC'));
     $matchIsLive = $gameDate->getTimestamp() < time();
-    $numberGame = $info->map->num;
+    $numberGame = $info->map->num - 1;
 ?>
 
-
    <div class="items-row hover:bg-gray-800 border-l-[1px] {{ $matchIsLive ? 'border-red-500 border-l-[4px]' : 'border-gray-700'}}">
-        <a href="/match" class="border-transparent flex flex-row w-full h-full items-center">
+        <a href="/{{$game->id}}" class="border-transparent flex flex-row w-full h-full items-center">
             <div class="flex items-col pl-4 w-[45px]">
                 <img loading="lazy" class="opacity-50 w-5 h-5" alt="dota-2 icon"
                      src={{asset("media/icons/games/".$info->t->g."-bw.webp")}}>
@@ -65,7 +64,7 @@
                         </div>
                     </div>
                     <div class="flex flex-row items-center text-base justify-center italic" >
-                        <span class="leading-normal text-apple text-xs sm:text-sm text-right font-bold pr-1" >{{$info->map->games->{$numberGame}->t1->s }}</span>
+                        <span class="leading-normal text-apple text-xs sm:text-sm text-right font-bold pr-1" >{{ $info->map->games->{$numberGame}->t1->s }}</span>
                         :
                         <span class="leading-normal text-apple text-xs sm:text-sm text-center font-bold pl-1" >{{$info->map->games->{$numberGame}->t2->s}}</span>
                     </div>

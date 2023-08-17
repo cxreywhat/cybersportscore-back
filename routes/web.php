@@ -4,6 +4,7 @@
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\MatchShowController;
 use App\Http\Controllers\SeoController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,14 +27,13 @@ Route::get('go', [BannerController::class, 'go']);
 //    ]);
 //});
 
-Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/news', [ArticleController::class, 'index']);
-
-Route::group(['prefix' => 'news'], function () {
-    Route::get('/{block}', [ArticleController::class, 'show']);
+Route::group(['prefix' => '/'], function () {
+    Route::get('/', [HomeController::class, 'index']);
+    Route::get('/{id}', [MatchShowController::class, 'index']);
 });
 
-Route::get('/match', function () {
-    return view('match');
+Route::group(['prefix' => 'news'], function () {
+    Route::get('/', [ArticleController::class, 'index']);
+    Route::get('/{block}', [ArticleController::class, 'show']);
 });

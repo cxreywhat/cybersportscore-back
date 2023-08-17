@@ -1,0 +1,1910 @@
+{
+    "server_adress": "http://127.0.0.1:8000/api/beta/matches/522426/",
+    "id": 522426,
+    "game_id": 582,
+    "tid": 8274,
+    "tier": "1",
+    "stage": 32781,
+    "round": 103722,
+    "rtab": 0,
+    "is_current": "1",
+    "t1": 87999,
+    "t2": 94673,
+    "link": "/dota-2/european-pro-league-season-11/playoff/kz-vs-team-sexy-522426",
+    "title": "EPL S11/t/1//1 : 0/0/87999/38/KZ/94673/14/Sexy//",
+    "iv": "0",
+    "lt": "142/1/2/KZ TEAM/Team Sexy/2047/63/2047/63",
+    "date": "2023-08-17 12:11:00",
+    "tmpl": "1",
+    "last_modified": null,
+    "current_game": null,
+    "is_live": true,
+    "match": {
+        "id": 522426,
+        "t1s": 1,
+        "t2s": 0,
+        "data": 0,
+        "t1p": 0,
+        "t2p": 0,
+        "bo": 3,
+        "info": {
+            "t": {
+                "e": "european-pro-league-season-11",
+                "t": "EPL S11",
+                "l": null,
+                "i": "",
+                "p": 0,
+                "g": "dota-2",
+                "prize": 0,
+                "u": "/dota-2/european-pro-league-season-11/playoff"
+            },
+            "s": {
+                "e": "playoff",
+                "t": "Playoff"
+            },
+            "r": {
+                "t": "Lower Bracket, Round 3"
+            },
+            "t1": {
+                "e": "kz",
+                "t": "KZ",
+                "n": "KZ Team",
+                "i": 38,
+                "l": "t87999.png?41",
+                "place": 0,
+                "c": "Turkey",
+                "win": "0",
+                "players": [
+                    {
+                        "id": 2731,
+                        "eng": "ssaspartan",
+                        "cid": 41,
+                        "nick": "SsaSpartan",
+                        "logo": "p2731.png?36",
+                        "role": 1,
+                        "standin": "1",
+                        "stat": {
+                            "form": 70,
+                            "str": 0,
+                            "stat": 35,
+                            "hero": 60,
+                            "lane": 88,
+                            "gold": 19,
+                            "fights": 49,
+                            "exp": 68
+                        },
+                        "str": 226
+                    },
+                    {
+                        "id": 2732,
+                        "eng": "desire",
+                        "cid": 41,
+                        "nick": "dEsire.UNLOCK",
+                        "logo": "p2732.png?28",
+                        "role": 2,
+                        "standin": "1",
+                        "stat": {
+                            "form": 72,
+                            "str": 0,
+                            "stat": 40,
+                            "hero": 46,
+                            "lane": 88,
+                            "gold": 37,
+                            "fights": 51,
+                            "exp": 45
+                        },
+                        "str": 271
+                    },
+                    {
+                        "id": 3433,
+                        "eng": "w1sh",
+                        "cid": 74,
+                        "nick": "W1sh-",
+                        "logo": "p3433.png?39",
+                        "role": 3,
+                        "standin": "1",
+                        "stat": {
+                            "form": 76,
+                            "str": 0,
+                            "stat": 50,
+                            "hero": 82,
+                            "lane": 76,
+                            "gold": 96,
+                            "fights": 62,
+                            "exp": 42
+                        },
+                        "str": 276
+                    },
+                    {
+                        "id": 3441,
+                        "eng": "skylark",
+                        "cid": 41,
+                        "nick": "Eleven",
+                        "logo": "p3441.png?17",
+                        "role": 4,
+                        "standin": "1",
+                        "stat": {
+                            "form": 75,
+                            "str": 0,
+                            "stat": 51,
+                            "hero": 58,
+                            "lane": 72,
+                            "gold": 93,
+                            "fights": 50,
+                            "exp": 71
+                        },
+                        "str": 265
+                    },
+                    {
+                        "id": 99005,
+                        "eng": "nandedota",
+                        "cid": 74,
+                        "nick": "Nande",
+                        "logo": "p99005.png?42",
+                        "role": 5,
+                        "standin": "1",
+                        "stat": {
+                            "form": 87,
+                            "str": 0,
+                            "stat": 72,
+                            "hero": 78,
+                            "lane": 81,
+                            "gold": 87,
+                            "fights": 64,
+                            "exp": 31
+                        },
+                        "str": 281
+                    }
+                ],
+                "stat": {
+                    "1": 13,
+                    "2": 13,
+                    "3": 14,
+                    "4": 10,
+                    "form": 89,
+                    "str": 0,
+                    "stab": 91,
+                    "lane": 0
+                },
+                "real": {
+                    "1": 75,
+                    "2": 72,
+                    "3": 73,
+                    "4": 21,
+                    "str": 0,
+                    "stab": 91,
+                    "form": 103,
+                    "lane": 0
+                },
+                "m": [
+                    {
+                        "id": 519679,
+                        "w": "-1",
+                        "d": "2023-07-01 15:00:00",
+                        "t": "Sexy [2:1] KZ"
+                    },
+                    {
+                        "id": 519683,
+                        "w": "1",
+                        "d": "2023-07-01 18:34:00",
+                        "t": "KZ [2:0] Hot"
+                    },
+                    {
+                        "id": 519685,
+                        "w": "-1",
+                        "d": "2023-07-03 18:54:00",
+                        "t": "LG [2:0] KZ"
+                    },
+                    {
+                        "id": 522403,
+                        "w": "1",
+                        "d": "2023-08-11 12:02:00",
+                        "t": "SIBE [0:2] KZ"
+                    },
+                    {
+                        "id": 522406,
+                        "w": "1",
+                        "d": "2023-08-12 12:16:00",
+                        "t": "StoRm [1:2] KZ"
+                    },
+                    {
+                        "id": 522409,
+                        "w": "1",
+                        "d": "2023-08-14 12:21:00",
+                        "t": "KZ [2:1] Rams"
+                    }
+                ],
+                "diff": 2
+            },
+            "t2": {
+                "e": "team-sexy",
+                "t": "Sexy",
+                "n": "Team Sexy",
+                "i": 14,
+                "l": "t94673.png?76",
+                "place": 0,
+                "c": "Ukraine",
+                "win": "0",
+                "players": [
+                    {
+                        "id": 45529,
+                        "eng": "7jesu",
+                        "cid": 14,
+                        "nick": "7jesu",
+                        "logo": "p45529.png?2",
+                        "role": 1,
+                        "stat": {
+                            "form": 70,
+                            "str": 0,
+                            "stat": 61,
+                            "hero": 78,
+                            "lane": 74,
+                            "gold": 86,
+                            "fights": 62,
+                            "exp": 31
+                        },
+                        "str": 103
+                    },
+                    {
+                        "id": 39245,
+                        "eng": "mirage-kaz",
+                        "cid": 31,
+                        "nick": "Mirage",
+                        "logo": "p39245.png?84",
+                        "role": 2,
+                        "stat": {
+                            "form": 82,
+                            "str": 0,
+                            "stat": 57,
+                            "hero": 55,
+                            "lane": 70,
+                            "gold": 86,
+                            "fights": 76,
+                            "exp": 26
+                        },
+                        "str": 153
+                    },
+                    {
+                        "id": 19300,
+                        "eng": "nefrit",
+                        "cid": 14,
+                        "nick": "nefrit",
+                        "logo": "p19300.png?18",
+                        "role": 3,
+                        "stat": {
+                            "form": 79,
+                            "str": 0,
+                            "stat": 64,
+                            "hero": 53,
+                            "lane": 75,
+                            "gold": 89,
+                            "fights": 68,
+                            "exp": 47
+                        },
+                        "str": 185
+                    },
+                    {
+                        "id": 55896,
+                        "eng": "hduo",
+                        "cid": 14,
+                        "nick": "Hduo",
+                        "logo": "p55896.png?56",
+                        "role": 4,
+                        "stat": {
+                            "form": 77,
+                            "str": 0,
+                            "stat": 42,
+                            "hero": 64,
+                            "lane": 86,
+                            "gold": 31,
+                            "fights": 66,
+                            "exp": 30
+                        },
+                        "str": 170
+                    },
+                    {
+                        "id": 125305,
+                        "eng": "9class",
+                        "cid": 3,
+                        "nick": "9Class",
+                        "logo": "p125305.png?66",
+                        "role": 5,
+                        "stat": {
+                            "form": 83,
+                            "str": 0,
+                            "stat": 50,
+                            "hero": 46,
+                            "lane": 86,
+                            "gold": 33,
+                            "fights": 65,
+                            "exp": 10
+                        },
+                        "str": 93
+                    }
+                ],
+                "stat": {
+                    "1": 18,
+                    "2": 27,
+                    "3": 34,
+                    "4": 28,
+                    "form": 86,
+                    "str": 90,
+                    "stab": 83,
+                    "lane": 0
+                },
+                "real": {
+                    "1": 105,
+                    "2": 156,
+                    "3": 188,
+                    "4": 134,
+                    "str": 6,
+                    "stab": 83,
+                    "form": 100,
+                    "lane": 0
+                },
+                "m": [
+                    {
+                        "id": 519716,
+                        "w": "-1",
+                        "d": "2023-06-27 15:24:00",
+                        "t": "Sexy [1:2] Hot"
+                    },
+                    {
+                        "id": 519679,
+                        "w": "1",
+                        "d": "2023-07-01 15:00:00",
+                        "t": "Sexy [2:1] KZ"
+                    },
+                    {
+                        "id": 519681,
+                        "w": "1",
+                        "d": "2023-07-02 12:03:00",
+                        "t": "ex-Monaspa [0:2] Sexy"
+                    },
+                    {
+                        "id": 519682,
+                        "w": "1",
+                        "d": "2023-07-03 15:09:00",
+                        "t": "Sexy [2:1] ATT"
+                    },
+                    {
+                        "id": 519689,
+                        "w": "1",
+                        "d": "2023-07-05 15:06:00",
+                        "t": "Sexy [3:2] ex-Monaspa"
+                    },
+                    {
+                        "id": 522416,
+                        "w": "-1",
+                        "d": "2023-08-15 12:07:00",
+                        "t": "Sexy [0:2] StoRm"
+                    }
+                ],
+                "diff": 5
+            },
+            "compare": {
+                "t1": {
+                    "mid": 90,
+                    "safe": 136,
+                    "hard": 148,
+                    "forest": 0,
+                    "games": 0,
+                    "match": 4
+                },
+                "t2": {
+                    "mid": 71,
+                    "safe": 97,
+                    "hard": 126,
+                    "forest": 9,
+                    "games": 2,
+                    "match": 4
+                }
+            },
+            "map": {
+                "num": 2,
+                "id": 1051887,
+                "pic": "",
+                "match_start": "1",
+                "match_result": "",
+                "db_id": 7288915516,
+                "type": 2,
+                "is_api": 1,
+                "games": {
+                    "1": {
+                        "t1": {
+                            "t": "KZ TEAM",
+                            "s": 36,
+                            "w": 1,
+                            "h": {
+                                "39": "Queen of Pain",
+                                "66": "Chen",
+                                "104": "Legion Commander",
+                                "114": "Monkey King",
+                                "121": "Grimstroke"
+                            }
+                        },
+                        "t2": {
+                            "t": "Team Sexy",
+                            "s": 17,
+                            "w": 0,
+                            "h": {
+                                "40": "Venomancer",
+                                "41": "Faceless Void",
+                                "68": "Ancient Apparition",
+                                "74": "Invoker",
+                                "136": "Marci"
+                            }
+                        },
+                        "d": 2434
+                    },
+                    "2": {
+                        "t1": {
+                            "t": "KZ TEAM",
+                            "s": 1,
+                            "w": 0,
+                            "h": []
+                        },
+                        "t2": {
+                            "t": "Team Sexy",
+                            "s": 2,
+                            "w": 0,
+                            "h": []
+                        },
+                        "d": 142
+                    }
+                }
+            },
+            "title": null,
+            "teams": null,
+            "compare_players": "1",
+            "rate_kol": 10,
+            "kol_1": 2,
+            "kol_2": 10,
+            "betway": null,
+            "egb": null,
+            "gg": null,
+            "pin": null,
+            "pm": null,
+            "bb": null,
+            "prb": null,
+            "stream": null
+        },
+        "next_match_w": "522427-2",
+        "next_match_l": "@4",
+        "defwin": "0",
+        "txt": "",
+        "count_show": 0,
+        "rate": "1.000",
+        "is_score": "1"
+    },
+    "match_games": [
+        {
+            "id": 1051886,
+            "mid": 522426,
+            "num": 1,
+            "data": 1692274265,
+            "pic": "",
+            "db_id": 7288789194,
+            "match_start": "3",
+            "match_result": "522426-1-813.jpg",
+            "match_data": {
+                "teams": {
+                    "t1": {
+                        "id": 7300277,
+                        "tid": 87999,
+                        "title": "KZ TEAM",
+                        "score": 36,
+                        "score2": 36,
+                        "win": 1,
+                        "fb": 0,
+                        "players": {
+                            "27178898": {
+                                "team": 87999,
+                                "side": "radiant",
+                                "id": 3441,
+                                "nick": "Eleven",
+                                "hero_id": 104,
+                                "hero_title": "Legion Commander",
+                                "k": 7,
+                                "d": 3,
+                                "a": 14,
+                                "l": 222,
+                                "dn": 22,
+                                "lvl": 23,
+                                "gpm": 511,
+                                "xpm": 772,
+                                "n": 21904,
+                                "items": [
+                                    {
+                                        "id": 210,
+                                        "title": "Heaven&apos;s Halberd"
+                                    },
+                                    {
+                                        "id": 127,
+                                        "title": "Blade Mail"
+                                    },
+                                    {
+                                        "id": 112,
+                                        "title": "Assault Cuirass"
+                                    },
+                                    {
+                                        "id": 116,
+                                        "title": "Black King Bar"
+                                    },
+                                    {
+                                        "id": 50,
+                                        "title": "Phase Boots"
+                                    },
+                                    {
+                                        "id": 1,
+                                        "title": "Blink Dagger"
+                                    }
+                                ],
+                                "dmg": 24508,
+                                "tdmg": 4202,
+                                "heal": 360
+                            },
+                            "92949094": {
+                                "team": 87999,
+                                "side": "radiant",
+                                "id": 2731,
+                                "nick": "SsaSpartan",
+                                "hero_id": 66,
+                                "hero_title": "Chen",
+                                "k": 2,
+                                "d": 8,
+                                "a": 21,
+                                "l": 131,
+                                "dn": 5,
+                                "lvl": 18,
+                                "gpm": 381,
+                                "xpm": 472,
+                                "n": 14507,
+                                "items": [
+                                    {
+                                        "id": 229,
+                                        "title": "Solar Crest"
+                                    },
+                                    {
+                                        "id": 90,
+                                        "title": "Pipe of Insight"
+                                    },
+                                    {
+                                        "id": 931,
+                                        "title": "Boots of Bearing"
+                                    },
+                                    {
+                                        "id": 36,
+                                        "title": "Magic Wand"
+                                    },
+                                    {
+                                        "id": 212,
+                                        "title": "Ring of Aquila"
+                                    }
+                                ],
+                                "dmg": 11654,
+                                "tdmg": 1939,
+                                "heal": 6964
+                            },
+                            "115464954": {
+                                "team": 87999,
+                                "side": "radiant",
+                                "id": 2732,
+                                "nick": "dEsire.UNLOCK",
+                                "hero_id": 121,
+                                "hero_title": "Grimstroke",
+                                "k": 6,
+                                "d": 3,
+                                "a": 18,
+                                "l": 88,
+                                "dn": 1,
+                                "lvl": 21,
+                                "gpm": 395,
+                                "xpm": 584,
+                                "n": 16553,
+                                "items": [
+                                    {
+                                        "id": 30,
+                                        "title": "Gem of True Sight"
+                                    },
+                                    {
+                                        "id": 254,
+                                        "title": "Glimmer Cape"
+                                    },
+                                    {
+                                        "id": 102,
+                                        "title": "Force Staff"
+                                    },
+                                    {
+                                        "id": 42,
+                                        "title": "Observer Ward"
+                                    },
+                                    {
+                                        "id": 96,
+                                        "title": "Scythe of Vyse"
+                                    },
+                                    {
+                                        "id": 180,
+                                        "title": "Arcane Boots"
+                                    },
+                                    {
+                                        "id": 36,
+                                        "title": "Magic Wand"
+                                    },
+                                    {
+                                        "id": 40,
+                                        "title": "Dust of Appearance"
+                                    },
+                                    {
+                                        "id": 676,
+                                        "title": "Ceremonial Robe"
+                                    }
+                                ],
+                                "dmg": 9508,
+                                "tdmg": 307,
+                                "heal": 1214
+                            },
+                            "120613892": {
+                                "team": 87999,
+                                "side": "radiant",
+                                "id": 3433,
+                                "nick": "W1sh-",
+                                "hero_id": 39,
+                                "hero_title": "Queen of Pain",
+                                "k": 13,
+                                "d": 1,
+                                "a": 12,
+                                "l": 404,
+                                "dn": 13,
+                                "lvl": 26,
+                                "gpm": 743,
+                                "xpm": 975,
+                                "n": 31031,
+                                "items": [
+                                    {
+                                        "id": 110,
+                                        "title": "Refresher Orb"
+                                    },
+                                    {
+                                        "id": 273,
+                                        "title": "Kaya and Sange"
+                                    },
+                                    {
+                                        "id": 96,
+                                        "title": "Scythe of Vyse"
+                                    },
+                                    {
+                                        "id": 108,
+                                        "title": "Aghanim&apos;s Scepter"
+                                    },
+                                    {
+                                        "id": 116,
+                                        "title": "Black King Bar"
+                                    },
+                                    {
+                                        "id": 63,
+                                        "title": "Power Treads"
+                                    },
+                                    {
+                                        "id": 41,
+                                        "title": "Bottle"
+                                    },
+                                    {
+                                        "id": 40,
+                                        "title": "Dust of Appearance"
+                                    },
+                                    {
+                                        "id": 596,
+                                        "title": "Falcon Blade"
+                                    },
+                                    {
+                                        "id": 300,
+                                        "title": "Timeless Relic"
+                                    }
+                                ],
+                                "dmg": 45861,
+                                "tdmg": 3745,
+                                "heal": 0
+                            },
+                            "171097887": {
+                                "team": 87999,
+                                "side": "radiant",
+                                "id": 99005,
+                                "nick": "Nande",
+                                "hero_id": 114,
+                                "hero_title": "Monkey King",
+                                "k": 7,
+                                "d": 2,
+                                "a": 17,
+                                "l": 395,
+                                "dn": 12,
+                                "lvl": 24,
+                                "gpm": 672,
+                                "xpm": 776,
+                                "n": 27723,
+                                "items": [
+                                    {
+                                        "id": 63,
+                                        "title": "Power Treads"
+                                    },
+                                    {
+                                        "id": 158,
+                                        "title": "Mjollnir"
+                                    },
+                                    {
+                                        "id": 939,
+                                        "title": "item_harpoon"
+                                    },
+                                    {
+                                        "id": 116,
+                                        "title": "Black King Bar"
+                                    },
+                                    {
+                                        "id": 569,
+                                        "title": "Orb of Corrosion"
+                                    },
+                                    {
+                                        "id": 160,
+                                        "title": "Eye of Skadi"
+                                    }
+                                ],
+                                "dmg": 31757,
+                                "tdmg": 9109,
+                                "heal": 0
+                            }
+                        },
+                        "bans": [
+                            {
+                                "id": 135,
+                                "title": "Dawnbreaker",
+                                "order": 2
+                            },
+                            {
+                                "id": 15,
+                                "title": "Razor",
+                                "order": 3
+                            },
+                            {
+                                "id": 7,
+                                "title": "Earthshaker",
+                                "order": 5
+                            },
+                            {
+                                "id": 53,
+                                "title": "Natures Prophet",
+                                "order": 6
+                            },
+                            {
+                                "id": 86,
+                                "title": "Rubick",
+                                "order": 12
+                            },
+                            {
+                                "id": 128,
+                                "title": "Snapfire",
+                                "order": 20
+                            },
+                            {
+                                "id": 47,
+                                "title": "Viper",
+                                "order": 21
+                            }
+                        ],
+                        "picks": [
+                            {
+                                "id": 114,
+                                "title": "Monkey King",
+                                "order": 9
+                            },
+                            {
+                                "id": 121,
+                                "title": "Grimstroke",
+                                "order": 13
+                            },
+                            {
+                                "id": 104,
+                                "title": "Legion Commander",
+                                "order": 16
+                            },
+                            {
+                                "id": 39,
+                                "title": "Queen of Pain",
+                                "order": 17
+                            },
+                            {
+                                "id": 66,
+                                "title": "Chen",
+                                "order": 24
+                            }
+                        ]
+                    },
+                    "t2": {
+                        "id": 8975678,
+                        "tid": 94673,
+                        "title": "Team Sexy",
+                        "score": 17,
+                        "score2": 17,
+                        "win": 0,
+                        "fb": 0,
+                        "players": {
+                            "116249155": {
+                                "team": 94673,
+                                "side": "dire",
+                                "id": 19300,
+                                "nick": "nefrit",
+                                "hero_id": 40,
+                                "hero_title": "Venomancer",
+                                "k": 2,
+                                "d": 6,
+                                "a": 8,
+                                "l": 310,
+                                "dn": 11,
+                                "lvl": 19,
+                                "gpm": 475,
+                                "xpm": 510,
+                                "n": 18548,
+                                "items": [
+                                    {
+                                        "id": 102,
+                                        "title": "Force Staff"
+                                    },
+                                    {
+                                        "id": 210,
+                                        "title": "Heaven&apos;s Halberd"
+                                    },
+                                    {
+                                        "id": 119,
+                                        "title": "Shiva&apos;s Guard"
+                                    },
+                                    {
+                                        "id": 116,
+                                        "title": "Black King Bar"
+                                    },
+                                    {
+                                        "id": 36,
+                                        "title": "Magic Wand"
+                                    },
+                                    {
+                                        "id": 180,
+                                        "title": "Arcane Boots"
+                                    },
+                                    {
+                                        "id": 950,
+                                        "title": "Guardian Shell"
+                                    }
+                                ],
+                                "dmg": 21823,
+                                "tdmg": 1210,
+                                "heal": 0
+                            },
+                            "140251702": {
+                                "team": 94673,
+                                "side": "dire",
+                                "id": 39245,
+                                "nick": "Mirage",
+                                "hero_id": 74,
+                                "hero_title": "Invoker",
+                                "k": 4,
+                                "d": 4,
+                                "a": 8,
+                                "l": 264,
+                                "dn": 19,
+                                "lvl": 20,
+                                "gpm": 501,
+                                "xpm": 567,
+                                "n": 20399,
+                                "items": [
+                                    {
+                                        "id": 73,
+                                        "title": "Bracer"
+                                    },
+                                    {
+                                        "id": 63,
+                                        "title": "Power Treads"
+                                    },
+                                    {
+                                        "id": 116,
+                                        "title": "Black King Bar"
+                                    },
+                                    {
+                                        "id": 267,
+                                        "title": "Spirit Vessel"
+                                    },
+                                    {
+                                        "id": 123,
+                                        "title": "Linken&apos;s Sphere"
+                                    },
+                                    {
+                                        "id": 65,
+                                        "title": "Hand of Midas"
+                                    },
+                                    {
+                                        "id": 361,
+                                        "title": "Enchanted Quiver"
+                                    }
+                                ],
+                                "dmg": 20750,
+                                "tdmg": 723,
+                                "heal": 0
+                            },
+                            "164199202": {
+                                "team": 94673,
+                                "side": "dire",
+                                "id": 125305,
+                                "nick": "9Class",
+                                "hero_id": 136,
+                                "hero_title": "Marci",
+                                "k": 3,
+                                "d": 12,
+                                "a": 10,
+                                "l": 73,
+                                "dn": 4,
+                                "lvl": 15,
+                                "gpm": 246,
+                                "xpm": 313,
+                                "n": 9795,
+                                "items": [
+                                    {
+                                        "id": 116,
+                                        "title": "Black King Bar"
+                                    },
+                                    {
+                                        "id": 40,
+                                        "title": "Dust of Appearance"
+                                    },
+                                    {
+                                        "id": 50,
+                                        "title": "Phase Boots"
+                                    },
+                                    {
+                                        "id": 73,
+                                        "title": "Bracer"
+                                    },
+                                    {
+                                        "id": 75,
+                                        "title": "Wraith Band"
+                                    },
+                                    {
+                                        "id": 17,
+                                        "title": "Belt of Strength"
+                                    },
+                                    {
+                                        "id": 38,
+                                        "title": "Clarity"
+                                    },
+                                    {
+                                        "id": 376,
+                                        "title": "Paladin Sword"
+                                    }
+                                ],
+                                "dmg": 12640,
+                                "tdmg": 522,
+                                "heal": 2823
+                            },
+                            "185059559": {
+                                "team": 94673,
+                                "side": "dire",
+                                "id": 55896,
+                                "nick": "Hduo",
+                                "hero_id": 68,
+                                "hero_title": "Ancient Apparition",
+                                "k": 7,
+                                "d": 6,
+                                "a": 8,
+                                "l": 35,
+                                "dn": 3,
+                                "lvl": 16,
+                                "gpm": 262,
+                                "xpm": 356,
+                                "n": 9894,
+                                "items": [
+                                    {
+                                        "id": 9,
+                                        "title": "Platemail"
+                                    },
+                                    {
+                                        "id": 254,
+                                        "title": "Glimmer Cape"
+                                    },
+                                    {
+                                        "id": 36,
+                                        "title": "Magic Wand"
+                                    },
+                                    {
+                                        "id": 29,
+                                        "title": "Boots of Speed"
+                                    },
+                                    {
+                                        "id": 218,
+                                        "title": "Observer and Sentry Wards"
+                                    },
+                                    {
+                                        "id": 289,
+                                        "title": "Quickening Charm"
+                                    },
+                                    {
+                                        "id": 331,
+                                        "title": "Vambrace"
+                                    },
+                                    {
+                                        "id": 300,
+                                        "title": "Timeless Relic"
+                                    }
+                                ],
+                                "dmg": 16211,
+                                "tdmg": 0,
+                                "heal": 0
+                            },
+                            "293731272": {
+                                "team": 94673,
+                                "side": "dire",
+                                "id": 45529,
+                                "nick": "7jesu",
+                                "hero_id": 41,
+                                "hero_title": "Faceless Void",
+                                "k": 1,
+                                "d": 8,
+                                "a": 7,
+                                "l": 345,
+                                "dn": 4,
+                                "lvl": 21,
+                                "gpm": 518,
+                                "xpm": 619,
+                                "n": 19522,
+                                "items": [
+                                    {
+                                        "id": 63,
+                                        "title": "Power Treads"
+                                    },
+                                    {
+                                        "id": 65,
+                                        "title": "Hand of Midas"
+                                    },
+                                    {
+                                        "id": 116,
+                                        "title": "Black King Bar"
+                                    },
+                                    {
+                                        "id": 158,
+                                        "title": "Mjollnir"
+                                    },
+                                    {
+                                        "id": 75,
+                                        "title": "Wraith Band"
+                                    },
+                                    {
+                                        "id": 24,
+                                        "title": "Ultimate Orb"
+                                    },
+                                    {
+                                        "id": 376,
+                                        "title": "Paladin Sword"
+                                    },
+                                    {
+                                        "id": 122,
+                                        "title": "Linken&apos;s Sphere Recipe"
+                                    },
+                                    {
+                                        "id": 311,
+                                        "title": "Spell Prism"
+                                    }
+                                ],
+                                "dmg": 8648,
+                                "tdmg": 735,
+                                "heal": 0
+                            }
+                        },
+                        "bans": [
+                            {
+                                "id": 107,
+                                "title": "Earth Spirit",
+                                "order": 1
+                            },
+                            {
+                                "id": 46,
+                                "title": "Templar Assassin",
+                                "order": 4
+                            },
+                            {
+                                "id": 38,
+                                "title": "Beastmaster",
+                                "order": 7
+                            },
+                            {
+                                "id": 106,
+                                "title": "Ember Spirit",
+                                "order": 10
+                            },
+                            {
+                                "id": 111,
+                                "title": "Oracle",
+                                "order": 11
+                            },
+                            {
+                                "id": 101,
+                                "title": "Skywrath Mage",
+                                "order": 19
+                            },
+                            {
+                                "id": 89,
+                                "title": "Naga Siren",
+                                "order": 22
+                            }
+                        ],
+                        "picks": [
+                            {
+                                "id": 74,
+                                "title": "Invoker",
+                                "order": 8
+                            },
+                            {
+                                "id": 40,
+                                "title": "Venomancer",
+                                "order": 14
+                            },
+                            {
+                                "id": 136,
+                                "title": "Marci",
+                                "order": 15
+                            },
+                            {
+                                "id": 41,
+                                "title": "Faceless Void",
+                                "order": 18
+                            },
+                            {
+                                "id": 68,
+                                "title": "Ancient Apparition",
+                                "order": 23
+                            }
+                        ]
+                    }
+                },
+                "duration": 2434,
+                "duration2": 2434,
+                "is_live": 1,
+                "gnd": 2126,
+                "gold": {
+                    "1846": 16469,
+                    "1885": 14995,
+                    "1916": 15150,
+                    "1947": 15870,
+                    "1979": 16774,
+                    "2011": 20187,
+                    "2043": 21310,
+                    "2074": 21541,
+                    "2105": 22897,
+                    "2126": 22111,
+                    "2187": 22111,
+                    "2221": 24604,
+                    "2307": 26739,
+                    "2367": 26739,
+                    "2398": 28345,
+                    "2434": 33560,
+                    "2435": 33885
+                },
+                "rlead": 33885,
+                "ts": {
+                    "radiant": {
+                        "tower_state": 1855,
+                        "barracks_state": 63
+                    },
+                    "dire": {
+                        "tower_state": 1568,
+                        "barracks_state": 44
+                    }
+                }
+            },
+            "match_data_result": null,
+            "winner": 87999,
+            "duration": 2434,
+            "koef": "",
+            "events": {
+                "1800": [
+                    {
+                        "s": "t1",
+                        "i": "3",
+                        "h": [
+                            {
+                                "s": "t1",
+                                "t1": [
+                                    114,
+                                    39,
+                                    66,
+                                    121,
+                                    104
+                                ],
+                                "t2": [
+                                    74,
+                                    41,
+                                    68,
+                                    136,
+                                    40
+                                ],
+                                "t": 1846
+                            },
+                            {
+                                "s": "t2",
+                                "t1": [
+                                    74,
+                                    41,
+                                    68,
+                                    136,
+                                    40
+                                ],
+                                "t2": [
+                                    114,
+                                    39,
+                                    66,
+                                    121,
+                                    104
+                                ],
+                                "t": 1846
+                            }
+                        ],
+                        "g1": 54461,
+                        "g2": 37992,
+                        "d1": 0,
+                        "d2": 0
+                    },
+                    {
+                        "i": "1",
+                        "r": {
+                            "s": "t0"
+                        }
+                    }
+                ],
+                "1860": [
+                    {
+                        "s": "t2",
+                        "i": "3",
+                        "h": [
+                            {
+                                "s": "t2",
+                                "t1": [
+                                    68
+                                ],
+                                "t2": [
+                                    121
+                                ],
+                                "t": 1885
+                            }
+                        ],
+                        "g1": -226,
+                        "g2": 2136,
+                        "d1": 0,
+                        "d2": 0
+                    }
+                ],
+                "1920": [
+                    {
+                        "s": "t1",
+                        "i": "3",
+                        "h": [
+                            {
+                                "s": "t1",
+                                "t1": [
+                                    114,
+                                    39
+                                ],
+                                "t2": [
+                                    68,
+                                    136,
+                                    40
+                                ],
+                                "t": 1979
+                            },
+                            {
+                                "s": "t2",
+                                "t1": [
+                                    74
+                                ],
+                                "t2": [
+                                    66
+                                ],
+                                "t": 1979
+                            }
+                        ],
+                        "g1": 853,
+                        "g2": -51,
+                        "d1": 0,
+                        "d2": 0
+                    }
+                ],
+                "1980": [
+                    {
+                        "s": "t1",
+                        "i": "3",
+                        "h": [
+                            {
+                                "s": "t1",
+                                "t1": [
+                                    66
+                                ],
+                                "t2": [
+                                    41
+                                ],
+                                "t": 2011
+                            }
+                        ],
+                        "g1": 3252,
+                        "g2": -400,
+                        "d1": 0,
+                        "d2": 0
+                    }
+                ],
+                "2040": [
+                    {
+                        "i": "1",
+                        "r": {
+                            "s": "t1"
+                        },
+                        "a": {
+                            "s": "t1",
+                            "h": "Monkey King"
+                        }
+                    }
+                ],
+                "2220": [
+                    {
+                        "s": "t1",
+                        "i": "4",
+                        "h": [
+                            {
+                                "s": "t1",
+                                "t1": 1,
+                                "t2": 1,
+                                "t": 2221
+                            }
+                        ],
+                        "g1": 2493,
+                        "g2": 0,
+                        "d1": 0,
+                        "d2": 0
+                    }
+                ],
+                "2280": [
+                    {
+                        "s": "t1",
+                        "i": "4",
+                        "h": [
+                            {
+                                "s": "t1",
+                                "t1": 1,
+                                "t2": 1,
+                                "t": 2307
+                            }
+                        ],
+                        "g1": 2135,
+                        "g2": 0,
+                        "d1": 0,
+                        "d2": 0
+                    },
+                    {
+                        "s": "t1",
+                        "i": "2",
+                        "b": [
+                            "Tier 3 Top Tower",
+                            "Ranged Top Barracks",
+                            "Melee Top Barracks"
+                        ]
+                    }
+                ],
+                "2340": [
+                    {
+                        "s": "t1",
+                        "i": "4",
+                        "h": [
+                            {
+                                "s": "t1",
+                                "t1": 1,
+                                "t2": 1,
+                                "t": 2398
+                            }
+                        ],
+                        "g1": 1606,
+                        "g2": 0,
+                        "d1": 0,
+                        "d2": 0
+                    }
+                ],
+                "2400": [
+                    {
+                        "s": "t1",
+                        "i": "4",
+                        "h": [
+                            {
+                                "s": "t1",
+                                "t1": 1,
+                                "t2": 4,
+                                "t": 2435
+                            }
+                        ],
+                        "g1": 5540,
+                        "g2": 0,
+                        "d1": 0,
+                        "d2": 0
+                    },
+                    {
+                        "s": "t1",
+                        "i": "2",
+                        "b": [
+                            "Tier 3 Bottom Tower",
+                            "Melee Bottom Barracks"
+                        ]
+                    }
+                ]
+            },
+            "fb": "t1",
+            "first_ten_kills": null,
+            "destroyed_first_tower": "t1",
+            "killed_first_elite_creep": "t0",
+            "advantage_exp": 48560,
+            "biggest_net": 31031
+        },
+        {
+            "id": 1051887,
+            "mid": 522426,
+            "num": 2,
+            "data": 0,
+            "pic": "",
+            "db_id": 7288915516,
+            "match_start": "2",
+            "match_result": "",
+            "match_data": {
+                "teams": {
+                    "t1": {
+                        "id": 7300277,
+                        "tid": 87999,
+                        "title": "KZ TEAM",
+                        "score": 0,
+                        "score2": 1,
+                        "fb": 0,
+                        "win": 0,
+                        "players": {
+                            "27178898": {
+                                "team": 87999,
+                                "side": "radiant",
+                                "id": 3441,
+                                "nick": "Skylark",
+                                "hero_id": 38,
+                                "hero_title": "Beastmaster",
+                                "k": 0,
+                                "d": 0,
+                                "a": 0,
+                                "l": 0,
+                                "dn": 0,
+                                "g": 0,
+                                "lvl": 0,
+                                "gpm": 0,
+                                "xpm": 0,
+                                "n": 0,
+                                "items": [],
+                                "dmg": 0,
+                                "tdmg": 0,
+                                "heal": 0
+                            },
+                            "92949094": {
+                                "team": 87999,
+                                "side": "radiant",
+                                "id": 2731,
+                                "nick": "SsaSparTaN.",
+                                "hero_id": 86,
+                                "hero_title": "Rubick",
+                                "k": 0,
+                                "d": 0,
+                                "a": 0,
+                                "l": 0,
+                                "dn": 0,
+                                "g": 0,
+                                "lvl": 0,
+                                "gpm": 0,
+                                "xpm": 0,
+                                "n": 0,
+                                "items": [],
+                                "dmg": 0,
+                                "tdmg": 0,
+                                "heal": 0
+                            },
+                            "115464954": {
+                                "team": 87999,
+                                "side": "radiant",
+                                "id": 2732,
+                                "nick": "dEsire.n3ttlee ️",
+                                "hero_id": 14,
+                                "hero_title": "Pudge",
+                                "k": 0,
+                                "d": 0,
+                                "a": 0,
+                                "l": 0,
+                                "dn": 0,
+                                "g": 0,
+                                "lvl": 0,
+                                "gpm": 0,
+                                "xpm": 0,
+                                "n": 0,
+                                "items": [],
+                                "dmg": 0,
+                                "tdmg": 0,
+                                "heal": 0
+                            },
+                            "120613892": {
+                                "team": 87999,
+                                "side": "radiant",
+                                "id": 3433,
+                                "nick": "W1sh-",
+                                "hero_id": 39,
+                                "hero_title": "Queen of Pain",
+                                "k": 0,
+                                "d": 0,
+                                "a": 0,
+                                "l": 0,
+                                "dn": 0,
+                                "g": 0,
+                                "lvl": 0,
+                                "gpm": 0,
+                                "xpm": 0,
+                                "n": 0,
+                                "items": [],
+                                "dmg": 0,
+                                "tdmg": 0,
+                                "heal": 0
+                            },
+                            "171097887": {
+                                "team": 87999,
+                                "side": "radiant",
+                                "id": 99005,
+                                "nick": "Nande",
+                                "hero_id": 44,
+                                "hero_title": "Phantom Assassin",
+                                "k": 0,
+                                "d": 0,
+                                "a": 0,
+                                "l": 0,
+                                "dn": 0,
+                                "g": 0,
+                                "lvl": 0,
+                                "gpm": 0,
+                                "xpm": 0,
+                                "n": 0,
+                                "items": [],
+                                "dmg": 0,
+                                "tdmg": 0,
+                                "heal": 0
+                            }
+                        },
+                        "bans": [
+                            {
+                                "id": 53,
+                                "title": "Natures Prophet",
+                                "order": 1
+                            },
+                            {
+                                "id": 135,
+                                "title": "Dawnbreaker",
+                                "order": 3
+                            },
+                            {
+                                "id": 7,
+                                "title": "Earthshaker",
+                                "order": 9
+                            },
+                            {
+                                "id": 114,
+                                "title": "Monkey King",
+                                "order": 11
+                            },
+                            {
+                                "id": 109,
+                                "title": "Terrorblade",
+                                "order": 13
+                            },
+                            {
+                                "id": 104,
+                                "title": "Legion Commander",
+                                "order": 19
+                            },
+                            {
+                                "id": 77,
+                                "title": "Lycan",
+                                "order": 21
+                            }
+                        ],
+                        "picks": [
+                            {
+                                "id": 38,
+                                "title": "Beastmaster",
+                                "order": 5
+                            },
+                            {
+                                "id": 86,
+                                "title": "Rubick",
+                                "order": 8
+                            },
+                            {
+                                "id": 39,
+                                "title": "Queen of Pain",
+                                "order": 16
+                            },
+                            {
+                                "id": 14,
+                                "title": "Pudge",
+                                "order": 17
+                            },
+                            {
+                                "id": 44,
+                                "title": "Phantom Assassin",
+                                "order": 23
+                            }
+                        ]
+                    },
+                    "t2": {
+                        "id": 8975678,
+                        "tid": 94673,
+                        "title": "Team Sexy",
+                        "score": 0,
+                        "score2": 2,
+                        "fb": 5,
+                        "win": 0,
+                        "players": {
+                            "116249155": {
+                                "team": 94673,
+                                "side": "dire",
+                                "id": 19300,
+                                "nick": "nefrit",
+                                "hero_id": 55,
+                                "hero_title": "Dark Seer",
+                                "k": 0,
+                                "d": 0,
+                                "a": 0,
+                                "l": 0,
+                                "dn": 0,
+                                "g": 0,
+                                "lvl": 0,
+                                "gpm": 0,
+                                "xpm": 0,
+                                "n": 0,
+                                "items": [],
+                                "dmg": 0,
+                                "tdmg": 0,
+                                "heal": 0
+                            },
+                            "140251702": {
+                                "team": 94673,
+                                "side": "dire",
+                                "id": 39245,
+                                "nick": "Mirage`",
+                                "hero_id": 74,
+                                "hero_title": "Invoker",
+                                "k": 0,
+                                "d": 0,
+                                "a": 0,
+                                "l": 0,
+                                "dn": 0,
+                                "g": 0,
+                                "lvl": 0,
+                                "gpm": 0,
+                                "xpm": 0,
+                                "n": 0,
+                                "items": [],
+                                "dmg": 0,
+                                "tdmg": 0,
+                                "heal": 0
+                            },
+                            "164199202": {
+                                "team": 94673,
+                                "side": "dire",
+                                "id": 125305,
+                                "nick": "9Class",
+                                "hero_id": 56,
+                                "hero_title": "Clinkz",
+                                "k": 0,
+                                "d": 0,
+                                "a": 0,
+                                "l": 0,
+                                "dn": 0,
+                                "g": 0,
+                                "lvl": 0,
+                                "gpm": 0,
+                                "xpm": 0,
+                                "n": 0,
+                                "items": [],
+                                "dmg": 0,
+                                "tdmg": 0,
+                                "heal": 0
+                            },
+                            "185059559": {
+                                "team": 94673,
+                                "side": "dire",
+                                "id": 55896,
+                                "nick": "Till the end",
+                                "hero_id": 51,
+                                "hero_title": "Clockwerk",
+                                "k": 0,
+                                "d": 0,
+                                "a": 0,
+                                "l": 0,
+                                "dn": 0,
+                                "g": 0,
+                                "lvl": 0,
+                                "gpm": 0,
+                                "xpm": 0,
+                                "n": 0,
+                                "items": [],
+                                "dmg": 0,
+                                "tdmg": 0,
+                                "heal": 0
+                            },
+                            "293731272": {
+                                "team": 94673,
+                                "side": "dire",
+                                "id": 45529,
+                                "nick": "7jesu",
+                                "hero_id": 72,
+                                "hero_title": "Gyrocopter",
+                                "k": 0,
+                                "d": 0,
+                                "a": 0,
+                                "l": 0,
+                                "dn": 0,
+                                "g": 0,
+                                "lvl": 0,
+                                "gpm": 0,
+                                "xpm": 0,
+                                "n": 0,
+                                "items": [],
+                                "dmg": 0,
+                                "tdmg": 0,
+                                "heal": 0
+                            }
+                        },
+                        "bans": [
+                            {
+                                "id": 107,
+                                "title": "Earth Spirit",
+                                "order": 2
+                            },
+                            {
+                                "id": 46,
+                                "title": "Templar Assassin",
+                                "order": 4
+                            },
+                            {
+                                "id": 15,
+                                "title": "Razor",
+                                "order": 10
+                            },
+                            {
+                                "id": 106,
+                                "title": "Ember Spirit",
+                                "order": 12
+                            },
+                            {
+                                "id": 121,
+                                "title": "Grimstroke",
+                                "order": 14
+                            },
+                            {
+                                "id": 93,
+                                "title": "Slark",
+                                "order": 20
+                            },
+                            {
+                                "id": 41,
+                                "title": "Faceless Void",
+                                "order": 22
+                            }
+                        ],
+                        "picks": [
+                            {
+                                "id": 74,
+                                "title": "Invoker",
+                                "order": 6
+                            },
+                            {
+                                "id": 56,
+                                "title": "Clinkz",
+                                "order": 7
+                            },
+                            {
+                                "id": 51,
+                                "title": "Clockwerk",
+                                "order": 15
+                            },
+                            {
+                                "id": 72,
+                                "title": "Gyrocopter",
+                                "order": 18
+                            },
+                            {
+                                "id": 55,
+                                "title": "Dark Seer",
+                                "order": 24
+                            }
+                        ]
+                    }
+                },
+                "duration": 0,
+                "duration2": 142,
+                "is_live": 1,
+                "gnd": 0,
+                "gold": {
+                    "0": 0,
+                    "5": 132,
+                    "22": 132,
+                    "65": -71,
+                    "142": -71
+                },
+                "rlead": -71,
+                "ts": {
+                    "radiant": {
+                        "tower_state": 2047,
+                        "barracks_state": 63
+                    },
+                    "dire": {
+                        "tower_state": 2047,
+                        "barracks_state": 63
+                    }
+                }
+            },
+            "match_data_result": null,
+            "winner": 0,
+            "duration": 0,
+            "koef": "",
+            "events": {
+                "60": [
+                    {
+                        "s": "t2",
+                        "i": "4",
+                        "h": [
+                            {
+                                "s": "t1",
+                                "t1": 1,
+                                "t2": 1,
+                                "t": 65
+                            },
+                            {
+                                "s": "t2",
+                                "t1": 1,
+                                "t2": 1,
+                                "t": 65
+                            }
+                        ],
+                        "g1": 0,
+                        "g2": 203,
+                        "d1": 0,
+                        "d2": 0
+                    }
+                ]
+            },
+            "fb": "t1",
+            "first_ten_kills": null,
+            "destroyed_first_tower": null,
+            "killed_first_elite_creep": null,
+            "advantage_exp": 0,
+            "biggest_net": 0
+        },
+        {
+            "id": 1051888,
+            "mid": 522426,
+            "num": 3,
+            "data": 0,
+            "pic": "",
+            "db_id": 0,
+            "match_start": "",
+            "match_result": "",
+            "match_data": null,
+            "match_data_result": null,
+            "winner": 0,
+            "duration": 0,
+            "koef": "",
+            "events": [],
+            "fb": null,
+            "first_ten_kills": null,
+            "destroyed_first_tower": null,
+            "killed_first_elite_creep": null,
+            "advantage_exp": 0,
+            "biggest_net": 0
+        }
+    ]
+}

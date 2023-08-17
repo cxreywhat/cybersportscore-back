@@ -6,11 +6,9 @@
             {{-- $t('labels.matches')--}}
         </h3>
 
-        {{--@if(isMounted)--}}
         <div class="flex flex-col md:flex-row w-full">
             @include('components.common.filterListBox')
         </div>
-        {{--@endif--}}
     </div>
 
     {{--@if(isMounted)--}}
@@ -25,16 +23,6 @@
             @endforeach
         @endif
 
-        {{--@elseif(!showLoader)--}}{{--
-        <div class="flex border-l border-t border-r min-h-[200px] relative justify-center items-center
-        overflow-hidden rounded-b-md border-gray-700 text-gray-600 text-xl
-        bg-[#212D3D]">
-            --}}{{--{{ $t('state.no_matches') }}--}}{{--
-        </div>--}}
-        {{--@endif--}}
-        {{--@if(showLoader)--}}
-{{--        @include('components.common.loader')--}}
-        {{--@endif--}}
     </div>
 
     <div class="mt-5">

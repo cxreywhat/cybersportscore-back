@@ -1,0 +1,109 @@
+{#1689 ▼
+    +team1Id: 87999
+    +team2Id: 94673
+    +matchTitle: App\Dto\MatchList\MatchTitleDto {#1656 ▼
+      +tournamentTitle: "EPL S11"
+      +tournamentMemberType: "t"
+      +live: true
+      +tournamentIcon: ""
+      +nameCached: "1 : 0"
+      +tournamentCountryId: 0
+      +team1: App\Dto\MatchList\MatchTitleTeamDto {#1687 ▼
+        +logo: "87999"
+        +countryId: 38
+        +shortTitle: "KZ"
+      }
+      +team2: App\Dto\MatchList\MatchTitleTeamDto {#1704 ▼
+        +logo: "94673"
+        +countryId: 14
+        +shortTitle: "Sexy"
+      }
+    }
+    +team1Block: Illuminate\Support\Collection {#1371 ▼
+      #items: array:11 [▼
+        0 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1691 ▼
+          -teams: array:2 [▶]
+          -date: "2023-08-14 12:21:00"
+          -logo: ""
+          -bestOf: 3
+          -matchId: 522409
+          -tournamentId: 8274
+          -tournamentTitle: "EPL S11"
+          -priorityTeam: 87999
+        }
+        1 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1695 ▶}
+        2 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1698 ▶}
+        3 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1688 ▶}
+        4 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1711 ▶}
+        5 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1686 ▶}
+        6 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1683 ▶}
+        7 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1680 ▶}
+        8 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1677 ▶}
+        9 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1674 ▶}
+        10 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1671 ▶}
+      ]
+      #escapeWhenCastingToString: false
+    }
+    +team2Block: Illuminate\Support\Collection {#1707 ▼
+      #items: array:11 [▼
+        0 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1697 ▼
+          -teams: array:2 [▶]
+          -date: "2023-08-15 12:07:00"
+          -logo: ""
+          -bestOf: 3
+          -matchId: 522416
+          -tournamentId: 8274
+          -tournamentTitle: "EPL S11"
+          -priorityTeam: 94673
+        }
+        1 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1693 ▶}
+        2 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1690 ▶}
+        3 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1653 ▶}
+        4 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1709 ▶}
+        5 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1651 ▶}
+        6 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1692 ▶}
+        7 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1639 ▶}
+        8 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1696 ▶}
+        9 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1636 ▶}
+        10 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1632 ▶}
+      ]
+      #escapeWhenCastingToString: false
+    }
+    +commonBlock: Illuminate\Support\Collection {#1366 ▼
+      #items: array:2 [▼
+        0 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1627 ▼
+          -teams: array:2 [▼
+            0 => App\Dto\MatchDetails\History\TeamDto {#1700 ▼
+              +id: 94673
+              +score: 2
+              +title: "Team Sexy"
+              +shortTitle: "Sexy"
+              +hasLogo: true
+            }
+            1 => App\Dto\MatchDetails\History\TeamDto {#1642 ▶}
+          ]
+          -date: "2023-07-01 15:00:00"
+          -logo: "8235"
+          -bestOf: 3
+          -matchId: 519679
+          -tournamentId: 8235
+          -tournamentTitle: "EPL S10"
+          -priorityTeam: null
+        }
+        1 => App\Dto\MatchDetails\History\HistoryBlockItemDto {#1369 ▼
+          -teams: array:2 [▼
+            0 => App\Dto\MatchDetails\History\TeamDto {#1665 ▶}
+            1 => App\Dto\MatchDetails\History\TeamDto {#1624 ▶}
+          ]
+          -date: "2023-06-25 09:01:00"
+          -logo: "8235"
+          -bestOf: 3
+          -matchId: 519692
+          -tournamentId: 8235
+          -tournamentTitle: "EPL S10"
+          -priorityTeam: null
+        }
+      ]
+      #escapeWhenCastingToString: false
+    }
+  }

@@ -40,6 +40,7 @@ Route::middleware(['cors'])->group(function () {
 
     Route::get('matches/{id}/streams', [StreamController::class, 'index'])
         ->name('matches.streams');
+
     Route::get('matches/{id}/history/{side?}', [MatchController::class, 'showHistory'])
         ->whereIn('side', ['t1', 't2', 'common'])
         ->name('matches.show-history');
