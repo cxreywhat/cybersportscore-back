@@ -2,7 +2,6 @@
 
 @section('content')
     <div class="w-full h-full relative">
-        <?php dd($preview)?>
         <div class="grid grid-cols-1 md:grid-cols-6 gap-6 relative mb-3">
             <div class="col-span-6 lg:col-span-3 flex justify-between items-center w-full flex-col sm:flex-row">
                 <div class="flex my-5 sm:my-0 text-gray-300 font-bold text-[10px] sm:text-xs">
@@ -36,21 +35,30 @@
             </div>
             <div class="col-span-6 lg:col-span-3">
                 <div class="flex flex-col w-full min-h-[96px] justify-center">
-                    @include('components.matchesShow.pickBansBlock')
+                    @include('components.matchesShow.pickBansBlock', [
+                            'preview' => $preview,
+                            'gameId' => $match->game_id
+                        ])
                 </div>
                 <div class="flex flex-col w-full border border-gray-700 rounded-lg shadow-xl min-h-[300px] bg-[#212D3D] p-3 mb-6">
                     @include('components.matchesIndex.matchRowDetailsChart')
                 </div>
-                @include('components.matchesIndex.matchRowDetailsPlayers')
+                @include('components.matchesIndex.matchRowDetailsPlayers', [
+                        'preview' => $preview,
+                        'gameId' => $match->game_id
+                    ])
             </div>
             <div class="col-span-6 lg:col-span-6">
                 <div class="flex flex-col w-full border border-gray-700 rounded-lg shadow-xl bg-[#212D3D] overflow-x-hidden">
-                    @include('components.matchesShow.statisticBlock')
+                    @include('components.matchesShow.statisticBlock', [
+                            'preview' => $preview,
+                            'gameId' => $match->game_id
+                        ])
                 </div>
             </div>
             <div class="col-span-6 lg:col-span-6">
                 <div class="flex flex-col w-full rounded-lg shadow-xl bg-[#212D3D] overflow-x-hidden">
-                    @include('components.matchesShow.matchHistoryBlock')
+                    @include('components.matchesShow.matchHistoryBlock', ['history' => $history])
                 </div>
             </div>
         </div>

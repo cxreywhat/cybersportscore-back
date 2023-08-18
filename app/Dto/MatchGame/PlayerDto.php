@@ -13,6 +13,7 @@ class PlayerDto
     protected int $damage = 0;
     protected int $damageTaken = 0;
     protected int $heal = 0;
+    protected int $denies = 0;
 
     public function __construct(
         public readonly int $id,
@@ -124,6 +125,18 @@ class PlayerDto
     public function setHeal(int $heal): PlayerDto
     {
         $this->heal = $heal;
+
+        return $this;
+    }
+
+    public function getDenies(): int
+    {
+        return $this->denies;
+    }
+
+    public function setDenies(int $denies): PlayerDto
+    {
+        $this->denies = $denies;
 
         return $this;
     }

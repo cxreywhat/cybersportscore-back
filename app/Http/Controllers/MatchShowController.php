@@ -48,14 +48,12 @@ class MatchShowController extends Controller
             $this->matchService->offlineMatchBuilder($dataMatch);
         }
 
-        $match =  response()->json($dataMatch);
+        $match = response()->json($dataMatch);
         $history = new HistoryResource($this->matchService->getHistory($id, $side));
-        $preview = new PreviewResource(
-            $this->matchService->preview($id)
-        );
+        $preview = new PreviewResource($this->matchService->preview($id));
 
         return view('match', [
-            'match' => $match,
+            'match' => $match->getData(),
             'history' => $history,
             'preview' => $preview
         ]);

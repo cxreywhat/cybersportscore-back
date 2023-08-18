@@ -25,7 +25,9 @@ class HistoryBlockResource extends JsonResource
                 'id' => $this->getTournamentId(),
                 'title' => $this->getTournamentTitle(),
                 'has_icon' => $this->hasLogo(),
+                'logo' => $this->getLogo(),
             ],
+
             'date' => $this->getDate(),
             'bo' => $this->getBestOf(),
             'teams' => array_map(function (TeamDto $team) {
