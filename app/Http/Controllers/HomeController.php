@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\GamesType;
 use App\Http\Requests\MatchesRequest;
+use App\Http\Resources\MatchDetails\PreviewResource;
 use App\Http\Resources\MatchList\MatchListResource;
 use App\Http\Resources\NewsListResource;
+use App\Models\GtMatchList;
 use App\Services\MatchService;
 use App\Services\NewsService;
 use Illuminate\Http\Request;
@@ -31,10 +34,13 @@ class HomeController extends Controller
                 'per_page' => $request->get('perPage'),
             ])
         );
+        $preview = new PreviewResource($this->matchService->preview(522402));
+
 
         return view('home', [
             'items' => $data,
-            'news' => $news
+            'news' => $news,
+            'preview' => $preview
         ]);
     }
 }

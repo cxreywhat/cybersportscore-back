@@ -6,17 +6,34 @@
             <div class="col-span-6 lg:col-span-3 flex justify-between items-center w-full flex-col sm:flex-row">
                 <div class="flex my-5 sm:my-0 text-gray-300 font-bold text-[10px] sm:text-xs">
                     <div class="flex flex-col h-full ml-1 bg-gray-100 bg-opacity-60 w-[55px] h-[50px] items-center justify-center rounded-[100%]">
-                        <img src="https://api.cybersportscore.com/media/event/_120/e8311.webp" title="LNTI" alt="LNTI icon" loading="lazy" class="w-[2.5rem] h-[2.5rem] inline">
+                        <img src="https://api.cybersportscore.com/media/event/_120/e{{ $match_beta->tid }}.webp" title="LNTI" alt="LNTI icon" loading="lazy" class="w-[2.5rem] h-[2.5rem] inline">
                     </div>
-                    <span class="flex flex-col ml-4 justify-center"><span class="whitespace-nowrap">LNTIassa</span><br><span>$20,000</span></span>
+                    <span class="flex flex-col ml-4 justify-center">
+                        <span class="whitespace-nowrap">{{ $match_beta->match->info->t->t }}</span>
+                        <br>
+                        <span>$20,000</span>
+                    </span>
                 </div>
                 <div class="flex flex-row align-center md:w-56 md:justify-center sm:justify-end sm:ml-3 flex-wrap">
-                    <span class="mx-1 sm:mx-2 my-1 sm:mr-0"><a aria-current="page" href="/ru/dota-2/524035?num=1" class="router-link-active router-link-exact-active cursor-default pointer-events-none bg-apple text-gray-900 uppercase text-[10px] font-semibold px-2 py-1 rounded sm:text-xs"><span class="animate-pulse inline-flex w-[8px] h-[8px] bg-red-500 border border-gray-400 border-1 rounded-[100%] mr-1"></span><span class="inline-flex">Карта 1</span></a></span><span class="mx-1 sm:mx-2 my-1 sm:mr-0"><a aria-current="page" href="/ru/dota-2/524035?num=2" class="router-link-active router-link-exact-active text-gray-700 border border-1 border-gray-700 cursor-default pointer-events-none uppercase text-[10px] font-semibold px-2 py-1 rounded sm:text-xs"><!----><span class="inline-flex">Карта 2</span></a></span>
+                    @foreach($match_beta->match_games as $game)
+                        @php
+                            $currentMatchStyle = 'cursor-default pointer-events-none text-gray-900 bg-apple';
+                            $previousMatchStyle ='border border-gray-500 text-gray-500 hover:text-gray-300 hover:border-apple';
+                            $futureMatchStyle = 'text-gray-700 border border-1 border-gray-700 cursor-default pointer-events-none';
+                        @endphp
+                        <span class="mx-1 sm:mx-2 my-1 sm:mr-0">
+                            <a aria-current="page" href="/ru/dota-2/524035?num=1" class="{{ $match_beta->is_current == $game->num ? $currentMatchStyle :
+                                  ($match_beta->is_current > $game->num ? $previousMatchStyle : $futureMatchStyle) }} uppercase text-[10px] font-semibold px-2 py-1 rounded sm:text-xs">
+                                {!! $match_beta->is_live ? "<span class='animate-pulse inline-flex w-[8px] h-[8px] bg-red-500 border border-gray-400 border-1 rounded-[100%] mr-1'></span>" : ""!!}
+                                <span class="inline-flex">Карта {{$game->num}}</span>
+                            </a>
+                        </span>
+                    @endforeach
                 </div>
             </div>
             <div class="col-span-6 lg:col-span-3 flex justify-between items-center">
                 <div class="flex flex-row w-full border border-gray-700 h-[55px] rounded-lg shadow-xl bg-[#212D3D] items-center justify-center relative">
-                    @include('components.matchesIndex.matchRowMainPart')
+                    @include('components.matchesIndex.matchRowMainPart', ['match_beta' => $match_beta])
                 </div>
             </div>
         </div>
@@ -26,8 +43,8 @@
                 <div class="w-full border border-gray-700 rounded-lg shadow-xl bg-[#212D3D] grid grid-cols-12 gap-2 flex">
                     <div class="flex flex-row items-center grow w-full border-r border-gray-700 p-4 col-span-12 sm:col-span-5 order-2 sm:order-1">
                         <div class="w-full flex flex-col-reverse flex-col">
-                            @include('components.matchesIndex.matchRowDetailsSummary')
-                            @include('components.matchesIndex.matchRowDetailsMapDota2')
+                            @include('components.matchesIndex.matchRowDetailsSummary', ['aggregatedEvents' => $preview->getAggregatedEvents()])
+                            @include('components.matchesIndex.matchRowDetailsMapDota2', ['destroyedBuildings' => $preview->getAggregatedEvents()->getDestroyedBuildings()])
                         </div>
                     </div>
                     @include('components.matchesShow.logsBlock')
@@ -37,7 +54,7 @@
                 <div class="flex flex-col w-full min-h-[96px] justify-center">
                     @include('components.matchesShow.pickBansBlock', [
                             'preview' => $preview,
-                            'gameId' => $match->game_id
+                            'gameId' => $match_beta->game_id
                         ])
                 </div>
                 <div class="flex flex-col w-full border border-gray-700 rounded-lg shadow-xl min-h-[300px] bg-[#212D3D] p-3 mb-6">
@@ -45,14 +62,14 @@
                 </div>
                 @include('components.matchesIndex.matchRowDetailsPlayers', [
                         'preview' => $preview,
-                        'gameId' => $match->game_id
+                        'gameId' => $match_beta->game_id
                     ])
             </div>
             <div class="col-span-6 lg:col-span-6">
                 <div class="flex flex-col w-full border border-gray-700 rounded-lg shadow-xl bg-[#212D3D] overflow-x-hidden">
                     @include('components.matchesShow.statisticBlock', [
                             'preview' => $preview,
-                            'gameId' => $match->game_id
+                            'gameId' => $match_beta->game_id
                         ])
                 </div>
             </div>

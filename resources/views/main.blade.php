@@ -17,8 +17,8 @@
 <body>
 <div id="app" class="h-full">
     <div class="h-full fixed mx-auto">
-        <a rel="nofollow" class="fixed w-full h-full" target="_blank" href="https://api.cybersportscore.com/go?n=422"
-           id="css01" style="background: url('https://api.cybersportscore.com/media/a/banner422.gif') 50% 0 no-repeat scroll rgb(0, 0, 0);"></a>
+        <a rel="nofollow" class="fixed w-full h-full" target="_blank"
+           id="css01" style="background: url('https://api.cybersportscore.com/media/a/banner247.gif') 50% 0 no-repeat scroll rgb(0, 0, 0);"></a>
     </div>
     <div class="h-auto relative flex flex-col max-w-6xl mx-auto px-0 lg:px-3 bg-[#1B2838]">
         @include('components.layout.navbar')

@@ -7,8 +7,12 @@
             </div>
             <div class="flex flex-col grow items-start justify-start text-left pr-3 text-xs">
                 <div class="mb-2">
-                    <span class="red-side font-semibold mb-2"><span>VSG</span></span><span> уничтожают </span><span class="green-side font-semibold mb-2"></span><span class="font-bold">
-                                        Tier 1 Middle Tower</span>
+                    <span class="red-side font-semibold mb-2">
+                        <span>VSG</span>
+                    </span>
+                    <span> уничтожают </span>
+                    <span class="green-side font-semibold mb-2"></span>
+                    <span class="font-bold">Tier 1 Middle Tower</span>
                 </div>
             </div>
         </div>
@@ -128,6 +132,7 @@
                 </div>
             </div>
         </div>
+
         <div class="flex flex-row border-b border-dashed border-gray-700 mb-2">
             <div class="flex flex-col min-w-[50px] items-end text-xs justify-start text-right text-gray-600 pr-3">
                 <span>12:00</span>

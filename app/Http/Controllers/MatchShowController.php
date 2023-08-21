@@ -46,6 +46,21 @@ class MatchShowController extends Controller
         if ($dataMatch) {
             $this->matchService->liveMatchBuilder($dataMatch);
             $this->matchService->offlineMatchBuilder($dataMatch);
+        };
+
+        $matchLogs = GtMatchList::query()
+            ->with([
+                'match',
+                'matchGames'
+            ])
+            ->find($id);
+
+
+
+        $logs = response()->json();
+
+        if ($matchLogs) {
+            $logs = response()->json($this->matchService->buildGameLogs($matchLogs, 2));
         }
 
         $match = response()->json($dataMatch);
@@ -53,9 +68,10 @@ class MatchShowController extends Controller
         $preview = new PreviewResource($this->matchService->preview($id));
 
         return view('match', [
-            'match' => $match->getData(),
+            'match_beta' => $match->getData(),
             'history' => $history,
-            'preview' => $preview
+            'preview' => $preview,
+            'logs' => $logs
         ]);
     }
 }

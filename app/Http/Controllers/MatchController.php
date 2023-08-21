@@ -220,7 +220,6 @@ class MatchController extends Controller
         $tournaments = DB::table('gt_tournaments')
             ->when($request->has('query'), function ($q) use ($query) {
                 $searchService = new SearchService();
-                dd($searchService->query('event', 3, $query, 0, [], 100));
                 $search = $searchService->query('event', 3, $query, 0, [], 100);
                 $q->whereIn('gt_tournaments.id', $search['ids'] ?? []);
             })
@@ -237,6 +236,7 @@ class MatchController extends Controller
                 'gt_tournaments.eng',
                 'gt_tournaments.title',
                 'gt_tournaments.logo'
+
             ]);
 
         return response()->json($tournaments);
@@ -267,6 +267,6 @@ class MatchController extends Controller
                 'gt_teams_list.logo'
             ]);
 
-        dd( response()->json($teams));
+        return response()->json($teams);
     }
 }

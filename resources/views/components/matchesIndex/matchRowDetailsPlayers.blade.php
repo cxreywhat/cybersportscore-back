@@ -12,7 +12,7 @@
     @php
         $i = 0;
         $maxNetWorthPlayer = 0;
-        $maxNetWorth = -INF;
+        $maxNetWorth = 0;
         $mergedArray = $preview->getTeam1()->getPlayers() + $preview->getTeam2()->getPlayers();
         foreach ($mergedArray as $element) {
             $netWorth = $element->matchGamePlayer->netWorth;
@@ -27,12 +27,11 @@
                 $key = array_keys($preview->getTeam2()->getPlayers());
                 $playerTeam2 = $preview->getTeam2()->getPlayers()[$key[$i]];
                 $i++;
-                $netWorthScalePlayerT1 = $playerTeam1->matchGamePlayer->netWorth * 0/9 / $maxNetWorthPlayer;
-                $netWorthScalePlayerT2 = $playerTeam2->matchGamePlayer->netWorth * 0/9 / $maxNetWorthPlayer;
+                $netWorthScalePlayerT1 = $playerTeam1->matchGamePlayer->netWorth * 0.9 / $maxNetWorth;
+                $netWorthScalePlayerT2 = $playerTeam2->matchGamePlayer->netWorth * 0.9 / $maxNetWorth;
             @endphp
 
             <div class="flex w-full justify-between text-sm py-1 border-gray-700 border-b last:rounded-b-md border-l border-r min-h-[42px] relative">
-
                 <div class="px-2 flex w-full items-center grow max-w-[50%] relative max-h-8">
                     <span title="Ценность героя {{ $playerTeam1->matchGamePlayer->netWorth }}" class="left-2 origin-left hover:bg-clip-border py-[2px] -bottom-[9px] opacity-90 bg-yellow-400 transition
                         font-bold absolute w-full border border-t-[1px] border-b-[1px] border-transparent bg-clip-padding" style="transform: scaleX({{$netWorthScalePlayerT1}})"></span>

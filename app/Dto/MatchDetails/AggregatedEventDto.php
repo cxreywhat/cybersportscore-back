@@ -78,6 +78,26 @@ class AggregatedEventDto implements \JsonSerializable
         $this->firstEliteCreepKill = $team;
     }
 
+    public function getFirstBlood(): ?string
+    {
+        return $this->firstBlood;
+    }
+
+    public function getFirst10Kills(): ?string
+    {
+        return $this->first10Kills;
+    }
+
+    public function getFirstEliteCreepKill(): ?string
+    {
+        return $this->firstEliteCreepKill;
+    }
+
+    public function getFirstTowerDestroy(): ?string
+    {
+        return $this->firstTowerDestroy;
+    }
+
     public function jsonSerialize(): array
     {
         return [

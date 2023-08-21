@@ -4,7 +4,6 @@
     $matchIsLive = $gameDate->getTimestamp() < time();
     $numberGame = $info->map->num - 1;
 ?>
-
    <div class="items-row hover:bg-gray-800 border-l-[1px] {{ $matchIsLive ? 'border-red-500 border-l-[4px]' : 'border-gray-700'}}">
         <a href="/{{$game->id}}" class="border-transparent flex flex-row w-full h-full items-center">
             <div class="flex items-col pl-4 w-[45px]">
@@ -13,7 +12,7 @@
             </div>
             <span>
                 <div class="w-[45px] sm:w-[120px] md:w-[130px] items-col p-0 sm:px-3 py-3 text-sm">
-                    @if($matchIsLive)
+                    @if($matchIsLive && $game->is_live)
                         <div class="font-semibold text-sm text-red-500 leading-4 flex flex-col items-center opacity-90">
                             <span class="hidden md:flex">LIVE</span>
                             <span class="text-[9px] sm:text-xs font-semibold mt-0 md:mt-1 px-1 rounded bg-red-500 text-gray-900" >
@@ -29,7 +28,7 @@
             </span>
             <div class="items-end flex-col items-col grow w-8 sm:w-10 overflow-visible text-xs text-gray-300 md:text-base text-end">
                 <div class="flex flex-col-reverse md:flex-row md:items-center text-left w-[100%] flex-grow-1">
-                    @if($matchIsLive)
+                    @if($matchIsLive && $game->is_live)
                         <span class="mr-3 sm:mr-0 md:mr-8 items-col-adv text-[9px] font-semibold opacity-90">
                             <span class="h-[12px] sm:h-[18px] block sm:inline md:p-1 md:border rounded border-yellow-300 text-yellow-300 leading-normal">
                                 +9.1k
@@ -52,7 +51,7 @@
                 </div>
             </div>
             <div class="flex items-col border-l border-r text-gray-400 justify-center items-center sm:text-sm w-[70px] sm:w-[100px]">
-                @if($matchIsLive)
+                @if($matchIsLive && $game->is_live)
                     <div class="flex flex-row items-center justify-center">
                         <svg class="opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" style="color: rgb(171, 175, 187); height: 1.1em;">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clip-rule="evenodd"></path>
