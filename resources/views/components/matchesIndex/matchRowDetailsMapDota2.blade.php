@@ -12,7 +12,7 @@
     @foreach($buildings as $building)
         @php
             $sideClass = $building->side === "t1" ? "green-side-map" : "red-side-map";
-            $classes = in_array($building->id, $destroyedBuildings) ? "destroyed-side-map" : $sideClass;
+            $classes = in_array($building->id, $preview->getAggregatedEvents()->getDestroyedBuildings()) ? "destroyed-side-map" : $sideClass;
         @endphp
         <div id="{{$building->id}}"
              class="{{$classes}} absolute shadow-sm transition"

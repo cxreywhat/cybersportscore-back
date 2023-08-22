@@ -1,8 +1,8 @@
 @php
-    $fb = $aggregatedEvents->getFirstBlood() === "t1" ? "green-side" : ($aggregatedEvents->getFirstBlood() === "t2" ? "red-side" : "#374151");
-    $f10k = $aggregatedEvents->getFirst10Kills() === "t1" ? "green-side" : ($aggregatedEvents->getFirst10Kills() === "t2" ? "red-side" : "#374151");
-    $ftd = $aggregatedEvents->getFirstTowerDestroy() === "t1" ? "green-side" : ($aggregatedEvents->getFirstTowerDestroy() === "t2" ? "red-side" : "#374151");
-    $feck = $aggregatedEvents->getFirstEliteCreepKill() === "t1" ? "green-side" : ($aggregatedEvents->getFirstEliteCreepKill() === "t2" ? "red-side" : "#374151");
+    $fb = $preview->getAggregatedEvents()->getFirstBlood() === "t1" ? "green-side" : ($preview->getAggregatedEvents()->getFirstBlood() === "t2" ? "red-side" : "#374151");
+    $f10k = $preview->getAggregatedEvents()->getFirst10Kills() === "t1" ? "green-side" : ($preview->getAggregatedEvents()->getFirst10Kills() === "t2" ? "red-side" : "#374151");
+    $ftd = $preview->getAggregatedEvents()->getFirstTowerDestroy() === "t1" ? "green-side" : ($preview->getAggregatedEvents()->getFirstTowerDestroy() === "t2" ? "red-side" : "#374151");
+    $feck = $preview->getAggregatedEvents()->getFirstEliteCreepKill() === "t1" ? "green-side" : ($preview->getAggregatedEvents()->getFirstEliteCreepKill() === "t2" ? "red-side" : "#374151");
 
     $fbIconColor = $fb === "green-side" ? "#92a525" :($fb === "red-side" ? "#c23c2a" : "#374151");
     $f10kIconColor = $f10k === "green-side" ? "#92a525" : ($f10k === "red-side" ? "#c23c2a" : "#374151");

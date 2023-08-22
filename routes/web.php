@@ -30,7 +30,8 @@ Route::get('go', [BannerController::class, 'go']);
 
 Route::group(['prefix' => '/'], function () {
     Route::get('/', [HomeController::class, 'index']);
-    Route::get('/{id}', [MatchShowController::class, 'index']);
+    Route::get('/{id}', [MatchShowController::class, 'index'])->name("match-index");;
+    Route::post('/{id}', [MatchShowController::class, 'index'])->name("match-post-index");
 });
 
 Route::group(['prefix' => 'news'], function () {

@@ -3,7 +3,7 @@
     rounded-t-md border-x border-t border-gray-700 bg-[#212D3D]">
 
         <h3 class="text-sm font-semibold text-gray-600 grow pl-3 w-full pb-2 md:pb-0 ">
-            {{-- $t('labels.matches')--}}
+            Матчи
         </h3>
 
         <div class="flex flex-col md:flex-row w-full">
@@ -11,7 +11,6 @@
         </div>
     </div>
 
-    {{--@if(isMounted)--}}
     <div class="[showLoader ? 'min-h-[785px] border-l border-r border-t' : '',
         'relative overflow-hidden border-b rounded-b-md border-gray-700 shadow-xl']">
 
@@ -28,8 +27,6 @@
     <div class="mt-5">
         @include('components.common.pagination')
     </div>
-    {{--@endif--}}
-
 </div>
 
 <style lang="scss">

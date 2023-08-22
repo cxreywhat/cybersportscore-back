@@ -48,30 +48,17 @@ class MatchShowController extends Controller
             $this->matchService->offlineMatchBuilder($dataMatch);
         };
 
-        $matchLogs = GtMatchList::query()
-            ->with([
-                'match',
-                'matchGames'
-            ])
-            ->find($id);
-
-
-
-        $logs = response()->json();
-
-        if ($matchLogs) {
-            $logs = response()->json($this->matchService->buildGameLogs($matchLogs, 2));
-        }
 
         $match = response()->json($dataMatch);
         $history = new HistoryResource($this->matchService->getHistory($id, $side));
         $preview = new PreviewResource($this->matchService->preview($id));
+        $numGame = intval($request->input('num')) > 0 ? intval($request->input('num')) : intval($match->getData()->is_current);
 
         return view('match', [
             'match_beta' => $match->getData(),
             'history' => $history,
             'preview' => $preview,
-            'logs' => $logs
+            'num_game' => $numGame,
         ]);
     }
 }
