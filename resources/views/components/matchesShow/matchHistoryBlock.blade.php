@@ -71,7 +71,7 @@
                     <div class="flex w-14 items-center">
                         <span class="mx-4">
                             <img src="{{ $common->getLogo() ? "https://api.cybersportscore.com/media/event/_120/e".$common->getLogo().".webp" : asset('media/icons/no-icon.svg')}}"
-                                 title="Phoenix League" alt="Phoenix League icon" loading="lazy" class="w-[1.6rem] h-[1.6rem] inline">
+                                 title="{{ $common->getTournamentTitle() }}" alt="Phoenix League icon" loading="lazy" class="w-[1.6rem] h-[1.6rem] inline">
                         </span>
                     </div>
                 </div>

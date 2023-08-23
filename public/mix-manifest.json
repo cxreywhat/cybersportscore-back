@@ -2,6 +2,7 @@
     "/js/app.js": "/js/app.js",
     "/js/components/filterListBox.js": "/js/components/filterListBox.js",
     "/js/helper.js": "/js/helper.js",
+    "/js/match-data-update.js": "/js/match-data-update.js",
     "/css/critical.css": "/css/critical.css",
     "/css/app.css": "/css/app.css",
     "/css/style.css": "/css/style.css"

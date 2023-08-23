@@ -1,7 +1,16 @@
 @extends('main')
 
+@php
+    $t1 = $match_beta->match_games[$num_game - 1]->match_data->teams->t1->tid === $preview->getTeam1()->id;
+    $t2 = $match_beta->match_games[$num_game - 1]->match_data->teams->t2->tid === $preview->getTeam2()->id;
+@endphp
+
 @section('content')
     <div class="w-full h-full relative">
+{{--@php
+    dd($match_beta);
+    dd($preview);
+@endphp--}}
         <div class="grid grid-cols-1 md:grid-cols-6 gap-6 relative mb-3">
             <div class="col-span-6 lg:col-span-3 flex justify-between items-center w-full flex-col sm:flex-row">
                 <div class="flex my-5 sm:my-0 text-gray-300 font-bold text-[10px] sm:text-xs">
@@ -22,10 +31,10 @@
                                 <input type="hidden" name="num" value="{{ $game->num }}">
                                 <button aria-current="page" href="/{{ $match_beta->id}}?num={{$game->num}}" class="
                                     {{ $num_game == $game->num ? "cursor-default pointer-events-none text-gray-900 bg-apple"
-                                    : ($game->num <= $match_beta->is_current ? "border border-gray-500 text-gray-500 hover:text-gray-300 hover:border-apple"
+                                    : ($game->num <= $preview->getNum() ? "border border-gray-500 text-gray-500 hover:text-gray-300 hover:border-apple"
                                     : "text-gray-700 border border-1 border-gray-700 cursor-default pointer-events-none") }}
                                     uppercase text-[10px] font-semibold px-2 py-1 rounded sm:text-xs">
-                                        {!! $match_beta->is_live ? "<span class='animate-pulse inline-flex w-[8px] h-[8px] bg-red-500 border border-gray-400 border-1 rounded-[100%] mr-1'></span>" : ""!!}
+                                        {!! $match_beta->is_live && $game->match_data?->is_live != null ? "<span class='animate-pulse inline-flex w-[8px] h-[8px] bg-red-500 border border-gray-400 border-1 rounded-[100%] mr-1'></span>" : ""!!}
                                     <span class="inline-flex">Карта {{$game->num}}</span>
                                 </button>
                             </form>
@@ -75,6 +84,7 @@
         <!---->
     </div>
 @endsection()
+
 <style lang="scss">
 
     .items-col-adv span + span {
@@ -112,271 +122,3 @@
         }
     }
 </style>
-<script>
-    import { onMounted, onBeforeUnmount, ref, inject, computed, watch } from 'vue'
-    import { useI18n } from 'vue-i18n'
-    import { useRouter, useRoute } from 'vue-router'
-    import { useStore } from "vuex"
-
-    import { timestampToShortFormat, convertSecondsToMinutes } from "../../helpers/time"
-    import { shortNumber, numberWithCommas } from "../../helpers/common"
-    import { externalTooltipHandler } from "../../helpers/chart"
-
-
-    import { Chart, registerables } from 'chart.js'
-
-    Chart.register(...registerables)
-
-    const { t, d, locale } = useI18n({ useScope: 'global' })
-    const router = useRouter()
-    const route = useRoute()
-    const store = useStore()
-
-    const props = defineProps({
-        gold: Array || null,
-        events: Object || null,
-        gameId: Number,
-        teamsConfig: Object || null,
-        status: Object,
-        num: Number
-    })
-
-    const chartRef = ref()
-
-    let chart
-    let currentGoldLength = 0
-
-    const segmentColor = (ctx) => {
-        if(ctx.p1.parsed.y < 0 || ctx.p0.parsed.y < 0) {
-            return props.teamsConfig.t2.color
-        } else {
-            return props.teamsConfig.t1.color
-        }
-    }
-
-    const labelColor = (item) => {
-        if ( item.parsed.y < 0 ) {
-            return {
-                borderColor: props.teamsConfig.t2.color,
-                backgroundColor: props.teamsConfig.t2.bgColor,
-            }
-        } else {
-            return {
-                borderColor: props.teamsConfig.t1.color,
-                backgroundColor: props.teamsConfig.t1.bgColor,
-            }
-        }
-    }
-
-    const datapoints = (gold, events=null) => {
-        if (props.status.isBreak) {
-            return []
-        } else {
-            //  fix lol gold issue
-            let gold_timeline = gold.map((el)=> el.time).sort((a,b) => a - b)
-            let gold_diffline = gold.map((el)=> el.diff)
-
-            let goldMapping = {}
-            let durations = []
-
-            for (var i = 0; i < gold_timeline.length; i++) {
-                durations.push(gold_timeline[i])
-                goldMapping[gold_timeline[i]] = gold_diffline[i]
-            }
-            let eventsMapping
-
-            if (events) {
-                eventsMapping = events?.reduce(function (r, a) {
-                    r[a.duration] = r[a.duration] || []
-                    r[a.duration].push(a)
-                    return r
-                }, Object.create(null))
-
-                events?.forEach((el)=> durations.push(el.duration))
-
-                durations = Array.from(new Set(durations)).sort((a,b) => a - b)
-            }
-
-            let result = []
-            durations.forEach((time, index) => {
-                let nextTime = durations[index+1]
-                let currentGoldAmount = goldMapping[time] || gold?.findLast(el => el.time <= time)?.diff
-
-                result.push({
-                    x: '' + (time || 0),
-                    y: currentGoldAmount,
-                    game_events: eventsMapping ? eventsMapping[time] : null,
-                    game_id: props.gameId,
-                    axis_crossing: false
-                })
-
-                // insert axis crossing keypoint
-                if (nextTime) {
-                    let nextGoldAmount = goldMapping[nextTime] || gold?.findLast(el => el.time <= nextTime)?.diff
-                    if (nextGoldAmount != 0 && currentGoldAmount != 0 && Math.sign(nextGoldAmount) != Math.sign(currentGoldAmount)) {
-
-                        let x = time - (nextTime-time)*currentGoldAmount/(nextGoldAmount-currentGoldAmount)
-
-                        result.push({
-                            x: '' + (x || 0),
-                            y: 0,
-                            game_events: null,
-                            axis_crossing: true
-                        })
-                    }
-                }
-            })
-
-            return result
-
-        }
-    }
-
-    const data = {
-
-        datasets: [
-            {
-                data: datapoints(props.gold, props.events) || [],
-                // pointRadius: 0,
-                // pointHoverRadius: 5,
-                fill: {
-                    target: 'origin',
-                    above: props.teamsConfig.t1.bgColor,
-                    below: props.teamsConfig.t2.bgColor
-                },
-                borderColor: 'rgb(140, 149, 164)',
-                backgroundColor: 'rgba(140, 149, 164, 0.2)',
-                cubicInterpolationMode: 'monotone',
-                // tension: 0.4,
-                spanGaps: false,
-                segment: {
-                    borderColor: ctx => segmentColor(ctx),
-                }
-            }
-        ]
-    }
-
-    const label = (data) => {
-        return data.raw
-    }
-
-    const title = (data) => {
-        return data.raw
-    }
-
-
-    const options = {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-            legend: {
-                display: false
-            },
-            tooltip: {
-                enabled: false,
-                displayColors: false,
-                // position: 'nearest',
-                position: 'average',
-                external: externalTooltipHandler,
-                callbacks: {
-                    labelColor: labelColor,
-                    label: label,
-                    title: title
-                }
-            }
-        },
-        interaction: {
-            intersect: false,
-            mode: 'x',
-            // mode: 'dataset',
-            includeInvisible: false
-        },
-        elements: {
-            point: {
-                radius: function(ctx) {
-                    if (ctx?.raw?.game_events) {
-                        let defaultSize = 4
-                        let fightSum = defaultSize
-                        ctx.raw.game_events.forEach((el) => el.type == 'fights' ? fightSum += el.fights.length : 0)
-                        return fightSum
-                    } else if (ctx?.raw?.axis_crossing) {
-                        return 0
-                    } else {
-                        return 0
-                    }
-                },
-                hitRadius: function(ctx) {
-                    if (ctx?.raw?.game_events) {
-                        return 2
-                    } else {
-                        return 0
-                    }
-                }
-            }
-        },
-        scales: {
-            x: {
-                display: true,
-                grid: {
-                    tickColor: "#374151",
-                },
-                ticks: {
-                    color: '#b6bac6',
-                    beginAtZero: true,
-                    callback: function(val, index) {
-                        return convertSecondsToMinutes(this.getLabelForValue(val))
-                    },
-                }
-            },
-            y: {
-                display: true,
-                grid: {
-                    tickColor: "#374151",
-                    color: ctx => !props.status.isBreak && props.gold && props.gold.length > 0 && ctx.tick.value == 0 ? "#374151" : "#1f2a38",
-                    lineWidth: ctx => !props.status.isBreak && props.gold && props.gold.length > 0 && ctx.tick.value == 0 ? 2 : 1,
-                },
-                ticks: {
-                    color: '#b6bac6',
-                    beginAtZero: true,
-                    callback: value => shortNumber(value)
-                },
-                suggestedMin: -100,
-                suggestedMax: 100
-            }
-        }
-    }
-
-    onMounted(async () => {
-        await router.isReady()
-        currentGoldLength = props.gold.length
-        chart = new Chart(
-            chartRef.value,
-            {
-                type: 'line',
-                data: data,
-                options: options
-            })
-    })
-
-    watch(() => props.gold, (newGold) => {
-        if (props.status.isBreak) {
-            chart.data.datasets[0].data = null
-            chart.update()
-            return
-        }
-        if (!chart?.data?.datasets) { return }
-        if (newGold.length <= currentGoldLength) { return }
-        chart.data.datasets[0].data = datapoints(newGold, props.events)
-        currentGoldLength = newGold.length
-        chart.update()
-    })
-
-    watch(() => props.status.isBreak, () => {
-        if (props.status.isBreak) {
-            chart.data.datasets[0].data = null
-            chart.update()
-            return
-        }
-    })
-
-</script>

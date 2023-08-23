@@ -1,26 +1,23 @@
 @php
     $timeMapSeconds = $match_beta->match_games[$num_game - 1]->match_data->duration;
     $timeMap = sprintf('%02d:%02d', floor( $timeMapSeconds / 60),  $timeMapSeconds % 60);
-    $t1 = strpos($match_beta->match->info->t1->n, $match_beta->match_games[$num_game - 1]->match_data->teams->t1->title) || $match_beta->match_games[$num_game - 1]->match_data->teams->t1->title === $match_beta->match->info->t1->n;
-    $t2 = strpos($match_beta->match->info->t2->n, $match_beta->match_games[$num_game - 1]->match_data->teams->t2->title) || $match_beta->match_games[$num_game - 1]->match_data->teams->t2->title === $match_beta->match->info->t2->n;
-    $titleT1 = $t1 ? $match_beta->match->info->t1->t : $match_beta->match->info->t2->t;
-    $titleT2 = $t2 ? $match_beta->match->info->t2->t : $match_beta->match->info->t1->t;
 @endphp
 
 <div class="flex items-col pl-4 w-[45px]">
     <img src="/media/icons/games/dota-2-bw.webp" alt="dota-2 icon" loading="lazy" class="opacity-50 w-5 h-5">
 </div>
+
 <div class="items-end flex-col items-col grow w-8 sm:w-10 overflow-visible text-xs text-gray-300 md:text-base" >
     <div class="flex-col-reverse items-end flex" >
         <span class="ml-3 sm:ml-0 items-col-adv text-[9px] font-semibold opacity-90" >
-            @if(end($match_beta->match_games[$num_game - 1]->match_data->gold) > 0)
+            @if(end($match_beta->match_games[$num_game - 1]->match_data->gold) > 0 && $match_beta->is_live)
                 <span class="h-[12px] block rounded border-yellow-300 text-yellow-300 leading-normal" >+{{round(end($match_beta->match_games[$num_game - 1]->match_data->gold) / 1000), 1}}k</span>
             @endif
-            @if($match_beta->match_games[$num_game - 1]->advantage_exp > 0)
+            @if($match_beta->match_games[$num_game - 1]->advantage_exp > 0 && $match_beta->is_live)
                 <span class="text-left h-[12px] block sm:ml-0 rounded border-[#1786ED] text-[#1786ED] leading-normal" >+{{round($match_beta->match_games[$num_game - 1]->advantage_exp / 1000, 1)}}k</span>
             @endif
         </span>
-        <span class="text-[10px] sm:text-xs font-semibold mr-3 sm:mr-0 mb-0 sm:mb-1 md:mb-0 truncate" >{{ $titleT1 }}</span>
+        <span class="text-[10px] sm:text-xs font-semibold mr-3 sm:mr-0 mb-0 sm:mb-1 md:mb-0 truncate" >{{ $preview->getTeam1()->getShortTitle() }}</span>
 
     </div>
 </div>
@@ -49,13 +46,13 @@
 </div>
 <div class="items-col grow w-8 sm:w-10 overflow-visible text-xs text-gray-300 md:text-base" >
     <div class="flex-col flex" >
-        <span class="text-[10px] sm:text-xs font-semibold ml-3 sm:ml-0 mb-0 sm:mb-1 md:mb-0 truncate" >{{ $titleT2 }}</span>
+        <span class="text-[10px] sm:text-xs font-semibold ml-3 sm:ml-0 mb-0 sm:mb-1 md:mb-0 truncate" >{{ $preview->getTeam2()->getShortTitle() }}</span>
 
         <span class="ml-3 sm:ml-0 items-col-adv text-[9px] font-semibold opacity-90" >
-            @if(end($match_beta->match_games[$num_game - 1]->match_data->gold) < 0)
+            @if(end($match_beta->match_games[$num_game - 1]->match_data->gold) < 0 && $match_beta->is_live)
                 <span class="h-[12px] block rounded border-yellow-300 text-yellow-300 leading-normal" >+{{round(end($match_beta->match_games[$num_game - 1]->match_data->gold) * -1 / 1000), 1}}k</span>
             @endif
-            @if($match_beta->match_games[$num_game - 1]->advantage_exp < 0)
+            @if($match_beta->match_games[$num_game - 1]->advantage_exp < 0 && $match_beta->is_live)
                 <span class="text-left h-[12px] block sm:ml-0 rounded border-[#1786ED] text-[#1786ED] leading-normal" >+{{round($match_beta->match_games[$num_game - 1]->advantage_exp * -1 / 1000, 1)}}k</span>
             @endif
         </span>

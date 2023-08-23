@@ -3,12 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Enums\GamesType;
-use App\Http\Resources\MatchDetails\HistoryBlockResource;
 use App\Http\Resources\MatchDetails\HistoryResource;
 use App\Http\Resources\MatchDetails\PreviewResource;
 use App\Models\GtMatchList;
+use App\Services\Events\MatchDataUpdated;
 use App\Services\MatchService;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class MatchShowController extends Controller
@@ -46,13 +45,16 @@ class MatchShowController extends Controller
         if ($dataMatch) {
             $this->matchService->liveMatchBuilder($dataMatch);
             $this->matchService->offlineMatchBuilder($dataMatch);
-        };
 
+            broadcast(new MatchDataUpdated($id, $dataMatch))->toOthers();
+        };
 
         $match = response()->json($dataMatch);
         $history = new HistoryResource($this->matchService->getHistory($id, $side));
         $preview = new PreviewResource($this->matchService->preview($id));
-        $numGame = intval($request->input('num')) > 0 ? intval($request->input('num')) : intval($match->getData()->is_current);
+        $numGame = intval($request->input('num')) > 0
+            ? intval($request->input('num'))
+            : $preview->getNum();
 
         return view('match', [
             'match_beta' => $match->getData(),
