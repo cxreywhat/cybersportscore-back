@@ -148,12 +148,3 @@
         @endif
     </table>
 </div>
-<script>
-    const matchId = {{ $match_beta->id }};
-
-    window.Echo.channel('match.' + matchId)
-        .listen('MatchDataUpdated', (e) => {
-            console.log('Match updated:', e);
-
-        });
-</script>

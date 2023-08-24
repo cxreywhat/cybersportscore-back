@@ -1,13 +1,16 @@
 <?php
 
+use App\Events\MatchDataUpdate;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\MatchController;
+use App\Http\Controllers\MatchShowController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\SeoController;
 use App\Http\Controllers\StreamController;
 use App\Http\Controllers\FilterController;
 use App\Http\Controllers\DictionaryController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\Facades\Route;
 use App\Enums\GameEnum as Game;
 
@@ -68,3 +71,14 @@ Route::middleware(['cors'])->group(function () {
 
     Route::get('sitemap/{sitemap}', [SeoController::class, 'sitemap']);
 });
+
+Route::get('{id}', function (Request $request, $id, ?string $side = null) {
+    $controller = app()->make(MatchShowController::class);
+    $data = $controller->index($request, $id, $side);
+
+    broadcast(new MatchDataUpdate(1, $data))->toOthers();
+
+    return $data;
+});
+
+

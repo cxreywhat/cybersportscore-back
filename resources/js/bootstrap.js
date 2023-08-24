@@ -20,7 +20,16 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 import Echo from 'laravel-echo';
 
+
 window.Echo = new Echo({
-    broadcaster: 'socket.io',
-    host: window.location.hostname + ':6001', // Укажите порт, на котором работает Laravel Echo
+    broadcaster: 'pusher',
+    key: 'aInHQQ.kb1gHg:8Smc1TYdSlSkExz2IlQj5k70peMMFT_5MVWdon_oCMk',
+    cluster: 'us2',
+    forceTLS: true
 });
+
+window.Echo.channel('live-data')
+    .listen('MatchDataUpdate', (e) => {
+        console.log('Match data updated:', e);
+        // Обновите данные на вашей странице
+    });
