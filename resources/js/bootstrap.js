@@ -19,6 +19,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  */
 
 import Echo from 'laravel-echo';
+import statisticsTeam1 from './components/matches/statisticBlock'
 window.Pusher = require('pusher-js');
 
 window.Echo = new Echo({
@@ -50,6 +51,9 @@ window.Echo = new Echo({
 
 window.Echo.channel('live-data')
     .listen('MatchDataUpdate', (e) => {
-        console.log('Match data updated:', e);
+        let match_beta = e.updatedData.match_beta;
+        let numGame = e.updatedData.num_games;
+        console.log([numGame, match_beta])
+        statisticsPlayersTeam1(match_beta.match_games[numGame].match_data.teams.t1.players.toArray())
     });
 

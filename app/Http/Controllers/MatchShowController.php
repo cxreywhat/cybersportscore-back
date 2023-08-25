@@ -75,7 +75,7 @@ class MatchShowController extends Controller
     public function sendWebSocketData(Request $request, int $id)
     {
         $i = 0;
-        while(true)
+        while($i != 6)
         {
             $i++;
             $dataMatch = GtMatchList::query()
@@ -114,14 +114,7 @@ class MatchShowController extends Controller
                 'num_game' => $this->numGame,
                 'preview' => $this->preview
             ]));
-
-            sleep(10);
-
-            if($i == 3 ) {
-                break;
-            }
+            sleep(2);
         }
-
-
     }
 }

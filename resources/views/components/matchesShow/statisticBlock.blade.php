@@ -38,7 +38,7 @@
         </tr>
         </thead>
         @if(intval($match_beta->match_games[$num_game - 1]->match_start) == 3)
-            <tbody>
+            <tbody id="stats-team1-players">
                 @foreach($playersTeam1 as $playerT1)
                     <tr class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]">
                         <td class="py-1 px-2">
