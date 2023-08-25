@@ -72,13 +72,6 @@ Route::middleware(['cors'])->group(function () {
     Route::get('sitemap/{sitemap}', [SeoController::class, 'sitemap']);
 });
 
-Route::get('{id}', function (Request $request, $id, ?string $side = null) {
-    $controller = app()->make(MatchShowController::class);
-    $data = $controller->index($request, $id, $side);
-
-    broadcast(new MatchDataUpdate(1, $data))->toOthers();
-
-    return $data;
-});
+Route::get('{id}', [MatchShowController::class, 'sendWebSocketData']);
 
 

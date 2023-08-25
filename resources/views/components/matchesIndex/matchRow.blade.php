@@ -50,7 +50,7 @@
                          alt="{{ $info->t1->t }} icon" class="w-[1.6rem] aspect-[3/2] object-contain" loading="lazy">
                 </div>
             </div>
-            <div class="flex items-col border-l border-r text-gray-400 justify-center items-center sm:text-sm w-[70px] sm:w-[100px]">
+            <div class="flex items-col border-l border-r text-gray-400 justifalsefy-center items-center sm:text-sm w-[70px] sm:w-[100px]">
                 @if($matchIsLive )
                     <div class="flex flex-row items-center justify-center">
                         <svg class="opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" style="color: rgb(171, 175, 187); height: 1.1em;">

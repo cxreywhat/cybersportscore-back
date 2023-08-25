@@ -1,19 +1,12 @@
-@php use Illuminate\Http\Request; @endphp
 @extends('main')
 
-{{--@php
-
-    $t1 = $match_beta->match_games[$num_game - 1]->match_data->teams->t1->tid === $preview->getTeam1()->id;
-    $t2 = $match_beta->match_games[$num_game - 1]->match_data->teams->t2->tid === $preview->getTeam2()->id;
-@endphp--}}
 
 @section('content')
     <div class="w-full h-full relative">
-@php
-    dd($data1);
-       dd($match_beta);
-       dd($preview);
-@endphp
+    @php
+           dd($match_beta);
+           dd($preview);
+    @endphp
         <div class="grid grid-cols-1 md:grid-cols-6 gap-6 relative mb-3">
             <div class="col-span-6 lg:col-span-3 flex justify-between items-center w-full flex-col sm:flex-row">
                 <div class="flex my-5 sm:my-0 text-gray-300 font-bold text-[10px] sm:text-xs">

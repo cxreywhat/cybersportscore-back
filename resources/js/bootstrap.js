@@ -19,17 +19,37 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  */
 
 import Echo from 'laravel-echo';
-
+window.Pusher = require('pusher-js');
 
 window.Echo = new Echo({
     broadcaster: 'pusher',
-    key: 'aInHQQ.kb1gHg:8Smc1TYdSlSkExz2IlQj5k70peMMFT_5MVWdon_oCMk',
-    cluster: 'us2',
-    forceTLS: true
+    key: 'app-key',
+    wsHost: '127.0.0.1',
+    cluster: 'eu',
+    wsPort: 6001,
+    wssPort: 6001,
+    forceTLS: false,
+    encrypted: true,
+    disableStats: true,
+    enabledTransports: ['ws', 'wss'],
+    activityTimeout: 5000000
 });
+
+
+// window.Echo = new Echo({
+//     broadcaster: 'pusher',
+//     key: process.env.PUSHER_APP_KEY,
+//     wsHost: process.env.PUSHER_HOST,
+//     wsPort: process.env.PUSHER_PORT,
+//     wssPort: process.env.PUSHER_PORT,
+//     forceTLS: false,
+//     encrypted: true,
+//     disableStats: true,
+//     enabledTransports: ['ws', 'wss'],
+// });
 
 window.Echo.channel('live-data')
     .listen('MatchDataUpdate', (e) => {
         console.log('Match data updated:', e);
-        // Обновите данные на вашей странице
     });
+

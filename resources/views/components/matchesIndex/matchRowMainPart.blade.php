@@ -11,7 +11,11 @@
     <div class="flex-col-reverse items-end flex" >
         <span class="ml-3 sm:ml-0 items-col-adv text-[9px] font-semibold opacity-90" >
             @if(end($match_beta->match_games[$num_game - 1]->match_data->gold) > 0 && $match_beta->is_live)
-                <span class="h-[12px] block rounded border-yellow-300 text-yellow-300 leading-normal" >+{{round(end($match_beta->match_games[$num_game - 1]->match_data->gold) / 1000), 1}}k</span>
+                <span class="h-[12px] block rounded border-yellow-300 text-yellow-300 leading-normal" >
+                    +{{ end($match_beta->match_games[$num_game - 1]->match_data->gold)  >= 1000 ?
+                        round(end($match_beta->match_games[$num_game - 1]->match_data->gold) / 1000, 1).'k'  :
+                         end($match_beta->match_games[$num_game - 1]->match_data->gold)  }}
+                </span>
             @endif
             @if($match_beta->match_games[$num_game - 1]->advantage_exp > 0 && $match_beta->is_live)
                 <span class="text-left h-[12px] block sm:ml-0 rounded border-[#1786ED] text-[#1786ED] leading-normal" >+{{round($match_beta->match_games[$num_game - 1]->advantage_exp / 1000, 1)}}k</span>
@@ -35,9 +39,15 @@
             </div>
         </div>
         <div class="flex flex-row items-center text-base justify-center italic" >
-            <span class="leading-normal text-apple text-xs sm:text-sm text-right font-bold pr-1">{{$match_beta->match_games[$num_game - 1]->match_data->teams->t1->score}}</span>
+            <span class="leading-normal text-apple text-xs sm:text-sm text-right font-bold pr-1">
+                {{ $t1 ? $match_beta->match_games[$num_game - 1]->match_data->teams->t1->score
+                    : $match_beta->match_games[$num_game - 1]->match_data->teams->t2->score }}
+            </span>
             :
-            <span class="leading-normal text-apple text-xs sm:text-sm text-center font-bold pl-1">{{$match_beta->match_games[$num_game - 1]->match_data->teams->t2->score}}</span>
+            <span class="leading-normal text-apple text-xs sm:text-sm text-center font-bold pl-1">
+            {{ $t2 ? $match_beta->match_games[$num_game - 1]->match_data->teams->t2->score
+                    : $match_beta->match_games[$num_game - 1]->match_data->teams->t1->score }}
+            </span>
         </div>
     </div>
 </div>
@@ -50,10 +60,18 @@
 
         <span class="ml-3 sm:ml-0 items-col-adv text-[9px] font-semibold opacity-90" >
             @if(end($match_beta->match_games[$num_game - 1]->match_data->gold) < 0 && $match_beta->is_live)
-                <span class="h-[12px] block rounded border-yellow-300 text-yellow-300 leading-normal" >+{{round(end($match_beta->match_games[$num_game - 1]->match_data->gold) * -1 / 1000), 1}}k</span>
+                <span class="h-[12px] block rounded border-yellow-300 text-yellow-300 leading-normal" >
+                   +{{ end($match_beta->match_games[$num_game - 1]->match_data->gold)  <= -1000 ?
+                        round(end($match_beta->match_games[$num_game - 1]->match_data->gold) * -1 / 1000, 1).'k'  :
+                         end($match_beta->match_games[$num_game - 1]->match_data->gold) }}
+                </span>
             @endif
             @if($match_beta->match_games[$num_game - 1]->advantage_exp < 0 && $match_beta->is_live)
-                <span class="text-left h-[12px] block sm:ml-0 rounded border-[#1786ED] text-[#1786ED] leading-normal" >+{{round($match_beta->match_games[$num_game - 1]->advantage_exp * -1 / 1000, 1)}}k</span>
+                <span class="text-left h-[12px] block sm:ml-0 rounded border-[#1786ED] text-[#1786ED] leading-normal" >
+                    +{{ $match_beta->match_games[$num_game - 1]->advantage_exp <= -1000 ?
+                        round($match_beta->match_games[$num_game - 1]->advantage_exp * - 1 / 1000, 1).'k' :
+                         $match_beta->match_games[$num_game - 1]->advantage_exp - 1 }}
+                </span>
             @endif
         </span>
     </div>
