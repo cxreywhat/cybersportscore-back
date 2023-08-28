@@ -19,7 +19,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  */
 
 import Echo from 'laravel-echo';
-import statisticsTeam1 from './components/matches/statisticBlock'
+import { statisticsPlayersTeam } from './components/matches/statisticBlock'
+import { renderingPicksAndBans } from "./components/matches/picksAndBans";
+import { details } from "./components/matches/detailsPlayers";
+
 window.Pusher = require('pusher-js');
 
 window.Echo = new Echo({
@@ -51,9 +54,18 @@ window.Echo = new Echo({
 
 window.Echo.channel('live-data')
     .listen('MatchDataUpdate', (e) => {
-        let match_beta = e.updatedData.match_beta;
-        let numGame = e.updatedData.num_games;
-        console.log([numGame, match_beta])
-        statisticsPlayersTeam1(match_beta.match_games[numGame].match_data.teams.t1.players.toArray())
+        let matchBeta = e.updatedData.match_beta;
+        let numGame = e.updatedData.num_game;
+        let matchStart = matchBeta.match_games[numGame- 1].match_start;
+        let preview = e.updatedData.preview;
+
+        statisticsPlayersTeam(matchBeta.match_games[numGame - 1].match_data.teams.t1.players, matchBeta.game_id, matchStart, 1);
+        statisticsPlayersTeam(matchBeta.match_games[numGame - 1].match_data.teams.t2.players, matchBeta.game_id, matchStart, 2);
+
+        renderingPicksAndBans(matchBeta.match_games[numGame - 1].match_data.teams.t1, matchBeta.game_id, matchStart, 1)
+        renderingPicksAndBans(matchBeta.match_games[numGame - 1].match_data.teams.t2, matchBeta.game_id, matchStart, 2)
+
+        details(matchBeta, numGame);
+
     });
 

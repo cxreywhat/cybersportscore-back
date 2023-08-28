@@ -17,7 +17,7 @@
         @if(count($items) > 0)
             @foreach($items as $item)
                 <div class="border-gray-700 border-x border-t justify-between">
-                    @include('components.matchesIndex.matchRow', ['game' => $item])
+                    @include('components.matchesIndex.matchRow')
                 </div>
             @endforeach
         @endif

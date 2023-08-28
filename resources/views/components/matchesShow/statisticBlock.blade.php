@@ -37,47 +37,47 @@
             <th class="py-2 px-1 w-[65px] pr-4 text-right">TKN</th>
         </tr>
         </thead>
-        @if(intval($match_beta->match_games[$num_game - 1]->match_start) == 3)
-            <tbody id="stats-team1-players">
-                @foreach($playersTeam1 as $playerT1)
-                    <tr class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]">
-                        <td class="py-1 px-2">
-                            <div class="flex flex-row gap-2 items-center">
-                                <img class="w-9 shadow-md rounded-sm" src="https://api.cybersportscore.com/media/game/hero/{{$match_beta->game_id}}/_59/{{ $playerT1->hero_id }}.png" alt="{{ $playerT1->hero_title }}"><!---->
-                                <div class="flex-col">
-                                    <div class="flex text-xs leading-none text-gray-300">
-                                        {{ $playerT1->nick }}
+        <tbody id="stats-team1-players">
+            @if(intval($match_beta->match_games[$num_game - 1]->match_start) == 3)
+                    @foreach($playersTeam1 as $playerT1)
+                        <tr class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]">
+                            <td class="py-1 px-2">
+                                <div class="flex flex-row gap-2 items-center">
+                                    <img class="w-9 shadow-md rounded-sm" src="https://api.cybersportscore.com/media/game/hero/{{$match_beta->game_id}}/_59/{{ $playerT1->hero_id }}.png" alt="{{ $playerT1->hero_title }}"><!---->
+                                    <div class="flex-col">
+                                        <div class="flex text-xs leading-none text-gray-300">
+                                            {{ $playerT1->nick }}
+                                        </div>
+                                        <a class="text-[10px] leading-none text-gray-500">{{ $playerT1->hero_title }}</a>
                                     </div>
-                                    <a class="text-[10px] leading-none text-gray-500">{{ $playerT1->hero_title }}</a>
+                                    <span title="{{ $playerT1->lvl }} Level" class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal
+                                        cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded">{{ $playerT1->lvl }}</span>
                                 </div>
-                                <span title="{{ $playerT1->lvl }} Level" class="ml-2 font-semibold bg-gray-700 bg-opacity-20 px-1 py-0 leading-normal
-                                    cursor-default text-[8px] text-gray-500 border-2 border-gray-700 hover:border-gray-600 rounded">{{ $playerT1->lvl }}</span>
-                            </div>
-                        </td>
-                        <td class="py-2 px-1 text-gray-400">{{ $playerT1->k }}</td>
-                        <td class="py-2 px-1 text-gray-400">{{ $playerT1->d }}</td>
-                        <td class="py-2 px-1 text-gray-400">{{ $playerT1->a }}</td>
-                        <td class="py-2 pr-4 text-apple text-right">{{ $playerT1->n }}</td>
-                        <td class="py-2 px-1">
-                            <div class="flex gap-2 w-[240px]">
-                                @foreach($playerT1->items as $item)
-                                    <div class="flex gap-0.5">
-                                        <img class="w-5 shadow-md rounded-sm" src="https://api.cybersportscore.com/media/game/item/{{ $match_beta->game_id }}/_29/{{ $item->id }}.png" title="{{ $item->title }}" alt="{{ $item->title }}">
-                                    </div>
-                                @endforeach
-                            </div>
-                        </td>
-                        <td class="py-2 px-1 pr-3 text-gray-300 text-right">{{ $playerT1->l }} ({{ $playerT1->dn }})</td>
-                        <td class="py-2 px-1 pr-3 text-apple text-right">{{ $playerT1->gpm }}</td>
-                        <td class="py-2 px-1 text-gray-300 pr-3 text-right">{{ $playerT1->xpm }}</td>
-                        <td class="py-2 px-1 text-gray-300 pr-3 text-right">{{ $playerT1->heal }}</td>
-                        <td class="py-2 px-1 text-gray-300 pr-3 text-right">{{ $playerT1->dmg }}</td>
-                        <td class="py-2 px-1 text-gray-300 pr-3 text-right">{{ $playerT1->tdmg}}</td>
-                        <td class="py-2 px-1 text-gray-300 pr-4 text-right">0</td>
-                    </tr>
-                @endforeach
-            </tbody>
-        @endif
+                            </td>
+                            <td class="py-2 px-1 text-gray-400">{{ $playerT1->k }}</td>
+                            <td class="py-2 px-1 text-gray-400">{{ $playerT1->d }}</td>
+                            <td class="py-2 px-1 text-gray-400">{{ $playerT1->a }}</td>
+                            <td class="py-2 pr-4 text-apple text-right">{{ $playerT1->n }}</td>
+                            <td class="py-2 px-1">
+                                <div id="items" class="flex gap-2 w-[240px]">
+                                    @foreach($playerT1->items as $item)
+                                        <div class="flex gap-0.5">
+                                            <img class="w-5 shadow-md rounded-sm" src="https://api.cybersportscore.com/media/game/item/{{ $match_beta->game_id }}/_29/{{ $item->id }}.png" title="{{ $item->title }}" alt="{{ $item->title }}">
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </td>
+                            <td class="py-2 px-1 pr-3 text-gray-300 text-right">{{ $playerT1->l }} ({{ $playerT1->dn }})</td>
+                            <td class="py-2 px-1 pr-3 text-apple text-right">{{ $playerT1->gpm }}</td>
+                            <td class="py-2 px-1 text-gray-300 pr-3 text-right">{{ $playerT1->xpm }}</td>
+                            <td class="py-2 px-1 text-gray-300 pr-3 text-right">{{ $playerT1->heal }}</td>
+                            <td class="py-2 px-1 text-gray-300 pr-3 text-right">{{ $playerT1->dmg }}</td>
+                            <td class="py-2 px-1 text-gray-300 pr-3 text-right">{{ $playerT1->tdmg}}</td>
+                            <td class="py-2 px-1 text-gray-300 pr-4 text-right">0</td>
+                        </tr>
+                    @endforeach
+            @endif
+        </tbody>
     </table>
     <table class="w-full table-fixed text-xs text-left">
         <thead class="text-xs uppercase text-gray-500 border-b border-t border-gray-700 bg-gray-700 bg-opacity-40">
@@ -105,8 +105,8 @@
                 <th class="py-2 px-1 w-[65px] pr-4 text-right">TKN</th>
             </tr>
         </thead>
-        @if(intval($match_beta->match_games[$num_game - 1]->match_start) == 3)
-            <tbody>
+        <tbody id="stats-team2-players">
+            @if(intval($match_beta->match_games[$num_game - 1]->match_start) == 3)
                 @foreach($playersTeam2 as $playerT2)
                     <tr class="border-b last:border-b-0 border-gray-700 hover:bg-gray-800 h-[40px]">
                         <td class="py-1 px-2">
@@ -127,10 +127,10 @@
                         <td class="py-2 px-1 text-gray-400">{{ $playerT2->a }}</td>
                         <td class="py-2 pr-4 text-apple text-right">{{ $playerT2->n }}</td>
                         <td class="py-2 px-1">
-                            <div class="flex gap-2 w-[240px]">
+                            <div id="items-2" class="flex gap-2 w-[240px]">
                                 @foreach($playerT2->items as $item)
                                     <div class="flex gap-0.5">
-                                        <img class="w-5 shadow-md rounded-sm" src="https://api.cybersportscore.com/media/game/item/{{ $match_beta->game_id }}/_29/{{ $item->id }}.png" title="{{ $item->title }}" alt="{{ $item->title}}">
+                                        <img class="w-5 shadow-md rounded-sm" src="https://api.cybersportscore.com/media/game/item/{{ $match_beta->game_id }}/_29/{{ $item->id }}.png" title="{{ $item->title }}" alt="{{ $item->title }}">
                                     </div>
                                 @endforeach
                             </div>
@@ -144,7 +144,8 @@
                         <td class="py-2 px-1 text-gray-300 pr-4 text-right">0</td>
                     </tr>
                 @endforeach
-            </tbody>
-        @endif
+            @endif
+        </tbody>
     </table>
 </div>
+<script src={{ asset('js/components/matches/statisticBlock.js') }}></script>

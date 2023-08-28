@@ -1,11 +1,11 @@
 <?php
-    $info = json_decode($game->info);
-    $gameDate = new DateTime($game->date, new DateTimeZone('UTC'));
-    $matchIsLive = $gameDate->getTimestamp() < time();
+    $info = json_decode($item->info);
+    $itemDate = new DateTime($item->date, new DateTimeZone('UTC'));
+    $matchIsLive = $itemDate->getTimestamp() > time() && intval($info->map->match_start) == 1;
     $numberGame = $info->map->num;
 ?>
    <div class="items-row hover:bg-gray-800 border-l-[1px] {{ $matchIsLive ? 'border-red-500 border-l-[4px]' : 'border-gray-700'}}">
-        <a href="/{{$game->id}}" class="border-transparent flex flex-row w-full h-full items-center">
+        <a href="/{{$item->id}}" class="border-transparent flex flex-row w-full h-full items-center">
             <div class="flex items-col pl-4 w-[45px]">
                 <img loading="lazy" class="opacity-50 w-5 h-5" alt="dota-2 icon"
                      src={{asset("media/icons/games/".$info->t->g."-bw.webp")}}>
@@ -45,7 +45,7 @@
             </div>
             <div class="items-col w-[50px] md:w-[60px] items-center hidden sm:flex">
                 <div class="flex flex-col items-center mx-auto">
-                    <img {{--src={{ "https://api.cybersportscore.com/media/logo/_30/t".$game->t1.".webp" }}--}}
+                    <img {{--src={{ "https://api.cybersportscore.com/media/logo/_30/t".$item->t1.".webp" }}--}}
                          src='{{ asset("media/icons/no-icon.svg") }}'
                          alt="{{ $info->t1->t }} icon" class="w-[1.6rem] aspect-[3/2] object-contain" loading="lazy">
                 </div>
@@ -75,7 +75,7 @@
             </div>
             <div class="items-col w-[50px] md:w-[60px] items-center hidden sm:flex">
                 <div class="flex flex-col items-center mx-auto">
-                    <img  {{--src='{{ 'https://api.cybersportscore.com/media/logo/_30/t'.$game->t2.'.webp' }}'--}}
+                    <img  {{--src='{{ 'https://api.cybersportscore.com/media/logo/_30/t'.$item->t2.'.webp' }}'--}}
                           src='{{ asset("media/icons/no-icon.svg") }}'
                           alt="{{ $info->t2->t }} icon" class="w-[1.6rem] aspect-[3/2] object-contain" loading="lazy">
                 </div>
@@ -94,10 +94,10 @@
             </div>
             <div class="items-col w-[50px] items-center">
                 <div class="flex font-semibold flex-col text-xs text-gray-300 leading-4 mx-auto ">
-                    BO{{$game->bo}}
+                    BO{{$item->bo}}
                 </div>
                 <span class="{{$matchIsLive ? 'bg-apple' : 'bg-gray-500'}} text-[11px] leading-none font-semibold mt-0.5 w-7 px-1 py-0.5 rounded text-white mx-auto text-center">
-                    {{$game->t1s}}:{{$game->t2s}}
+                    {{$item->t1s}}:{{$item->t2s}}
                 </span>
             </div>
         </a>
@@ -109,7 +109,7 @@
         </button>
     </div>
 @if($matchIsLive)
-    @include('components.matchesIndex.matchHomeDetails', ['gameInfo' => $info, 'game' => $game, 'id' => 'matchDetails'])
+    @include('components.matchesIndex.matchHomeDetails', ['gameInfo' => $info, 'game' => $item, 'id' => 'matchDetails'])
 @endif
 
 <script>

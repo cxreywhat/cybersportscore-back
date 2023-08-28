@@ -1,6 +1,9 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/components/filterListBox.js": "/js/components/filterListBox.js",
+    "/js/components/matches/statisticBlock.js": "/js/components/matches/statisticBlock.js",
+    "/js/components/matches/picksAndBans.js": "/js/components/matches/picksAndBans.js",
+    "/js/components/matches/detailsPlayers.js": "/js/components/matches/detailsPlayers.js",
     "/css/critical.css": "/css/critical.css",
     "/css/app.css": "/css/app.css",
     "/css/style.css": "/css/style.css"

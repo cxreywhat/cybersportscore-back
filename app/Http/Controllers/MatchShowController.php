@@ -75,7 +75,7 @@ class MatchShowController extends Controller
     public function sendWebSocketData(Request $request, int $id)
     {
         $i = 0;
-        while($i != 6)
+        while($i != 5)
         {
             $i++;
             $dataMatch = GtMatchList::query()

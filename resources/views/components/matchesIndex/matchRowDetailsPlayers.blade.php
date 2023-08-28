@@ -27,7 +27,7 @@
             <img src="https://api.cybersportscore.com/media/logo/_30/t{{ $match_beta->match_games[$num_game - 1]->match_data->teams->t2->tid }}.webp" alt="{{ $match_beta->match_games[$num_game - 1]->match_data->teams->t2->tid }} icon" class="w-[1.6rem] aspect-[3/2] object-contain ml-2" loading="lazy">
         </div>
     </div>
-        <div class="flex flex-col relative bg-[#1F2937]">
+        <div id="detailsContainer" class="flex flex-col relative bg-[#1F2937]">
         @foreach($playersTeam1 as $playerTeam1)
             @php
                 $key = array_keys($playersTeam2);
@@ -68,9 +68,9 @@
                     @else
                         <img src="https://api.cybersportscore.com/media/flags/{{$playerTeam2->matchPlayer->countryId}}.svg" alt="Country flag 31" loading="lazy" class="w-4 md:w-5 ml-2">
                     @endif
-
                 </div>
             </div>
         @endforeach
     </div>
 </div>
+<script src={{ asset('js/components/matches/detailsPlayers.js') }}></script>
