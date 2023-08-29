@@ -73,4 +73,3 @@
         @endforeach
     </div>
 </div>
-<script src={{ asset('js/components/matches/detailsPlayers.js') }}></script>

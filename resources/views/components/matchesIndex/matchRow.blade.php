@@ -45,8 +45,8 @@
             </div>
             <div class="items-col w-[50px] md:w-[60px] items-center hidden sm:flex">
                 <div class="flex flex-col items-center mx-auto">
-                    <img {{--src={{ "https://api.cybersportscore.com/media/logo/_30/t".$item->t1.".webp" }}--}}
-                         src='{{ asset("media/icons/no-icon.svg") }}'
+                    <img src={{ "https://api.cybersportscore.com/media/logo/_30/t".$item->t1.".webp" }}
+                         {{--src='{{ asset("media/icons/no-icon.svg") }}'--}}
                          alt="{{ $info->t1->t }} icon" class="w-[1.6rem] aspect-[3/2] object-contain" loading="lazy">
                 </div>
             </div>
@@ -75,8 +75,8 @@
             </div>
             <div class="items-col w-[50px] md:w-[60px] items-center hidden sm:flex">
                 <div class="flex flex-col items-center mx-auto">
-                    <img  {{--src='{{ 'https://api.cybersportscore.com/media/logo/_30/t'.$item->t2.'.webp' }}'--}}
-                          src='{{ asset("media/icons/no-icon.svg") }}'
+                    <img  src='{{ 'https://api.cybersportscore.com/media/logo/_30/t'.$item->t2.'.webp' }}'
+                          {{--src='{{ asset("media/icons/no-icon.svg") }}'--}}
                           alt="{{ $info->t2->t }} icon" class="w-[1.6rem] aspect-[3/2] object-contain" loading="lazy">
                 </div>
             </div>
@@ -89,7 +89,7 @@
             </div>
             <div class="items-col w-[80px] hidden sm:flex items-center">
                 <div class="flex flex-col items-center mx-auto">
-                    <img src='{{ asset("media/icons/no-icon.svg") }}' title="Miso Soup" alt="Miso Soup icon" loading="lazy" class="w-[1.6rem] h-[1.6rem] inline">
+                    <img src='{{ asset('https://api.cybersportscore.com/media/event/_30/e'.$item->tournament_id.'.webp') }}' title="Miso Soup" alt="Miso Soup icon" loading="lazy" class="w-[1.6rem] h-[1.6rem] inline">
                 </div>
             </div>
             <div class="items-col w-[50px] items-center">

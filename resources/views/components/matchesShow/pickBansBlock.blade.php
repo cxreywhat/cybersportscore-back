@@ -40,5 +40,4 @@
         </div>
     @endif
 </div>
-<script src={{ asset('js/components/matches/picksAndBans.js') }}></script>
 

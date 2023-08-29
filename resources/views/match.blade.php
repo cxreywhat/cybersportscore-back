@@ -34,7 +34,7 @@
                                     : ($game->num <= $preview->getNum() ? "border border-gray-500 text-gray-500 hover:text-gray-300 hover:border-apple"
                                     : "text-gray-700 border border-1 border-gray-700 cursor-default pointer-events-none") }}
                                     uppercase text-[10px] font-semibold px-2 py-1 rounded sm:text-xs">
-                                        {!! $match_beta->is_live && $game->match_data?->is_live != null ? "<span class='animate-pulse inline-flex w-[8px] h-[8px] bg-red-500 border border-gray-400 border-1 rounded-[100%] mr-1'></span>" : ""!!}
+                                        {!! $match_beta->is_live && $game->num == $preview->getNum() ? "<span class='animate-pulse inline-flex w-[8px] h-[8px] bg-red-500 border border-gray-400 border-1 rounded-[100%] mr-1'></span>" : ""!!}
                                     <span class="inline-flex">Карта {{$game->num}}</span>
                                 </button>
                             </form>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="w-full border border-gray-700 rounded-lg shadow-xl bg-[#212D3D] grid grid-cols-12 gap-2 flex">
                     <div class="flex flex-row items-center grow w-full border-r border-gray-700 p-4 col-span-12 sm:col-span-5 order-2 sm:order-1">
-                        <div class="w-full flex flex-col-reverse flex-col">
+                        <div id="map" class="w-full flex flex-col-reverse flex-col">
                             @include('components.matchesIndex.matchRowDetailsSummary')
                             @include('components.matchesIndex.matchRowDetailsMapDota2')
                         </div>
@@ -86,6 +86,14 @@
         <!---->
     </div>
 @endsection()
+
+@section('scripts')
+    <script src={{ asset('js/components/matches/detailsPlayers.js') }}></script>
+    <script src={{ asset('js/components/matches/detailsMap.js') }}></script>
+    <script src={{ asset('js/components/matches/picksAndBans.js') }}></script>
+    <script src={{ asset('js/components/matches/statisticBlock.js') }}></script>
+    <script src={{ asset('js/components/matches/detailsMap.js') }}></script>
+@endsection
 
 <style lang="scss">
 

@@ -22,7 +22,6 @@
             @endif
         </span>
         <span class="text-[10px] sm:text-xs font-semibold mr-3 sm:mr-0 mb-0 sm:mb-1 md:mb-0 truncate" >{{ $preview->getTeam1()->getShortTitle() }}</span>
-
     </div>
 </div>
 <div class="items-col w-[50px] md:w-[60px] items-center hidden sm:flex" >
@@ -63,14 +62,14 @@
                 <span class="h-[12px] block rounded border-yellow-300 text-yellow-300 leading-normal" >
                    +{{ end($match_beta->match_games[$num_game - 1]->match_data->gold)  <= -1000 ?
                         round(end($match_beta->match_games[$num_game - 1]->match_data->gold) * -1 / 1000, 1).'k'  :
-                         end($match_beta->match_games[$num_game - 1]->match_data->gold) }}
+                         end($match_beta->match_games[$num_game - 1]->match_data->gold) * -1 }}
                 </span>
             @endif
             @if($match_beta->match_games[$num_game - 1]->advantage_exp < 0 && $match_beta->is_live)
                 <span class="text-left h-[12px] block sm:ml-0 rounded border-[#1786ED] text-[#1786ED] leading-normal" >
                     +{{ $match_beta->match_games[$num_game - 1]->advantage_exp <= -1000 ?
-                        round($match_beta->match_games[$num_game - 1]->advantage_exp * - 1 / 1000, 1).'k' :
-                         $match_beta->match_games[$num_game - 1]->advantage_exp - 1 }}
+                        round($match_beta->match_games[$num_game - 1]->advantage_exp * -1 / 1000, 1).'k' :
+                         $match_beta->match_games[$num_game - 1]->advantage_exp * -1 }}
                 </span>
             @endif
         </span>

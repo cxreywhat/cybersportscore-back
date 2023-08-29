@@ -148,4 +148,3 @@
         </tbody>
     </table>
 </div>
-<script src={{ asset('js/components/matches/statisticBlock.js') }}></script>

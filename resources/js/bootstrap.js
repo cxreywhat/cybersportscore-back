@@ -22,6 +22,8 @@ import Echo from 'laravel-echo';
 import { statisticsPlayersTeam } from './components/matches/statisticBlock'
 import { renderingPicksAndBans } from "./components/matches/picksAndBans";
 import { details } from "./components/matches/detailsPlayers";
+import { getMap } from "./components/matches/detailsMap";
+import { getSummary } from "./components/matches/detailsSummary";
 
 window.Pusher = require('pusher-js');
 
@@ -58,7 +60,6 @@ window.Echo.channel('live-data')
         let numGame = e.updatedData.num_game;
         let matchStart = matchBeta.match_games[numGame- 1].match_start;
         let preview = e.updatedData.preview;
-
         statisticsPlayersTeam(matchBeta.match_games[numGame - 1].match_data.teams.t1.players, matchBeta.game_id, matchStart, 1);
         statisticsPlayersTeam(matchBeta.match_games[numGame - 1].match_data.teams.t2.players, matchBeta.game_id, matchStart, 2);
 
@@ -66,6 +67,7 @@ window.Echo.channel('live-data')
         renderingPicksAndBans(matchBeta.match_games[numGame - 1].match_data.teams.t2, matchBeta.game_id, matchStart, 2)
 
         details(matchBeta, numGame);
-
+        getSummary(matchBeta, numGame);
+        getMap(preview.aggregated_events.destroyed_buildings);
     });
 
