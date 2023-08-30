@@ -8,7 +8,6 @@
 @section('content')
     <div class="w-full h-full relative">
     {{--@php
-           dd($match_beta);
            dd($preview);
     @endphp--}}
         <div class="grid grid-cols-1 md:grid-cols-6 gap-6 relative mb-3">
@@ -43,7 +42,7 @@
                 </div>
             </div>
             <div class="col-span-6 lg:col-span-3 flex justify-between items-center">
-                <div class="flex flex-row w-full border border-gray-700 h-[55px] rounded-lg shadow-xl bg-[#212D3D] items-center justify-center relative">
+                <div id="mainPart" class="flex flex-row w-full border border-gray-700 h-[55px] rounded-lg shadow-xl bg-[#212D3D] items-center justify-center relative">
                     @include('components.matchesIndex.matchRowMainPart')
                 </div>
             </div>
@@ -89,6 +88,7 @@
 
 @section('scripts')
     <script src={{ asset('js/components/matches/detailsPlayers.js') }}></script>
+    <script src={{ asset('js/components/matches/mainPart.js') }}></script>
     <script src={{ asset('js/components/matches/detailsMap.js') }}></script>
     <script src={{ asset('js/components/matches/picksAndBans.js') }}></script>
     <script src={{ asset('js/components/matches/statisticBlock.js') }}></script>

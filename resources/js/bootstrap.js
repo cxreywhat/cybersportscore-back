@@ -24,6 +24,7 @@ import { renderingPicksAndBans } from "./components/matches/picksAndBans";
 import { details } from "./components/matches/detailsPlayers";
 import { getMap } from "./components/matches/detailsMap";
 import { getSummary } from "./components/matches/detailsSummary";
+import { getMainPartInfo } from "./components/matches/mainPart";
 
 window.Pusher = require('pusher-js');
 
@@ -69,5 +70,6 @@ window.Echo.channel('live-data')
         details(matchBeta, numGame);
         getSummary(matchBeta, numGame);
         getMap(preview.aggregated_events.destroyed_buildings);
+        getMainPartInfo(matchBeta, numGame, preview);
     });
 

@@ -6,6 +6,7 @@
     "/js/components/matches/detailsPlayers.js": "/js/components/matches/detailsPlayers.js",
     "/js/components/matches/detailsMap.js": "/js/components/matches/detailsMap.js",
     "/js/components/matches/detailsSummary.js": "/js/components/matches/detailsSummary.js",
+    "/js/components/matches/mainPart.js": "/js/components/matches/mainPart.js",
     "/css/critical.css": "/css/critical.css",
     "/css/app.css": "/css/app.css",
     "/css/style.css": "/css/style.css"

@@ -6,6 +6,7 @@ mix.js("resources/js/app.js", "public/js")
     .js("resources/js/components/matches/detailsPlayers.js", "public/js/components/matches")
     .js("resources/js/components/matches/detailsMap.js", "public/js/components/matches")
     .js("resources/js/components/matches/detailsSummary.js", "public/js/components/matches")
+    .js("resources/js/components/matches/mainPart.js", "public/js/components/matches")
     .postCss("resources/css/app.css", "public/css", [require("tailwindcss")])
     .css('resources/css/critical.css', 'public/css')
     .sass('resources/css/style.scss', 'public/css');
