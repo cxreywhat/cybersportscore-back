@@ -1,7 +1,7 @@
 <?php
 
-use App\Events\MatchDataUpdate;
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MatchController;
 use App\Http\Controllers\MatchShowController;
 use App\Http\Controllers\NewsController;
@@ -10,7 +10,6 @@ use App\Http\Controllers\StreamController;
 use App\Http\Controllers\FilterController;
 use App\Http\Controllers\DictionaryController;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\Facades\Route;
 use App\Enums\GameEnum as Game;
 
@@ -72,6 +71,8 @@ Route::middleware(['cors'])->group(function () {
     Route::get('sitemap/{sitemap}', [SeoController::class, 'sitemap']);
 });
 
-Route::get('{id}', [MatchShowController::class, 'sendWebSocketData']);
 
+
+Route::get('{id}', [MatchShowController::class, 'sendWebSocketData'])
+    ->where('id', '[0-9]+');
 

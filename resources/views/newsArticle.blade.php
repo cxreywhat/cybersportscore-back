@@ -1,72 +1,64 @@
-<?php
-    $blocks = json_decode($data->blocks);
-    $timestamp = $data->data + 3 * 3600;
-    $months = array( 1 => 'янв.', 2 => 'фев.', 3 => 'мар.', 4 => 'апр.', 5 => 'мая', 6 => 'июн.', 7 => 'июл.', 8 => 'авг.', 9 => 'сен.', 10 => 'окт.', 11 => 'ноя.', 12 => 'дек.');
-    $formattedDate = date('j ', $timestamp) . $months[date('n', $timestamp)] . date(', Y H:i', $timestamp);
-?>
-
 @extends('main')
 
 @section('content')
-    <div class="grid grid-cols-1 md:grid-cols-6 gap-5">
-        <div class="col-span-5 lg:col-span-4 bg-[#212D3D]">
-            <div class="article-content col-span-2 md:col-span-4 w-full">
-                <div class="flex flex-col w-full border border-gray-700 rounded-lg">
-                    <div class="flex flex-col md:flex-row items-center p-3 border-b border-gray-700">
-                        <h4 class="text-m font-extrabold text-gray-500 text-white md:text-l">Article</h4>
-                    </div>
-                    <div class="p-4 relative min-h-[285px]">
-                        <article itemscope itemtype="http://schema.org/NewsArticle">
-                            <div style="display:none" itemprop="identifier" content="fake-identifier"></div>
-                            <div style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                                <span itemprop="name">John Doe</span>
-                            </div>
-                            <div style="display:none" itemprop="inLanguage" content="en"></div>
-                            <picture class="newspic flex mb-4 h-[400px] bg-gray-800">
-                                <source srcset="https://cybersportscore-api-next.esnadm.com/media/news/{{$data->pic}}">
-                                <img loading="lazy" src="https://cybersportscore-api-next.esnadm.com/media/news/{{$data->pic}}" itemprop="image" class="rounded-md">
-                            </picture>
-                            <section class="articleBody" itemprop="articleBody">
-                                <h1 itemprop="headline">{{$data->title}}</h1>
-                                <i class="time sct text-gray-500 italic block mb-10 text-xs">
-                                    {{ $formattedDate }}
-                                </i>
-                                @foreach($blocks as $block)
-                                    @if($block->type === "paragraph")
-                                        @include("components.blocks.paragraph", ['text' => $block->data->text])
-                                    @elseif($block->type === "header")
-                                        @include("components.blocks.header",
-                                            ['text' => $block->data->text],
-                                            ['level' => $block->data->level])
-                                    @elseif($block->type === "image")
-                                        @include("components.blocks.image", ['nameImg' => $block->data->file->url])
-                                    @elseif($block->type === "list")
-                                        @include("components.blocks.list", [''])
-                                    @elseif($block->type === "quote")
-                                        @include("components.blocks.quote", [
-                                            'text' => $block->data->text,
-                                            'caption' => $block->data->caption])
-                                    @elseif($block->type === "embed")
-                                        @include("components.blocks.embed", [
-                                            'id' => $block->data->embed])
-                                    @elseif($block->type === "table")
-                                        @include("components.blocks.table", [''])
-                                    @elseif($block->type === "delimiter")
-                                        @include("components.blocks.delimiter", [''])
-                                    @endif
-                                @endforeach
-                            </section>
-                        </article>
-                    </div>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-5">
+    <div class="col-span-5 lg:col-span-4 bg-[#212D3D]">
+        <div class="article-content col-span-2 md:col-span-4 w-full">
+            <div class="flex flex-col w-full border border-gray-700 rounded-lg">
+                <div class="flex flex-col md:flex-row items-center p-3 border-b border-gray-700">
+                    <h4 class="text-m font-extrabold text-gray-500 text-white md:text-l">Article</h4>
+                </div>
+                <div class="p-4 relative min-h-[285px]">
+                    <article itemscope itemtype="http://schema.org/NewsArticle">
+                        <div style="display:none" itemprop="identifier" content="fake-identifier"></div>
+                        <div style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="name">John Doe</span>
+                        </div>
+                        <div style="display:none" itemprop="inLanguage" content="en"></div>
+                        <picture class="newspic flex mb-4 h-[400px] bg-gray-800">
+                            <source srcset="{{asset('/media/news/'.$data->pic == "" ? $data->pic_in : $data->pic)}}">
+                            <img loading="lazy" src="{{asset('/media/news/'.$data->pic == "" ? $data->pic_in : $data->pic)}}" itemprop="image" class="rounded-md">
+                        </picture>
+                        <section class="articleBody" itemprop="articleBody">
+                            <h1 itemprop="headline">{{$data->title}}</h1>
+                            <i class="time sct text-gray-500 italic block mb-10 text-xs">
+                                {{ $formattedDate }}
+                            </i>
+                            @foreach($blocks as $block)
+                                @if($block->type === "paragraph")
+                                    @include("components.blocks.paragraph", ['text' => $block->data->text])
+                                @elseif($block->type === "header")
+                                    @include("components.blocks.header",
+                                        ['text' => $block->data->text],
+                                        ['level' => $block->data->level])
+                                @elseif($block->type === "image")
+                                    @include("components.blocks.image", ['nameImg' => $block->data->file->url])
+                                @elseif($block->type === "list")
+                                    @include("components.blocks.list", [''])
+                                @elseif($block->type === "quote")
+                                    @include("components.blocks.quote", [
+                                        'text' => $block->data->text,
+                                        'caption' => $block->data->caption])
+                                @elseif($block->type === "embed")
+                                    @include("components.blocks.embed", [
+                                        'id' => $block->data->embed])
+                                @elseif($block->type === "table")
+                                    @include("components.blocks.table", [''])
+                                @elseif($block->type === "delimiter")
+                                    @include("components.blocks.delimiter", [''])
+                                @endif
+                            @endforeach
+                        </section>
+                    </article>
                 </div>
             </div>
         </div>
-        <div class="col-span-5 lg:col-span-2 ">
-            @include('components.matchesIndex.articlesBlock', ['news' => $news, 'count' => 10])
-        </div>
     </div>
+    <div class="col-span-5 lg:col-span-2 ">
+        @include('components.matchesIndex.articlesBlock', ['news' => $news, 'count' => 10])
+    </div>
+</div>
 @endsection
-
 <style lang="scss">
     hr {
         margin-top: 1rem;

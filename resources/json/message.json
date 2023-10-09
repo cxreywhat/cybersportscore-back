@@ -96,6 +96,20 @@
         "article": {
             "source": "Source",
             "sourcePic": "Source picture"
+        },
+        "months": {
+            "january": "jan",
+            "february": "feb",
+            "march": "mar",
+            "april": "apr",
+            "may": "may",
+            "june": "jun",
+            "july": "jul",
+            "august": "aug",
+            "september": "sep",
+            "october": "oct",
+            "november": "nov",
+            "december": "dec"
         }
     },
     "ru": {
@@ -187,12 +201,26 @@
             "last_matches": "Последние матчи",
             "atricles": "Статьи",
             "news": "Новости",
-            "map": "Карта",
+            "map": "Карта ",
             "dota2": "дота 2"
         },
         "article": {
             "source": "Источник",
             "sourcePic": "Заглавное фото"
+        },
+        "month": {
+            "january": "янв.",
+            "february": "фев.",
+            "march": "мар.",
+            "april": "апр.",
+            "may": "мая",
+            "june": "июн.",
+            "july": "июл.",
+            "august": "авг.",
+            "september": "сен.",
+            "october": "окт.",
+            "november": "ноя.",
+            "december": "дек."
         }
     },
     "zh": {
@@ -289,6 +317,20 @@
         "article": {
             "source": "Source",
             "sourcePic": "Source picture"
+        },
+        "month": {
+            "january": "一月 ",
+            "february": "二月",
+            "march": "三月",
+            "april": "四月",
+            "may": "五月",
+            "june": "六月",
+            "july": "七月",
+            "august": "八月",
+            "september": "九月",
+            "october": "十月",
+            "november": "十一月",
+            "december": "十二月"
         }
     },
     "uk": {
@@ -384,6 +426,20 @@
         "article": {
             "source": "Джерело",
             "sourcePic": "Заголовне фото"
+        },
+        "month": {
+            "january": "січ.",
+            "february": "лют.",
+            "march": "бер.",
+            "april": "квіт.",
+            "may": "трав.",
+            "june": "черв.",
+            "july": "лип.",
+            "august": "серп.",
+            "september": "верес.",
+            "october": "жовт.",
+            "november": "лист.",
+            "december": "груд."
         }
     }
 }

@@ -8,8 +8,8 @@
 @endphp
 <a href="{{ $item->source }}" class="external-post">
     <picture data-v-dcd628b6="">
-        <source srcset="https://cybersportscore-api-next.esnadm.com/media/news/_182/{{ $item->pic }}">
-        <img src="https://cybersportscore-api-next.esnadm.com/media/news/_182/{{ $item->pic }}" loading="lazy" alt="">
+        <source srcset="{{asset('/media/news/_182/'.$item->pic)}}">
+        <img src="{{asset('/media/news/_182/'.$item->pic)}}" loading="lazy" alt="">
     </picture>
     <div>
         <div class="exp-title">

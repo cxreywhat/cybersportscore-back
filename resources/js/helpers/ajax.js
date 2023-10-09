@@ -1,7 +1,8 @@
-import {addNews, addToNewsPage} from "./components/news";
-import {createList, setEvents, setTeams} from "./components/filterListBox";
+import {addNews, addToNewsPage} from "../components/news";
+import {createList, setEvents, setTeams} from "../components/filterListBox";
 import {isNullOrUndef} from "chart.js/helpers";
-import {insertChart} from "./helpers/detailsMap";
+import {insertChart} from "./detailsMap";
+import {historyMatchesBlock} from "../components/matches/historyBlock";
 
 let blockId = '';
 $(document).ready(function() {
@@ -26,8 +27,7 @@ $(document).ready(function() {
         });
     })
 
-
-    function changeNews(lang, perPage) {
+   function changeNews(lang, perPage) {
         $.ajax({
             url: '/api/news',
             method: 'GET',
@@ -48,7 +48,7 @@ $(document).ready(function() {
         });
     }
 });
-function loadNews() {
+export function loadNews() {
     $('.ajax-news').click((e) => {
         e.preventDefault();
 
@@ -66,7 +66,6 @@ function loadNews() {
             success: function(response) {
                 $('#content-container').html(response);
                 history.pushState({}, '', '/news');
-                loadNews();
                 loadNewsBlock();
             },
             error: function(xhr) {
@@ -76,7 +75,7 @@ function loadNews() {
     });
 }
 
-function loadNewsBlock() {
+export function loadNewsBlock() {
     const newsBlock = document.querySelectorAll('.news-block');
     newsBlock.forEach((news) => {
         news.addEventListener('click', (e) => {
@@ -106,7 +105,7 @@ function loadNewsBlock() {
         })
     })
 }
-function loadHome() {
+export function loadHome() {
     $('.main-logo').click((e) => {
         e.preventDefault();
         $.ajax({
@@ -123,6 +122,8 @@ function loadHome() {
             success: function(response) {
                 $('#content-container').html(response);
                 history.pushState({}, '', '/');
+
+                loadNews()
             },
             error: function(xhr) {
                 console.error(xhr);
@@ -131,7 +132,7 @@ function loadHome() {
     })
 }
 
-function loadMatchBlockInfo() {
+export function loadMatchBlockInfo() {
     $(document).ready(function() {
         const matchInfoLinks = document.querySelectorAll('.ajax-match-info');
         let id = null;
@@ -175,13 +176,14 @@ function loadMatchBlockInfo() {
     });
 }
 
-function loadMatchBlock() {
+export function loadMatchBlock() {
     $(document).ready(function() {
         const matchBlocks = document.querySelectorAll('.ajax-match-block');
         matchBlocks.forEach((match) => {
             match.addEventListener('click', function (event) {
                 event.preventDefault();
                 const matchId = match.getAttribute('data-id');
+
                 if (matchId) {
                     $.ajax({
                         url: '/' + matchId,
@@ -196,6 +198,7 @@ function loadMatchBlock() {
                         },
                         success: function(response) {
                             $('#content-container').html(response);
+                            loadHistoryTeams(matchId);
                             history.pushState({}, '', '/' + matchId);
                         },
                         error: function(xhr) {
@@ -210,7 +213,22 @@ function loadMatchBlock() {
     });
 }
 
-function checkDetailsMatch(gameId, num, csrfToken, container) {
+function loadHistoryTeams(id) {
+    $.ajax({
+        url: '/api/matches/' + id + '/history',
+        method: 'GET',
+        dataType: 'html',
+        success: function(response) {
+            const histories = JSON.parse(response).data
+            historyMatchesBlock(histories);
+        },
+        error: function(xhr) {
+            console.log(xhr.statusText);
+        },
+    });
+}
+
+export function checkDetailsMatch(gameId, num, csrfToken, container) {
     $.ajax({
         url: '/match/details?id=' + gameId + '&num=' + num,
         method: 'POST',
@@ -228,7 +246,7 @@ function checkDetailsMatch(gameId, num, csrfToken, container) {
         }
     });
 }
-function getTournaments(game_id) {
+export function getTournaments(game_id) {
     return new Promise((resolve, reject) => {
         let url = 'api/filters/tournaments';
         if (!isNullOrUndef(game_id)) {
@@ -252,7 +270,7 @@ function getTournaments(game_id) {
     });
 }
 
-function getTeams(game_id) {
+export function getTeams(game_id) {
     return new Promise((resolve, reject) => {
         let url = 'api/filters/teams';
         if (!isNullOrUndef(game_id)) {
@@ -276,7 +294,7 @@ function getTeams(game_id) {
     });
 }
 
-function searchItem(searchInput, itemList, api) {
+export function searchItem(searchInput, itemList, api) {
     const searchText = searchInput.value;
 
     $.ajax({
@@ -302,12 +320,3 @@ function hideLoader() {
     $('#content-container').show();
 }
 
-
-loadMatchBlockInfo()
-loadHome();
-loadMatchBlock()
-
-loadNews();
-loadNewsBlock();
-
-export default { setEvents, setTeams, searchItem, checkDetailsMatch, loadMatchBlock}

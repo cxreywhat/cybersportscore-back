@@ -8,5 +8,4 @@
 
         </path>
     </svg>
-    {{--<!-- <div class="opacity-80 mt-3">{{ $t('state.loading') }}</div> -->--}}
 </div>

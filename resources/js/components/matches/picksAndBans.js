@@ -1,6 +1,6 @@
-export function renderingPicksAndBans(teams, gameId, matchStart, numTeam)
+export function renderingPicksAndBans(teams, gameId, picksAndBans, numTeam)
 {
-    if(matchStart < 2) {
+    if(!picksAndBans.hasBans) {
         return
     }
 
@@ -21,7 +21,7 @@ function picksTeam(picks, gameId, numTeam) {
 
         picksRow.innerHTML =
             `
-                <img class="transform scale-110" src="https://api.cybersportscore.com/media/game/hero/${gameId}/_59/${ pick.id }.png" title="${pick.title}" alt="${pick.title}">
+                <img class="transform scale-110" title="${pick.hero_title}" alt="${pick.hero_title}" src="/media/game/hero/${gameId}/_59/${pick.hero_id}.png" >
             `;
 
         div.appendChild(picksRow);
@@ -42,7 +42,7 @@ function bansTeam(bans, gameId, numTeam) {
 
         bansRow.innerHTML =
             `
-                <img class="transform scale-110 grayscale hover:grayscale-0" src="https://api.cybersportscore.com/media/game/hero/${gameId}/_59/${ ban.id }.png" title="${ban.title}" alt="${ban.title}">
+                <img class="transform scale-110 grayscale hover:grayscale-0" title="${ban.hero_title}" alt="${ban.hero_title}" src="/media/game/hero/${gameId}/_59/${ban.hero_id}.png" >
             `;
 
         div.appendChild(bansRow);

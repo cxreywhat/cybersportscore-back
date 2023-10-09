@@ -2,3 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.items-row {
+    position: relative;
+    display: flex;
+    height: 3.2rem;
+    color: #718096;
+    align-items: center;
+    will-change: contents;
+}

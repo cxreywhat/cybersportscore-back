@@ -19,57 +19,75 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  */
 
 import Echo from 'laravel-echo';
-import { statisticsPlayersTeam } from './components/matches/statisticBlock'
-import { renderingPicksAndBans } from "./components/matches/picksAndBans";
-import { details } from "./components/matches/detailsPlayers";
-import { getMap } from "./components/matches/detailsMap";
-import { getSummary } from "./components/matches/detailsSummary";
-import { getMainPartInfo } from "./components/matches/mainPart";
+import { statisticsPlayersTeam } from './components/matches/statisticBlock.js'
+import { renderingPicksAndBans } from "./components/matches/picksAndBans.js";
+import { details } from "./components/matches/detailsPlayers.js";
+import { getMap } from "./components/matches/detailsMap.js";
+import { getSummary } from "./components/matches/detailsSummary.js";
+import { getMainPartInfo } from "./components/matches/mainPart.js";
+import { addEventToLogs } from "./components/matches/logsMatch";
+import { addChart } from "./components/matches/detailsChart";
+import {changeLanguage} from "./translate";
+import {updateMatches} from "./components/homeSocket";
+import {detailsHome} from "./components/detailsHomeSocket";
 
 window.Pusher = require('pusher-js');
+
 
 window.Echo = new Echo({
     broadcaster: 'pusher',
     key: 'app-key',
     wsHost: '127.0.0.1',
     cluster: 'eu',
-    wsPort: 6001,
-    wssPort: 6001,
+    wsPort: '6001',
+    wssPort: '6001',
     forceTLS: false,
     encrypted: true,
     disableStats: true,
     enabledTransports: ['ws', 'wss'],
-    activityTimeout: 5000000
+    activityTimeout: 50000000
 });
-
-
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: process.env.PUSHER_APP_KEY,
-//     wsHost: process.env.PUSHER_HOST,
-//     wsPort: process.env.PUSHER_PORT,
-//     wssPort: process.env.PUSHER_PORT,
-//     forceTLS: false,
-//     encrypted: true,
-//     disableStats: true,
-//     enabledTransports: ['ws', 'wss'],
-// });
 
 window.Echo.channel('live-data')
     .listen('MatchDataUpdate', (e) => {
-        let matchBeta = e.updatedData.match_beta;
-        let numGame = e.updatedData.num_game;
-        let matchStart = matchBeta.match_games[numGame- 1].match_start;
-        let preview = e.updatedData.preview;
-        statisticsPlayersTeam(matchBeta.match_games[numGame - 1].match_data.teams.t1.players, matchBeta.game_id, matchStart, 1);
-        statisticsPlayersTeam(matchBeta.match_games[numGame - 1].match_data.teams.t2.players, matchBeta.game_id, matchStart, 2);
+        const selectedLang = document.getElementById('selected-lang')
+        const match = e.updatedData.match;
+        const isLive = match.is_live;
+        const hasBansAndPicks = {
+            hasBans: e.updatedData.hasBans,
+            hasPicks: e.updatedData.hasPicks
+        }
+        const biggestNetWorth = e.updatedData.biggestNet;
+        const heroes = e.updatedData.heroes;
 
-        renderingPicksAndBans(matchBeta.match_games[numGame - 1].match_data.teams.t1, matchBeta.game_id, matchStart, 1)
-        renderingPicksAndBans(matchBeta.match_games[numGame - 1].match_data.teams.t2, matchBeta.game_id, matchStart, 2)
-
-        details(matchBeta, numGame);
-        getSummary(matchBeta, numGame);
-        getMap(preview.aggregated_events.destroyed_buildings);
-        getMainPartInfo(matchBeta, numGame, preview);
+        statisticsPlayersTeam(match.teams[0].players, match.game_id, isLive, 1);
+        statisticsPlayersTeam(match.teams[1].players, match.game_id, isLive, 2);
+        renderingPicksAndBans(match.teams[0], match.game_id, hasBansAndPicks, 1);
+        renderingPicksAndBans(match.teams[1], match.game_id, hasBansAndPicks, 2);
+        details(match, biggestNetWorth);
+        getMap(match.aggregated_events, match.game_id);
+        getMainPartInfo(match);
+        addEventToLogs(match, heroes);
+        addChart(match.gold, match.events)
+        changeLanguage(selectedLang.value)
     });
+
+window.Echo.channel('live-data-home')
+    .listen('HomeUpdate', (e) => {
+        const matches = e.updatedData.matches;
+
+        updateMatches(matches)
+    });
+
+
+window.Echo.channel('live-data-details')
+    .listen('HomeDetailsUpdate', (e) => {
+        const match = e.updatedData.match;
+        const biggestNet = e.updatedData.biggestNet;
+
+        detailsHome(match, biggestNet)
+    });
+
+
+
 

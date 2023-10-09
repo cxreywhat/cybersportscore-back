@@ -1,8 +1,8 @@
-export  function getSummary(matchBeta, numGame){
-    const fb = matchBeta.match_games[numGame - 1].fb === "t1" ? "green-side" : (matchBeta.match_games[numGame - 1].fb === "t2" ? "red-side" : "#374151");
-    const f10k = matchBeta.match_games[numGame - 1].first_ten_kills === "t1" ? "green-side" : (matchBeta.match_games[numGame - 1].first_ten_kills === "t2" ? "red-side" : "#374151");
-    const ftd = matchBeta.match_games[numGame - 1].destroyed_first_tower === "t1" ? "green-side" : (matchBeta.match_games[numGame - 1].destroyed_first_tower === "t2" ? "red-side" : "#374151");
-    const feck = matchBeta.match_games[numGame - 1].killed_first_elite_creep === "t1" ? "green-side" : (matchBeta.match_games[numGame - 1].killed_first_elite_creep === "t2" ? "red-side" : "#374151");
+export  function getSummary(events){
+    const fb = events.first_blood === "t1" ? "green-side" : (events.first_blood === "t2" ? "red-side" : "#374151");
+    const f10k = events.first_10_kills === "t1" ? "green-side" : (events.first_10_kills === "t2" ? "red-side" : "#374151");
+    const ftd = events.first_tower_destroy === "t1" ? "green-side" : (events.first_tower_destroy === "t2" ? "red-side" : "#374151");
+    const feck = events.first_elite_creep_kill === "t1" ? "green-side" : (events.first_elite_creep_kill === "t2" ? "red-side" : "#374151");
 
     const fbIconColor = fb === "green-side" ? "#92a525" : (fb === "red-side" ? "#c23c2a" : "#374151");
     const f10kIconColor = f10k === "green-side" ? "#92a525" : (f10k === "red-side" ? "#c23c2a" : "#374151");

@@ -13,8 +13,8 @@
                         </div>
                         <div style="display:none" itemprop="inLanguage" content="en"></div>
                         <picture class="newspic flex mb-4 h-[400px] bg-gray-800">
-                            <source srcset="https://cybersportscore-api-next.esnadm.com/media/news/{{$data->pic}}">
-                            <img loading="lazy" src="https://cybersportscore-api-next.esnadm.com/media/news/{{$data->pic}}" itemprop="image" class="rounded-md">
+                            <source srcset="{{asset('/media/news/'.$data->pic == "" ? $data->pic_in : $data->pic)}}">
+                            <img loading="lazy" src="{{asset('/media/news/'.$data->pic == "" ? $data->pic_in : $data->pic)}}" itemprop="image" class="rounded-md">
                         </picture>
                         <section class="articleBody" itemprop="articleBody">
                             <h1 itemprop="headline">{{$data->title}}</h1>
@@ -31,7 +31,7 @@
                                 @elseif($block->type === "image")
                                     @include("components.blocks.image", ['nameImg' => $block->data->file->url])
                                 @elseif($block->type === "list")
-                                    @include("components.blocks.list", [''])
+                                    @include("components.blocks.list")
                                 @elseif($block->type === "quote")
                                     @include("components.blocks.quote", [
                                         'text' => $block->data->text,

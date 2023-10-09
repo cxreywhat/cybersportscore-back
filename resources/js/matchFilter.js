@@ -32,24 +32,17 @@ export function filterMatchRows(game_id, event_id, team,id) {
 }
 
 export function buildApiUrl(basicUrl, game_id, event_id, team_id) {
+    const params = [];
 
     if (!isNullOrUndef(game_id)) {
-        basicUrl += `game_id=${game_id}&`;
+        params.push(`game_id=${game_id}`);
+    } if (!isNullOrUndef(event_id)) {
+        params.push(`event_id=${event_id}`);
+    } if (!isNullOrUndef(team_id)) {
+        params.push(`team_id=${team_id}`);
     }
 
-    if (!isNullOrUndef(event_id)) {
-        basicUrl += `event_id=${event_id}&`;
-    }
-
-    if (!isNullOrUndef(team_id)) {
-        basicUrl += `team_id=${team_id}&`;
-    }
-
-    if (basicUrl.endsWith('&')) {
-        basicUrl = basicUrl.slice(0, -1);
-    }
-
-    return basicUrl;
+    return `${basicUrl}${params.length > 0 ? '?' : ''}${params.join('&')}`;
 }
 
 export function pagination(pagesMeta) {
@@ -57,12 +50,12 @@ export function pagination(pagesMeta) {
 
     paginationContainer.innerHTML = '';
 
-
     for(let i = 1; i <= pagesMeta.last_page; i++) {
         const pageButton = document.createElement('button');
         pageButton.className = `page-button ${pagesMeta.current_page === i ? 'bg-gray-700 font-semibold text-gray-200 pointer-events-none cursor-default ' : 'text-gray-500 ' }text-xs flex rounded-3xl px-3 py-2 mr-1 enabled:hover:bg-apple enabled:hover:text-white`;
         pageButton.setAttribute('data-page', i.toString());
         pageButton.textContent = i.toString();
+
         pageButton.addEventListener('click', () => {
             const pageNumber = pageButton.getAttribute('data-page');
 
