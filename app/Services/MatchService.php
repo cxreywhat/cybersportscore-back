@@ -19,6 +19,8 @@ use App\Enums\GamesType;
 use App\Models\GtMatchList;
 use App\Services\Events\EventService;
 use Carbon\Carbon;
+use Dmp\Services\SearchServices\SearchService;
+use http\Env\Request;
 use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Query\JoinClause;
@@ -170,10 +172,10 @@ class MatchService
                 'gt_match.t2s',
             ])
             ->whereIn('gt_match_list.game_id', static::DISCIPLINES)
-            ->whereBetween('gt_match_list.date', [
+            /*->whereBetween('gt_match_list.date', [
                 Carbon::now()->startOfDay(),
                 Carbon::now()->endOfDay()->addDays(3)
-            ])
+            ])*/
             ->where('gt_match_list.is_current', '1')
             ->join('gt_tournaments', function (JoinClause $query) {
                 return $query->on('gt_tournaments.id', '=', 'gt_match_list.tid');
@@ -213,7 +215,7 @@ class MatchService
                 },
             ])
             ->orderBy('date')
-            ->paginate();
+            ->paginate(15);
     }
 
 
@@ -680,5 +682,83 @@ class MatchService
         }
 
         return max($team1, $team2);
+    }
+
+    public function biggestNetMatch(array $team1Players, array $team2Players): int
+    {
+        $team1 = max(array_map(function ($player) {
+            return $player->matchGamePlayer->netWorth;
+        }, $team1Players));
+
+        $team2 = max(array_map(function ($player) {
+            return $player->matchGamePlayer->netWorth;
+        }, $team2Players));
+
+        if (!$team1 || !$team2) {
+            return 0;
+        }
+
+        return max($team1, $team2);
+    }
+
+    public function sortPlayersDeskByNetWorth($players) {
+         usort($players, function ($a, $b) {
+            return $b->matchGamePlayer->netWorth - $a->matchGamePlayer->netWorth;
+         });
+
+         return $players;
+    }
+
+    public function getTournaments($request) {
+        $query = $request->get('query');
+        $tournaments = DB::table('gt_tournaments')
+            ->when($request->has('query'), function ($q) use ($query) {
+                $searchService = new SearchService();
+                $search = $searchService->query('event', 3, $query, 0, [], 100);
+                $q->whereIn('gt_tournaments.id', $search['ids'] ?? []);
+            })
+            ->where('gt_tournaments.is_current', '=', '1')
+            ->whereIn('gt_tournaments.game_id', [GamesType::DOTA2->broadcast(), GamesType::LOL->broadcast()])
+            ->when(!$request->has('query'), function ($q) {
+                $q->join('esn_top_list', 'esn_top_list.id', 'gt_tournaments.id')
+                    ->where('esn_top_list.rid', '=', 'event')
+                    ->orderBy('esn_top_list.kol', 'desc');
+            })
+            ->limit(5)
+            ->get([
+                'gt_tournaments.id',
+                'gt_tournaments.eng',
+                'gt_tournaments.title',
+                'gt_tournaments.logo'
+
+            ]);
+        return $tournaments;
+    }
+
+    public function getTeams($request) {
+        $query = $request->get('query');
+
+        $teams = DB::table('gt_teams_list')
+            ->when($request->has('query'), function ($q) use ($query) {
+                $searchService = new SearchService();
+                $search = $searchService->query('team', 1, $query, 0, [], 100);
+                $q->whereIn('gt_tournaments.id', $search['ids'] ?? []);
+            })
+            ->where('gt_teams_list.is_act', '=', '1')
+            ->whereIn('gt_teams_list.game_id', [GamesType::DOTA2->broadcast(), GamesType::LOL->broadcast()])
+            ->limit(8)
+            ->when(!$request->has('query'), function ($q) {
+                $q->join('esn_top_list', 'esn_top_list.id', 'gt_teams_list.id')
+                    ->where('esn_top_list.rid', '=', 'team')
+                    ->orderBy('esn_top_list.kol', 'desc');
+            })
+            ->get([
+                'gt_teams_list.id',
+                'gt_teams_list.eng',
+                'gt_teams_list.title',
+                'gt_teams_list.logo'
+            ]);
+
+        return $teams;
     }
 }

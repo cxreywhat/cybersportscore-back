@@ -37,15 +37,12 @@ class TeamService
                     ],
                 ]
             ];
-
             $search = $searchService->query('team', $filter['search'], $searchFilters, $sort, 0, 10);
-
             $rows = [];
 
             if (isset($search['items']['team'])) {
                 foreach ($search['items']['team'] as $item) {
                     $data = $item['data'];
-                    $data['title'] = $data['ltitle'];
 
                     $rows[] = $data;
                 }

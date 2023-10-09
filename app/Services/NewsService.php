@@ -39,6 +39,8 @@ class NewsService
 
     public function getNewsList(array $filter = []): Paginator
     {
+        $filter['lang'] = $filter['lang'] ?? 'en';
+
         return $this->getBasicQuery()
             ->when($filter['lang'], function ($query, $lang) {
                 return $query->where('lang', $lang);

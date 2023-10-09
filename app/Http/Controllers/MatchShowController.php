@@ -4,117 +4,107 @@ namespace App\Http\Controllers;
 
 use App\Enums\GamesType;
 use App\Events\MatchDataUpdate;
+use App\Http\Resources\MatchDetails\HistoryBlockResource;
 use App\Http\Resources\MatchDetails\HistoryResource;
+use App\Http\Resources\MatchDetails\MatchResource;
 use App\Http\Resources\MatchDetails\PreviewResource;
 use App\Http\Resources\StreamResource;
 use App\Models\GtMatchList;
+use App\Services\DictionaryService;
 use App\Services\MatchService;
 use App\Services\StreamService;
+use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\View\View;
 
 class MatchShowController extends Controller
 {
     private MatchService $matchService;
     private StreamService $streamService;
+    private DictionaryService $dictService;
 
-    private $match;
-    private $preview;
-    private $numGame;
-
-    public function __construct(MatchService $matchService, StreamService $streamService)
+    public function __construct(
+        MatchService      $matchService,
+        StreamService     $streamService,
+        DictionaryService $dictService)
     {
         $this->matchService = $matchService;
         $this->streamService = $streamService;
+        $this->dictService = $dictService;
     }
 
-    public function index(Request $request, int $id, ?string $side = null)
+    public function show(Request $request, int $id, ?string $side = null)
     {
-        $dataMatch = GtMatchList::query()
-            ->with([
-                'match',
-                'matchGames',
-                'matchDotaLiveGame' => function ($q) {
-                    $q
-                        ->with('dotaEvents')
-                        ->whereHas('matchList', function ($q) {
-                            $q->where('gt_match_list.game_id', GamesType::DOTA2->broadcast());
-                        });
-                },
-                'matchLolLiveGame' => function ($q) {
-                    $q
-                        ->whereHas('matchList', function ($q) {
-                            $q->where('gt_match_list.game_id', GamesType::LOL->broadcast());
-                        });
-                }
-            ])
-            ->find($id);
-
-        if ($dataMatch) {
-            $this->matchService->liveMatchBuilder($dataMatch);
-            $this->matchService->offlineMatchBuilder($dataMatch);
-        };
+        $match = new MatchResource(
+            $this->matchService->show($id, $request->get('num'))
+        );
 
         $streams = StreamResource::collection($this->streamService->getListForMatch($id));
-        $this->match = response()->json($dataMatch);
-        $history = new HistoryResource($this->matchService->getHistory($id, $side));
-        $this->preview = new PreviewResource($this->matchService->preview($id));
-        $this->numGame = intval($request->input('num')) > 0
-            ? intval($request->input('num'))
-            : $this->preview->getNum();
+
+        $heroesDota2 = $this->dictService->getHeroes("dota-2");
+        $heroesLol = $this->dictService->getHeroes("lol");
+
+        $match->getTeam1()->setPlayers($this->matchService->sortPlayersDeskByNetWorth($match->getTeam1()->getPlayers()));
+        $match->getTeam2()->setPlayers($this->matchService->sortPlayersDeskByNetWorth($match->getTeam2()->getPlayers()));
+
+        $isLive = $match->getStatus() == 1 || $match->getWinner();
+
+        $hasPicks = $match->getTeam1()->getPicks() && $match->getTeam2()->getPicks();
+        $hasBans = $match->getTeam1()->getBans() && $match->getTeam2()->getBans();
+
+        if ($request->has('is_ajax')) {
+            return view('ajax.match', [
+                'match_id' => $id,
+                'streams' => $streams,
+                'hasPicks' => $hasPicks,
+                'hasBans' => $hasBans,
+                'heroes' => $heroesDota2,
+                'heroesLol' => $heroesLol,
+                'biggestNet' => $this->matchService->biggestNetMatch($match->getTeam1()->getPlayers(), $match->getTeam2()->getPlayers()),
+                'isLive' => $isLive,
+                'match' => $match,
+            ]);
+        }
 
         return view('match', [
-            'match_beta' => $this->match->getData(),
+            'match_id' => $id,
             'streams' => $streams,
-            'history' => $history,
-            'num_game' => $this->numGame,
-            'preview' => $this->preview
+            'hasPicks' => $hasPicks,
+            'hasBans' => $hasBans,
+            'heroes' => $heroesDota2,
+            'heroesLol' => $heroesLol,
+            'biggestNet' => $this->matchService->biggestNetMatch($match->getTeam1()->getPlayers(), $match->getTeam2()->getPlayers()),
+            'isLive' => $isLive,
+            'match' => $match,
         ]);
     }
 
+
     public function sendWebSocketData(Request $request, int $id)
     {
-        $i = 0;
-        while($i != 5)
-        {
-            $i++;
-            $dataMatch = GtMatchList::query()
-                ->with([
-                    'match',
-                    'matchGames',
-                    'matchDotaLiveGame' => function ($q) {
-                        $q
-                            ->with('dotaEvents')
-                            ->whereHas('matchList', function ($q) {
-                                $q->where('gt_match_list.game_id', GamesType::DOTA2->broadcast());
-                            });
-                    },
-                    'matchLolLiveGame' => function ($q) {
-                        $q
-                            ->whereHas('matchList', function ($q) {
-                                $q->where('gt_match_list.game_id', GamesType::LOL->broadcast());
-                            });
-                    }
-                ])
-                ->find($id);
+        $match = new MatchResource(
+            $this->matchService->show($id, $request->get('num'))
+        );
 
-            if ($dataMatch) {
-                $this->matchService->liveMatchBuilder($dataMatch);
-                $this->matchService->offlineMatchBuilder($dataMatch);
-            };
 
-            $this->match = response()->json($dataMatch);
-            $this->preview = new PreviewResource($this->matchService->preview($id));
-            $this->numGame = intval($request->input('num')) > 0
-                ? intval($request->input('num'))
-                : $this->preview->getNum();
+        $heroes = $this->dictService->getHeroes("dota-2");
 
-            event(new MatchDataUpdate($id, [
-                'match_beta' => $this->match->getData(),
-                'num_game' => $this->numGame,
-                'preview' => $this->preview
-            ]));
-            sleep(2);
-        }
+        $match->getTeam1()->setPlayers($this->matchService->sortPlayersDeskByNetWorth($match->getTeam1()->getPlayers()));
+        $match->getTeam2()->setPlayers($this->matchService->sortPlayersDeskByNetWorth($match->getTeam2()->getPlayers()));
+
+        $isLive = $match->getStatus() == 1 && !$match->getWinner();
+
+        $hasPicks = $match->getTeam1()->getPicks() && $match->getTeam2()->getPicks();
+        $hasBans = $match->getTeam1()->getBans() && $match->getTeam2()->getBans();
+
+        event(new MatchDataUpdate($id, [
+            'hasPicks' => $hasPicks,
+            'hasBans' => $hasBans,
+            'heroes' => $heroes,
+            'biggestNet' => $this->matchService->biggestNetMatch($match->getTeam1()->getPlayers(), $match->getTeam2()->getPlayers()),
+            'isLive' => $isLive,
+            'match' => $match,
+        ]));
     }
 }

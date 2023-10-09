@@ -24,19 +24,19 @@ class TournamentService
         if ($filter['search']) {
             $searchFilters = [
                 'game_id' => array_values($games ?? config('app.games')),
-                'is_current' => ['1', '2']
+               /* 'is_current' => ['1', '2']*/
             ];
 
             $searchService = new SearchService($_ENV['DMP_ENV']);
 
             $sort = [
                 [
-                    'orde' => [
+                    'name.keyword' => [
                         'order' => 'desc'
                     ],
-                    'esn_top' => [
+                    /*'esn_top' => [
                         'order' => 'desc'
-                    ],
+                    ],*/
                     'id' => [
                         'order' => 'desc'
                     ],
@@ -50,13 +50,12 @@ class TournamentService
             if (isset($search['items']['event'])) {
                 foreach ($search['items']['event'] as $item) {
                     $data = $item['data'];
-                    $data['logo'] = $data['icon'];
+                    $data['logo'] = isset($data['icon']) ?: '';
                     $data['title'] = $data['name'];
-
+                    $data['eng'] = isset($data['icon']) ?: '';
                     $rows[] = $data;
                 }
             }
-
             $rows = collect(json_decode(json_encode($rows), FALSE));
         } else {
             $rows = DB::table('gt_tournaments')
@@ -73,7 +72,6 @@ class TournamentService
                 ->orderByDesc('esn_top_list.kol')
                 ->limit(10)
                 ->get();
-
             if ($filter['event_eng']) {
                 $event = DB::table('gt_tournaments')
                     ->select([
@@ -91,7 +89,6 @@ class TournamentService
                 $rows->push($event);
             }
         }
-
         return $rows;
     }
 }

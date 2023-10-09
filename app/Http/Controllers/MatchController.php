@@ -44,9 +44,11 @@ class MatchController extends Controller
 
     public function show(Request $request, int $id): Responsable
     {
-        return new MatchResource(
+        $data = new MatchResource(
             $this->matchService->show($id, $request->get('num'))
         );
+
+        return $data;
     }
 
     public function showHistory(Request $request, int $id, ?string $side = null): Responsable
@@ -215,12 +217,13 @@ class MatchController extends Controller
 
     public function tournaments(Request $request): JsonResponse
     {
+
         $query = $request->get('query');
 
         $tournaments = DB::table('gt_tournaments')
             ->when($request->has('query'), function ($q) use ($query) {
                 $searchService = new SearchService();
-                $search = $searchService->query('event', 3, $query, 0, [], 100);
+                $search = $searchService->query('event', 5, $query, [], 0, 100);
                 $q->whereIn('gt_tournaments.id', $search['ids'] ?? []);
             })
             ->where('gt_tournaments.is_current', '=', '1')
@@ -230,7 +233,7 @@ class MatchController extends Controller
                     ->where('esn_top_list.rid', '=', 'event')
                     ->orderBy('esn_top_list.kol', 'desc');
             })
-            ->limit(5)
+            ->limit(8)
             ->get([
                 'gt_tournaments.id',
                 'gt_tournaments.eng',
@@ -254,7 +257,7 @@ class MatchController extends Controller
             })
             ->where('gt_teams_list.is_act', '=', '1')
             ->whereIn('gt_teams_list.game_id', [GamesType::DOTA2->broadcast(), GamesType::LOL->broadcast()])
-            ->limit(5)
+            ->limit(8)
             ->when(!$request->has('query'), function ($q) {
                 $q->join('esn_top_list', 'esn_top_list.id', 'gt_teams_list.id')
                     ->where('esn_top_list.rid', '=', 'team')

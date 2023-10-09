@@ -45,7 +45,7 @@ class BannerController extends Controller
             return response()->json(Arr::whereNotNull($cssFilteredBanners));
             return response()->json(Arr::whereNotNull($banner));
         }
-
+        dd(response()->json());
         return response()->json();
     }
 

@@ -6,6 +6,7 @@ namespace App\Dto\MatchDetails;
 
 class MatchDto
 {
+    private bool $live;
     private ?string $winner = null;
     private int $gameId;
     private int $status;
