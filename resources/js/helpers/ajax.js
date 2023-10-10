@@ -94,7 +94,7 @@ export function loadNewsBlock() {
                 },
                 success: function(response) {
                     $('#content-container').html(response);
-                    history.pushState({}, '', '/news/' + block);
+                    history.pushState({}, '', '/news/' + blockId);
                     loadNews();
                     loadNewsBlock();
                 },

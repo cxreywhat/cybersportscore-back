@@ -8,7 +8,7 @@
 </div>
 <div id="news-container" class="p-4 relative min-h-[200px]">
     @foreach($news->take($count) as $item)
-        <a href="/news/{{$item->id}}-{{$item->eng}}" data-block="{{$item->id}}-{{$item->eng}}"
+        <a href="/news/{{$item->id}}" data-block="{{$item->id}}-{{$item->eng}}"
            class="ajax-news-block transition text-xs font-normal leading-1 inline-block pb-2 text-gray-300">
             <span class="text" lang="en">
                 {{$item->title}}

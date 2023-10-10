@@ -18,22 +18,14 @@ class ArticleController extends Controller
                 'per_page' => $request->get('perPage'),
             ])
         );
-        if($request->has('is_ajax')) {
-            return view('ajax.newsList', [
-                'data' => $data,
-            ]);
-        }
 
-
-        return view('newsList', [
+        return view($request->has('is_ajax') ? 'ajax.newsList' : 'newsList', [
             'data' => $data,
         ]);
     }
 
-    public function show(Request $request, string $block, NewsService $service)
+    public function show(Request $request, string $id, NewsService $service)
     {
-        $id = intval(preg_replace('/^(\d+)-.*$/', '$1', $block));
-
         $data = new NewsItemResource(
             $service->getNewsItem($id, (bool) $request->get('preview'))
         );
@@ -50,18 +42,8 @@ class ArticleController extends Controller
         $months = array( 1 => 'янв.', 2 => 'фев.', 3 => 'мар.', 4 => 'апр.', 5 => 'мая', 6 => 'июн.', 7 => 'июл.', 8 => 'авг.', 9 => 'сен.', 10 => 'окт.', 11 => 'ноя.', 12 => 'дек.');
         $formattedDate = date('j ', $timestamp) . $months[date('n', $timestamp)] . date(', Y H:i', $timestamp);
 
-        if($request->has('is_ajax')) {
-            return view('ajax.newsArticle', [
-                    'data' => $data,
-                    'news' => $news,
-                    'blocks' => $blocks,
-                    'timestamp' => $timestamp,
-                    'formattedDate' => $formattedDate
-                ]
-            );
-        }
-
-        return view('newsArticle', [
+        return view($request->has('is_ajax') ? 'ajax.newsArticle' : 'newsArticle', [
+                'count' => 10,
                 'data' => $data,
                 'news' => $news,
                 'blocks' => $blocks,

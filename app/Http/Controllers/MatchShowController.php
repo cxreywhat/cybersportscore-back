@@ -34,7 +34,7 @@ class MatchShowController extends Controller
         $this->dictService = $dictService;
     }
 
-    public function show(Request $request, int $id, ?string $side = null)
+    public function show(Request $request, int $id)
     {
         $match = new MatchResource(
             $this->matchService->show($id, $request->get('num'))
@@ -45,36 +45,25 @@ class MatchShowController extends Controller
         $heroesDota2 = $this->dictService->getHeroes("dota-2");
         $heroesLol = $this->dictService->getHeroes("lol");
 
-        $match->getTeam1()->setPlayers($this->matchService->sortPlayersDeskByNetWorth($match->getTeam1()->getPlayers()));
-        $match->getTeam2()->setPlayers($this->matchService->sortPlayersDeskByNetWorth($match->getTeam2()->getPlayers()));
+        $t1 = $match->getTeam1();
+        $t2 = $match->getTeam2();
+
+        $t1->setPlayers($this->matchService->sortPlayersDeskByNetWorth($t1->getPlayers()));
+        $t2->setPlayers($this->matchService->sortPlayersDeskByNetWorth($t2->getPlayers()));
 
         $isLive = $match->getStatus() == 1 || $match->getWinner();
 
-        $hasPicks = $match->getTeam1()->getPicks() && $match->getTeam2()->getPicks();
-        $hasBans = $match->getTeam1()->getBans() && $match->getTeam2()->getBans();
+        $hasPicks = $t1->getPicks() && $t2->getPicks();
+        $hasBans = $t1->getBans() && $t2->getBans();
 
-        if ($request->has('is_ajax')) {
-            return view('ajax.match', [
-                'match_id' => $id,
-                'streams' => $streams,
-                'hasPicks' => $hasPicks,
-                'hasBans' => $hasBans,
-                'heroes' => $heroesDota2,
-                'heroesLol' => $heroesLol,
-                'biggestNet' => $this->matchService->biggestNetMatch($match->getTeam1()->getPlayers(), $match->getTeam2()->getPlayers()),
-                'isLive' => $isLive,
-                'match' => $match,
-            ]);
-        }
-
-        return view('match', [
+        return view($request->has('is_ajax') ?'ajax.match' : 'match', [
             'match_id' => $id,
             'streams' => $streams,
             'hasPicks' => $hasPicks,
             'hasBans' => $hasBans,
             'heroes' => $heroesDota2,
             'heroesLol' => $heroesLol,
-            'biggestNet' => $this->matchService->biggestNetMatch($match->getTeam1()->getPlayers(), $match->getTeam2()->getPlayers()),
+            'biggestNet' => $this->matchService->biggestNetMatch($t1->getPlayers(), $t2->getPlayers()),
             'isLive' => $isLive,
             'match' => $match,
         ]);

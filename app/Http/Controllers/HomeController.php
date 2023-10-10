@@ -29,7 +29,6 @@ class HomeController extends Controller
 
     public function index(Request $request, MatchesRequest $matchRequest)
     {
-
         $data = MatchListResource::collection(
             $this->matchService->getList($matchRequest->validated())->items()
         );
@@ -46,17 +45,7 @@ class HomeController extends Controller
         $tournaments = $this->matchService->getTournaments($request);
         $teams = $this->matchService->getTeams($request);
 
-        if($request->has('is_ajax')) {
-            return view('ajax.home', [
-                'teams' => $teams,
-                'tournaments' => $tournaments,
-                'items' => $data,
-                'news' => $news,
-                'pages' => $pages
-            ]);
-        }
-
-        return view('home', [
+        return view($request->has('is_ajax') ? 'ajax.home' : 'home', [
             'teams' => $teams,
             'tournaments' => $tournaments,
             'items' => $data,

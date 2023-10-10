@@ -656,7 +656,6 @@ class MatchService
         $expTeam1 = 0;
         $expTeam2 = 0;
 
-
         foreach ($team1Players as $player) {
             if (array_key_exists('xpm', $player)) {
                 $expTeam1 += $player['xpm'] * floor($duration / 60);

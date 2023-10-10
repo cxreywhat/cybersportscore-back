@@ -1,5 +1,5 @@
 const matchElements = document.querySelectorAll('[data-match-id]');
-
+import m from '../../json/message.json'
 function changeUTCDate(matchTimeInSeconds, selectedLang) {
     const offset = document.getElementById('selected-time-zone').value;
 
@@ -40,13 +40,6 @@ function formatMatchTime(matchTimeInSeconds, language) {
     const now = new Date();
     const matchDate = new Date(matchTimeInSeconds * 1000);
 
-    const monthNames = {
-        'ru': ["янв.", "фев.", "мар.", "апр.", "мая", "июн.", "июл.", "авг.", "сен.", "окт.", "ноя.", "дек."],
-        'uk': ["січ.", "лют.", "бер.", "квіт.", "трав.", "черв.", "лип.", "серп.", "вер.", "жовт.", "листоп.", "груд."],
-        'en': ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        'zh': ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"]
-    };
-
     const dayOfMonth = matchDate.getDate();
     const monthIndex = matchDate.getMonth();
     const hours = addLeadingZero(matchDate.getHours());
@@ -76,8 +69,8 @@ function formatMatchTime(matchTimeInSeconds, language) {
         return `<span data-translate='date.tomorrow'>Завтра</span>, ${hours}:${minutes}`;
     }
 
-    const selectedMonthNames = monthNames[language] || monthNames['en'];
-    const monthName = selectedMonthNames[monthIndex];
+    const selectedMonthNames = m[language] || m['en'];
+    const monthName = selectedMonthNames['month'][monthIndex];
 
     return `${dayOfMonth} ${monthName}, ${hours}:${minutes}`;
 }
