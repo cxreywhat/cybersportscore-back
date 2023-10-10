@@ -208,7 +208,7 @@
             "source": "Источник",
             "sourcePic": "Заглавное фото"
         },
-        "month": {
+        "months": {
             "january": "янв.",
             "february": "фев.",
             "march": "мар.",
@@ -318,7 +318,7 @@
             "source": "Source",
             "sourcePic": "Source picture"
         },
-        "month": {
+        "months": {
             "january": "一月 ",
             "february": "二月",
             "march": "三月",
@@ -427,7 +427,7 @@
             "source": "Джерело",
             "sourcePic": "Заголовне фото"
         },
-        "month": {
+        "months": {
             "january": "січ.",
             "february": "лют.",
             "march": "бер.",

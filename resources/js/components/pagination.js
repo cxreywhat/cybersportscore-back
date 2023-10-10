@@ -43,7 +43,7 @@ export function loadHomePerPage(pageNum) {
         url: url,
         method: 'GET',
         dataType: 'html',
-        data: { is_ajax: true, page: pageNum },
+        data: { page: pageNum },
         beforeSend: function() {
             showLoader('loader-match', 'matches');
         },
@@ -58,9 +58,6 @@ export function loadHomePerPage(pageNum) {
             history.pushState({}, '', '/?page=' + pageNum);
             loadMatchBlock();
         },
-        error: function(xhr) {
-            console.error(xhr);
-        }
     });
 }
 

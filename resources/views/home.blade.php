@@ -6,7 +6,7 @@
             @include('components.matchesIndex')
         </div>
         <div class="col-span-5 lg:col-span-1">
-            @include("components.matchesIndex.articlesBlock", ['count' => 5])
+            @include("components.matchesIndex.articlesBlock")
         </div>
     </div>
 @endsection

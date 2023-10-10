@@ -172,10 +172,10 @@ class MatchService
                 'gt_match.t2s',
             ])
             ->whereIn('gt_match_list.game_id', static::DISCIPLINES)
-            ->whereBetween('gt_match_list.date', [
+            /*->whereBetween('gt_match_list.date', [
                 Carbon::now()->startOfDay(),
                 Carbon::now()->endOfDay()->addDays(3)
-            ])
+            ])*/
             ->where('gt_match_list.is_current', '1')
             ->join('gt_tournaments', function (JoinClause $query) {
                 return $query->on('gt_tournaments.id', '=', 'gt_match_list.tid');

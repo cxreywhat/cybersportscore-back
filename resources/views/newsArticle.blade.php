@@ -55,7 +55,7 @@
         </div>
     </div>
     <div class="col-span-5 lg:col-span-2 ">
-        @include('components.matchesIndex.articlesBlock', ['news' => $news, 'count' => 10])
+        @include('components.matchesIndex.articlesBlock')
     </div>
 </div>
 @endsection

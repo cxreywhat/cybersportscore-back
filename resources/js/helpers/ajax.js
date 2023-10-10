@@ -42,9 +42,6 @@ $(document).ready(function() {
                     $('#news-container').html(addNews(response.data));
                 }
             },
-            error: function() {
-                alert('Произошла ошибка при отправке запроса.');
-            }
         });
     }
 });
@@ -56,7 +53,6 @@ export function loadNews() {
             url: '/news',
             method: 'GET',
             dataType: 'html',
-            data: { is_ajax: true },
             beforeSend: function() {
                 showLoader()
             },
@@ -68,9 +64,6 @@ export function loadNews() {
                 history.pushState({}, '', '/news');
                 loadNewsBlock();
             },
-            error: function(xhr) {
-                console.error(xhr);
-            }
         });
     });
 }
@@ -84,7 +77,6 @@ export function loadNewsBlock() {
             $.ajax({
                 url: '/news/' + blockId,
                 method: 'GET',
-                data: { is_ajax: true },
                 dataType: 'html',
                 beforeSend: function() {
                     showLoader()
@@ -98,9 +90,6 @@ export function loadNewsBlock() {
                     loadNews();
                     loadNewsBlock();
                 },
-                error: function(xhr) {
-                    console.log(xhr.statusText);
-                }
             });
         })
     })
@@ -112,7 +101,6 @@ export function loadHome() {
             url: '/',
             method: 'GET',
             dataType: 'html',
-            data: { is_ajax: true },
             beforeSend: function() {
                 showLoader()
             },
@@ -125,9 +113,6 @@ export function loadHome() {
 
                 loadNews()
             },
-            error: function(xhr) {
-                console.error(xhr);
-            }
         });
     })
 }
@@ -157,7 +142,6 @@ export function loadMatchBlockInfo() {
                 url: '/' + id + '?num=' + num,
                 method: 'GET',
                 dataType: 'html',
-                data: { is_ajax: true },
                 beforeSend: function() {
                     showLoader()
                 },
@@ -168,9 +152,6 @@ export function loadMatchBlockInfo() {
                     $('#content-container').html(response);
                     history.pushState({}, '', '/' + id + '?num=' + num);
                 },
-                error: function(xhr) {
-                    console.error(xhr);
-                }
             });
         })
     });
@@ -188,7 +169,6 @@ export function loadMatchBlock() {
                     $.ajax({
                         url: '/' + matchId,
                         method: 'GET',
-                        data: { is_ajax: true },
                         dataType: 'html',
                         beforeSend: function() {
                             showLoader()
@@ -200,9 +180,6 @@ export function loadMatchBlock() {
                             $('#content-container').html(response);
                             loadHistoryTeams(matchId);
                             history.pushState({}, '', '/' + matchId);
-                        },
-                        error: function(xhr) {
-                            console.log(xhr.statusText);
                         },
                     });
                 } else {
@@ -222,9 +199,6 @@ function loadHistoryTeams(id) {
             const histories = JSON.parse(response).data
             historyMatchesBlock(histories);
         },
-        error: function(xhr) {
-            console.log(xhr.statusText);
-        },
     });
 }
 
@@ -236,14 +210,10 @@ export function checkDetailsMatch(gameId, num, csrfToken, container) {
         headers: {
             'X-CSRF-Token': csrfToken,
         },
-        data: {is_ajax: true},
         success: function (response) {
             container.innerHTML = response;
             insertChart();
         },
-        error: function (xhr) {
-            console.error(xhr);
-        }
     });
 }
 export function getTournaments(game_id) {
@@ -262,10 +232,6 @@ export function getTournaments(game_id) {
                 const listEvents = setEvents(events);
                 resolve(listEvents);
             },
-            error: function(xhr) {
-                console.error(xhr);
-                reject(xhr);
-            }
         });
     });
 }
@@ -286,10 +252,6 @@ export function getTeams(game_id) {
                 const listTeams = setTeams(teams);
                 resolve(listTeams);
             },
-            error: function(xhr) {
-                console.error(xhr);
-                reject(xhr);
-            }
         });
     });
 }
@@ -304,9 +266,6 @@ export function searchItem(searchInput, itemList, api) {
         success: function(response) {
             createList(JSON.parse(response).data, itemList, searchInput)
         },
-        error: function(xhr) {
-            console.error(xhr);
-        }
     });
 }
 

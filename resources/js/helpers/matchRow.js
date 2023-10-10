@@ -6,7 +6,6 @@ function changeUTCDate(matchTimeInSeconds, selectedLang) {
     const matchDateUTC = new Date(matchTimeInSeconds * 1000);
     const adjustedMatchTime = new Date(matchDateUTC.getTime() + (offset - 3) * 3600 * 1000);
     const adjustedMatchTimeInSeconds = Math.floor(adjustedMatchTime.getTime() / 1000);
-
     return formatMatchTime(adjustedMatchTimeInSeconds, selectedLang);
 }
 
@@ -46,13 +45,11 @@ function formatMatchTime(matchTimeInSeconds, language) {
     const minutes = addLeadingZero(matchDate.getMinutes());
 
     const current = language === 'en' ? "Now" : (language === 'ru' ? "Сейчас" : '现在')
-
     if (now >= matchDate) {
         return `<span data-translate='date.now'>${current}</span>, ${hours}:${minutes}`;
     }
 
-    if (
-        now.getFullYear() === matchDate.getFullYear() &&
+    if (now.getFullYear() === matchDate.getFullYear() &&
         now.getMonth() === monthIndex &&
         now.getDate() === dayOfMonth
     ) {
@@ -61,8 +58,8 @@ function formatMatchTime(matchTimeInSeconds, language) {
 
     const tomorrow = new Date(now);
     tomorrow.setDate(now.getDate() + 1);
-    if (
-        tomorrow.getFullYear() === matchDate.getFullYear() &&
+
+    if (tomorrow.getFullYear() === matchDate.getFullYear() &&
         tomorrow.getMonth() === monthIndex &&
         tomorrow.getDate() === dayOfMonth
     ) {
@@ -70,11 +67,11 @@ function formatMatchTime(matchTimeInSeconds, language) {
     }
 
     const selectedMonthNames = m[language] || m['en'];
-    const monthName = selectedMonthNames['month'][monthIndex];
+    const month = matchDate.toLocaleDateString('en-US', { month: 'long' }).toLowerCase()
+    const monthName = selectedMonthNames['months'][month];
 
     return `${dayOfMonth} ${monthName}, ${hours}:${minutes}`;
 }
-
 
 export function formateDate (timeMatch) {
     const languageList = document.getElementById('languages');

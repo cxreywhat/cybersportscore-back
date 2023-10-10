@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import vue from '@vitejs/plugin-vue'
 import path from 'path'
 
 export default defineConfig({
@@ -14,7 +13,6 @@ export default defineConfig({
             input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
         }),
-        vue(),
     ],
     server: {
         port: 5173,
@@ -24,9 +22,15 @@ export default defineConfig({
             host: 'localhost'
         }
     },
+    websocket: {
+        port: process.env.VITE_PUSHER_PORT,
+        host: process.env.VITE_PUSHER_HOST,
+        cluster: process.env.VITE_PUSHER_CLUSTER,
+        key: process.env.VITE_PUSHER_APP_KEY,
+    },
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, './src'),
+            '@': '/resources/js',
         },
     }
 });

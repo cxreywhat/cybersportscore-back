@@ -44,7 +44,7 @@
     <script src="{{ asset('js/components/filterListBox.js') }}"></script>
 @endif
 
-<script>
+<script type="module">
     document.addEventListener('DOMContentLoaded', function() {
         const loader = document.getElementById('loader-content');
         const contentContainer = document.getElementById('content-container');
@@ -52,5 +52,12 @@
         loader.style.display = 'none';
         contentContainer.style.display = 'block';
     });
+
+    window.PUSHER_HOST = `{{ config('broadcasting.connections.pusher.options.host') }}`
+    window.PUSHER_APP_KEY = `{{ config('broadcasting.connections.pusher.key') }}`
+    window.PUSHER_PORT = `{{ config('broadcasting.connections.pusher.options.port') }}`
+    window.BROADCAST_DRIVER = `{{ config('broadcasting.connections.pusher.driver') }}`
+    window.PUSHER_CLUSTER = `{{ config('broadcasting.connections.pusher.options.cluster') }}`
 </script>
+<script src="{{ asset('js/websocket.js') }}"></script>
 @yield('scripts')

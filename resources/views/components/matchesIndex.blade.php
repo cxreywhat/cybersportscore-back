@@ -11,7 +11,6 @@
 </div>
 <div id="matches" class="{{count($items) === 0 ? 'min-h-[785px] border-l border-r '
     : ''}} relative overflow-hidden border-gray-700 shadow-xl">
-
     @if(count($items) > 0)
         @foreach($items as $item)
             @if($item->info != null )

@@ -45,7 +45,8 @@ class HomeController extends Controller
         $tournaments = $this->matchService->getTournaments($request);
         $teams = $this->matchService->getTeams($request);
 
-        return view($request->has('is_ajax') ? 'ajax.home' : 'home', [
+        return view($request->ajax() ? 'ajax.home' : 'home', [
+            'count' => 5,
             'teams' => $teams,
             'tournaments' => $tournaments,
             'items' => $data,

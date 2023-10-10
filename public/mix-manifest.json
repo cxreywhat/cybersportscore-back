@@ -9,6 +9,7 @@
     "/js/helpers/detailsMap.js": "/js/helpers/detailsMap.js",
     "/js/components/filterListBox.js": "/js/components/filterListBox.js",
     "/js/components/pagination.js": "/js/components/pagination.js",
+    "/js/websocket.js": "/js/websocket.js",
     "/css/critical.css": "/css/critical.css",
     "/css/app.css": "/css/app.css",
     "/css/style.css": "/css/style.css"

@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\BannerController;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MatchController;
 use App\Http\Controllers\MatchShowController;
 use App\Http\Controllers\NewsController;

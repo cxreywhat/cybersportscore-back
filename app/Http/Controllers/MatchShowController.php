@@ -56,7 +56,7 @@ class MatchShowController extends Controller
         $hasPicks = $t1->getPicks() && $t2->getPicks();
         $hasBans = $t1->getBans() && $t2->getBans();
 
-        return view($request->has('is_ajax') ?'ajax.match' : 'match', [
+        return view($request->ajax() ?'ajax.match' : 'match', [
             'match_id' => $id,
             'streams' => $streams,
             'hasPicks' => $hasPicks,
