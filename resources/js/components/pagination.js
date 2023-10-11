@@ -1,4 +1,4 @@
-import {createMatch} from "./homeSocket";
+import {createMatch} from "./homeSocket.js";
 import {buildApiUrl, pagination} from "../matchFilter";
 import {checkDetailsMap} from "../helpers/detailsMap";
 import {hideLoader, showLoader} from "../helpers/loader";

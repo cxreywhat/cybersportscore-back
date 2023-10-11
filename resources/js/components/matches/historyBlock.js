@@ -1,4 +1,4 @@
-import {teamHistory} from "./historyTeams";
+import {teamHistory} from "./historyTeams.js";
 
 window.historyMatchesBlock = historyMatchesBlock;
 

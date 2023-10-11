@@ -1,6 +1,6 @@
-import {getMap} from "./matches/detailsMap";
-import {addChartToHome} from "./matches/detailsChart";
-import {clearDetailsContainer, generatePlayerDetails} from "./matches/detailsPlayers";
+import {getMap} from "./matches/detailsMap.js";
+import {addChartToHome} from "./matches/detailsChart.js";
+import {clearDetailsContainer, generatePlayerDetails} from "./matches/detailsPlayers.js";
 
 
 export function detailsHome(match, biggestNet) {

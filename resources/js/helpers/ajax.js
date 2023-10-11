@@ -2,7 +2,7 @@ import {addNews, addToNewsPage} from "../components/news";
 import {createList, setEvents, setTeams} from "../components/filterListBox";
 import {isNullOrUndef} from "chart.js/helpers";
 import {insertChart} from "./detailsMap";
-import {historyMatchesBlock} from "../components/matches/historyBlock";
+import {historyMatchesBlock} from "../components/matches/historyBlock.js";
 
 let blockId = '';
 $(document).ready(function() {

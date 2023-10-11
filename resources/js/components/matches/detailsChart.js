@@ -235,4 +235,3 @@ export function addChartToHome(dataGold, dataEvents) {
         options: options
     });
 }
-

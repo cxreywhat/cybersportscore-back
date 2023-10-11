@@ -8,5 +8,3 @@
         text-xs flex rounded-3xl px-3 py-2 mr-1 enabled:hover:bg-apple enabled:hover:text-white" data-page="{{$i}}">{{ $i }}</button>
     @endfor
 </div>
-
-<script src="{{ asset('js/components/pagination.js')}}"></script>

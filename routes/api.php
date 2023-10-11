@@ -8,6 +8,7 @@ use App\Http\Controllers\SeoController;
 use App\Http\Controllers\StreamController;
 use App\Http\Controllers\FilterController;
 use App\Http\Controllers\DictionaryController;
+use App\Http\Controllers\WebsocketController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Enums\GameEnum as Game;
@@ -26,6 +27,8 @@ use App\Enums\GameEnum as Game;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/config', [WebsocketController::class, 'getEchoConfig']);
 
 Route::middleware(['cors'])->group(function () {
     Route::group(['prefix' => 'filters'], function () {
