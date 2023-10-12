@@ -86,9 +86,6 @@ export function createList(items, itemList, searchInput) {
 
     items.forEach((item) => {
         const listItem = document.createElement('li')
-        listItem.role = 'option';
-        listItem.tabIndex = -1;
-        listItem.ariaSelected = 'false';
         listItem.className = 'relative'
 
         listItem.innerHTML = `

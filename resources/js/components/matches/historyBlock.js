@@ -52,10 +52,9 @@ function commonBlockMatches(commonBlock) {
     commonBlock.map((item) => {
         const team1Score = item.teams[0].score;
         const team2Score = item.teams[1].score;
-
         const date = item.date.split(" ")[0];
-
         const matchesHistory = document.createElement('div');
+
         matchesHistory.className = 'flex border-b justify-between border-gray-700 hover:bg-gray-800';
         matchesHistory.appendChild(dateMatch(date));
         matchesHistory.appendChild(matchInfo(team1Score, team2Score));
@@ -72,11 +71,8 @@ function dateMatch(date) {
     info.className = 'flex w-24 items-center pl-4';
     info.innerHTML = `
         <div class="flex flex-col">
-            <div class="text-[12px] text-[#6B7280] leading-none">
-                ${date}
-            </div>
-        </div>
-    `
+            <div class="text-[12px] text-[#6B7280] leading-none">${date}</div>
+        </div>`
 
     return info;
 }
@@ -87,9 +83,7 @@ function matchInfo(t1score, t2score) {
     info.innerHTML += winOrLose(t1score, t2score, 't1');
     info.innerHTML += `
         <div class="flex justify-center items-center border-x border-gray-700 w-14 h-10">
-            <div class="text-xs text-gray-300 font-bold">
-                ${t1score}-${t2score}
-            </div>
+            <div class="text-xs text-gray-300 font-bold">${t1score}-${t2score}</div>
         </div>`
     info.innerHTML += winOrLose(t2score, t1score, 't2');
 
@@ -102,8 +96,7 @@ function eventInfo(title, logo, hasLogo) {
 
     info.innerHTML = `
         <span class="mx-4">
-            <img src="${hasLogo ? '/media/event/_120/e${logo}.webp' : 'media/icons/no-icon.svg'}"
-                 title="${title}" alt="${title} icon" loading="lazy" class="w-[1.6rem] h-[1.6rem] inline">
+            <img src="${hasLogo ? '/media/event/_120/e${logo}.webp' : 'media/icons/no-icon.svg'}" title="${title}" alt="${title} icon" loading="lazy" class="w-[1.6rem] h-[1.6rem] inline">
         </span>`
 
     return info;
@@ -128,13 +121,10 @@ function commonBlockTeamInfo(shortTitle, logo, sideTeam) {
     tInfo.className = 'flex w-28 items-center ' + side;
     tInfo.innerHTML = `
         <div class="flex items-center">
-            <span class="px-4">
-                <img src="/media/logo/_30/t${logo}.webp" alt="undefined icon" class="w-[1.6rem] aspect-[3/2] object-contain" loading="lazy">
-            </span>
+            <span class="px-4"><img src="/media/logo/_30/t${logo}.webp" alt="undefined icon" class="w-[1.6rem] aspect-[3/2] object-contain" loading="lazy"></span>
         </div>
-        <span class="text-gray-300 text-[12px] leading-4">
-            ${shortTitle}
-        </span>`
+        <span class="text-gray-300 text-[12px] leading-4">${shortTitle}</span>
+    `
 
     return tInfo;
 }
@@ -143,10 +133,7 @@ function teamInfo(logo, shortTitle){
     const tInfo = document.createElement('div');
     tInfo.className = 'flex items-center bg-gray-700 bg-opacity-40 border-b border-gray-700 py-2';
     tInfo.innerHTML = `
-        <span class="px-4">
-            <img src="/media/logo/_30/t${logo}.webp'"
-                 alt="undefined icon" class="w-[1.6rem] aspect-[3/2] object-contain" loading="lazy">
-        </span>
+        <span class="px-4"><img src="/media/logo/_30/t${logo}.webp'" alt="undefined icon" class="w-[1.6rem] aspect-[3/2] object-contain" loading="lazy"></span>
         <span class="text-gray-300 text-[12px]">${shortTitle}</span>
     `
 

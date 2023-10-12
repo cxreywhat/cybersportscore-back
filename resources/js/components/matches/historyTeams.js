@@ -27,10 +27,7 @@ function scoreTeam(t1Score, t2Score) {
 
     const score = document.createElement('div');
     score.className = 'flex justify-center items-center px-1 w-14';
-    score.innerHTML = `
-        <div class="text-xs font-bold ${color}">
-            ${t1Score}-${t2Score}
-        </div>`;
+    score.innerHTML = `<div class="text-xs font-bold ${color}">${t1Score}-${t2Score}</div>`;
 
     return score;
 }
@@ -40,10 +37,7 @@ function teamInfo(shortTitle, id, hasLogo) {
     info.className = 'flex grow py-1 gap-2 relative';
     info.innerHTML = `
         <div class="flex grow flex-1 content-center md:items-center gap-1 md:gap-3 flex-row">
-            <span class="px-2 w-14">
-                <img src="${hasLogo ? `/media/logo/_30/t${id}.webp` : 'media/icons/no-icon.svg'}"
-                     alt="" class="w-[1.6rem] aspect-[3/2] object-contain" loading="lazy">
-            </span>
+            <span class="px-2 w-14"><img src="${hasLogo ? `/media/logo/_30/t${id}.webp` : 'media/icons/no-icon.svg'}" alt="" class="w-[1.6rem] aspect-[3/2] object-contain" loading="lazy"></span>
             <span class="text-gray-300 text-[12px]">${shortTitle}</span>
         </div>`
 
@@ -54,13 +48,8 @@ function eventInfo(date, logo, shortTitle, hasLogo) {
     const info = document.createElement('div');
     info.className = 'flex items-center w-[140px] justify-end gap-3 pr-3';
     info.innerHTML = `
-        <div class="text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1">
-            ${date}
-        </div>
-        <span class="px-1">
-            <img src="${ hasLogo ? `/media/event/_120/e${logo}.webp` : 'media/icons/no-icon.svg'}"
-                 title="${shortTitle}" alt="" loading="lazy" class="w-[1.6rem] h-[1.6rem] inline">
-        </span>`
+        <div class="text-[12px] w-[80px] text-[#6B7280] leading-4 pr-1">${date}</div>
+        <span class="px-1"><img src="${ hasLogo ? `/media/event/_120/e${logo}.webp` : 'media/icons/no-icon.svg'}" title="${shortTitle}" alt="" loading="lazy" class="w-[1.6rem] h-[1.6rem] inline"></span>`
 
     return info;
 }

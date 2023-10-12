@@ -11,7 +11,6 @@ function t1Info(goldAdv, expAdv, t1ShortTitle) {
     if (goldAdv > 0) {
         let goldSpan = document.createElement("span");
         goldSpan.className = "h-[12px] block rounded border-yellow-300 text-yellow-300 leading-normal";
-
         goldSpan.textContent = "+" + (goldAdv >= 1000 ? (goldAdv / 1000).toFixed(1) + "k" : goldAdv);
 
         goldExp.appendChild(goldSpan);
@@ -28,7 +27,6 @@ function t1Info(goldAdv, expAdv, t1ShortTitle) {
     t1InfoDiv.appendChild(goldExp);
     let titleTeam = document.createElement("span");
     titleTeam.className = "text-[10px] sm:text-xs font-semibold mr-3 sm:mr-0 mb-0 sm:mb-1 md:mb-0 truncate";
-
     titleTeam.textContent = t1ShortTitle;
 
     t1InfoDiv.appendChild(titleTeam)
@@ -42,35 +40,32 @@ function t2Info(goldAdv, expAdv, t2ShortTitle) {
     }
 
     let titleTeam = document.createElement("span");
-
     titleTeam.className = "text-[10px] sm:text-xs font-semibold mr-3 sm:mr-0 mb-0 sm:mb-1 md:mb-0 truncate";
-
     titleTeam.textContent = t2ShortTitle;
 
     t2InfoDiv.appendChild(titleTeam)
 
     let goldExp = document.createElement("span");
-
     goldExp.className = "ml-3 sm:ml-0 items-col-adv text-[9px] font-semibold opacity-90";
 
     if (goldAdv < 0) {
         let goldSpan = document.createElement("span");
 
         goldSpan.className = "h-[12px] block rounded border-yellow-300 text-yellow-300 leading-normal";
-
         goldSpan.textContent = "+" + (goldAdv <= -1000 ? (goldAdv / 1000).toFixed(1) * -1 + "k" : goldAdv * -1 );
-        goldExp.appendChild(goldSpan);
 
+        goldExp.appendChild(goldSpan);
     }
 
     if (expAdv < 0) {
         let advExpSpan = document.createElement("span");
         advExpSpan.className = "text-left h-[12px] block sm:ml-0 rounded border-[#1786ED] text-[#1786ED] leading-normal";
+
         const shortExp = expAdv <= -1000;
         advExpSpan.textContent = "+" + (shortExp ? (expAdv / 1000).toFixed(1) * -1 + "k" : expAdv * -1);
         goldExp.appendChild(advExpSpan);
-
     }
+
     t2InfoDiv.appendChild(goldExp)
 }
 
@@ -116,7 +111,6 @@ function duration(seconds) {
 }
 
 export function getMainPartInfo(match) {
-
     t1Info(match.teams[0].gold_adv, match.teams[0].exp_adv, match.teams[0].short_title);
     duration(match.duration);
     scoreMatch(match.teams[0], match.teams[1]);

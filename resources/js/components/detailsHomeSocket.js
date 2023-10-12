@@ -5,11 +5,10 @@ import {clearDetailsContainer, generatePlayerDetails} from "./matches/detailsPla
 
 export function detailsHome(match, biggestNet) {
     const detailsPlayersContainer = document.getElementById('detailsContainer');
-    const mapDetailsContainer = document.getElementById('mapDetails')
-    console.log(match)
+    const mapDetailsContainer = document.getElementById('map')
+
     clearDetailsContainer(detailsPlayersContainer);
     clearDetailsContainer(mapDetailsContainer);
-
     detailsPlayers(match, biggestNet, detailsPlayersContainer);
     getMap(match.aggregated_events.destroyed_buildings)
     addChartToHome(match.gold, match.events)

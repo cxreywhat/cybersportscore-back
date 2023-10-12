@@ -56,9 +56,7 @@ function roshanKill(shortTitleTeam, side, duration) {
     eventContent.innerHTML += `
         <div class="mb-2">
             <span class="${side} font-semibold mb-2">
-                <span>
-                    ${shortTitleTeam}
-                </span>
+                <span>${shortTitleTeam}</span>
             </span>
             <span data-translate="events.team_killed"> убивают </span>
             <span class="font-bold">
@@ -72,17 +70,11 @@ function roshanKill(shortTitleTeam, side, duration) {
     return event;
 }
 
-function killNahor() {
-
-}
-
 function aegis(shortTitleTeam, side) {
     return `
         <div class="mb-2">
             <span class="${side} font-semibold mb-2">
-                <span>
-                    ${shortTitleTeam}
-                </span>
+                <span>${shortTitleTeam}</span>
             </span>
             <span data-translate="events.team_picked_up"> подбирают </span>
             <span class="font-bold">
@@ -108,19 +100,14 @@ function teamFights(heroes, event, teamsTitle, side) {
             contentEventFight.innerHTML +=
                 `<div class="mb-2">
                     <span class="${event.side === 't1' ? side.green : side.red} font-semibold mb-2">
-                        <span class="whitespace-nowrap">
-                            ${heroes.find(hero => hero.id === fight.killer).title}
-                        </span>
+                        <span class="whitespace-nowrap">${heroes.find(hero => hero.id === fight.killer).title}</span>
                     </span>
                     <span data-translate="events.killed"> убивает </span>
                     <span class="${event.side === 't1' ? side.red: side.green} font-semibold mb-2">
-                        <span class="whitespace-nowrap">
-                           ${heroes.find(hero => hero.id === fight.victim).title}
-                        </span>
+                        <span class="whitespace-nowrap">${heroes.find(hero => hero.id === fight.victim).title}</span>
                     </span>
                 </div>`
         } else if(fight.type === 'group_kill') {
-
             const killerTitles = fight.killers.map(killerId => {
                 const heroWithMatchingId = heroes.find(hero => hero.id === killerId);
                 return heroWithMatchingId ? heroWithMatchingId.title : null;
@@ -134,15 +121,11 @@ function teamFights(heroes, event, teamsTitle, side) {
             contentEventFight.innerHTML +=
                 `<div class="mb-2">
                     <span class="${event.side === 't1' ? side.green : side.red} font-semibold mb-2">
-                        <span class="whitespace-nowrap">
-                           ${killerTitles.filter(Boolean).join(', ')}
-                        </span>
+                        <span class="whitespace-nowrap">${killerTitles.filter(Boolean).join(', ')}</span>
                     </span>
                     <span data-translate="events.team_killed"> убивают </span>
                     <span class="${event.side === 't1' ? side.red: side.green} font-semibold mb-2">
-                        <span class="whitespace-nowrap">
-                           ${victimsTitles.filter(Boolean).join(', ')}
-                        </span>
+                        <span class="whitespace-nowrap">${victimsTitles.filter(Boolean).join(', ')}</span>
                     </span>
                 </div>`
         }
@@ -157,9 +140,7 @@ function gold(teamGold, shortTitleTeam, side) {
     return `
         <div class="mb-2">
             <span class="${side} font-semibold mb-2">
-                <span>
-                    ${shortTitleTeam}
-                </span>
+                <span>${shortTitleTeam}</span>
             </span>
             <span data-translate="events.team_get"> получают </span>
             <span class="font-bold text-yellow-400 whitespace-nowrap">
@@ -185,9 +166,7 @@ function destroyedTowers(buildings, shortTitleTeam, side, duration) {
         <div class="flex flex-col grow items-start justify-start text-left pr-3 text-xs">
             <div class="mb-2">
                 <span class="${side} font-semibold mb-2">
-                    <span>
-                        ${shortTitleTeam}
-                    </span>
+                    <span>${shortTitleTeam}</span>
                 </span>
                 <span data-translate="events.team_destroyed"> уничтожают </span>
                 <span class="font-bold"> ${buildingHtml}</span>
@@ -206,9 +185,7 @@ function matchEnd(teamShortTitle, side, duration) {
             <div class="mb-2">
                 <span data-translate="events.winner"> Игра завершилась победой </span>
                 <span class="${side} font-semibold mb-2">
-                    <span>
-                        ${teamShortTitle}
-                    </span>
+                    <span>${teamShortTitle}</span>
                 </span>
             </div>
         </div>`
@@ -259,8 +236,5 @@ export function addEventToLogs(match, heroes) {
 
             logs.appendChild(roshanKill(team, side, event.duration));
         }
-
-
     })
-
 }

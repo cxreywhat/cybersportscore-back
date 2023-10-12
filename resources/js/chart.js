@@ -12,7 +12,6 @@ if(!isNullOrUndef(ctx)) {
     dataEvents.sort((a, b) => b.duration - a.duration)
 }
 
-
 function kFormatter(num) {
     const absNum = Math.abs(num);
     return absNum > 999 ? Math.sign(num) * ((absNum / 1000).toFixed(1)) + 'k' : Math.sign(num) * absNum
@@ -76,7 +75,6 @@ export const datapoints = (gold, events=null) => {
             axis_crossing: false
         })
 
-        // insert axis crossing keypoint
         if (nextTime) {
             let nextGoldAmount = goldMapping[nextTime] || gold?.findLast(el => el.time <= nextTime)?.diff
             if (nextGoldAmount != 0 && currentGoldAmount != 0 && Math.sign(nextGoldAmount) != Math.sign(currentGoldAmount)) {
@@ -102,17 +100,7 @@ const getOrCreateTooltip = (chart) => {
     if (!tooltipEl) {
         tooltipEl = document.createElement('div');
     }
-    tooltipEl.style.background = 'rgba(24, 36, 49, 0.9)';
-    tooltipEl.style.borderRadius = '8px';
-    tooltipEl.style.color = 'white';
-    tooltipEl.style.opacity = 1;
-    tooltipEl.style.textAlign = 'center';
-    tooltipEl.style.minWidth = '163px';
-    tooltipEl.style.pointerEvents = 'none';
-    tooltipEl.style.position = 'absolute';
-    tooltipEl.style.transform = 'translate(-50%, 0%)';
-    tooltipEl.style.zIndex = '100'
-    tooltipEl.style.transition = 'all .2s ease';
+    tooltipEl.className = 'bg-opacity-90 rounded-lg text-white opacity-100 text-center min-w-[163px] pointer-events-none absolute transform -translate-x-1/2 z-50 transition-all duration-200 ease-in'
 
     const table = document.createElement('table');
     table.style.margin = '0px';
@@ -217,29 +205,16 @@ const sideEl = (side, winSide, value, valueType, teamsConfig, game_id=null) => {
     } else if (valueType == 'hero_ids') {
         contentEl = document.createElement('div')
         value.forEach((hero_id) => {
-            contentEl.style.display = 'flex'
-            contentEl.style.flexDirection = 'column'
-            contentEl.style.justifyContent = 'center'
-            contentEl.style.height = '100%'
+            contentEl.className = 'flex flex-col justify-center h-full'
+
             const imgEl = heroImg(hero_id, game_id)
-            imgEl.style.display = 'block'
-            imgEl.style.marginTop = '3px'
-            imgEl.style.marginBottom = '3px'
+            imgEl.className = 'block my-3';
+
             contentEl.appendChild(imgEl)
         })
     } else if (valueType == 'side') {
         contentEl = document.createElement('div')
-        contentEl.style.display = 'flex'
-        // contentEl.style.paddingLeft = '5px'
-        contentEl.style.width = '100%'
-        contentEl.style.overflow = 'hidden'
-        contentEl.style.textOverflow = 'ellipsis'
-        contentEl.style.height = '35px'
-        contentEl.style.fontSize = value?.length > 18 ? '10px' : '12px'
-        // contentEl.style.flexDirection = 'column'
-        contentEl.style.whiteSpace = 'nowrap'
-        contentEl.style.alignItems = 'center'
-        contentEl.style.justifyContent = 'start'
+        contentEl.className = `flex w-full h-10 overflow-hidden truncate items-center text-sm justify-start ${ value && value.length > 18 ? 'text-xs' : '' }`
 
         let contentElText = document.createTextNode(value)
 
@@ -283,23 +258,11 @@ const oppositeFightSide = (side) => {
 
 const AddKillRow = (parentEl, teamsConfig, fight, game_id, contentArray=[]) => {
     const rowEl = document.createElement('div')
-    rowEl.style.display = 'flex'
-    rowEl.style.alignItems = 'center'
-    rowEl.style.lineHeight = '15px'
-    rowEl.style.justifyContent = 'center'
-    rowEl.style.padding = '2px'
+    rowEl.className = 'flex items-center justify-center leading-4 p-2'
 
     const centerEl = document.createElement('div')
-    centerEl.style.display = 'inline-flex'
-    centerEl.style.justifyContent = 'center'
-    centerEl.style.alignItems = 'center'
-    centerEl.style.flexDirection = 'column'
-    centerEl.style.textAlign = 'center'
-    centerEl.style.color = 'rgb(140, 141, 145)'
-    centerEl.style.fontSize = '9px'
+    centerEl.className = 'inline-flex flex-col items-center justify-center text-center text-gray-500 text-xs w-8 font-semibold leading-4'
     centerEl.style.width = '30px'
-    centerEl.style.fontWeight = '600'
-    centerEl.style.lineHeight = '16px'
 
     centerEl.appendChild(killImgEl('5px'))
 
@@ -326,14 +289,8 @@ const AddKillRow = (parentEl, teamsConfig, fight, game_id, contentArray=[]) => {
         rowEl.appendChild(sideEl('left', fight.side, /*t[languageSelected().id]?.events[fight.category]*/ 'Тут евент', 'side', teamsConfig, game_id))
     } else if (fight.type == 'dota_building_destroy') {
         fight.buildings.forEach((building) => {
-            // parentEl.appendChild(sideEl('left', fight.side, building, 'side', teamsConfig, game_id))
             const mRowEl = document.createElement('div')
-            mRowEl.style.width = '100%'
-            mRowEl.style.display = 'flex'
-            mRowEl.style.alignItems = 'center'
-            mRowEl.style.lineHeight = '15px'
-            mRowEl.style.justifyContent = 'center'
-            mRowEl.style.padding = '2px'
+            mRowEl.className = 'w-full flex items-center justify-center leading-4 p-2'
             mRowEl.appendChild(sideEl('left', fight.side, building, 'side', teamsConfig, game_id))
             parentEl.appendChild(mRowEl)
         })
@@ -412,17 +369,12 @@ export const externalTooltipHandler = (context) => {
     }
 
     if (tooltip.body) {
-
-        const titleLines = tooltip.title || [];
         const bodyLines = tooltip.body.map(b => b.lines);
-
         const tableHead = document.createElement('thead');
-
         let hideTooltip = false
-
         const tableBody = document.createElement('tbody');
-        bodyLines.forEach((body, i) => {
 
+        bodyLines.forEach((body, i) => {
             const tr = document.createElement('tr')
             tr.style.backgroundColor = 'inherit'
             tr.style.borderWidth = 0
@@ -450,7 +402,6 @@ export const externalTooltipHandler = (context) => {
 
         const tableRoot = tooltipEl.querySelector('table');
 
-
         while (tableRoot.firstChild) {
             tableRoot.firstChild.remove();
         }
@@ -459,15 +410,12 @@ export const externalTooltipHandler = (context) => {
         tableRoot.appendChild(tableBody);
     }
 
-
     const {offsetLeft: positionX, offsetTop: positionY} = chart.canvas;
-
     tooltipEl.style.font = tooltip.options.bodyFont.string;
     tooltipEl.style.padding = tooltip.options.padding + 'px ' + tooltip.options.padding + 'px';
 
     let positionLeft = positionX + tooltip.caretX
     let positionTop = positionY + tooltip.caretY
-
     let leftOffset = chart.canvas.width - positionX - tooltip.caretX - tooltipEl.offsetWidth/3
 
     if (leftOffset < 0)
@@ -475,7 +423,6 @@ export const externalTooltipHandler = (context) => {
 
     tooltipEl.style.left = positionLeft + 'px';
     tooltipEl.style.top = positionTop + 'px';
-
     tooltipEl.style.opacity = 1;
 };
 
@@ -493,8 +440,6 @@ export const labelColor = (item) => {
     }
 }
 
-
-
 export const label = (data) => {
     return data.raw
 }
@@ -504,7 +449,6 @@ export const title = (data) => {
 }
 
 if(!isNullOrUndef(ctx)) {
-
     const data = {
         datasets: [
             {

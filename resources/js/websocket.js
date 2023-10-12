@@ -58,8 +58,6 @@ $.ajax({
 
                 detailsHome(match, biggestNet)
             });
-
-
     },
 });
 

@@ -2,7 +2,7 @@
     @include('components.matchesIndex.matchRowDetailsPlayers')
 </div>
 <div class="py-5 md:py-0 flex w-full flex-col md:w-[180px] justify-center items-center px-4">
-    <div id="mapDetails" class="w-full flex flex-col-reverse ">
+    <div id="map" class="w-full flex flex-col-reverse ">
         @include('components.matchesIndex.matchRowDetailsSummary', [
             'fb' => $match->getAggregatedEvents()->getFirstBlood(),
             'f10k' => $match->getAggregatedEvents()->getFirst10Kills(),
