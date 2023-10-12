@@ -148,7 +148,7 @@ export function createMatch(match) {
     matchDiv.id = "match";
     matchDiv.className = "border-gray-700 border-x border-b justify-between relative bg-opacity-20 text-gray-500 items-center will-change-contents";
     matchDiv.setAttribute("data-game", `${match.game_id === 582 ? '582' : '313' }`);
-    matchDiv.setAttribute("data-tournament", `${ match.event.tournament_id }`);
+    matchDiv.setAttribute("data-tournament", `${ match.event.id }`);
     matchDiv.setAttribute("data-teams", `[${teamsInfo[0].id}, ${teamsInfo[0].id}]`);
 
     const matchContent = document.createElement('div');
