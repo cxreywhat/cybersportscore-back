@@ -5,46 +5,7 @@ import {insertChart} from "./detailsMap";
 import {historyMatchesBlock} from "../components/matches/historyBlock.js";
 
 let blockId = '';
-$(document).ready(function() {
-    const lang = document.getElementById('selected-lang');
-    if(window.location.pathname === '/news') {
-        changeNews(lang.value, 15);
-    }
 
-    lang.addEventListener('click', () => {
-        const langButtons = document.querySelectorAll('.lang-button');
-
-        langButtons.forEach((button) => {
-            button.addEventListener('click', () => {
-                if(window.location.pathname === '/') {
-                    changeNews(button.value, 5);
-                } else if(window.location.pathname === '/news') {
-                    changeNews(button.value, 15);
-                } else {
-                    changeNews(button.value, 10);
-                }
-            });
-        });
-    })
-
-   function changeNews(lang, perPage) {
-        $.ajax({
-            url: '/api/news',
-            method: 'GET',
-            data: {
-                lang: lang,
-                perPage: perPage
-            },
-            success: function(response) {
-                if(window.location.pathname === '/news') {
-                    $('#news-content').html(addToNewsPage(response.data));
-                } else {
-                    $('#news-container').html(addNews(response.data));
-                }
-            },
-        });
-    }
-});
 export function loadNews() {
     $('.ajax-news').click((e) => {
         e.preventDefault();
@@ -69,7 +30,7 @@ export function loadNews() {
 }
 
 export function loadNewsBlock() {
-    const newsBlock = document.querySelectorAll('.news-block');
+    const newsBlock = document.querySelectorAll('.ajax-news-block');
     newsBlock.forEach((news) => {
         news.addEventListener('click', (e) => {
             e.preventDefault();
@@ -279,3 +240,12 @@ function hideLoader() {
     $('#content-container').show();
 }
 
+function removeAllEventListeners(element) {
+    if(!element) {
+        return
+    }
+
+    const clonedElement = element.cloneNode(true);
+    element.parentNode.replaceChild(clonedElement, element);
+    return clonedElement;
+}

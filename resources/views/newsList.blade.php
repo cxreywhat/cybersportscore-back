@@ -14,7 +14,7 @@
                     @foreach($data as $news)
                         <a id="news-block" href="{{"/news/".$news->id}}"
                            class="ajax-news-block text-xs flex items-center font-normal leading-1 p-3 hover:bg-[#ffffff05] border-b border-gray-700 hover:text-gray-100"
-                           data-news-block="{{$news->id."-".$news->eng}}">
+                           data-news-block="{{$news->id}}">
                             {{$news->title}}
                         </a>
                     @endforeach

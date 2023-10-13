@@ -40,6 +40,8 @@
 <script src={{ asset('js/app.js') }}></script>
 <script src='{{asset('js/helpers/loadAjax.js')}}'></script>
 <script src="{{ asset('js/translate.js') }}"></script>
+<script src="{{ asset('js/i18n/language.js') }}"></script>
+<script src="{{ asset('js/i18n/timeZone.js') }}"></script>
 @if (Request::path() === '/' || preg_match('/\/\?page=\d+/', Request::fullUrl()))
     <script src="{{ asset('js/components/filterListBox.js') }}"></script>
 @endif

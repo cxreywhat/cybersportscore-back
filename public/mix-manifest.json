@@ -1,14 +1,16 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/matchFilter.js": "/js/matchFilter.js",
-    "/js/historyBlock.js": "/js/historyBlock.js",
     "/js/chart.js": "/js/chart.js",
     "/js/translate.js": "/js/translate.js",
+    "/js/historyBlock.js": "/js/historyBlock.js",
+    "/js/websocket.js": "/js/websocket.js",
     "/js/helpers/matchRow.js": "/js/helpers/matchRow.js",
     "/js/helpers/loadAjax.js": "/js/helpers/loadAjax.js",
     "/js/helpers/detailsMap.js": "/js/helpers/detailsMap.js",
+    "/js/i18n/timeZone.js": "/js/i18n/timeZone.js",
+    "/js/i18n/language.js": "/js/i18n/language.js",
     "/js/components/filterListBox.js": "/js/components/filterListBox.js",
-    "/js/websocket.js": "/js/websocket.js",
     "/css/critical.css": "/css/critical.css",
     "/css/app.css": "/css/app.css",
     "/css/style.css": "/css/style.css"

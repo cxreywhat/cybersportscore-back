@@ -26,6 +26,7 @@ class ArticleController extends Controller
 
     public function show(Request $request, string $id, NewsService $service)
     {
+        $id = intval($id);
         $data = new NewsItemResource(
             $service->getNewsItem($id, (bool) $request->get('preview'))
         );

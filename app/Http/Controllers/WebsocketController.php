@@ -12,7 +12,6 @@ class WebsocketController extends Controller
     public function getEchoConfig(Request $request)
     {
         if (request()->ajax()) {
-
             $config = [
                 'broadcaster' => config('broadcasting.default'),
                 'key' => config('broadcasting.connections.pusher.key'),
@@ -24,10 +23,11 @@ class WebsocketController extends Controller
                 'encrypted' => true,
                 'disableStats' => true,
                 'enabledTransports' => ['ws', 'wss'],
-                'activityTimeout' => 50000000,
+                'activityTimeout' => 50000000
             ];
 
-            return response()->json($config);
+            $key = substr(config('app.key'), 7);
+            return response()->json(array('c' => encrypt($config), 'k' => $key));
         }
 
         return response('Access Denied', 403);

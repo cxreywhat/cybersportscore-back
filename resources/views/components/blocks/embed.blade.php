@@ -1,20 +1,30 @@
-@inject('newsService', 'App\Services\NewsService')
-
-@php
-    $request = app('request');
-    $item = new App\Http\Resources\NewsItemResource(
-            $newsService->getNewsItem($id, (bool) $request->get('preview'))
-        );
-@endphp
-<a href="{{ $item->source }}" class="external-post">
-    <picture data-v-dcd628b6="">
-        <source srcset="{{asset('/media/news/_182/'.$item->pic)}}">
-        <img src="{{asset('/media/news/_182/'.$item->pic)}}" loading="lazy" alt="">
-    </picture>
-    <div>
-        <div class="exp-title">
-           {{ $item->title }}
-        </div>
-        <div class="exp-subtitle"></div>
-    </div>
+<a id='embedNews' class="external-post">
 </a>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script>
+    $.ajax({
+        url: `/api/news/{{$id}}`,
+        method: 'GET',
+        success: function(response) {
+            createEmbed(response.data);
+        },
+    });
+
+    function createEmbed(data) {
+        const embed = document.getElementById('embedNews');
+        embed.setAttribute('href', 'news/' + data.id);
+        embed.className = 'external-post';
+        embed.innerHTML = `
+            <picture>
+                <source srcset="/media/news/_182/${data.pic}">
+                <img src="/media/news/_182/${data.pic}" loading="lazy">
+            </picture>
+            <div>
+                <div class="exp-title">
+                    ${data.title}
+                </div>
+                <div class="exp-subtitle"></div>
+            </div>`
+    }
+</script>

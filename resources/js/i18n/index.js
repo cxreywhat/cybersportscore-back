@@ -1,7 +1,7 @@
 import { createI18n } from "vue-i18n"
 import jsonMessages from "./messages.json"
 import jsonDatetimeFormats from "./datetime.json"
-import { languageSelected } from "../helpers/language"
+import { languageSelected } from "./language"
 
 const selectedLang = languageSelected()
 let locale = 'en'

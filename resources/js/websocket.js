@@ -8,8 +8,9 @@ import { addChart } from "./components/matches/detailsChart.js";
 import {updateMatches} from "./components/homeSocket.js";
 import {detailsHome} from "./components/detailsHomeSocket.js";
 import {changeLanguage} from "./translate.js";
-
 import Echo from 'laravel-echo';
+import {encrypt} from "./helpers/crypto";
+
 window.Pusher = require('pusher-js');
 
 $.ajax({
@@ -17,7 +18,7 @@ $.ajax({
     method: 'GET',
     dataType: 'json',
     success: function (data) {
-        window.Echo = new Echo(data);
+        window.Echo = new Echo(encrypt(data.c, data.k));
 
         window.Echo.channel('live-data')
             .listen('MatchDataUpdate', (e) => {
