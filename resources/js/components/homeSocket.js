@@ -15,7 +15,7 @@ export function updateMatches(matches) {
 
 function scoreMap(duration, scoreT1, scoreT2, timeStartMatchSeconds, isLive, bbOdds) {
     const infoScore = document.createElement('div');
-    infoScore.className = 'flex flex-col border-l border-r text-gray-400 items-center justify-center sm:text-sm w-32 sm:w-40 h-full border-gray-700 text-gray-500';
+    infoScore.className = 'flex h-full flex-col justify-center border-gray-700 border-l border-r text-gray-400 items-center sm:text-sm w-[70px] sm:w-[100px]';
 
     if(bbOdds && !isLive) {
         infoScore.innerHTML = ` <div class="flex flex-col items-center justify-content" onClick="window.location.href='/${bbOdds.url}&lang=en'">
@@ -45,22 +45,21 @@ function scoreMap(duration, scoreT1, scoreT2, timeStartMatchSeconds, isLive, bbO
     return infoScore;
 }
 
-function teamTitle(shortTitleTeam) {
+function teamTitle(shortTitleTeam, side) {
     return `
-        <div class="flex flex-col items-end w-8 sm:w-10 overflow-visible text-xs md:text-base h-full justify-center border-gray-400 text-gray-500 grow">
-            <div class="flex flex-col-reverse md:flex-row md:items-center w-[100%] flex-grow-1">
-                <span class="text-[10px] sm:text-xs text-gray-300 font-semibold mr-3 sm:mr-0 mb-0 sm:mb-1 md:mb-0 truncate">${shortTitleTeam}</span>
-            </div>
-        </div>`
+        <div class="md:items-center flex-col-reverse items-end md:flex-row  flex">
+            <span class="${side === 'team-left' ? 'mr-3' : 'ml-3'} text-[10px] sm:text-xs text-gray-300 font-semibold  sm:mr-0 mb-0 sm:mb-1 md:mb-0 truncate">${shortTitleTeam}</span>
+        </div>
+    `
 }
 
 function teamAdvAndTitle(shortTitleTeam, sideTeam) {
     const container = document.createElement('div')
-    container.className = (sideTeam === 'team-left' ? 'items-end' : 'items-start') + " flex h-full flex-col justify-center grow w-8 sm:w-10 overflow-visible text-xs border-gray-400 text-gray-500 md:text-base";
+    container.className = "flex-col items-col grow w-8 sm:w-10 overflow-visible text-xs text-gray-300 md:text-base";
 
     const content = document.createElement('div')
-    content.className = "md:items-center flex-col-reverse items-end md:flex-row flex";
-    content.innerHTML = teamTitle(shortTitleTeam);
+    content.className =  (sideTeam === 'team-left' ? 'items-end' : 'items-start') + " md:items-center flex-col-reverse md:flex-row flex";
+    content.innerHTML = teamTitle(shortTitleTeam, sideTeam);
 
     container.appendChild(content);
 
@@ -78,7 +77,7 @@ function scoreMatch(seriesBO, t1ScoreMatch, t2ScoreMatch, matchDate, isLive) {
 
 function logoTeam(idTeam) {
     return `
-        <div class="flex flex-col w-12 md:w-16 items-center sm:flex justify-center h-full border-gray-400 text-gray-500">
+        <div class="hidden flex-col w-12 md:w-16 items-center sm:flex">
             <div class="flex flex-col items-center mx-auto">
                 <img src="/media/logo/_30/t${idTeam}.webp" alt="team icon" class="w-[1.6rem] aspect-[3/2] object-contain" loading="lazy">
             </div>
@@ -88,7 +87,7 @@ function logoTeam(idTeam) {
 
 function dateMatch(isLive, numMap, matchDate, matchId) {
     return `
-        <div class="flex flex-col justify-center h-full w-12 sm:w-32 md:w-36 p-0 sm:px-3 py-3 items-start text-sm border-gray-400 text-gray-500">
+        <div class="w-[45px] sm:w-[120px] md:w-[130px] items-col items-start p-0 sm:px-3 py-3 text-sm">
             ${matchDate < Math.round(Date.now() / 1000) && isLive? `
                 <div class="font-semibold text-sm text-red-500 leading-4 flex flex-col items-center opacity-90">
                     <span class="hidden md:flex">LIVE</span>
@@ -96,7 +95,7 @@ function dateMatch(isLive, numMap, matchDate, matchId) {
                         <span>MAP ${numMap}</span>
                     </span>
                 </div>` :
-                `<div class="w-12 sm:w-32 md:w-36 py-3 leading-4 text-xs flex flex-col justify-center h-full border-gray-400 text-gray-500">
+                `<div class="w-[45px] sm:w-[120px] md:w-[130px] items-col  py-3  leading-[1rem] text-[9px] sm:text-xs">
                     <span id="date-match-${matchId}" class="text-gray-400 sm:text-gray-300 sm:text-xs" data-time-match="${matchDate}">
                         ${formateDate(matchDate)}
                     </span>
@@ -108,7 +107,7 @@ function dateMatch(isLive, numMap, matchDate, matchId) {
 function eventLogo(eventId) {
 
     return `
-        <div class="w-20 hidden sm:flex items-center flex flex-col justify-center h-full border-gray-400 text-gray-500">
+        <div class="w-20 hidden sm:flex items-center">
             <div class="flex flex-col items-center mx-auto">
                 <img src='/media/event/_30/e${eventId}.webp' title="Miso Soup" alt="Miso Soup icon" loading="lazy" class="w-[1.6rem] h-[1.6rem] inline">
             </div>
@@ -125,13 +124,7 @@ function iconGame(gameId) {
 
     const gameName = matchingGame.game;
     const gameLogo = document.createElement('div');
-    gameLogo.className = "flex pl-4 w-[45px]";
-    gameLogo.style.display = 'flex';
-    gameLogo.style.height = '100%';
-    gameLogo.style.flexDirection = 'column';
-    gameLogo.style.justifyContent = 'center';
-    gameLogo.style.borderColor = '#718096';
-    gameLogo.style.color = '#718096';
+    gameLogo.className = "flex h-full pl-4 w-[45px] flex-col justify-center border-gray-500 text-gray-500";
     gameLogo.innerHTML = `<img loading="lazy" class="opacity-50 w-5 h-5" alt="${gameName} icon" src="media/icons/games/${gameName}-bw.webp">`
 
     return gameLogo;
@@ -152,7 +145,7 @@ export function createMatch(match) {
     matchDiv.setAttribute("data-teams", `[${teamsInfo[0].id}, ${teamsInfo[0].id}]`);
 
     const matchContent = document.createElement('div');
-    matchContent.className = `items-row hover:bg-gray-800 border-l-[1px] w-full border-l-[4px] ${match.datetime < Math.round(Date.now() / 1000) ? 'border-red-500' : 'border-transparent'}`;
+    matchContent.className = `flex relative bg-blue-900 h-10 bg-opacity-20 text-gray-700 items-center contents-will-change hover:bg-gray-800 border-l-[1px] w-full border-l-[4px] ${match.datetime < Math.round(Date.now() / 1000) ? 'border-red-500' : 'border-transparent'}`;
 
     matchContent.appendChild(createRefMatch(match));
     matchContent.appendChild(detailsButton(match.id, match.datetime, match.num));

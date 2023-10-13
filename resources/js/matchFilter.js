@@ -4,7 +4,7 @@ import {hideLoader, showLoader} from "./helpers/loader";
 
 export function filterMatchRows(game_id, event_id, team,id) {
 
-    const url = buildApiUrl('api/matches?', game_id, event_id, team,id)
+    const url = buildApiUrl('api/matches', game_id, event_id, team,id)
 
     $.ajax({
         url: url,

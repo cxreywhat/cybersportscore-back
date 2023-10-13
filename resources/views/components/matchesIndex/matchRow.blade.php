@@ -22,20 +22,12 @@
         </div>
         <div class="items-end flex-col items-col grow w-8 sm:w-10 overflow-visible text-xs text-gray-300 md:text-base">
             <div class="md:items-center flex-col-reverse items-end md:flex-row  flex">
-                {{--@if($itemDate?->getTimestamp() < time() && intval($info?->map?->match_start) == "1")
-                    <span class="mr-3 sm:mr-0 md:mr-8 items-col-adv text-[9px] font-semibold opacity-90">
-                        <span class="h-[12px] sm:h-[18px] block sm:inline md:p-1 md:border rounded border-yellow-300 text-yellow-300 leading-normal">
-                        </span>
-                        <span class="text-right h-[12px] sm:h-[18px] block sm:inline md:border md:p-1 rounded border-[#1786ED] text-[#1786ED] leading-normal">
-                        </span>
-                    </span>
-                @endif--}}
                 <span class="text-[10px] sm:text-xs text-gray-300 font-semibold mr-3 sm:mr-0 mb-0 sm:mb-1 md:mb-0 truncate">
                     {{ $info->t1->t }}
                 </span>
             </div>
         </div>
-        <div class="items-col w-[50px] md:w-[60px] items-center hidden sm:flex">
+        <div class="w-[50px] md:w-[60px] items-center hidden sm:flex">
             <div class="flex flex-col items-center mx-auto">
                 <img src="{{ asset("/media/logo/_30/t".$item->t1.".webp")}}"
                      alt="{{ $info->t1->t }} icon" class="w-[1.6rem] aspect-[3/2] object-contain" loading="lazy">
@@ -74,7 +66,7 @@
                 </div>
             @endif
         </div>
-        <div class="items-col w-[50px] md:w-[60px] items-center hidden sm:flex">
+        <div class="w-[50px] md:w-[60px] items-center hidden sm:flex">
             <div class="flex flex-col items-center mx-auto">
                 <img src='{{ asset('/media/logo/_30/t'.$item->t2.'.webp') }}'
                       alt="{{ $info->t2->t }} icon" class="w-[1.6rem] aspect-[3/2] object-contain" loading="lazy">
@@ -87,9 +79,9 @@
                 </span>
             </div>
         </div>
-        <div class="items-col w-[80px] hidden sm:flex items-center">
+        <div class="w-[80px] hidden sm:flex items-center ">
             <div class="flex flex-col items-center mx-auto">
-                <img src='{{ asset('/media/event/_30/e'.$item->tournament_id.'.webp') }}' title="Miso Soup" alt="Miso Soup icon" loading="lazy" class="w-[1.6rem] h-[1.6rem] inline">
+                <img src='{{ asset('/media/event/_30/e'.$item->tournament_id.'.webp') }}' title="{{$item->tournament_title}}" alt="{{$item->tournament_title}} icon" loading="lazy" class="w-[1.6rem] h-[1.6rem] inline">
             </div>
         </div>
         <div class="items-col w-[50px] items-center">

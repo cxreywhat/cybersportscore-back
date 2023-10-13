@@ -2,7 +2,7 @@
     <h3 class="text-sm font-semibold text-gray-600 grow pl-3 w-full pb-2 md:pb-0" data-translate="labels.matches">
         Матчи
     </h3>
-    <div id="filterListBox" class="flex flex-col md:flex-row ">
+    <div id="filterListBox" class="flex flex-col md:flex-row w-full">
         @include('components.common.filterListBox')
     </div>
 </div>
@@ -10,7 +10,7 @@
     @include('components.common.loader')
 </div>
 <div id="matches" class="{{count($items) === 0 ? 'min-h-[785px] border-l border-r '
-    : ''}} relative overflow-hidden border-gray-700 shadow-xl">
+    : ''}} ajax-match-block relative overflow-hidden border-gray-700 shadow-xl">
     @if(count($items) > 0)
         @foreach($items as $item)
             @if($item->info != null )
