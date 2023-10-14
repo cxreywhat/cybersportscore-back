@@ -59,6 +59,12 @@
     </div>
 </div>
 @endsection
+@section('scripts')
+    <script>
+        let lang = document.getElementById('selected-lang').value;
+        window.loadArticlesNewsBlock(lang, 10)
+    </script>
+@endsection
 <style lang="scss">
     hr {
         margin-top: 1rem;

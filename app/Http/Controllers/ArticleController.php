@@ -9,10 +9,16 @@ use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
-    public function index(Request $request, NewsService $service)
+    private NewsService $newsService;
+
+    public function __construct(NewsService $newsService) {
+        $this->newsService = $newsService;
+    }
+
+    public function index(Request $request)
     {
         $data = NewsListResource::collection(
-            $service->getNewsList([
+            $this->newsService->getNewsList([
                 'game_id' => $request->get('game_id'),
                 'lang' => $request->get('lang'),
                 'per_page' => $request->get('perPage'),
@@ -24,18 +30,11 @@ class ArticleController extends Controller
         ]);
     }
 
-    public function show(Request $request, string $id, NewsService $service)
+    public function show(Request $request, string $id)
     {
         $id = intval($id);
         $data = new NewsItemResource(
-            $service->getNewsItem($id, (bool) $request->get('preview'))
-        );
-        $news = NewsListResource::collection(
-            $service->getNewsList([
-                'game_id' => $request->get('game_id'),
-                'lang' => $request->get('lang'),
-                'per_page' => $request->get('perPage'),
-            ])
+            $this->newsService->getNewsItem($id, (bool) $request->get('preview'))
         );
 
         $blocks = json_decode($data->blocks);
@@ -44,13 +43,26 @@ class ArticleController extends Controller
         $formattedDate = date('j ', $timestamp) . $months[date('n', $timestamp)] . date(', Y H:i', $timestamp);
 
         return view($request->ajax() ? 'ajax.newsArticle' : 'newsArticle', [
-                'count' => 10,
                 'data' => $data,
-                'news' => $news,
                 'blocks' => $blocks,
                 'timestamp' => $timestamp,
                 'formattedDate' => $formattedDate
             ]
         );
+    }
+
+    public function articlesBlock(Request $request) {
+
+        $news = NewsListResource::collection(
+            $this->newsService->getNewsList([
+                'game_id' => $request->get('game_id'),
+                'lang' => $request->get('lang'),
+                'per_page' => $request->get('perPage'),
+            ])
+        );
+
+        $isNewsPage = $request->get('isNewsPage');
+
+        return view('components.matchesIndex.articles', ['news' => $news, 'isNewsPage' => $isNewsPage]);
     }
 }

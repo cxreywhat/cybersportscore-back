@@ -34,23 +34,13 @@ class HomeController extends Controller
         );
         $pages = $this->matchService->getList($matchRequest->validated());
 
-        $news = NewsListResource::collection(
-            $this->newsService->getNewsList([
-                'game_id' => $request->get('game_id'),
-                'lang' => $request->get('lang'),
-                'per_page' => $request->get('perPage'),
-            ])
-        );
-
         $tournaments = $this->matchService->getTournaments($request);
         $teams = $this->matchService->getTeams($request);
 
         return view($request->ajax() ? 'ajax.home' : 'home', [
-            'count' => 5,
             'teams' => $teams,
             'tournaments' => $tournaments,
             'items' => $data,
-            'news' => $news,
             'pages' => $pages
         ]);
     }

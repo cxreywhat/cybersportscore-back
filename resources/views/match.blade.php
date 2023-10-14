@@ -5,7 +5,7 @@
         <div class="grid grid-cols-1 md:grid-cols-6 gap-6 relative mb-3">
             <div class="col-span-6 lg:col-span-3 flex justify-between items-center w-full flex-col sm:flex-row">
                 <div class="flex my-5 sm:my-0 text-gray-300 font-bold text-[10px] sm:text-xs">
-                    <div class="flex flex-col h-full ml-1 bg-gray-100 bg-opacity-60 w-[55px] h-[50px] items-center justify-center rounded-[100%]">
+                    <div class="flex flex-col ml-1 bg-gray-100 bg-opacity-60 w-[55px] h-[50px] items-center justify-center rounded-[100%]">
                         <img src="{{ asset('media/event/_120/e'.$match->getTournament()->id.'.webp')}}" title="{{ $match->getTournament()->title }}"
                              alt="{{ $match->getTournament()->title }} icon" loading="lazy" class="w-[2.8rem] h-[2.8rem] inline">
                     </div>

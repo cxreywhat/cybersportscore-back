@@ -10,3 +10,9 @@
         </div>
     </div>
 @endsection
+@section('scripts')
+    <script>
+        let lang = document.getElementById('selected-lang').value;
+        window.loadArticlesNewsBlock(lang, 5)
+    </script>
+@endsection

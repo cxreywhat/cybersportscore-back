@@ -1,4 +1,4 @@
-import {addNews, addToNewsPage} from "../components/news";
+import {loadArticlesNewsBlock} from "../helpers/ajax";
 
 const selectedLang = document.getElementById('selected-lang');
 const listLangs = document.getElementById('list-langs');
@@ -92,40 +92,19 @@ function selectLanguages(item) {
 
 $(document).ready(function() {
     let lang = document.getElementById('selected-lang');
-    if(window.location.pathname === '/news') {
-        changeNews(lang.value, 15);
-    }
     lang.addEventListener('click', () => {
         const langButtons = document.querySelectorAll('.lang-button');
 
         langButtons.forEach((button) => {
             button.addEventListener('click', () => {
                 if(window.location.pathname === '/') {
-                    changeNews(button.value, 5);
+                    loadArticlesNewsBlock(button.value, 5);
                 } else if(window.location.pathname === '/news') {
-                    changeNews(button.value, 15);
-                } else {
-                    changeNews(button.value, 10);
+                    loadArticlesNewsBlock(button.value, 15, true);
+                } else if (window.location.pathname.match(/^\/news\/\d+$/)) {
+                    loadArticlesNewsBlock(button.value, 10);
                 }
             });
         });
     })
-
-    function changeNews(lang, perPage) {
-        $.ajax({
-            url: '/api/news',
-            method: 'GET',
-            data: {
-                lang: lang,
-                perPage: perPage
-            },
-            success: function(response) {
-                if(window.location.pathname === '/news') {
-                    $('#news-content').html(addToNewsPage(response.data));
-                } else {
-                    $('#news-container').html(addNews(response.data));
-                }
-            },
-        });
-    }
 });

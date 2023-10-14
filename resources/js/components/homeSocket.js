@@ -132,20 +132,19 @@ function iconGame(gameId) {
 
 function addDetails(matchId) {
     return `<div id='matchDetails-${matchId}' class="min-h-[285px] flex-col md:flex-row p-4 relative w-full" style="display: none; background: linear-gradient(180deg, rgba(214, 214, 214, 0.06) 0%, rgba(217, 217, 217, 0.03) 100%)"></div>`
-
 }
 
 export function createMatch(match) {
     const matchDiv = document.createElement("div");
     const teamsInfo = match.teams;
     matchDiv.id = "match";
-    matchDiv.className = "border-gray-700 border-x border-b justify-between relative bg-opacity-20 text-gray-500 items-center will-change-contents";
+    matchDiv.className = "border-gray-700 border-x border-b justify-between";
     matchDiv.setAttribute("data-game", `${match.game_id === 582 ? '582' : '313' }`);
     matchDiv.setAttribute("data-tournament", `${ match.event.id }`);
     matchDiv.setAttribute("data-teams", `[${teamsInfo[0].id}, ${teamsInfo[0].id}]`);
 
     const matchContent = document.createElement('div');
-    matchContent.className = `flex relative bg-blue-900 h-10 bg-opacity-20 text-gray-700 items-center contents-will-change hover:bg-gray-800 border-l-[1px] w-full border-l-[4px] ${match.datetime < Math.round(Date.now() / 1000) ? 'border-red-500' : 'border-transparent'}`;
+    matchContent.className = `items-row hover:bg-gray-800 border-l-[4px]  ${match.datetime < Math.round(Date.now() / 1000) ? 'border-red-500' : 'border-transparent'}`;
 
     matchContent.appendChild(createRefMatch(match));
     matchContent.appendChild(detailsButton(match.id, match.datetime, match.num));

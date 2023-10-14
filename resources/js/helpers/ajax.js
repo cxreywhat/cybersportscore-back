@@ -1,10 +1,32 @@
-import {addNews, addToNewsPage} from "../components/news";
 import {createList, setEvents, setTeams} from "../components/filterListBox";
 import {isNullOrUndef} from "chart.js/helpers";
 import {insertChart} from "./detailsMap";
 import {historyMatchesBlock} from "../components/matches/historyBlock.js";
 
 let blockId = '';
+
+
+export function loadArticlesNewsBlock(lang, perPage, isNewsPage = false) {
+    $.ajax({
+        url: '/articlesBlock',
+        beforeSend: function() {
+            showLoaderNews()
+        },
+        complete: function() {
+            hideLoaderNews();
+        },
+        data: {
+            lang: lang,
+            perPage: perPage,
+            isNewsPage: isNewsPage
+        },
+        method: 'GET',
+        success: function(response) {
+            console.log(response)
+            $('#news-container').html(response);
+        },
+    });
+}
 
 export function loadNews() {
     $('.ajax-news').click((e) => {
@@ -240,12 +262,13 @@ function hideLoader() {
     $('#content-container').show();
 }
 
-function removeAllEventListeners(element) {
-    if(!element) {
-        return
-    }
 
-    const clonedElement = element.cloneNode(true);
-    element.parentNode.replaceChild(clonedElement, element);
-    return clonedElement;
+function showLoaderNews() {
+    $('#loader-news').show();
+    $('#news-container').hide();
+}
+
+function hideLoaderNews() {
+    $('#loader-news').hide();
+    $('#news-container').show();
 }

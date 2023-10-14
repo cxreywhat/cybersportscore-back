@@ -93,8 +93,7 @@
             </span>
         </div>
     </a>
-    <button id="matchDetailsButton-{{$item->id}}" class="{{$itemDate?->getTimestamp() < time() && $info?->map?->match_start !== "" ? 'hover:bg-apple bg-gray-700 text-gray-300 cursor-pointer' : 'text-gray-700 cursor-default'}}  w-[46px] sm:w-[42px] h-full justify-center items-center flex"
-            data-csrf-token="{{ csrf_token() }}">
+    <button id="matchDetailsButton-{{$item->id}}" class="{{$itemDate?->getTimestamp() < time() && $info?->map?->match_start !== "" ? 'hover:bg-apple bg-gray-700 text-gray-300 cursor-pointer' : 'text-gray-700 cursor-default'}}  w-[46px] sm:w-[42px] h-full justify-center items-center flex">
         <svg class="h-5 w-5 transition" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd">
             </path>
@@ -107,16 +106,6 @@
     <script src="{{ asset('js/matchFilter.js') }}" type="module"></script>
 @endif
 <style>
-    .items-row {
-        position: relative;
-        display: flex;
-        background-color: #192536;
-        height: 3.2rem;
-        background-color: rgba(55, 65, 81, 0.2);
-        color: #718096;
-        align-items: center;
-        will-change: contents;
-    }
 
     .items-col {
         display: flex;

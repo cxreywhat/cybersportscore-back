@@ -46,4 +46,5 @@ Route::match(['get', 'post'],'/match/details', [HomeController::class, 'details'
 
 Route::get('/matchesData', [HomeController::class, 'sendData']);
 Route::get('/matchDetails', [HomeController::class, 'sendDataDetailsMatch']);
+Route::get('/articlesBlock', [ArticleController::class, 'articlesBlock']);
 
