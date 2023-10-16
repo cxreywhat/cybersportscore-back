@@ -1,7 +1,10 @@
 @extends('main')
 
 @section('content')
-<div class="grid grid-cols-1 md:grid-cols-6 gap-5">
+<div id="loader-news-block" class='min-h-[785px] border-l border-r border-t relative overflow-hidden border-b rounded-b-md border-gray-700 shadow-xl' style="display: block">
+    @include('components.common.loader')
+</div>
+<div id="news-block" class="grid grid-cols-1 md:grid-cols-6 gap-5" style="display: none">
     <div class="col-span-5 lg:col-span-4 bg-[#212D3D]">
         <div class="article-content col-span-2 md:col-span-4 w-full">
             <div class="flex flex-col w-full border border-gray-700 rounded-lg">
@@ -61,8 +64,16 @@
 @endsection
 @section('scripts')
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loader = document.getElementById('loader-news-block');
+            const contentContainer = document.getElementById('news-block');
+
+            loader.style.display = 'none';
+            contentContainer.style.display = 'grid';
+        });
+
         let lang = document.getElementById('selected-lang').value;
-        window.loadArticlesNewsBlock(lang, 10)
+        Promise.all([window.loadArticlesNewsBlock(lang, 10)])
     </script>
 @endsection
 <style lang="scss">

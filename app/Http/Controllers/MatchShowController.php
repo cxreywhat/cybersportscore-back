@@ -56,7 +56,11 @@ class MatchShowController extends Controller
         $hasPicks = $t1->getPicks() && $t2->getPicks();
         $hasBans = $t1->getBans() && $t2->getBans();
 
+        $jsonDataBuildings = file_get_contents("json/dota-2-maps.json");
+        $buildings = json_decode($jsonDataBuildings);
+
         return view($request->ajax() ?'ajax.match' : 'match', [
+            'buildings' => $buildings,
             'match_id' => $id,
             'streams' => $streams,
             'hasPicks' => $hasPicks,

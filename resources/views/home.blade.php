@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('content')
-    <div class="grid grid-cols-1 md:grid-cols-5 gap-5">
+    <div id='homePage' class="grid grid-cols-1 md:grid-cols-5 gap-5">
         <div class="col-span-5 lg:col-span-4">
             @include('components.matchesIndex')
         </div>
@@ -13,6 +13,6 @@
 @section('scripts')
     <script>
         let lang = document.getElementById('selected-lang').value;
-        window.loadArticlesNewsBlock(lang, 5)
+        Promise.all([window.loadArticlesNewsBlock(lang, 5)])
     </script>
 @endsection

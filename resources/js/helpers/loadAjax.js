@@ -5,8 +5,7 @@ const currentUrl = window.location.href;
 if(currentUrl.match(/\/(\?page=\d+)?$/)) {
     loadMatchBlockInfo()
 }
-window.loadArticlesNewsBlock = loadArticlesNewsBlock;
 loadHome();
 loadMatchBlock()
 loadNews();
-loadNewsBlock();
+window.loadArticlesNewsBlock = loadArticlesNewsBlock;

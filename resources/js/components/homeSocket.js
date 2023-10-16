@@ -170,8 +170,7 @@ function detailsButton(idMatch, matchDate, mapNum) {
 function createRefMatch(match) {
     const refMatch = document.createElement('a');
 
-    refMatch.setAttribute('id', 'ajax-match-block');
-    refMatch.className = 'flex flex-row w-full h-full items-center ';
+    refMatch.className = 'ajax-match-block flex flex-row w-full h-full items-center ';
     if (match.is_live) {
         refMatch.classList.add('cursor-pointer', 'ajax-match-block');
         refMatch.href = '/' + match.id

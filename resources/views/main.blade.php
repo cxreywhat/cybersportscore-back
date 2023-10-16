@@ -23,11 +23,7 @@
             <div class="h-auto relative flex flex-col max-w-6xl mx-auto px-0 lg:px-3 bg-[#1B2838]">
                 @include('components.layout.navbar')
 
-                <div id="loader-content" class='min-h-[785px] border-l border-r border-t relative overflow-hidden border-b rounded-b-md border-gray-700 shadow-xl' style="display: block">
-                    @include('components.common.loader')
-                </div>
-
-                <div id="content-container" class="hidden">
+                <div id="content-container">
                     @yield('content')
                 </div>
 
@@ -46,13 +42,5 @@
     <script src="{{ asset('js/components/filterListBox.js') }}"></script>
 @endif
 <script type="text/javascript" src="{{asset('js/websocket.js')}}"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const loader = document.getElementById('loader-content');
-        const contentContainer = document.getElementById('content-container');
 
-        loader.style.display = 'none';
-        contentContainer.style.display = 'block';
-    });
-</script>
 @yield('scripts')

@@ -37,7 +37,11 @@ class HomeController extends Controller
         $tournaments = $this->matchService->getTournaments($request);
         $teams = $this->matchService->getTeams($request);
 
+        $jsonDataBuildings = file_get_contents("json/dota-2-maps.json");
+        $buildings = json_decode($jsonDataBuildings);
+
         return view($request->ajax() ? 'ajax.home' : 'home', [
+            'buildings' => $buildings,
             'teams' => $teams,
             'tournaments' => $tournaments,
             'items' => $data,

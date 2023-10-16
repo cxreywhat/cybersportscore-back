@@ -6,14 +6,13 @@
         @include('components.common.filterListBox')
     </div>
 </div>
-<div id="loader-match" class='min-h-[785px] border-l border-r border-t relative overflow-hidden border-b rounded-b-md border-gray-700 shadow-xl' style="display: none">
+<div id="loader-match" class='min-h-[785px] border-l border-r border-t relative overflow-hidden border-b rounded-b-md border-gray-700 shadow-xl' style="display: block">
     @include('components.common.loader')
 </div>
-<div id="matches" class="{{count($items) === 0 ? 'min-h-[785px] border-l border-r '
-    : ''}} ajax-match-block relative overflow-hidden border-gray-700 shadow-xl">
+<div id="matches" class="{{count($items) === 0 ? 'min-h-[785px] border-l border-r': ''}} relative overflow-hidden border-gray-700 shadow-xl" style="display: none">
     @if(count($items) > 0)
         @foreach($items as $item)
-            @if($item->info != null )
+            @if($item->info != null)
              <div id="match" class="border-gray-700 border-x border-b justify-between"
                   data-game="{{ $item->game_id == 582 ? '582' : '313' }}"
                   data-tournament="{{ $item->tournament_id}}"
@@ -41,6 +40,15 @@
 <div class="mt-5 ">
     @include('components.common.pagination')
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const loader = document.getElementById('loader-match');
+        const contentContainer = document.getElementById('matches');
+
+        loader.style.display = 'none';
+        contentContainer.style.display = 'block';
+    });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="{{asset('js/helpers/matchRow.js')}}"></script>
 <style lang="scss">

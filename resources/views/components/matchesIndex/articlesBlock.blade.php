@@ -9,7 +9,6 @@
     <div id="loader-news" class='border-l border-r border-t relative overflow-hidden border-b rounded-b-md border-gray-700 shadow-xl' style="display: none; min-height: 250px">
         @include('components.common.loader')
     </div>
-    <div id="news-container" class="p-4 relative min-h-[200px]">
-    </div>
+    <div id="news-container" class="p-4 relative min-h-[200px]"></div>
 </div>
 

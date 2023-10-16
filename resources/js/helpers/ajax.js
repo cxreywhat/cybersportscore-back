@@ -5,26 +5,31 @@ import {historyMatchesBlock} from "../components/matches/historyBlock.js";
 
 let blockId = '';
 
-
 export function loadArticlesNewsBlock(lang, perPage, isNewsPage = false) {
-    $.ajax({
-        url: '/articlesBlock',
-        beforeSend: function() {
-            showLoaderNews()
-        },
-        complete: function() {
-            hideLoaderNews();
-        },
-        data: {
-            lang: lang,
-            perPage: perPage,
-            isNewsPage: isNewsPage
-        },
-        method: 'GET',
-        success: function(response) {
-            console.log(response)
-            $('#news-container').html(response);
-        },
+    return new Promise((resolve, reject) => {
+        $.ajax({
+            url: '/articlesBlock',
+            beforeSend: function() {
+                showLoaderNews()
+            },
+            complete: function() {
+                hideLoaderNews();
+            },
+            data: {
+                lang: lang,
+                perPage: perPage,
+                isNewsPage: isNewsPage
+            },
+            method: 'GET',
+            success: function(response) {
+                $('#news-container').html(response);
+                loadNewsBlock();
+                resolve();
+            },
+            error: function(error) {
+                reject(error);
+            }
+        });
     });
 }
 
@@ -45,35 +50,42 @@ export function loadNews() {
             success: function(response) {
                 $('#content-container').html(response);
                 history.pushState({}, '', '/news');
-                loadNewsBlock();
+
+                const lang = document.getElementById('selected-lang').value;
+                Promise.all([loadArticlesNewsBlock(lang, 15, true)])
             },
         });
     });
 }
 
 export function loadNewsBlock() {
-    const newsBlock = document.querySelectorAll('.ajax-news-block');
-    newsBlock.forEach((news) => {
-        news.addEventListener('click', (e) => {
-            e.preventDefault();
-            blockId = news.getAttribute('data-news-block') ;
-            $.ajax({
-                url: '/news/' + blockId,
-                method: 'GET',
-                dataType: 'html',
-                beforeSend: function() {
-                    showLoader()
-                },
-                complete: function() {
-                    hideLoader();
-                },
-                success: function(response) {
-                    $('#content-container').html(response);
-                    history.pushState({}, '', '/news/' + blockId);
-                    loadNews();
-                    loadNewsBlock();
-                },
-            });
+    $(document).ready(function() {
+        const newsBlock = document.querySelectorAll('.ajax-news-block');
+
+        newsBlock.forEach((news) => {
+            news.addEventListener('click', (e) => {
+                e.preventDefault();
+                blockId = news.getAttribute('data-news-block');
+                $.ajax({
+                    url: '/news/' + blockId,
+                    method: 'GET',
+                    dataType: 'html',
+                    beforeSend: function () {
+                        showLoaderNewsBlock()
+                    },
+                    complete: function () {
+                        hideLoaderNewsBlock();
+                    },
+                    success: function (response) {
+                        $('#content-container').html(response);
+                        history.pushState({}, '', '/news/' + blockId);
+                        loadNews();
+
+                        const lang = document.getElementById('selected-lang').value;
+                        Promise.all([loadArticlesNewsBlock(lang, 10)])
+                    },
+                });
+            })
         })
     })
 }
@@ -85,15 +97,18 @@ export function loadHome() {
             method: 'GET',
             dataType: 'html',
             beforeSend: function() {
-                showLoader()
+                showLoaderMatches()
             },
             complete: function() {
-                hideLoader();
+                hideLoaderMatches();
             },
             success: function(response) {
                 $('#content-container').html(response);
                 history.pushState({}, '', '/');
 
+                const lang = document.getElementById('selected-lang').value;
+
+                Promise.all([loadArticlesNewsBlock(lang, 5)])
                 loadNews()
             },
         });
@@ -153,20 +168,18 @@ export function loadMatchBlock() {
                         url: '/' + matchId,
                         method: 'GET',
                         dataType: 'html',
-                        beforeSend: function() {
+                        beforeSend: function () {
                             showLoader()
                         },
-                        complete: function() {
+                        complete: function () {
                             hideLoader();
                         },
-                        success: function(response) {
+                        success: function (response) {
                             $('#content-container').html(response);
                             loadHistoryTeams(matchId);
                             history.pushState({}, '', '/' + matchId);
                         },
                     });
-                } else {
-                    window.location.pathname = '/';
                 }
             });
         });
@@ -253,13 +266,14 @@ export function searchItem(searchInput, itemList, api) {
 }
 
 function showLoader() {
-    $('#loader-content').show();
-    $('#content-container').hide();
+    $('#homePage').hide();
+    $('#loader-match').show();
+    $('#match').hide();
 }
 
 function hideLoader() {
-    $('#loader-content').hide();
-    $('#content-container').show();
+    $('#loader-match').hide();
+    $('#match').show();
 }
 
 
@@ -271,4 +285,25 @@ function showLoaderNews() {
 function hideLoaderNews() {
     $('#loader-news').hide();
     $('#news-container').show();
+}
+
+function showLoaderNewsBlock() {
+    $('#loader-news-block').show();
+    $('#news-block').hide();
+}
+
+function hideLoaderNewsBlock() {
+    $('#loader-news-block').hide();
+    document.getElementById('news-block').style.display = 'grid';
+}
+
+
+function showLoaderMatches() {
+    $('#loader-match').show();
+    $('#matches').hide();
+}
+
+function hideLoaderMatches() {
+    $('#loader-match').hide();
+    $('#matches').show();
 }

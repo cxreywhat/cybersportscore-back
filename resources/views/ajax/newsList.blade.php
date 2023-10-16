@@ -7,17 +7,12 @@
                         Articles
                     </h1>
                 </div>
-                <div class="p-4">
-                    @foreach($data as $news)
-                        <a href="{{"/news/".$news->id}}"
-                           class="ajax-news-block text-xs flex items-center font-normal leading-1 p-3 hover:bg-[#ffffff05] border-b border-gray-700 hover:text-gray-100"
-                            data-news-block="{{$news->id}}">
-                            {{$news->title}}
-                        </a>
-                    @endforeach
+                <div id="loader-news" class='border-l border-r border-t relative overflow-hidden border-b rounded-b-md border-gray-700 shadow-xl' style="display: none; min-height: 650px">
+                    @include('components.common.loader')
+                </div>
+                <div id="news-container" class="p-4">
                 </div>
             </div>
         </div>
     </div>
 </div>
-

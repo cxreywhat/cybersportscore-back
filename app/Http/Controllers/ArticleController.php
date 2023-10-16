@@ -6,6 +6,7 @@ use App\Http\Resources\NewsItemResource;
 use App\Http\Resources\NewsListResource;
 use App\Services\NewsService;
 use Illuminate\Http\Request;
+use function Termwind\render;
 
 class ArticleController extends Controller
 {
@@ -63,6 +64,6 @@ class ArticleController extends Controller
 
         $isNewsPage = $request->get('isNewsPage');
 
-        return view('components.matchesIndex.articles', ['news' => $news, 'isNewsPage' => $isNewsPage]);
+        return view('components.matchesIndex.articles', ['news' => $news, 'isNewsPage' => $isNewsPage])->render();
     }
 }

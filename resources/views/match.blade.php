@@ -1,7 +1,11 @@
 @extends('main')
 
 @section('content')
-    <div class="w-full h-full relative">
+    <div id="loader-match" class='min-h-[785px] border-l border-r border-t relative overflow-hidden border-b rounded-b-md border-gray-700 shadow-xl' style="display: block">
+        @include('components.common.loader')
+    </div>
+
+    <div id='match' class="w-full h-full relative" style="display: none">
         <div class="grid grid-cols-1 md:grid-cols-6 gap-6 relative mb-3">
             <div class="col-span-6 lg:col-span-3 flex justify-between items-center w-full flex-col sm:flex-row">
                 <div class="flex my-5 sm:my-0 text-gray-300 font-bold text-[10px] sm:text-xs">
@@ -90,6 +94,14 @@
     <script src="{{ asset('js/matchFilter.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loader = document.getElementById('loader-match');
+            const contentContainer = document.getElementById('match');
+
+            loader.style.display = 'none';
+            contentContainer.style.display = 'block';
+        });
+
         $(document).ready(function() {
             const id = window.location.pathname.split('?')[0];
             $.ajax({
