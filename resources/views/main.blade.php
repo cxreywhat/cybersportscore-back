@@ -8,7 +8,7 @@
         <meta name="description" content="Live scores and results of all esports matches for Dota 2, League of Legends"/>
         <meta name="keywords" content="matches, results, live, online, stream, statistics, score, team, roster"/>
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="icon" type="image/svg+xml" href='https://cybersportscore.com/media/icons/favicon32.png'/>
+        <link rel="icon" type="image/svg+xml" href='{{ asset('media/icons/favicon32.png') }}'/>
         <link rel="stylesheet" href={{ asset('css/critical.css') }}>
         <link rel="stylesheet" href={{ asset('css/app.css') }} />
         <link rel="stylesheet" href={{ asset('css/style.css') }} />
@@ -22,6 +22,10 @@
             </div>-->
             <div class="h-auto relative flex flex-col max-w-6xl mx-auto px-0 lg:px-3 bg-[#1B2838]">
                 @include('components.layout.navbar')
+
+                <div id="loader-container" class='border-l border-r border-t relative overflow-hidden border-b rounded-b-md border-gray-700 shadow-xl' style="display: none; min-height: 650px">
+                    @include('components.common.loader')
+                </div>
 
                 <div id="content-container">
                     @yield('content')
@@ -38,9 +42,6 @@
 <script src="{{ asset('js/translate.js') }}"></script>
 <script src="{{ asset('js/i18n/language.js') }}"></script>
 <script src="{{ asset('js/i18n/timeZone.js') }}"></script>
-@if (Request::path() === '/' || preg_match('/\/\?page=\d+/', Request::fullUrl()))
-    <script src="{{ asset('js/components/filterListBox.js') }}"></script>
-@endif
 <script type="text/javascript" src="{{asset('js/websocket.js')}}"></script>
 
 @yield('scripts')

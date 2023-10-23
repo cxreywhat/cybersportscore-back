@@ -6,7 +6,6 @@
     "/js/historyBlock.js": "/js/historyBlock.js",
     "/js/websocket.js": "/js/websocket.js",
     "/js/helpers/matchRow.js": "/js/helpers/matchRow.js",
-    "/js/helpers/loadAjax.js": "/js/helpers/loadAjax.js",
     "/js/helpers/detailsMap.js": "/js/helpers/detailsMap.js",
     "/js/i18n/timeZone.js": "/js/i18n/timeZone.js",
     "/js/i18n/language.js": "/js/i18n/language.js",

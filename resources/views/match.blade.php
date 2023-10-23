@@ -22,7 +22,7 @@
                 <div class="flex flex-row align-center md:w-56 md:justify-center sm:justify-end sm:ml-3 flex-wrap">
                     @for ($numMap = 1; $numMap <= $match->getBestOf(); $numMap++)
                         <span class="mx-2 sm:mx-2 my-2 sm:mr-0">
-                            <a aria-current="page" href="/{{$match_id}}?num={{$numMap}}" class="ajax-match-info
+                            <a aria-current="page" href="/{{$game}}/{{$match_id}}?num={{$numMap}}" class="ajax-match-info
                                 {{ $match->getNum() == $numMap ? "cursor-default pointer-events-none text-gray-900 bg-apple"
                                 : ($numMap <= $match->getLiveNum() ? "border border-gray-500 text-gray-500 hover:text-gray-300 hover:border-apple"
                                 : "text-gray-700 border border-1 border-gray-700 cursor-default pointer-events-none") }}

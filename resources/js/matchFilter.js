@@ -1,18 +1,16 @@
-import {loadHomePerPage, matchesIncurrentPage} from "./components/pagination";
+import {matchesIncurrentPage} from "./components/pagination";
 import {isNullOrUndef} from "chart.js/helpers";
 import {hideLoader, showLoader} from "./helpers/loader";
+import {loadHomePerPage} from "./helpers/ajax";
 
 export function filterMatchRows(game_id, event_id, team,id) {
 
-    const url = buildApiUrl('api/matches', game_id, event_id, team,id)
-
+    const url = buildApiUrl('/api/matches', game_id, event_id, team,id)
+    const game = game_id == 582 ? 'dota-2' : (game_id == 313 ? 'lol' : '')
     $.ajax({
         url: url,
         method: 'GET',
         dataType: 'html',
-        data: {
-            is_ajax: true,
-        },
         beforeSend: function() {
             showLoader('loader-match', 'matches');
         },
@@ -23,16 +21,15 @@ export function filterMatchRows(game_id, event_id, team,id) {
             const matches = JSON.parse(response);
             pagination(matches.meta)
             matchesIncurrentPage(matches.data);
-            history.pushState({}, '', '/');
+            history.pushState({}, '', '/' + game);
         },
-        error: function(xhr) {
-            console.error(xhr);
-        }
     });
 }
 
 export function buildApiUrl(basicUrl, game_id, event_id, team_id) {
-    const params = [];
+    let params = [];
+
+    params = params.filter(item => !item.startsWith('game_id=') || !item.startsWith('event_id=') || !item.startsWith('team_id='));
 
     if (!isNullOrUndef(game_id)) {
         params.push(`game_id=${game_id}`);

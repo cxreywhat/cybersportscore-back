@@ -82,3 +82,21 @@
         </div>
     </div>
 </div>
+<script>
+    if('{{$game != '' }}') {
+        const selectedGame = document.getElementById('custom-select-game');
+        const game = '{{ $game == 'dota-2' ? 'Dota 2' : 'Lol' }}'
+        const gameId = '{{ $gameId }}';
+
+        selectedGame.innerHTML = `
+            <span class="ml-1 block truncate text-xs">
+                <img src="http://localhost:8000/media/icons/games/{{ $game }}.webp" alt="Game Icon" loading="lazy" class=" w-3 h-3 inline-block mr-3">
+                <span id="selected-game" data-value="${gameId}">
+                    ${game}
+                </span>
+            </span>
+            <span id="clear-selected-game" class="absolute inset-y-0 right-0 flex items-center pr-2">
+                <span class="z-11 hover:text-apple text-center h-5 w-5 text-white cursor-pointer">✕</span>
+            </span>`
+    }
+</script>

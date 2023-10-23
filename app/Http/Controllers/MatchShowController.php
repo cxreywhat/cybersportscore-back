@@ -34,16 +34,20 @@ class MatchShowController extends Controller
         $this->dictService = $dictService;
     }
 
-    public function show(Request $request, int $id)
+    public function show(Request $request)
     {
+        $id = intval($request->id);
+        $game = $request->game;
+
+        $lang = $request->language;
+
         $match = new MatchResource(
             $this->matchService->show($id, $request->get('num'))
         );
 
         $streams = StreamResource::collection($this->streamService->getListForMatch($id));
 
-        $heroesDota2 = $this->dictService->getHeroes("dota-2");
-        $heroesLol = $this->dictService->getHeroes("lol");
+        $heroes = $this->dictService->getHeroes($game);
 
         $t1 = $match->getTeam1();
         $t2 = $match->getTeam2();
@@ -59,14 +63,17 @@ class MatchShowController extends Controller
         $jsonDataBuildings = file_get_contents("json/dota-2-maps.json");
         $buildings = json_decode($jsonDataBuildings);
 
-        return view($request->ajax() ?'ajax.match' : 'match', [
+        $game = $match->getGameId()  == 582 ? 'dota-2' : 'lol';
+
+        return view('match', [
+            'lang' => $lang,
+            'game' => $game,
             'buildings' => $buildings,
             'match_id' => $id,
             'streams' => $streams,
             'hasPicks' => $hasPicks,
             'hasBans' => $hasBans,
-            'heroes' => $heroesDota2,
-            'heroesLol' => $heroesLol,
+            'heroes' => $heroes,
             'biggestNet' => $this->matchService->biggestNetMatch($t1->getPlayers(), $t2->getPlayers()),
             'isLive' => $isLive,
             'match' => $match,

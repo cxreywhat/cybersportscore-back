@@ -87,7 +87,7 @@ function logoTeam(idTeam) {
 
 function dateMatch(isLive, numMap, matchDate, matchId) {
     return `
-        <div class="w-[45px] sm:w-[120px] md:w-[130px] items-col items-start p-0 sm:px-3 py-3 text-sm">
+        <div class="flex h-full flex-col w-[45px] sm:w-[120px] md:w-[130px] justify-center border-gray-700 text-gray-500 items-start p-0 sm:px-3 py-3 text-sm">
             ${matchDate < Math.round(Date.now() / 1000) && isLive? `
                 <div class="font-semibold text-sm text-red-500 leading-4 flex flex-col items-center opacity-90">
                     <span class="hidden md:flex">LIVE</span>
@@ -169,17 +169,15 @@ function detailsButton(idMatch, matchDate, mapNum) {
 
 function createRefMatch(match) {
     const refMatch = document.createElement('a');
+    const game = match.game_id == 582 ? 'dota-2' : 'lol';
 
     refMatch.className = 'ajax-match-block flex flex-row w-full h-full items-center ';
+
     if (match.is_live) {
         refMatch.classList.add('cursor-pointer', 'ajax-match-block');
-        refMatch.href = '/' + match.id
+        refMatch.href = `/${game}/${match.id}`
     } else {
         refMatch.classList.add('cursor-default');
-    }
-
-    if (match.isLive) {
-        refMatch.setAttribute('href', `/${match.id}`);
     }
 
     const t1 = match.teams[0];

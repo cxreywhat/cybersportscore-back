@@ -1,188 +1,63 @@
 import {createList, setEvents, setTeams} from "../components/filterListBox";
 import {isNullOrUndef} from "chart.js/helpers";
-import {insertChart} from "./detailsMap";
+import {checkDetailsMap, insertChart} from "./detailsMap";
 import {historyMatchesBlock} from "../components/matches/historyBlock.js";
+import {matchesIncurrentPage} from "../components/pagination";
+import {buildApiUrl, pagination} from "../matchFilter";
 
 let blockId = '';
 
 export function loadArticlesNewsBlock(lang, perPage, isNewsPage = false) {
-    return new Promise((resolve, reject) => {
-        $.ajax({
-            url: '/articlesBlock',
-            beforeSend: function() {
-                showLoaderNews()
-            },
-            complete: function() {
-                hideLoaderNews();
-            },
-            data: {
-                lang: lang,
-                perPage: perPage,
-                isNewsPage: isNewsPage
-            },
-            method: 'GET',
-            success: function(response) {
-                $('#news-container').html(response);
-                loadNewsBlock();
-                resolve();
-            },
-            error: function(error) {
-                reject(error);
-            }
-        });
+    $.ajax({
+        url: '/api/articlesBlock',
+        beforeSend: function() {
+            showLoaderNews()
+        },
+        complete: function() {
+            hideLoaderNews();
+        },
+        data: {
+            lang: lang,
+            perPage: perPage,
+            isNewsPage: isNewsPage
+        },
+        method: 'GET',
+        success: function(response) {
+            $('#news-container').html(response);
+        },
+
+        error: function (error) {
+            console.log(error.message)
+        }
     });
 }
 
-export function loadNews() {
-    $('.ajax-news').click((e) => {
-        e.preventDefault();
+export function loadHomePerPage(pageNum) {
+    const gameId = document.getElementById('selected-game').getAttribute('data-value');
+    const eventId = document.getElementById('selected-tournament').getAttribute('data-value');
+    const teamId = document.getElementById('selected-team').getAttribute('data-value');
 
-        $.ajax({
-            url: '/news',
-            method: 'GET',
-            dataType: 'html',
-            beforeSend: function() {
-                showLoader()
-            },
-            complete: function() {
-                hideLoader();
-            },
-            success: function(response) {
-                $('#content-container').html(response);
-                history.pushState({}, '', '/news');
+    const basicUrl = '/api/matches?page=' + pageNum + '&'
+    const url = buildApiUrl(basicUrl, gameId, eventId, teamId)
 
-                const lang = document.getElementById('selected-lang').value;
-                Promise.all([loadArticlesNewsBlock(lang, 15, true)])
-            },
-        });
-    });
-}
-
-export function loadNewsBlock() {
-    $(document).ready(function() {
-        const newsBlock = document.querySelectorAll('.ajax-news-block');
-
-        newsBlock.forEach((news) => {
-            news.addEventListener('click', (e) => {
-                e.preventDefault();
-                blockId = news.getAttribute('data-news-block');
-                $.ajax({
-                    url: '/news/' + blockId,
-                    method: 'GET',
-                    dataType: 'html',
-                    beforeSend: function () {
-                        showLoaderNewsBlock()
-                    },
-                    complete: function () {
-                        hideLoaderNewsBlock();
-                    },
-                    success: function (response) {
-                        $('#content-container').html(response);
-                        history.pushState({}, '', '/news/' + blockId);
-                        loadNews();
-
-                        const lang = document.getElementById('selected-lang').value;
-                        Promise.all([loadArticlesNewsBlock(lang, 10)])
-                    },
-                });
-            })
-        })
-    })
-}
-export function loadHome() {
-    $('.main-logo').click((e) => {
-        e.preventDefault();
-        $.ajax({
-            url: '/',
-            method: 'GET',
-            dataType: 'html',
-            beforeSend: function() {
-                showLoaderMatches()
-            },
-            complete: function() {
-                hideLoaderMatches();
-            },
-            success: function(response) {
-                $('#content-container').html(response);
-                history.pushState({}, '', '/');
-
-                const lang = document.getElementById('selected-lang').value;
-
-                Promise.all([loadArticlesNewsBlock(lang, 5)])
-                loadNews()
-            },
-        });
-    })
-}
-
-export function loadMatchBlockInfo() {
-    $(document).ready(function() {
-        const matchInfoLinks = document.querySelectorAll('.ajax-match-info');
-        let id = null;
-        let num = null;
-        matchInfoLinks.forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                const href = link.getAttribute('href');
-                const matchId = href.match(/\/(\d+)\?num=(\d+)/);
-
-                if (matchId) {
-                    id = matchId[1];
-                    num = matchId[2];
-                }
-            });
-        });
-
-        $('.ajax-match-info').click((e) => {
-            e.preventDefault();
-            $.ajax({
-                url: '/' + id + '?num=' + num,
-                method: 'GET',
-                dataType: 'html',
-                beforeSend: function() {
-                    showLoader()
-                },
-                complete: function() {
-                    hideLoader();
-                },
-                success: function(response) {
-                    $('#content-container').html(response);
-                    history.pushState({}, '', '/' + id + '?num=' + num);
-                },
-            });
-        })
-    });
-}
-
-export function loadMatchBlock() {
-    $(document).ready(function() {
-        const matchBlocks = document.querySelectorAll('.ajax-match-block');
-        matchBlocks.forEach((match) => {
-            match.addEventListener('click', function (event) {
-                event.preventDefault();
-                const matchId = match.getAttribute('data-id');
-
-                if (matchId) {
-                    $.ajax({
-                        url: '/' + matchId,
-                        method: 'GET',
-                        dataType: 'html',
-                        beforeSend: function () {
-                            showLoader()
-                        },
-                        complete: function () {
-                            hideLoader();
-                        },
-                        success: function (response) {
-                            $('#content-container').html(response);
-                            loadHistoryTeams(matchId);
-                            history.pushState({}, '', '/' + matchId);
-                        },
-                    });
-                }
-            });
-        });
+    $.ajax({
+        url: url,
+        method: 'GET',
+        dataType: 'html',
+        data: { page: pageNum },
+        beforeSend: function() {
+            showLoaderMatches()
+        },
+        complete: function() {
+            hideLoaderMatches()
+        },
+        success: function(response) {
+            const matches = JSON.parse(response);
+            pagination(matches.meta)
+            matchesIncurrentPage(matches.data);
+            checkDetailsMap()
+            history.pushState({}, '', '/?page=' + pageNum);
+        },
     });
 }
 
@@ -214,7 +89,7 @@ export function checkDetailsMatch(gameId, num, csrfToken, container) {
 }
 export function getTournaments(game_id) {
     return new Promise((resolve, reject) => {
-        let url = 'api/filters/tournaments';
+        let url = '/api/filters/tournaments';
         if (!isNullOrUndef(game_id)) {
             url += '?game_id=' + game_id;
         }
@@ -234,7 +109,7 @@ export function getTournaments(game_id) {
 
 export function getTeams(game_id) {
     return new Promise((resolve, reject) => {
-        let url = 'api/filters/teams';
+        let url = '/api/filters/teams';
         if (!isNullOrUndef(game_id)) {
             url += '?game_id=' + game_id;
         }
@@ -265,17 +140,6 @@ export function searchItem(searchInput, itemList, api) {
     });
 }
 
-function showLoader() {
-    $('#homePage').hide();
-    $('#loader-match').show();
-    $('#match').hide();
-}
-
-function hideLoader() {
-    $('#loader-match').hide();
-    $('#match').show();
-}
-
 
 function showLoaderNews() {
     $('#loader-news').show();
@@ -297,6 +161,15 @@ function hideLoaderNewsBlock() {
     document.getElementById('news-block').style.display = 'grid';
 }
 
+function showLoaderContent() {
+    $('#loader-container').show();
+    $('#content-container').hide();
+}
+
+function hideLoaderContent() {
+    $('#loader-container').hide();
+    $('#content-container').show();
+}
 
 function showLoaderMatches() {
     $('#loader-match').show();

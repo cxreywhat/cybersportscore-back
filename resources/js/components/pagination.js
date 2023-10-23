@@ -1,8 +1,5 @@
 import {createMatch} from "./homeSocket.js";
-import {buildApiUrl, pagination} from "../matchFilter";
-import {checkDetailsMap} from "../helpers/detailsMap";
-import {hideLoader, showLoader} from "../helpers/loader";
-import {loadMatchBlock} from "../helpers/ajax";
+import {loadHomePerPage} from "../helpers/ajax";
 
 const pageButtons = document.querySelectorAll('.page-button');
 
@@ -29,36 +26,6 @@ function removeAllEventListeners(element) {
     const clonedElement = element.cloneNode(true);
     element.parentNode.replaceChild(clonedElement, element);
     return clonedElement;
-}
-
-export function loadHomePerPage(pageNum) {
-    const gameId = document.getElementById('selected-game').getAttribute('data-value');
-    const eventId = document.getElementById('selected-tournament').getAttribute('data-value');
-    const teamId = document.getElementById('selected-team').getAttribute('data-value');
-
-    const basicUrl = 'api/matches?page=' + pageNum + '&'
-    const url = buildApiUrl(basicUrl, gameId, eventId, teamId)
-
-    $.ajax({
-        url: url,
-        method: 'GET',
-        dataType: 'html',
-        data: { page: pageNum },
-        beforeSend: function() {
-            showLoader('loader-match', 'matches');
-        },
-        complete: function() {
-            hideLoader('loader-match', 'matches', 'block');
-        },
-        success: function(response) {
-            const matches = JSON.parse(response);
-            pagination(matches.meta)
-            matchesIncurrentPage(matches.data);
-            checkDetailsMap()
-            history.pushState({}, '', '/?page=' + pageNum);
-            loadMatchBlock();
-        },
-    });
 }
 
 export function matchesIncurrentPage(matches) {

@@ -71,9 +71,6 @@
             loader.style.display = 'none';
             contentContainer.style.display = 'grid';
         });
-
-        let lang = document.getElementById('selected-lang').value;
-        Promise.all([window.loadArticlesNewsBlock(lang, 10)])
     </script>
 @endsection
 <style lang="scss">

@@ -59,35 +59,18 @@
                                     <span class="whitespace-nowrap">
                                         @if(property_exists($fight, 'killers'))
                                             @foreach($fight->getKillers() as $key => $killerId)
-                                                @if($match->getGameId() == 582)
-                                                    @foreach($heroes as $hero)
-                                                        @if($hero->id == $killerId)
-                                                            {{ $key == array_key_last($fight->getKillers()) ? $hero->title : $hero->title.", " }}
-                                                        @endif
-                                                    @endforeach
-                                                @elseif($match->getGameId() == 313)
-                                                    @foreach($heroesLol as $hero)
-                                                        @if($hero->id == $killerId)
-                                                            {{ $key == array_key_last($fight->getKillers()) ? $hero->title : $hero->title.", " }}
-                                                        @endif
-                                                    @endforeach
-                                                @endif
+                                                @foreach($heroes as $hero)
+                                                    @if($hero->id == $killerId)
+                                                        {{ $key == array_key_last($fight->getKillers()) ? $hero->title : $hero->title.", " }}
+                                                    @endif
+                                                @endforeach
                                             @endforeach
                                         @elseif(property_exists($fight, 'killer'))
-                                            @if($match->getGameId() == 582)
-                                                @foreach($heroes as $hero)
-                                                    @if($hero->id == $fight->getKiller())
-                                                        {{ $hero->title}}
-                                                    @endif
-                                                @endforeach
-                                            @elseif($match->getGameId() == 313)
-                                                @foreach($heroesLol as $hero)
-                                                    @if($hero->id == $fight->getKiller())
-                                                        {{ $hero->title}}
-                                                    @endif
-                                                @endforeach
-                                            @endif
-
+                                            @foreach($heroes as $hero)
+                                                @if($hero->id == $fight->getKiller())
+                                                    {{ $hero->title}}
+                                                @endif
+                                            @endforeach
                                         @endif
                                     </span>
                                 </span>
@@ -96,35 +79,18 @@
                                     <span class="whitespace-nowrap">
                                         @if(property_exists($fight, 'victims'))
                                             @foreach($fight->getVictims() as $key => $victimId)
-                                                @if($match->getGameId() === 582)
-                                                    @foreach($heroes as $hero)
-                                                        @if($hero->id == $victimId)
-                                                            {{ $key == array_key_last($fight->getVictims()) ? $hero->title : $hero->title.", " }}
-                                                        @endif
-                                                    @endforeach
-                                                @elseif($match->getGameId() === 313)
-                                                    @foreach($heroesLol as $hero)
-                                                        @if($hero->id == $victimId)
-                                                            {{ $key == array_key_last($fight->getVictims()) ? $hero->title : $hero->title.", " }}
-                                                        @endif
-                                                    @endforeach
-                                                @endif
+                                                @foreach($heroes as $hero)
+                                                    @if($hero->id == $victimId)
+                                                        {{ $key == array_key_last($fight->getVictims()) ? $hero->title : $hero->title.", " }}
+                                                    @endif
+                                                @endforeach
                                             @endforeach
                                         @elseif(property_exists($fight, 'victim'))
-                                            @if($match->getGameId() === 582)
-
-                                                @foreach($heroes as $hero)
-                                                    @if($hero->id == $fight->getVictim())
-                                                        {{ $hero->title}}
-                                                    @endif
-                                                @endforeach
-                                            @elseif($match->getGameId() === 313)
-                                                @foreach($heroesLol as $hero)
-                                                    @if($hero->id == $fight->getVictim())
-                                                        {{ $hero->title}}
-                                                    @endif
-                                                @endforeach
-                                            @endif
+                                            @foreach($heroes as $hero)
+                                                @if($hero->id == $fight->getVictim())
+                                                    {{ $hero->title}}
+                                                @endif
+                                            @endforeach
                                         @endif
                                     </span>
                                 </span>

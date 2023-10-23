@@ -22,6 +22,7 @@
                 @include('components.matchesIndex.matchRow', [
                     'info' => json_decode($item->info),
                     'itemDate' => new DateTime($item->date, new DateTimeZone('UTC')),
+                    'game' => $item->game_id == 582 ? 'dota-2' : 'lol'
                 ])
             </div>
             @endif

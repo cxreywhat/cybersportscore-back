@@ -1,6 +1,6 @@
 <div class="items-row hover:bg-gray-800 border-l-[4px] {{ $itemDate->getTimestamp() < time() ? 'border-red-500'  : 'border-transparent'}}">
     <a class="ajax-match-block {{$info?->map?->match_start != "0" ? 'cursor-pointer' : 'cursor-default' }} flex flex-row w-full h-full items-center "
-       {{ $info?->map?->match_start == "1" ? "href=/$item->id" : '' }} data-id="{{ $item->id }}" >
+       {{ $info?->map?->match_start == "1" ? "href=/$game/$item->id" : '' }} data-id="{{ $item->id }}" >
         <div class="flex items-col pl-4 w-[45px]">
             <img loading="lazy" class="opacity-50 w-5 h-5" alt="dota-2 icon" src={{asset("media/icons/games/".$info->t->g."-bw.webp")}}>
         </div>

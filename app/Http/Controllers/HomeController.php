@@ -29,9 +29,22 @@ class HomeController extends Controller
 
     public function index(Request $request, MatchesRequest $matchRequest)
     {
+        $filters = $matchRequest->validated();
+        $gameId = $request->game === 'dota-2' ? 582 : ($request->game ? 313 : null);
+        $filters['game_id'] = $gameId;
+        $lang = $request->language;
+
         $data = MatchListResource::collection(
-            $this->matchService->getList($matchRequest->validated())->items()
+            $this->matchService->getList($filters)->items()
         );
+        $news = NewsListResource::collection(
+            $this->newsService->getNewsList([
+                'game_id' => $request->get('game_id'),
+                'lang' => $lang,
+                'per_page' => 5,
+            ])
+        );
+
         $pages = $this->matchService->getList($matchRequest->validated());
 
         $tournaments = $this->matchService->getTournaments($request);
@@ -45,7 +58,12 @@ class HomeController extends Controller
             'teams' => $teams,
             'tournaments' => $tournaments,
             'items' => $data,
-            'pages' => $pages
+            'pages' => $pages,
+            'news' => $news,
+            'isNewsPage' => false,
+            'game' => $request->game,
+            'gameId' => $gameId,
+            'lang' => $lang
         ]);
     }
 

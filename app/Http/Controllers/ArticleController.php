@@ -18,22 +18,28 @@ class ArticleController extends Controller
 
     public function index(Request $request)
     {
+        $lang = $request->language;
+
         $data = NewsListResource::collection(
             $this->newsService->getNewsList([
                 'game_id' => $request->get('game_id'),
-                'lang' => $request->get('lang'),
+                'lang' => $lang,
                 'per_page' => $request->get('perPage'),
             ])
         );
 
         return view($request->ajax() ? 'ajax.newsList' : 'newsList', [
-            'data' => $data,
+            'news' => $data,
+            'isNewsPage' => true,
+            'lang' => $lang
         ]);
     }
 
     public function show(Request $request, string $id)
     {
         $id = intval($id);
+        $lang = $request->language;
+
         $data = new NewsItemResource(
             $this->newsService->getNewsItem($id, (bool) $request->get('preview'))
         );
@@ -43,16 +49,28 @@ class ArticleController extends Controller
         $months = array( 1 => 'янв.', 2 => 'фев.', 3 => 'мар.', 4 => 'апр.', 5 => 'мая', 6 => 'июн.', 7 => 'июл.', 8 => 'авг.', 9 => 'сен.', 10 => 'окт.', 11 => 'ноя.', 12 => 'дек.');
         $formattedDate = date('j ', $timestamp) . $months[date('n', $timestamp)] . date(', Y H:i', $timestamp);
 
+        $news = NewsListResource::collection(
+            $this->newsService->getNewsList([
+                'game_id' => $request->get('game_id'),
+                'lang' => $lang,
+                'per_page' => 10,
+            ])
+        );
+
         return view($request->ajax() ? 'ajax.newsArticle' : 'newsArticle', [
                 'data' => $data,
                 'blocks' => $blocks,
                 'timestamp' => $timestamp,
-                'formattedDate' => $formattedDate
+                'formattedDate' => $formattedDate,
+                'news' => $news,
+                'isNewsPage' => false,
+                'lang' => $lang
             ]
         );
     }
 
-    public function articlesBlock(Request $request) {
+    public function articlesBlock(Request $request)
+    {
 
         $news = NewsListResource::collection(
             $this->newsService->getNewsList([

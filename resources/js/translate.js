@@ -1,8 +1,10 @@
 import languageData from '../json/message.json';
-let currentLanguage = 'en';
+
+let currentLanguage = document.getElementById('selected-lang').value;
 
 document.addEventListener('DOMContentLoaded', function () {
     const languageList = document.getElementById('languages');
+    changeLanguage(currentLanguage)
 
     languageList.addEventListener('click', function (event) {
         if (event.target.tagName === 'BUTTON') {
@@ -11,18 +13,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-export function changeLanguage(selectedLanguage) {
-    currentLanguage = selectedLanguage;
-    updatePageContent();
-}
 
-function updatePageContent() {
+export function changeLanguage(lang) {
     const elementsToUpdate = document.querySelectorAll('[data-translate]');
 
     elementsToUpdate.forEach(function (element) {
         const key = element.getAttribute('data-translate');
         const keyParts = key.split('.');
-        let translatedText = languageData[currentLanguage];
+        let translatedText = languageData[lang];
         for (const part of keyParts) {
             translatedText = translatedText[part];
             if (!translatedText) break;
@@ -30,12 +28,26 @@ function updatePageContent() {
 
         if (translatedText) {
             element.textContent = translatedText;
-        } else {
-            console.error(`Translation not found for key: ${key}`);
         }
 
         element.textContent = translatedText;
     });
-}
 
-updatePageContent();
+    lang = lang.endsWith('/') ? lang.slice(0, -1) : lang;
+    const path = window.location.pathname;
+    let newPath;
+
+    if (lang === 'en') {
+        newPath = path.replace(/^\/(ru|zh|uk)\b/, '');
+    } else {
+        newPath = path.replace(new RegExp(`^\\/(ru|zh|uk)(\\/|$)`, 'g'), '/');
+
+        if (lang === '' || lang) {
+            newPath = `/${lang}${newPath}`;
+        }
+    }
+
+    if (!path.startsWith(`/${lang}`)) {
+        history.pushState({}, '', newPath);
+    }
+}

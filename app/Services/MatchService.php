@@ -106,6 +106,7 @@ class MatchService
 
     public function getHistory(int $id, ?string $side = null): HistoryDto|Paginator
     {
+
         /** @var object $match */
         $match = DB::table('gt_match_list')
             ->select(['t1', 't2', 'game_id', 'title'])

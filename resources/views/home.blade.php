@@ -10,9 +10,4 @@
         </div>
     </div>
 @endsection
-@section('scripts')
-    <script>
-        let lang = document.getElementById('selected-lang').value;
-        Promise.all([window.loadArticlesNewsBlock(lang, 5)])
-    </script>
-@endsection
+<script src="{{ asset('js/components/filterListBox.js') }}"></script>

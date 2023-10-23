@@ -33,7 +33,7 @@
         <div class="relative rounded-md shadow-sm ml-2">
             <span class="inline-block w-full">
                 <button id="selected-lang" type="button" class="flex py-1 px-2 md:py-1.5 md:px-2 text-[10px] md:text-xs font-medium focus:outline-none rounded-md border
-                        bg-gray-800 text-apple border-gray-600 hover:text-white hover:bg-gray-700" value="en">
+                        bg-gray-800 text-apple border-gray-600 hover:text-white hover:bg-gray-700" value="{{ $lang }}">
                     English
                     <svg class="ml-1 mt-1 md:mt-0 md:ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>

@@ -75,6 +75,7 @@ Route::middleware(['cors'])->group(function () {
 });
 
 
+Route::get('articlesBlock', [ArticleController::class, 'articlesBlock']);
 
 Route::get('{id}', [MatchShowController::class, 'sendWebSocketData'])
     ->where('id', '[0-9]+');

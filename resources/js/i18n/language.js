@@ -97,12 +97,14 @@ $(document).ready(function() {
 
         langButtons.forEach((button) => {
             button.addEventListener('click', () => {
-                if(window.location.pathname === '/') {
-                    loadArticlesNewsBlock(button.value, 5);
-                } else if(window.location.pathname === '/news') {
+                const path = window.location.pathname
+
+                if(path.includes('blog')) {
                     loadArticlesNewsBlock(button.value, 15, true);
-                } else if (window.location.pathname.match(/^\/news\/\d+$/)) {
+                } else if (path.match(/^\/blog\/\d+$/)) {
                     loadArticlesNewsBlock(button.value, 10);
+                } else {
+                    loadArticlesNewsBlock(button.value, 5);
                 }
             });
         });

@@ -17,6 +17,7 @@
                     @include('components.common.loader')
                 </div>
                 <div id="news-container" class="p-4">
+                    @include('components.matchesIndex.articles')
                 </div>
             </div>
         </div>
@@ -32,8 +33,5 @@
             loader.style.display = 'none';
             contentContainer.style.display = 'block';
         });
-
-        let lang = document.getElementById('selected-lang').value;
-        Promise.all([window.loadArticlesNewsBlock(lang, 15, true)])
     </script>
 @endsection
