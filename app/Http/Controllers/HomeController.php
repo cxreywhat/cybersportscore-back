@@ -33,7 +33,6 @@ class HomeController extends Controller
         $gameId = $request->game === 'dota-2' ? 582 : ($request->game ? 313 : null);
         $filters['game_id'] = $gameId;
         $lang = $request->language;
-
         $data = MatchListResource::collection(
             $this->matchService->getList($filters)->items()
         );

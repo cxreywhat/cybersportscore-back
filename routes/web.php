@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\MatchShowController;
 use App\Http\Middleware\LanguageMiddleware;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,10 +33,16 @@ Route::get('go', [BannerController::class, 'go']);
 
 Route::middleware(['language'])->group(function () {
     Route::get('/blog', [ArticleController::class, 'index'])
+        ->where('language', 'en');
+
+    Route::get('/blog/{id}', [ArticleController::class, 'show'])
         ->where('language', 'en')
-        ->name('blog.index');
+        ->where('id', '[0-9]+');
+
     Route::get('/{language?}/blog', [ArticleController::class, 'index']);
-    Route::get('/{language?}/blog/{block}', [ArticleController::class, 'show']);
+
+    Route::get('/{language?}/blog/{id}', [ArticleController::class, 'show'])
+        ->where('id', '[0-9]+');
 
     Route::group(['prefix' => '/'], function () {
         Route::get('/{language?}/{game?}', [HomeController::class, 'index'])
@@ -53,7 +60,6 @@ Route::middleware(['language'])->group(function () {
             ->name("game-id");
     });
 });
-
 
 Route::get('loaderData', [HomeController::class, 'loader']);
 Route::match(['get', 'post'],'/match/details', [HomeController::class, 'details']);

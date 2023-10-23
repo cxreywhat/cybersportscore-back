@@ -99,10 +99,10 @@ $(document).ready(function() {
             button.addEventListener('click', () => {
                 const path = window.location.pathname
 
-                if(path.includes('blog')) {
-                    loadArticlesNewsBlock(button.value, 15, true);
-                } else if (path.match(/^\/blog\/\d+$/)) {
+                if(path.match(/^\/(?:[a-z]{2}\/)?blog\/\d+$/)) {
                     loadArticlesNewsBlock(button.value, 10);
+                } else if (path.includes('blog')) {
+                    loadArticlesNewsBlock(button.value, 15, true);
                 } else {
                     loadArticlesNewsBlock(button.value, 5);
                 }

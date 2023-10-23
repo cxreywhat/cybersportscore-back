@@ -42,10 +42,7 @@ class BannerController extends Controller
             });
             //$banner = Arr::whereNotNull($banner);
             return response()->json(count($banner) ? $banner : $country);
-            return response()->json(Arr::whereNotNull($cssFilteredBanners));
-            return response()->json(Arr::whereNotNull($banner));
         }
-        dd(response()->json());
         return response()->json();
     }
 
