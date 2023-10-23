@@ -33,8 +33,14 @@ class HomeController extends Controller
         $gameId = $request->game === 'dota-2' ? 582 : ($request->game ? 313 : null);
         $filters['game_id'] = $gameId;
         $lang = $request->language;
+<<<<<<< HEAD
         $data = $this->matchService->getList($filters);
 
+=======
+        $data = MatchListResource::collection(
+            $this->matchService->getList($filters)->items()
+        );
+>>>>>>> 06f32db (upd back logic)
         $news = NewsListResource::collection(
             $this->newsService->getNewsList([
                 'game_id' => $request->get('game_id'),
