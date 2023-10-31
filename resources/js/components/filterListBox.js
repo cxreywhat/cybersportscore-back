@@ -87,6 +87,10 @@ export function createList(items, itemList, searchInput) {
     items.forEach((item) => {
         const listItem = document.createElement('li')
         listItem.className = 'relative'
+        listItem.id = item.id;
+        listItem.setAttribute('data-game-eng', item.game_eng);
+        listItem.setAttribute('data-game-id', item.game_id);
+
 
         listItem.innerHTML = `
             <button class="flex items-center w-full text-left block py-2 px-2 text-white whitespace-normal truncate h-[43px] text-xs lg:text-sm">
@@ -104,32 +108,28 @@ function openSelect(itemSelect, listItems, selectedItem, side) {
         return;
     }
 
+    gameId = document.getElementById('selected-game').getAttribute('data-value');
+    if (side === 'tournaments') {
+        getTournaments(gameId).then((data) => {
+            listItems.appendChild(data);
+            selectItem(listItems, itemSelect, selectedItem, side);
+            searchEvents()
+        })
+    } else if (side === 'teams') {
+        getTeams(gameId).then((data) => {
+            listItems.appendChild(data);
+            selectItem(listItems, itemSelect, selectedItem, side);
+            searchTeams()
+        })
+    }
+
     itemSelect = removeAllEventListeners(itemSelect);
     itemSelect.addEventListener('click', () => {
-        gameId = document.getElementById('selected-game').getAttribute('data-value');
 
         if (listItems.style.display == 'block') {
             listItems.style.display = 'none';
         } else {
             listItems.style.display = 'block';
-        }
-
-        if (side === 'tournaments') {
-            getTournaments(gameId).then((data) => {
-                listItems.appendChild(data);
-                selectItem(listItems, itemSelect, selectedItem, side);
-                searchEvents()
-            }).catch((error) => {
-                console.error(error);
-            });
-        } else if (side === 'teams') {
-            getTeams(gameId).then((data) => {
-                listItems.appendChild(data);
-                selectItem(listItems, itemSelect, selectedItem, side);
-                searchTeams()
-            }).catch((error) => {
-                console.error(error);
-            });
         }
 
         document.querySelectorAll('.custom-select').forEach((select) => {

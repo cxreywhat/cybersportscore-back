@@ -3,10 +3,15 @@ import {isNullOrUndef} from "chart.js/helpers";
 import {hideLoader, showLoader} from "./helpers/loader";
 import {loadHomePerPage} from "./helpers/ajax";
 
-export function filterMatchRows(game_id, event_id, team,id) {
+let paramsUrl = []
 
-    const url = buildApiUrl('/api/matches', game_id, event_id, team,id)
+export function filterMatchRows(game_id, event_id, team_id) {
+
+    const url = buildApiUrl('/api/matches', game_id, event_id, team_id)
     const game = game_id == 582 ? 'dota-2' : (game_id == 313 ? 'lol' : '')
+    const lang = document.getElementById('selected-lang').value;
+
+    const historyUrl = buildApiUrl(`/${lang}/${game}`, null, event_id, team_id)
     $.ajax({
         url: url,
         method: 'GET',
@@ -21,25 +26,33 @@ export function filterMatchRows(game_id, event_id, team,id) {
             const matches = JSON.parse(response);
             pagination(matches.meta)
             matchesIncurrentPage(matches.data);
-            history.pushState({}, '', '/' + game);
+            history.pushState({}, '', historyUrl);
         },
     });
 }
 
 export function buildApiUrl(basicUrl, game_id, event_id, team_id) {
-    let params = [];
+    let paramsUrl = []
 
-    params = params.filter(item => !item.startsWith('game_id=') || !item.startsWith('event_id=') || !item.startsWith('team_id='));
+    paramsUrl = paramsUrl.filter(item => !(item.startsWith('game_id=') || item.startsWith('event_id=') || item.startsWith('team_id=')));
 
     if (!isNullOrUndef(game_id)) {
-        params.push(`game_id=${game_id}`);
-    } if (!isNullOrUndef(event_id)) {
-        params.push(`event_id=${event_id}`);
-    } if (!isNullOrUndef(team_id)) {
-        params.push(`team_id=${team_id}`);
+        paramsUrl.push(`game_id=${game_id}`);
     }
 
-    return `${basicUrl}${params.length > 0 ? '?' : ''}${params.join('&')}`;
+    if (!isNullOrUndef(event_id) && event_id != '') {
+        paramsUrl.push(`event_id=${event_id}`);
+    } else {
+        paramsUrl = paramsUrl.filter(item => !item.startsWith('event_id='));
+    }
+
+    if (!isNullOrUndef(team_id) && team_id != '') {
+        paramsUrl.push(`team_id=${team_id}`);
+    } else {
+        paramsUrl = paramsUrl.filter(item => !item.startsWith('team_id='));
+    }
+
+    return `${basicUrl}${paramsUrl.length > 0 ? '?' : ''}${paramsUrl.join('&')}`;
 }
 
 export function pagination(pagesMeta) {

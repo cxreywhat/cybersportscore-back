@@ -1,5 +1,5 @@
 <div class="flex items-col pl-4 w-[45px]">
-    <img src="/media/icons/games/dota-2-bw.webp" alt="dota-2 icon" loading="lazy" class="opacity-50 w-5 h-5">
+    <img src="{{asset('/media/icons/games/dota-2-bw.webp')}}" alt="dota-2 icon" loading="lazy" class="opacity-50 w-5 h-5">
 </div>
 
 <div class="items-end flex-col items-col grow w-8 sm:w-10 overflow-visible text-xs  md:text-base" >

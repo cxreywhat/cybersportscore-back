@@ -34,7 +34,7 @@ export function changeLanguage(lang) {
     });
 
     lang = lang.endsWith('/') ? lang.slice(0, -1) : lang;
-    const path = window.location.pathname;
+    const path = window.location.pathname + window.location.search;
     let newPath;
 
     if (lang === 'en') {

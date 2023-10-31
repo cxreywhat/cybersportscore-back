@@ -98,6 +98,9 @@ $(document).ready(function() {
         langButtons.forEach((button) => {
             button.addEventListener('click', () => {
                 const path = window.location.pathname
+                const language = button.value == 'en' ? '' : button.value;
+                changeLangHref(`/${language}`, 'main-logo')
+                changeLangHref(`/${language}/blog`, 'news-blog')
 
                 if(path.match(/^\/(?:[a-z]{2}\/)?blog\/\d+$/)) {
                     loadArticlesNewsBlock(button.value, 10);
@@ -110,3 +113,8 @@ $(document).ready(function() {
         });
     })
 });
+
+function changeLangHref(href, id) {
+    const logo = document.getElementById(id);
+    logo.href = href;
+}

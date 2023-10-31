@@ -5,8 +5,6 @@ import {historyMatchesBlock} from "../components/matches/historyBlock.js";
 import {matchesIncurrentPage} from "../components/pagination";
 import {buildApiUrl, pagination} from "../matchFilter";
 
-let blockId = '';
-
 export function loadArticlesNewsBlock(lang, perPage, isNewsPage = false) {
     $.ajax({
         url: '/api/articlesBlock',
@@ -37,14 +35,19 @@ export function loadHomePerPage(pageNum) {
     const eventId = document.getElementById('selected-tournament').getAttribute('data-value');
     const teamId = document.getElementById('selected-team').getAttribute('data-value');
 
+    const lang = document.getElementById('selected-lang').value;
+    const selectedGame = document.getElementById('selected-game').getAttribute('data-value') || '';
+    const game = selectedGame == 582 ? '/dota-2' : (selectedGame == 313 ? '/lol' : '');
+
     const basicUrl = '/api/matches?page=' + pageNum + '&'
     const url = buildApiUrl(basicUrl, gameId, eventId, teamId)
+    const historyUrl = `/${lang}${game}?page=${pageNum}${buildUrl(eventId, teamId)}`;
 
     $.ajax({
         url: url,
         method: 'GET',
         dataType: 'html',
-        data: { page: pageNum },
+        data: { lang: lang, page: pageNum },
         beforeSend: function() {
             showLoaderMatches()
         },
@@ -56,10 +59,25 @@ export function loadHomePerPage(pageNum) {
             pagination(matches.meta)
             matchesIncurrentPage(matches.data);
             checkDetailsMap()
-            history.pushState({}, '', '/?page=' + pageNum);
+
+            history.pushState({}, '', historyUrl);
         },
     });
 }
+
+function buildUrl(eventId, teamId) {
+    let url = '';
+
+    if(eventId != null || undefined) {
+        url += `&event_id=${eventId}`;
+    }
+    if(teamId != null || undefined) {
+        url += `&team_id=${teamId}`;
+    }
+
+    return url;
+}
+
 
 function loadHistoryTeams(id) {
     $.ajax({
@@ -88,9 +106,9 @@ export function checkDetailsMatch(gameId, num, csrfToken, container) {
     });
 }
 export function getTournaments(game_id) {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         let url = '/api/filters/tournaments';
-        if (!isNullOrUndef(game_id)) {
+        if (game_id != null || game_id != undefined) {
             url += '?game_id=' + game_id;
         }
 
@@ -110,7 +128,7 @@ export function getTournaments(game_id) {
 export function getTeams(game_id) {
     return new Promise((resolve, reject) => {
         let url = '/api/filters/teams';
-        if (!isNullOrUndef(game_id)) {
+        if (game_id != null || game_id != undefined) {
             url += '?game_id=' + game_id;
         }
 
@@ -149,26 +167,6 @@ function showLoaderNews() {
 function hideLoaderNews() {
     $('#loader-news').hide();
     $('#news-container').show();
-}
-
-function showLoaderNewsBlock() {
-    $('#loader-news-block').show();
-    $('#news-block').hide();
-}
-
-function hideLoaderNewsBlock() {
-    $('#loader-news-block').hide();
-    document.getElementById('news-block').style.display = 'grid';
-}
-
-function showLoaderContent() {
-    $('#loader-container').show();
-    $('#content-container').hide();
-}
-
-function hideLoaderContent() {
-    $('#loader-container').hide();
-    $('#content-container').show();
 }
 
 function showLoaderMatches() {

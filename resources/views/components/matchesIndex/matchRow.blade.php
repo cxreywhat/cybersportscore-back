@@ -1,11 +1,10 @@
 <div class="items-row hover:bg-gray-800 border-l-[4px] {{ $itemDate->getTimestamp() < time() ? 'border-red-500'  : 'border-transparent'}}">
     <a class="ajax-match-block {{$info?->map?->match_start != "0" ? 'cursor-pointer' : 'cursor-default' }} flex flex-row w-full h-full items-center "
-       {{ $info?->map?->match_start == "1" ? "href=/$game/$item->id" : '' }} data-id="{{ $item->id }}" >
+       {{ $info?->map?->match_start == "1" ? "href=/$lang/$game/$item->id" : '' }} data-id="{{ $item->id }}" >
         <div class="flex items-col pl-4 w-[45px]">
-            <img loading="lazy" class="opacity-50 w-5 h-5" alt="dota-2 icon" src={{asset("media/icons/games/".$info->t->g."-bw.webp")}}>
+            <img loading="lazy" class="opacity-50 w-5 h-5" alt="dota-2 icon" src={{asset("/media/icons/games/".$info->t->g."-bw.webp")}}>
         </div>
         <div class="w-[45px] sm:w-[120px] md:w-[130px] items-col items-start p-0 sm:px-3 py-3 text-sm">
-
             @if($itemDate?->getTimestamp() < time() && intval($info?->map?->match_start) >= 1)
                 <div class="font-semibold text-sm text-red-500 leading-4 flex flex-col items-center opacity-90">
                     <span class="hidden md:flex">LIVE</span>
@@ -15,8 +14,7 @@
                 </div>
             @else
                 <div class="w-[45px] sm:w-[120px] md:w-[130px] items-col  py-3  leading-[1rem] text-[9px] sm:text-xs">
-                    <span id="date-match-{{$item->id}}" class="text-gray-400 sm:text-gray-300 sm:text-xs" data-time-match="{{ $itemDate->getTimestamp() }}">
-                    </span>
+                    <span id="date-match-{{$item->id}}" class="text-gray-400 sm:text-gray-300 sm:text-xs" data-time-match="{{ $itemDate->getTimestamp() }}"></span>
                 </div>
             @endif
         </div>

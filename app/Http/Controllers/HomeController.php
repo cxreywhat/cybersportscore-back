@@ -33,9 +33,8 @@ class HomeController extends Controller
         $gameId = $request->game === 'dota-2' ? 582 : ($request->game ? 313 : null);
         $filters['game_id'] = $gameId;
         $lang = $request->language;
-        $data = MatchListResource::collection(
-            $this->matchService->getList($filters)->items()
-        );
+        $data = $this->matchService->getList($filters);
+
         $news = NewsListResource::collection(
             $this->newsService->getNewsList([
                 'game_id' => $request->get('game_id'),
@@ -43,8 +42,6 @@ class HomeController extends Controller
                 'per_page' => 5,
             ])
         );
-
-        $pages = $this->matchService->getList($matchRequest->validated());
 
         $tournaments = $this->matchService->getTournaments($request);
         $teams = $this->matchService->getTeams($request);
@@ -56,8 +53,8 @@ class HomeController extends Controller
             'buildings' => $buildings,
             'teams' => $teams,
             'tournaments' => $tournaments,
-            'items' => $data,
-            'pages' => $pages,
+            'items' => MatchListResource::collection($data),
+            'pages' => $data,
             'news' => $news,
             'isNewsPage' => false,
             'game' => $request->game,
@@ -116,16 +113,12 @@ class HomeController extends Controller
         $data = MatchListResource::collection(
             $this->matchService->getList($matchRequest->validated())->items()
         );
-        $pages = $this->matchService->getList($matchRequest->validated());
-
-        $tournaments = $this->matchService->getTournaments($request);
-        $teams = $this->matchService->getTeams($request);
 
         event(new HomeUpdate([
-            'teams' => $teams,
-            'tournaments' => $tournaments,
+            'teams' => $this->matchService->getTeams($request),
+            'tournaments' => $this->matchService->getTournaments($request),
             'matches' => $data,
-            'pages' => $pages
+            'pages' => $this->matchService->getList($matchRequest->validated())
         ]));
     }
 }

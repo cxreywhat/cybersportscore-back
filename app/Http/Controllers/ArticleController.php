@@ -77,7 +77,6 @@ class ArticleController extends Controller
 
     public function articlesBlock(Request $request)
     {
-
         $news = NewsListResource::collection(
             $this->newsService->getNewsList([
                 'game_id' => $request->get('game_id'),

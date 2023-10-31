@@ -45,13 +45,14 @@ class MatchShowController extends Controller
             $this->matchService->show($id, $request->get('num'))
         );
 
+        $history = $this->matchService->getHistory($id);
+
         $streams = StreamResource::collection($this->streamService->getListForMatch($id));
 
         $heroes = $this->dictService->getHeroes($game);
 
         $t1 = $match->getTeam1();
         $t2 = $match->getTeam2();
-
         $t1->setPlayers($this->matchService->sortPlayersDeskByNetWorth($t1->getPlayers()));
         $t2->setPlayers($this->matchService->sortPlayersDeskByNetWorth($t2->getPlayers()));
 
@@ -68,6 +69,7 @@ class MatchShowController extends Controller
         return view('match', [
             'lang' => $lang,
             'game' => $game,
+            'history' => new HistoryResource($history),
             'buildings' => $buildings,
             'match_id' => $id,
             'streams' => $streams,
